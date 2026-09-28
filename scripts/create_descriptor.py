@@ -16,6 +16,7 @@ def main() -> None:
     parser = argparse.ArgumentParser()
     parser.add_argument("--team-id", required=True)
     parser.add_argument("--digest", required=True)
+    parser.add_argument("--house-model", action="store_true")
     parser.add_argument("--out", type=Path, default=Path("submission.json"))
     args = parser.parse_args()
 
@@ -27,7 +28,13 @@ def main() -> None:
     descriptor.update(
         team_id=args.team_id,
         category="api",
-        models=[],
+        models=([{
+            "name": "nvidia/nemotron-3-super-120b-a12b",
+            "version": "rl-030326-fp8",
+            "revision": "rl-030326-fp8",
+            "training_cutoff": "unpublished",
+            "access": "api",
+        }] if args.house_model else []),
         license="MIT",
         image_access="public",
         image={

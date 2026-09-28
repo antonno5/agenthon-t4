@@ -1,0 +1,7 @@
+# Local-only faithfulness diagnostics. This image is never submitted to Agenthon.
+FROM agenthon-t4:checker
+RUN python -m pip install --no-cache-dir \
+      'torch==2.8.0+cpu' \
+      --index-url https://download.pytorch.org/whl/cpu
+RUN python -m pip install --no-cache-dir \
+      'transformers==4.51.3' 'sentencepiece==0.2.2'

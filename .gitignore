@@ -5,5 +5,7 @@ __pycache__/
 test-output/
 submission.json
 submission.zip
+submission-v2.json
+submission-v2.zip
 team-claim.json
 *.key

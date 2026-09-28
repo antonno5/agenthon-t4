@@ -55,3 +55,25 @@ ask for the Team Key on a hidden terminal prompt. The Team Key is not saved to
 the host, image or ZIP. Never put it in this repository, chat or command arguments.
 Upload `submission.zip` from the team's sole CodaBench account under T4
 Development → My Submissions.
+
+## V2: evidence retrieval and House forecasting
+
+`Dockerfile.v2` builds the next candidate. It chunks long filings into exact,
+citable windows, retrieves pre-cutoff passages per entity, asks the official
+House model for a forecast and quoted evidence, and validates the answer before
+writing it. It falls back to a deterministic forecast if the model route fails.
+The container uses only the Python standard library. See
+`ARTIFACT_PROVENANCE.md` for the artifact record.
+
+Build and exercise it on cero:
+
+```bash
+sudo -n docker build -f Dockerfile.v2 -t agenthon-t4:v2-local .
+python3 scripts/check_public.py --docker 'sudo -n docker' \
+  --image agenthon-t4:v2-local --units-dir /tmp/agenthon-t4/units
+python3 -m scripts.check_model_route
+```
+
+The published V2 digest is passed to `scripts/pack_submission_v2.sh` together
+with the team number. The script discloses the House model in the descriptor and
+creates `submission-v2.zip` with a hidden Team Key prompt.
