@@ -1,4 +1,4 @@
-# Track 4 V2/V3 artifact provenance
+# Track 4 V2/V3/V4 artifact provenance
 
 The V2 image contains Python source, a deterministic BM25 index built at runtime
 from the supplied official frozen corpus, and the Python 3.13 standard library.
@@ -13,6 +13,15 @@ that note. For Treasury auctions, it forecasts the note's average
 bid-to-cover ratio over recent same-tenor auctions and uses the note's
 historical range as its interval. There is no fitted coefficient or external
 dataset.
+
+V4 adds an unfitted rule for rate-curve tasks when the supplied snapshot
+explicitly records a policy move and either ongoing hikes or an easing path
+already priced more aggressively than the Committee's projections. The
+rule forecasts a fraction of the announced policy move, declining with
+maturity, and cites the full pre-cutoff policy and positioning passage.
+House-model regression intervals receive a broad floor derived from the
+pre-existing feature-scaled fallback. These constants were chosen as
+conservative uncertainty allowances, without fitting to any resolved task.
 
 When the harness supplies the House route, the agent calls only the approved
 `nvidia/nemotron-3-super-120b-a12b` model at revision `rl-030326-fp8` through

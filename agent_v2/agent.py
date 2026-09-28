@@ -226,6 +226,14 @@ def run_entity(task: dict, entity: dict, index: BM25Index,
     if lo is None or hi is None or lo > hi or not lo <= point <= hi:
         width = max(fallback_band[1] - fallback_point, abs(point) * 0.2)
         lo, hi = point - width, point + width
+    elif _target_type(task) == "regression":
+        # The House model's uncalibrated intervals were especially narrow on
+        # bank EPS-growth. There is no interval-width penalty in T4; a broad
+        # predeclared uncertainty floor is preferable to claiming confidence
+        # that the frozen evidence cannot support.
+        minimum_half_width = fallback_band[1] - fallback_point
+        lo = min(lo, point - minimum_half_width)
+        hi = max(hi, point + minimum_half_width)
     claims = _claims(parsed, retrieved)
 
     prediction = {

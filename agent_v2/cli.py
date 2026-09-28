@@ -15,6 +15,7 @@ from .cpi_reference import forecast_cpi
 from .formatter import build_answer
 from .indexer import build_index
 from .macro_revision import forecast_revision
+from .rate_reference import forecast_rate_change
 from .retriever import BM25Index
 
 MAX_MODEL_CALLS = 24  # House budget is 25 admitted requests per unit.
@@ -32,7 +33,8 @@ def run(task_path: Path, corpus_dir: Path, out_path: Path, *, offline: bool = Fa
     def reference_for(entity):
         return (forecast_cpi(task, entity, corpus)
                 or forecast_revision(task, entity, corpus)
-                or forecast_auction(task, entity, corpus))
+                or forecast_auction(task, entity, corpus)
+                or forecast_rate_change(task, entity, corpus))
 
     references = [reference_for(entity) for entity in entities]
     model_positions = {

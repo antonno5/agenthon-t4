@@ -52,6 +52,13 @@ def main() -> None:
         row = answer["entity_predictions"][0]
         assert row["label"] == "beat" and row["point_forecast"] == 1.6
         assert row["claims"] and "model predictions" in answer["evidence_trace"]
+        growth_unit = Path("/tmp/agenthon-t4/units/t4-eps-growth-2024Q3-banks")
+        with tempfile.TemporaryDirectory() as directory:
+            growth = run(growth_unit / "task.json", growth_unit / "corpus",
+                         Path(directory) / "answer.json")
+        for prediction in growth["entity_predictions"]:
+            assert prediction["interval"]["lo"] <= prediction["point_forecast"] - 200
+            assert prediction["interval"]["hi"] >= prediction["point_forecast"] + 200
         print("House route contract and model-to-citation path: PASS")
     finally:
         server.shutdown()

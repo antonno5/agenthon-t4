@@ -89,3 +89,10 @@ versus 9 of 12 for the V2 fallback.
 For Treasury auctions, it forecasts from the cited same-tenor recent average
 and historical range; the local NLI judge supports all seven public rows,
 versus two of seven for the V2 fallback.
+
+V4 adds an explicit pre-cutoff policy-regime forecast for FOMC yield-curve
+tasks and a broad uncertainty floor for House regression forecasts. On the two
+public FOMC practice units, the published local NLI judge supports 6/6 rows
+in each. All 11 public units pass structure and official smoke checks. These
+checks do not predict the hidden Development score; see `EXPERIMENTS.md` for
+actual V1 and V3 CodaBench results.
