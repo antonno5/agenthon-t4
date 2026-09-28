@@ -35,18 +35,23 @@ prediction quality or the production faithfulness score.
 
 ## Publishing and submitting
 
-Run the `Publish T4 image` GitHub Actions workflow, then make the GHCR package
-public. Verify the exact digest anonymously and confirm `linux/amd64` before
-putting it in a descriptor. Install the official `qfbench2-common` toolkit at
-`v2.4.4` in a Python 3.13 environment. Copy its
-`contracts/fixtures/c5/analysis_dev.json` fixture and set the team's derived
-`team_id`, `image.registry=ghcr.io`, `image.repository=antonno5/agenthon-t4`,
-the pushed digest, `image_access=public`, `models=[]`, and `license=MIT`.
-Keep `competition_id=agenthon2026-analysis-dev`, `track=analysis`,
-`phase=dev`, and `category=api`.
+The first image was published by [this workflow run](https://github.com/antonno5/agenthon-t4/actions/runs/36405553926)
+at digest `sha256:cfea7eaa99421714c7789190c6dc79ad30a14a9744ae621ec09e7d67b2b2db8d`.
+Make the GHCR package public, then verify this exact digest anonymously and
+confirm `linux/amd64` before packing. The checkout remains private.
 
-Use `qfbench2 submission alias --team-number <N>` and
-`qfbench2 submission pack --descriptor submission.json --team-number <N>
---out submission.zip`. The toolkit prompts for the Team Key without echoing it.
-Never put the key in this repository, image, ZIP, chat or command arguments.
-Upload the ZIP in T4 Development using the team's sole CodaBench account.
+On cero, in an interactive terminal, run:
+
+```bash
+cd /home/antonnos/agenthon-t4
+./scripts/pack_submission.sh YOUR_TEAM_NUMBER
+```
+
+The script uses the official `qfbench2-common@v2.4.4` toolkit already installed
+in the Python 3.13 checker image. It copies the T4 Development fixture, runs
+`qfbench2 submission alias` and `qfbench2 submission pack`, and checks that the
+ZIP has exactly `submission.json` and `team-claim.json`. Both toolkit commands
+ask for the Team Key on a hidden terminal prompt. The Team Key is not saved to
+the host, image or ZIP. Never put it in this repository, chat or command arguments.
+Upload `submission.zip` from the team's sole CodaBench account under T4
+Development → My Submissions.
