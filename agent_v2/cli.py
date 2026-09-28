@@ -8,10 +8,13 @@ from concurrent.futures import ThreadPoolExecutor
 from pathlib import Path
 
 from .agent import run_entity
+from .auction_reference import forecast_auction
 from .client import HTTPModelClient
 from .config import Config
+from .cpi_reference import forecast_cpi
 from .formatter import build_answer
 from .indexer import build_index
+from .macro_revision import forecast_revision
 from .retriever import BM25Index
 
 MAX_MODEL_CALLS = 24  # House budget is 25 admitted requests per unit.
@@ -26,9 +29,23 @@ def run(task_path: Path, corpus_dir: Path, out_path: Path, *, offline: bool = Fa
 
     entities = task.get("entities", [])
 
+    def reference_for(entity):
+        return (forecast_cpi(task, entity, corpus)
+                or forecast_revision(task, entity, corpus)
+                or forecast_auction(task, entity, corpus))
+
+    references = [reference_for(entity) for entity in entities]
+    model_positions = {
+        i for i, reference in enumerate(references) if reference is None
+    }
+    model_positions = set(sorted(model_positions)[:MAX_MODEL_CALLS])
+
     def predict(index_and_entity):
         position, entity = index_and_entity
-        row_client = client if position < MAX_MODEL_CALLS else None
+        reference = references[position]
+        if reference is not None:
+            return reference
+        row_client = client if position in model_positions else None
         return run_entity(task, entity, index, corpus, row_client, config.top_k)
 
     with ThreadPoolExecutor(max_workers=4) as pool:

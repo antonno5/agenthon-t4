@@ -77,3 +77,15 @@ python3 -m scripts.check_model_route
 The published V2 digest is passed to `scripts/pack_submission_v2.sh` together
 with the team number. The script discloses the House model in the descriptor and
 creates `submission-v2.zip` with a hidden Team Key prompt.
+
+V3 adds a CPI-component path that uses the cited pre-cutoff three-month
+average as its point forecast and the cited historical range as its interval.
+On the public CPI practice unit, the official local NLI judge supports all
+11 predictions, versus 1 of 11 for the V2 offline fallback. This is a
+faithfulness diagnostic; resolved CPI values are unavailable locally.
+It also uses the latest pre-cutoff vintage revision note to forecast the next
+revision direction. The local NLI judge supports all 12 public revision rows,
+versus 9 of 12 for the V2 fallback.
+For Treasury auctions, it forecasts from the cited same-tenor recent average
+and historical range; the local NLI judge supports all seven public rows,
+versus two of seven for the V2 fallback.
