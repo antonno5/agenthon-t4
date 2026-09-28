@@ -23,6 +23,11 @@ House-model regression intervals receive a broad floor derived from the
 pre-existing feature-scaled fallback. These constants were chosen as
 conservative uncertainty allowances, without fitting to any resolved task.
 
+V5 enables the approved House model's documented thinking mode and permits
+up to 4,000 generated tokens per request, the published per-request limit.
+This is a global inference setting for all House tasks, without fitting to
+any post-cutoff label or switching per task.
+
 When the harness supplies the House route, the agent calls only the approved
 `nvidia/nemotron-3-super-120b-a12b` model at revision `rl-030326-fp8` through
 that route. Its training cutoff is unpublished; the organizer provides and

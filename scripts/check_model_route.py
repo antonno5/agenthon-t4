@@ -18,7 +18,7 @@ class Handler(BaseHTTPRequestHandler):
         payload = json.loads(self.rfile.read(int(self.headers["Content-Length"])))
         assert payload["model"] == "house"
         assert payload["max_tokens"] <= 4000
-        assert payload["chat_template_kwargs"] == {"enable_thinking": False}
+        assert payload["chat_template_kwargs"] == {"enable_thinking": True}
         prompt = json.loads(payload["messages"][1]["content"].splitlines()[-1])
         excerpt = prompt["excerpts"][0]["text"]
         answer = {

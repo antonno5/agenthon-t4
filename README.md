@@ -101,3 +101,9 @@ The V4 image was published by [this workflow run](https://github.com/antonno5/ag
 at digest `sha256:e330b1614d1c5982ebb0ad13768eb5db73ce36447e9d2e88aa441afec7268cb5`.
 An anonymous pull by digest confirmed `linux/amd64` and interface label `2.0`.
 The exact published digest ran offline on all 11 public units.
+
+V5 enables the approved House model's documented thinking mode for every
+model call and requests at most 4,000 output tokens, the published maximum.
+It keeps the V4 cutoff-aware forecasts and citations. This is a Development
+experiment; the public tasks have no released labels, so its hidden score
+must be measured in CodaBench.

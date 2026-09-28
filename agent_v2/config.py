@@ -32,7 +32,7 @@ class Config:
             model_token=os.environ.get("MODEL_TOKEN") or None,
             seed=int(os.environ.get("T4_SEED", "20260731")),
             top_k=int(os.environ.get("T4_TOP_K", "5")),
-            timeout_s=float(os.environ.get("T4_MODEL_TIMEOUT_S", "55")),
+            timeout_s=float(os.environ.get("T4_MODEL_TIMEOUT_S", "75")),
             max_retries=1,
             temperature=float(os.environ.get("T4_TEMPERATURE", "0")),
         )

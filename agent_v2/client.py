@@ -9,7 +9,8 @@ server speaking that protocol works (ollama, llama.cpp, vLLM) whether its URL is
 given with or without the ``/v1`` suffix, and tests inject :class:`MockModelClient`
 — same interface, canned replies, no network.
 
-Determinism: temperature 0 and a fixed ``seed`` are sent on every request.
+Temperature 0 and a fixed ``seed`` are sent on every request. The approved
+House model's documented thinking mode is enabled for financial reasoning.
 """
 from __future__ import annotations
 
@@ -60,8 +61,8 @@ class HTTPModelClient:
             ],
             "temperature": self.config.temperature,
             "seed": self.config.seed,
-            "max_tokens": 1600,
-            "chat_template_kwargs": {"enable_thinking": False},
+            "max_tokens": 4000,
+            "chat_template_kwargs": {"enable_thinking": True},
         }
         headers = {"Content-Type": "application/json"}
         if self.config.model_token:
