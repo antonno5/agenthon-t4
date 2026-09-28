@@ -16,6 +16,7 @@ image_digest=sha256:cfea7eaa99421714c7789190c6dc79ad30a14a9744ae621ec09e7d67b2b2
 
 sudo -n docker run --rm -it \
   --network none \
+  --user "$(id -u):$(id -g)" \
   --volume "$repo_dir:/workspace" \
   --workdir /workspace \
   --env TEAM_NUMBER="$team_number" \
