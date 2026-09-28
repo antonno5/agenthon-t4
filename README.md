@@ -107,3 +107,5 @@ model call and requests at most 4,000 output tokens, the published maximum.
 It keeps the V4 cutoff-aware forecasts and citations. This is a Development
 experiment; the public tasks have no released labels, so its hidden score
 must be measured in CodaBench.
+The V5 image was published by [this workflow run](https://github.com/antonno5/agenthon-t4/actions/runs/36446201821)
+at digest `sha256:60f651c1cebe0524ea6f63a0af67950de706838eec7576bdce4377f9cae3d7ec`.
