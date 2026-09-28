@@ -9,7 +9,7 @@ labels and cannot predict the leaderboard score.
 | V1 official minimal baseline | `sha256:cfea7eaa99421714c7789190c6dc79ad30a14a9744ae621ec09e7d67b2b2db8d` | ID 949583, `0.1388` | 11/11 public structural and smoke |
 | V2 BM25 + House | `sha256:3e3f1471568f848a631763dcc89f2ccee270ac2e1158555a5fed5f6c0ce8fbdc` | Not submitted | 11/11 public structural and smoke; House route checked with a local fake server |
 | V3 House + cited historical forecasts | `sha256:5641c8876673e5b3029e2d1d0b0f48ac6f28661d01e49fb24deb9f09118a0161` | ID 949827, `0.1023` | Published digest ran offline on 11/11 public units; official smoke 11/11; local published NLI on targeted public families: CPI 11/11, macro revisions 12/12, Treasury auctions 7/7 |
-| V4 policy-regime rate forecasts + interval floor | Pending publication | Not submitted | Local container structural and official smoke 11/11; fake House route; public FOMC NLI 6/6 in each of two units |
+| V4 policy-regime rate forecasts + interval floor | `sha256:e330b1614d1c5982ebb0ad13768eb5db73ce36447e9d2e88aa441afec7268cb5` | Awaiting upload | Anonymous GHCR digest pull; `linux/amd64`, interface `2.0`; published image structural 11/11, local official smoke 11/11, fake House route, public FOMC NLI 6/6 in each of two units |
 
 V3 uses only the pre-cutoff frozen corpus for its historical estimates and
 citations. The three specialized paths use a three-month CPI average, the most

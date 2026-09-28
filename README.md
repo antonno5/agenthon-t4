@@ -96,3 +96,8 @@ public FOMC practice units, the published local NLI judge supports 6/6 rows
 in each. All 11 public units pass structure and official smoke checks. These
 checks do not predict the hidden Development score; see `EXPERIMENTS.md` for
 actual V1 and V3 CodaBench results.
+
+The V4 image was published by [this workflow run](https://github.com/antonno5/agenthon-t4/actions/runs/36433485761)
+at digest `sha256:e330b1614d1c5982ebb0ad13768eb5db73ce36447e9d2e88aa441afec7268cb5`.
+An anonymous pull by digest confirmed `linux/amd64` and interface label `2.0`.
+The exact published digest ran offline on all 11 public units.
