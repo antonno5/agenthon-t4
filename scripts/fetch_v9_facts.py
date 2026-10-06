@@ -8,10 +8,11 @@ import time
 import urllib.request
 import urllib.error
 
-p=argparse.ArgumentParser();p.add_argument('pool',choices=['additional_training','confirmation_a','confirmation_b']);args=p.parse_args()
+p=argparse.ArgumentParser();p.add_argument('pool',choices=['additional_training','training_extension','confirmation_a','confirmation_b']);args=p.parse_args()
 plan=json.loads(Path('lab/v9_plan.json').read_text());raw=Path('test-output/v9/raw')/args.pool;raw.mkdir(parents=True,exist_ok=True)
 records=[];failed=[]
-for n,company in enumerate(plan['pools'][args.pool]):
+companies=json.loads(Path('lab/v9_training_extension.json').read_text())['companies'] if args.pool=='training_extension' else plan['pools'][args.pool]
+for n,company in enumerate(companies):
     cik=company['cik'];url=f'https://data.sec.gov/api/xbrl/companyfacts/CIK{cik}.json';path=raw/f'CIK{cik}.json'
     try:
         if not path.exists():
@@ -24,4 +25,4 @@ for n,company in enumerate(plan['pools'][args.pool]):
     except (OSError,ValueError,AssertionError) as error:
         failed.append(dict(company,error=type(error).__name__,status=getattr(error,'code',None)))
     (raw/'sources.json').write_text(json.dumps(records,indent=2)+'\n');(raw/'failures.json').write_text(json.dumps(failed,indent=2)+'\n')
-    if n%10==0 or n==len(plan['pools'][args.pool])-1:print(args.pool,n+1,'downloaded',len(records),'failed',len(failed),flush=True)
+    if n%10==0 or n==len(companies)-1:print(args.pool,n+1,'downloaded',len(records),'failed',len(failed),flush=True)

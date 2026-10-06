@@ -58,4 +58,4 @@ def build(pool):
     write(manifest,result);print(__import__('json').dumps(result),flush=True)
 
 if __name__=='__main__':
-    p=argparse.ArgumentParser();p.add_argument('pool',choices=['existing','additional_training','confirmation_a','confirmation_b']);a=p.parse_args();build(a.pool)
+    p=argparse.ArgumentParser();p.add_argument('pool',choices=['existing','additional_training','training_extension','confirmation_a','confirmation_b']);a=p.parse_args();build(a.pool)

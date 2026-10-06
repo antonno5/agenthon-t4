@@ -9,4 +9,4 @@ exec sudo -n docker run --rm --network=none --read-only --user 1000:1000 \
   -v "$PWD/lab:/app/lab:ro" -v "$PWD/agent_submit_v8:/app/agent_submit_v8:ro" \
   -v "$PWD/test-output/independent-demo/official-track4:/official:ro" \
   -v "$PWD/test-output/v9:/experiment:rw" \
-  agenthon-t4:algorithmic-lab-v2 -m "$module" "$@"
+  "${V9_LAB_IMAGE:-agenthon-t4:algorithmic-lab-v2}" -m "$module" "$@"

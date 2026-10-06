@@ -1,0 +1,2 @@
+FROM agenthon-t4:algorithmic-lab-v2
+RUN pip install --no-cache-dir catboost==1.2.10 xgboost-cpu==3.4.1
