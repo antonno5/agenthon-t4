@@ -1,0 +1,2585 @@
+{
+  "version": "v9-1",
+  "target": "lower confidence bound of mean EPS composite improvement >= 0.10 versus frozen V7",
+  "baseline": "V7 seasonal half-difference; V6 remains scorer reference; V8 comparisons secondary",
+  "metric": "Unchanged official 5.2.2, equal-weight EPS direction and EPS growth, same calendar-quarter tasks and inclusion rules as V8",
+  "seed": 9,
+  "universe_url": "https://raw.githubusercontent.com/datasets/s-and-p-500-companies/main/data/constituents.csv",
+  "universe_sha256": "8e8c5a9aa27079a1feb6f92f9d56c5ad7a2084263a66d4191c54705a5b77c2ed",
+  "old_sources": [
+    {
+      "cik": "0000002488",
+      "ticker": "AMD",
+      "url": "https://data.sec.gov/api/xbrl/companyfacts/CIK0000002488.json",
+      "path": "CIK0000002488.json",
+      "sha256": "21a29c75076d90fced568785d855fc427a15c7458bc0bb153a9dedd88ad3349e",
+      "bytes": 3672449,
+      "retrieved_at": "2026-10-06T06:49:22.476335+00:00",
+      "source": "SEC public companyfacts XBRL API",
+      "provenance_caveat": "Current extraction, filter original filed dates and retain first-report targets; not archived API vintages",
+      "raw_folder": "test-output/v7-eps/raw"
+    },
+    {
+      "cik": "0000018230",
+      "ticker": "CAT",
+      "url": "https://data.sec.gov/api/xbrl/companyfacts/CIK0000018230.json",
+      "path": "CIK0000018230.json",
+      "sha256": "01ddc6ffa741f0a7da440e2949b2ed19cec14fab35435a398e3f3d0100019715",
+      "bytes": 5868239,
+      "retrieved_at": "2026-10-06T06:49:23.042870+00:00",
+      "source": "SEC public companyfacts XBRL API",
+      "provenance_caveat": "Current extraction, filter original filed dates and retain first-report targets; not archived API vintages",
+      "raw_folder": "test-output/v7-eps/raw"
+    },
+    {
+      "cik": "0000019617",
+      "ticker": "JPM",
+      "url": "https://data.sec.gov/api/xbrl/companyfacts/CIK0000019617.json",
+      "path": "CIK0000019617.json",
+      "sha256": "aca9a8075ba86537ff8e67f712ca22770ef2b9a840f69a98ff47037d848fbb44",
+      "bytes": 7973923,
+      "retrieved_at": "2026-10-06T06:49:23.710773+00:00",
+      "source": "SEC public companyfacts XBRL API",
+      "provenance_caveat": "Current extraction, filter original filed dates and retain first-report targets; not archived API vintages",
+      "raw_folder": "test-output/v7-eps/raw"
+    },
+    {
+      "cik": "0000021344",
+      "ticker": "KO",
+      "url": "https://data.sec.gov/api/xbrl/companyfacts/CIK0000021344.json",
+      "path": "CIK0000021344.json",
+      "sha256": "53d363a9aa3071406cda9857654358f4dca42e174a1defb8cc1ce9ad2a4c9e40",
+      "bytes": 5028478,
+      "retrieved_at": "2026-10-06T06:49:24.281651+00:00",
+      "source": "SEC public companyfacts XBRL API",
+      "provenance_caveat": "Current extraction, filter original filed dates and retain first-report targets; not archived API vintages",
+      "raw_folder": "test-output/v7-eps/raw"
+    },
+    {
+      "cik": "0000034088",
+      "ticker": "XOM",
+      "url": "https://data.sec.gov/api/xbrl/companyfacts/CIK0000034088.json",
+      "path": "CIK0000034088.json",
+      "sha256": "9b95535419e5662e3deed01de803e83deead477a4c81316e1c45186368fdd8b8",
+      "bytes": 3122723,
+      "retrieved_at": "2026-10-06T06:49:24.803836+00:00",
+      "source": "SEC public companyfacts XBRL API",
+      "provenance_caveat": "Current extraction, filter original filed dates and retain first-report targets; not archived API vintages",
+      "raw_folder": "test-output/v7-eps/raw"
+    },
+    {
+      "cik": "0000036104",
+      "ticker": "USB",
+      "url": "https://data.sec.gov/api/xbrl/companyfacts/CIK0000036104.json",
+      "path": "CIK0000036104.json",
+      "sha256": "4b9bb34f9bc7bf6555705d2ea24fb1faa71a595d2f55f79c58548425e4e32564",
+      "bytes": 6701690,
+      "retrieved_at": "2026-10-06T06:49:25.677336+00:00",
+      "source": "SEC public companyfacts XBRL API",
+      "provenance_caveat": "Current extraction, filter original filed dates and retain first-report targets; not archived API vintages",
+      "raw_folder": "test-output/v7-eps/raw"
+    },
+    {
+      "cik": "0000051143",
+      "ticker": "IBM",
+      "url": "https://data.sec.gov/api/xbrl/companyfacts/CIK0000051143.json",
+      "path": "CIK0000051143.json",
+      "sha256": "1660477fa5713e5749c3038cf22b3c776414acfc6e1e721d1772c91101dc5e5c",
+      "bytes": 5650571,
+      "retrieved_at": "2026-10-06T06:49:26.505334+00:00",
+      "source": "SEC public companyfacts XBRL API",
+      "provenance_caveat": "Current extraction, filter original filed dates and retain first-report targets; not archived API vintages",
+      "raw_folder": "test-output/v7-eps/raw"
+    },
+    {
+      "cik": "0000063908",
+      "ticker": "MCD",
+      "url": "https://data.sec.gov/api/xbrl/companyfacts/CIK0000063908.json",
+      "path": "CIK0000063908.json",
+      "sha256": "0394e814d75510be107679b026e2df6e5d02d4f2029166911aa4924f9556681f",
+      "bytes": 3579350,
+      "retrieved_at": "2026-10-06T06:49:27.055878+00:00",
+      "source": "SEC public companyfacts XBRL API",
+      "provenance_caveat": "Current extraction, filter original filed dates and retain first-report targets; not archived API vintages",
+      "raw_folder": "test-output/v7-eps/raw"
+    },
+    {
+      "cik": "0000070858",
+      "ticker": "BAC",
+      "url": "https://data.sec.gov/api/xbrl/companyfacts/CIK0000070858.json",
+      "path": "CIK0000070858.json",
+      "sha256": "be2ba0d81173b5591127e63a34de255d5892883fc643e6b33e10e390579d68c2",
+      "bytes": 6885886,
+      "retrieved_at": "2026-10-06T06:49:27.678667+00:00",
+      "source": "SEC public companyfacts XBRL API",
+      "provenance_caveat": "Current extraction, filter original filed dates and retain first-report targets; not archived API vintages",
+      "raw_folder": "test-output/v7-eps/raw"
+    },
+    {
+      "cik": "0000072971",
+      "ticker": "WFC",
+      "url": "https://data.sec.gov/api/xbrl/companyfacts/CIK0000072971.json",
+      "path": "CIK0000072971.json",
+      "sha256": "05aa73834fffd4c6bb5db9ef3fc30a09ce1297cc4553077a3c4b32d0d8f3972e",
+      "bytes": 7810998,
+      "retrieved_at": "2026-10-06T06:49:28.327935+00:00",
+      "source": "SEC public companyfacts XBRL API",
+      "provenance_caveat": "Current extraction, filter original filed dates and retain first-report targets; not archived API vintages",
+      "raw_folder": "test-output/v7-eps/raw"
+    },
+    {
+      "cik": "0000080424",
+      "ticker": "PG",
+      "url": "https://data.sec.gov/api/xbrl/companyfacts/CIK0000080424.json",
+      "path": "CIK0000080424.json",
+      "sha256": "606ad7056b611e91cfab9f7568b747404405772add188600efa5ccda5824f3d8",
+      "bytes": 3911151,
+      "retrieved_at": "2026-10-06T06:49:28.857389+00:00",
+      "source": "SEC public companyfacts XBRL API",
+      "provenance_caveat": "Current extraction, filter original filed dates and retain first-report targets; not archived API vintages",
+      "raw_folder": "test-output/v7-eps/raw"
+    },
+    {
+      "cik": "0000097745",
+      "ticker": "TMO",
+      "url": "https://data.sec.gov/api/xbrl/companyfacts/CIK0000097745.json",
+      "path": "CIK0000097745.json",
+      "sha256": "4d98ebd4c91521f5d90f032834b8dec04f78b30758a214be33e6cbba68fa766a",
+      "bytes": 5170585,
+      "retrieved_at": "2026-10-06T06:49:29.410122+00:00",
+      "source": "SEC public companyfacts XBRL API",
+      "provenance_caveat": "Current extraction, filter original filed dates and retain first-report targets; not archived API vintages",
+      "raw_folder": "test-output/v7-eps/raw"
+    },
+    {
+      "cik": "0000200406",
+      "ticker": "JNJ",
+      "url": "https://data.sec.gov/api/xbrl/companyfacts/CIK0000200406.json",
+      "path": "CIK0000200406.json",
+      "sha256": "7141c0c988fa1d30f779687b4c78ab561e19aa5990a58ad86a66467d0a783980",
+      "bytes": 4168526,
+      "retrieved_at": "2026-10-06T06:49:29.945368+00:00",
+      "source": "SEC public companyfacts XBRL API",
+      "provenance_caveat": "Current extraction, filter original filed dates and retain first-report targets; not archived API vintages",
+      "raw_folder": "test-output/v7-eps/raw"
+    },
+    {
+      "cik": "0000318154",
+      "ticker": "AMGN",
+      "url": "https://data.sec.gov/api/xbrl/companyfacts/CIK0000318154.json",
+      "path": "CIK0000318154.json",
+      "sha256": "fdf5906752dbed7151b14f5e765db25e75393cedef4a2582d976623b49e2e4c7",
+      "bytes": 3691898,
+      "retrieved_at": "2026-10-06T06:49:30.604833+00:00",
+      "source": "SEC public companyfacts XBRL API",
+      "provenance_caveat": "Current extraction, filter original filed dates and retain first-report targets; not archived API vintages",
+      "raw_folder": "test-output/v7-eps/raw"
+    },
+    {
+      "cik": "0000320193",
+      "ticker": "AAPL",
+      "url": "https://data.sec.gov/api/xbrl/companyfacts/CIK0000320193.json",
+      "path": "CIK0000320193.json",
+      "sha256": "73a86c6aedc31f77cac2ea4df5f80f0b3bd7e6eb58bb4e01444fbedf3afb9c43",
+      "bytes": 3789099,
+      "retrieved_at": "2026-10-06T06:49:31.124306+00:00",
+      "source": "SEC public companyfacts XBRL API",
+      "provenance_caveat": "Current extraction, filter original filed dates and retain first-report targets; not archived API vintages",
+      "raw_folder": "test-output/v7-eps/raw"
+    },
+    {
+      "cik": "0000713676",
+      "ticker": "PNC",
+      "url": "https://data.sec.gov/api/xbrl/companyfacts/CIK0000713676.json",
+      "path": "CIK0000713676.json",
+      "sha256": "205911d91e33a9827fb38f4594458e2aedab34d097c919c41925f4e4ab88ea55",
+      "bytes": 6060808,
+      "retrieved_at": "2026-10-06T06:49:31.925480+00:00",
+      "source": "SEC public companyfacts XBRL API",
+      "provenance_caveat": "Current extraction, filter original filed dates and retain first-report targets; not archived API vintages",
+      "raw_folder": "test-output/v7-eps/raw"
+    },
+    {
+      "cik": "0000773840",
+      "ticker": "HON",
+      "url": "https://data.sec.gov/api/xbrl/companyfacts/CIK0000773840.json",
+      "path": "CIK0000773840.json",
+      "sha256": "3ec36b94bcfb6c163227a5568ea524a2d714baae79e205929933cdb69ae3bcf7",
+      "bytes": 4558324,
+      "retrieved_at": "2026-10-06T06:49:32.456648+00:00",
+      "source": "SEC public companyfacts XBRL API",
+      "provenance_caveat": "Current extraction, filter original filed dates and retain first-report targets; not archived API vintages",
+      "raw_folder": "test-output/v7-eps/raw"
+    },
+    {
+      "cik": "0000789019",
+      "ticker": "MSFT",
+      "url": "https://data.sec.gov/api/xbrl/companyfacts/CIK0000789019.json",
+      "path": "CIK0000789019.json",
+      "sha256": "f8aae2965b20ad0df44bdf7ccbedf797d275b6b8dc030154a7a311361bb7246f",
+      "bytes": 4881196,
+      "retrieved_at": "2026-10-06T06:49:32.996294+00:00",
+      "source": "SEC public companyfacts XBRL API",
+      "provenance_caveat": "Current extraction, filter original filed dates and retain first-report targets; not archived API vintages",
+      "raw_folder": "test-output/v7-eps/raw"
+    },
+    {
+      "cik": "0000831001",
+      "ticker": "C",
+      "url": "https://data.sec.gov/api/xbrl/companyfacts/CIK0000831001.json",
+      "path": "CIK0000831001.json",
+      "sha256": "5f8de9381edd7647246aea9ae39a313f792606f180a1cffe738ff6a2c16a6319",
+      "bytes": 8886114,
+      "retrieved_at": "2026-10-06T06:49:33.751711+00:00",
+      "source": "SEC public companyfacts XBRL API",
+      "provenance_caveat": "Current extraction, filter original filed dates and retain first-report targets; not archived API vintages",
+      "raw_folder": "test-output/v7-eps/raw"
+    },
+    {
+      "cik": "0000886982",
+      "ticker": "GS",
+      "url": "https://data.sec.gov/api/xbrl/companyfacts/CIK0000886982.json",
+      "path": "CIK0000886982.json",
+      "sha256": "0789503eb7b99511f6fa488288d47c408433e33522b677ea6dbd06f2fd858918",
+      "bytes": 6000111,
+      "retrieved_at": "2026-10-06T06:49:34.364083+00:00",
+      "source": "SEC public companyfacts XBRL API",
+      "provenance_caveat": "Current extraction, filter original filed dates and retain first-report targets; not archived API vintages",
+      "raw_folder": "test-output/v7-eps/raw"
+    },
+    {
+      "cik": "0000895421",
+      "ticker": "MS",
+      "url": "https://data.sec.gov/api/xbrl/companyfacts/CIK0000895421.json",
+      "path": "CIK0000895421.json",
+      "sha256": "3f677bd34430d6b143952dca3789413d4f1f938ae95d5bf95468014eed7b30de",
+      "bytes": 7151392,
+      "retrieved_at": "2026-10-06T06:49:35.003304+00:00",
+      "source": "SEC public companyfacts XBRL API",
+      "provenance_caveat": "Current extraction, filter original filed dates and retain first-report targets; not archived API vintages",
+      "raw_folder": "test-output/v7-eps/raw"
+    },
+    {
+      "cik": "0001018724",
+      "ticker": "AMZN",
+      "url": "https://data.sec.gov/api/xbrl/companyfacts/CIK0001018724.json",
+      "path": "CIK0001018724.json",
+      "sha256": "7549fb68446eee40e1f50a166fa06b2d2ee6349e07c8553a4828757e032d3cd4",
+      "bytes": 4478611,
+      "retrieved_at": "2026-10-06T06:49:35.548566+00:00",
+      "source": "SEC public companyfacts XBRL API",
+      "provenance_caveat": "Current extraction, filter original filed dates and retain first-report targets; not archived API vintages",
+      "raw_folder": "test-output/v7-eps/raw"
+    },
+    {
+      "cik": "0001045810",
+      "ticker": "NVDA",
+      "url": "https://data.sec.gov/api/xbrl/companyfacts/CIK0001045810.json",
+      "path": "CIK0001045810.json",
+      "sha256": "19ef503a5770f5660964b3c3aea6937579d9b359da344afe6a9adf59c63d26ff",
+      "bytes": 4092966,
+      "retrieved_at": "2026-10-06T06:49:36.189288+00:00",
+      "source": "SEC public companyfacts XBRL API",
+      "provenance_caveat": "Current extraction, filter original filed dates and retain first-report targets; not archived API vintages",
+      "raw_folder": "test-output/v7-eps/raw"
+    },
+    {
+      "cik": "0001326801",
+      "ticker": "META",
+      "url": "https://data.sec.gov/api/xbrl/companyfacts/CIK0001326801.json",
+      "path": "CIK0001326801.json",
+      "sha256": "7518e76d6dac2d016e1a3d1dec1cc55ff9ea3bdd58a151b16fcaa067a6c9d94e",
+      "bytes": 2746680,
+      "retrieved_at": "2026-10-06T06:49:36.697161+00:00",
+      "source": "SEC public companyfacts XBRL API",
+      "provenance_caveat": "Current extraction, filter original filed dates and retain first-report targets; not archived API vintages",
+      "raw_folder": "test-output/v7-eps/raw"
+    },
+    {
+      "cik": "0001751788",
+      "ticker": "DOW",
+      "url": "https://data.sec.gov/api/xbrl/companyfacts/CIK0001751788.json",
+      "path": "CIK0001751788.json",
+      "sha256": "ff212d1e276fc1525ccac4101dadeadea5bb44ba5237a584a53d06d89535b823",
+      "bytes": 2601897,
+      "retrieved_at": "2026-10-06T06:49:37.314599+00:00",
+      "source": "SEC public companyfacts XBRL API",
+      "provenance_caveat": "Current extraction, filter original filed dates and retain first-report targets; not archived API vintages",
+      "raw_folder": "test-output/v7-eps/raw"
+    },
+    {
+      "ticker": "ABT",
+      "cik": "0000001800",
+      "path": "CIK0000001800.json",
+      "url": "https://data.sec.gov/api/xbrl/companyfacts/CIK0000001800.json",
+      "entity_name": "ABBOTT LABORATORIES",
+      "sha256": "5d751f73769f5c0a1f9bee0de16cb39d8961cf3f1ebb5558d555bb2678afb4ff",
+      "retrieved_at": "2026-10-06T08:09:57.131275+00:00",
+      "raw_folder": "test-output/v8-analyst/raw"
+    },
+    {
+      "ticker": "ABBV",
+      "cik": "0001551152",
+      "path": "CIK0001551152.json",
+      "url": "https://data.sec.gov/api/xbrl/companyfacts/CIK0001551152.json",
+      "entity_name": "AbbVie Inc.",
+      "sha256": "1fa00a2de3a0434fb2ebba8b1678cc379b16dc435a4f3e5c696efb7f9029698a",
+      "retrieved_at": "2026-10-06T08:09:57.832218+00:00",
+      "raw_folder": "test-output/v8-analyst/raw"
+    },
+    {
+      "ticker": "ADI",
+      "cik": "0000006281",
+      "path": "CIK0000006281.json",
+      "url": "https://data.sec.gov/api/xbrl/companyfacts/CIK0000006281.json",
+      "entity_name": "ANALOG DEVICES INC",
+      "sha256": "f468425da29412efbec29798ecd0f9cc719edd5766d734c5c3fc1092a3fe237c",
+      "retrieved_at": "2026-10-06T08:09:58.565844+00:00",
+      "raw_folder": "test-output/v8-analyst/raw"
+    },
+    {
+      "ticker": "AIG",
+      "cik": "0000005272",
+      "path": "CIK0000005272.json",
+      "url": "https://data.sec.gov/api/xbrl/companyfacts/CIK0000005272.json",
+      "entity_name": "AMERICAN INTERNATIONAL GROUP, INC.",
+      "sha256": "f0345bdab4c5d99fd3fc9d0fdf2fe7d72787367ee0fbb4ed5b603a9e8fa730f0",
+      "retrieved_at": "2026-10-06T08:09:59.440881+00:00",
+      "raw_folder": "test-output/v8-analyst/raw"
+    },
+    {
+      "ticker": "AXP",
+      "cik": "0000004962",
+      "path": "CIK0000004962.json",
+      "url": "https://data.sec.gov/api/xbrl/companyfacts/CIK0000004962.json",
+      "entity_name": "AMERICAN EXPRESS CO",
+      "sha256": "8fe514defe349eb117b04523e2e5371387cef70748eabd0445040fe0a9f4840f",
+      "retrieved_at": "2026-10-06T08:10:00.307473+00:00",
+      "raw_folder": "test-output/v8-analyst/raw"
+    },
+    {
+      "ticker": "BA",
+      "cik": "0000012927",
+      "path": "CIK0000012927.json",
+      "url": "https://data.sec.gov/api/xbrl/companyfacts/CIK0000012927.json",
+      "entity_name": "THE BOEING COMPANY",
+      "sha256": "0c63f1ae7cc10b3c27e0c94f2add0c461e6293036dd4e52e52ae6dbb6f206e15",
+      "retrieved_at": "2026-10-06T08:10:01.056604+00:00",
+      "raw_folder": "test-output/v8-analyst/raw"
+    },
+    {
+      "ticker": "BK",
+      "cik": "0001390777",
+      "path": "CIK0001390777.json",
+      "url": "https://data.sec.gov/api/xbrl/companyfacts/CIK0001390777.json",
+      "entity_name": "Bank of New York Mellon Corp",
+      "sha256": "5e1d416fbbc5df89085c4e9d2f32ee91dfae321cb8f3a29a107699e974d926cd",
+      "retrieved_at": "2026-10-06T08:10:02.012439+00:00",
+      "raw_folder": "test-output/v8-analyst/raw"
+    },
+    {
+      "ticker": "BMY",
+      "cik": "0000014272",
+      "path": "CIK0000014272.json",
+      "url": "https://data.sec.gov/api/xbrl/companyfacts/CIK0000014272.json",
+      "entity_name": "BRISTOL-MYERS SQUIBB COMPANY",
+      "sha256": "a18ba88ed8f92b7f0cbc4d83a6db14b8fba95a5721f7f83a6306ca843ad40c2f",
+      "retrieved_at": "2026-10-06T08:10:02.833562+00:00",
+      "raw_folder": "test-output/v8-analyst/raw"
+    },
+    {
+      "ticker": "BSX",
+      "cik": "0000885725",
+      "path": "CIK0000885725.json",
+      "url": "https://data.sec.gov/api/xbrl/companyfacts/CIK0000885725.json",
+      "entity_name": "BOSTON SCIENTIFIC CORPORATION",
+      "sha256": "06fbd22345eaba9b752251c5e485a8a67a53a54d553376a44919d4724a40c786",
+      "retrieved_at": "2026-10-06T08:10:03.566361+00:00",
+      "raw_folder": "test-output/v8-analyst/raw"
+    },
+    {
+      "ticker": "CL",
+      "cik": "0000021665",
+      "path": "CIK0000021665.json",
+      "url": "https://data.sec.gov/api/xbrl/companyfacts/CIK0000021665.json",
+      "entity_name": "COLGATE-PALMOLIVE COMPANY",
+      "sha256": "450c2668961565047c7745ff5df5d38b40cc57d6940c48fe8f32dca13100f96d",
+      "retrieved_at": "2026-10-06T08:10:04.378745+00:00",
+      "raw_folder": "test-output/v8-analyst/raw"
+    },
+    {
+      "ticker": "CMCSA",
+      "cik": "0001166691",
+      "path": "CIK0001166691.json",
+      "url": "https://data.sec.gov/api/xbrl/companyfacts/CIK0001166691.json",
+      "entity_name": "COMCAST\u00a0CORPORATION",
+      "sha256": "4931cbdeb5c78061844fd07853321766ae28733a65d5aab5b39175943ce45dfc",
+      "retrieved_at": "2026-10-06T08:10:05.292250+00:00",
+      "raw_folder": "test-output/v8-analyst/raw"
+    },
+    {
+      "ticker": "COP",
+      "cik": "0001163165",
+      "path": "CIK0001163165.json",
+      "url": "https://data.sec.gov/api/xbrl/companyfacts/CIK0001163165.json",
+      "entity_name": "ConocoPhillips",
+      "sha256": "cccc8afe3602880e8f2909266e778aa195b42e745da669a801925c593720d2fc",
+      "retrieved_at": "2026-10-06T08:10:06.242352+00:00",
+      "raw_folder": "test-output/v8-analyst/raw"
+    },
+    {
+      "ticker": "CSCO",
+      "cik": "0000858877",
+      "path": "CIK0000858877.json",
+      "url": "https://data.sec.gov/api/xbrl/companyfacts/CIK0000858877.json",
+      "entity_name": "CISCO SYSTEMS, INC.",
+      "sha256": "f9f6cfb3c04bb8102552f121868831471a474165074ccc7c539f6f80f19d1b99",
+      "retrieved_at": "2026-10-06T08:10:07.054008+00:00",
+      "raw_folder": "test-output/v8-analyst/raw"
+    },
+    {
+      "ticker": "CVS",
+      "cik": "0000064803",
+      "path": "CIK0000064803.json",
+      "url": "https://data.sec.gov/api/xbrl/companyfacts/CIK0000064803.json",
+      "entity_name": "CVS HEALTH CORPORATION",
+      "sha256": "5c08d55a669ee073f26bb7dc68826076bf640f0a2b5ac5b2161408f67f96e3ff",
+      "retrieved_at": "2026-10-06T08:10:07.755684+00:00",
+      "raw_folder": "test-output/v8-analyst/raw"
+    },
+    {
+      "ticker": "CVX",
+      "cik": "0000093410",
+      "path": "CIK0000093410.json",
+      "url": "https://data.sec.gov/api/xbrl/companyfacts/CIK0000093410.json",
+      "entity_name": "Chevron Corp",
+      "sha256": "c09b160603412cb45acf1bb9bf3732e531dedfb548afa0e275fd8aefd7ab397e",
+      "retrieved_at": "2026-10-06T08:10:08.626119+00:00",
+      "raw_folder": "test-output/v8-analyst/raw"
+    },
+    {
+      "ticker": "EMR",
+      "cik": "0000032604",
+      "path": "CIK0000032604.json",
+      "url": "https://data.sec.gov/api/xbrl/companyfacts/CIK0000032604.json",
+      "entity_name": "EMERSON ELECTRIC CO.",
+      "sha256": "195bcbf29fba4dfc4715c44e24c71f9da3bbca9c4d04f1166fd3a9ec661df27b",
+      "retrieved_at": "2026-10-06T08:10:09.321449+00:00",
+      "raw_folder": "test-output/v8-analyst/raw"
+    },
+    {
+      "ticker": "F",
+      "cik": "0000037996",
+      "path": "CIK0000037996.json",
+      "url": "https://data.sec.gov/api/xbrl/companyfacts/CIK0000037996.json",
+      "entity_name": "Ford Motor Co",
+      "sha256": "db9621054cffb365bcb65cde1f53e4161fb26ac56ebf8a95b9066b3d2375203e",
+      "retrieved_at": "2026-10-06T08:10:10.039218+00:00",
+      "raw_folder": "test-output/v8-analyst/raw"
+    },
+    {
+      "ticker": "GE",
+      "cik": "0000040545",
+      "path": "CIK0000040545.json",
+      "url": "https://data.sec.gov/api/xbrl/companyfacts/CIK0000040545.json",
+      "entity_name": "GENERAL ELECTRIC CO",
+      "sha256": "8c18acb17bbe0760fae6205c5df75b805480c58d4d1dbbabeba206d9ca36e1e3",
+      "retrieved_at": "2026-10-06T08:10:10.932456+00:00",
+      "raw_folder": "test-output/v8-analyst/raw"
+    },
+    {
+      "ticker": "GILD",
+      "cik": "0000882095",
+      "path": "CIK0000882095.json",
+      "url": "https://data.sec.gov/api/xbrl/companyfacts/CIK0000882095.json",
+      "entity_name": "GILEAD SCIENCES, INC.",
+      "sha256": "5703fd84d6e3d00697ac60bc3d7ded9306be2a9f36170a342858b8e6417506f0",
+      "retrieved_at": "2026-10-06T08:10:11.665249+00:00",
+      "raw_folder": "test-output/v8-analyst/raw"
+    },
+    {
+      "ticker": "HD",
+      "cik": "0000354950",
+      "path": "CIK0000354950.json",
+      "url": "https://data.sec.gov/api/xbrl/companyfacts/CIK0000354950.json",
+      "entity_name": "The Home Depot, Inc.",
+      "sha256": "aaf03befa1695d87ce1252bc08ca278b65be63782e46dc0b2858aab7a32c1be2",
+      "retrieved_at": "2026-10-06T08:10:12.363648+00:00",
+      "raw_folder": "test-output/v8-analyst/raw"
+    },
+    {
+      "ticker": "HPQ",
+      "cik": "0000047217",
+      "path": "CIK0000047217.json",
+      "url": "https://data.sec.gov/api/xbrl/companyfacts/CIK0000047217.json",
+      "entity_name": "HP INC.",
+      "sha256": "351d1874f2847fe331549968693423be2a4374a7731422f86687ac66da7af5f4",
+      "retrieved_at": "2026-10-06T08:10:13.247511+00:00",
+      "raw_folder": "test-output/v8-analyst/raw"
+    },
+    {
+      "ticker": "INTC",
+      "cik": "0000050863",
+      "path": "CIK0000050863.json",
+      "url": "https://data.sec.gov/api/xbrl/companyfacts/CIK0000050863.json",
+      "entity_name": "INTEL CORP",
+      "sha256": "70056711b8b04d3a27e4a42b6d86e26f85ddaa3d59e480039d66ccfb353eb0b8",
+      "retrieved_at": "2026-10-06T08:10:13.968519+00:00",
+      "raw_folder": "test-output/v8-analyst/raw"
+    },
+    {
+      "ticker": "KMB",
+      "cik": "0000055785",
+      "path": "CIK0000055785.json",
+      "url": "https://data.sec.gov/api/xbrl/companyfacts/CIK0000055785.json",
+      "entity_name": "KIMBERLY-CLARK CORPORATION",
+      "sha256": "20a44ed6a1f55fa51c786121735a8e3de8269d63c3584ad87844514756d04e18",
+      "retrieved_at": "2026-10-06T08:10:14.775588+00:00",
+      "raw_folder": "test-output/v8-analyst/raw"
+    },
+    {
+      "ticker": "LMT",
+      "cik": "0000936468",
+      "path": "CIK0000936468.json",
+      "url": "https://data.sec.gov/api/xbrl/companyfacts/CIK0000936468.json",
+      "entity_name": "LOCKHEED MARTIN CORPORATION",
+      "sha256": "aedb683271d2c57451a89db5afa42af45eaaa74c57bc544ddfb427762f785c01",
+      "retrieved_at": "2026-10-06T08:10:15.460592+00:00",
+      "raw_folder": "test-output/v8-analyst/raw"
+    },
+    {
+      "ticker": "LOW",
+      "cik": "0000060667",
+      "path": "CIK0000060667.json",
+      "url": "https://data.sec.gov/api/xbrl/companyfacts/CIK0000060667.json",
+      "entity_name": "LOWES COMPANIES INC",
+      "sha256": "7912551d61433f5e7e863ac602ebf24ee1484699e10aa556534f0055fff2ea7d",
+      "retrieved_at": "2026-10-06T08:10:16.171541+00:00",
+      "raw_folder": "test-output/v8-analyst/raw"
+    },
+    {
+      "ticker": "MA",
+      "cik": "0001141391",
+      "path": "CIK0001141391.json",
+      "url": "https://data.sec.gov/api/xbrl/companyfacts/CIK0001141391.json",
+      "entity_name": "Mastercard Incorporated",
+      "sha256": "78082e9cbae91bfa8c1480d214bd20c8d35fcbbcc72d71eaf01739c48b1e9511",
+      "retrieved_at": "2026-10-06T08:10:16.885780+00:00",
+      "raw_folder": "test-output/v8-analyst/raw"
+    },
+    {
+      "ticker": "MRK",
+      "cik": "0000310158",
+      "path": "CIK0000310158.json",
+      "url": "https://data.sec.gov/api/xbrl/companyfacts/CIK0000310158.json",
+      "entity_name": "Merck\u00a0& Co., Inc.",
+      "sha256": "de2e92301923703e6aee247c42c0cf2f1b741118ebca221fbaa5dc0e47644bd7",
+      "retrieved_at": "2026-10-06T08:10:17.608692+00:00",
+      "raw_folder": "test-output/v8-analyst/raw"
+    },
+    {
+      "ticker": "PEP",
+      "cik": "0000077476",
+      "path": "CIK0000077476.json",
+      "url": "https://data.sec.gov/api/xbrl/companyfacts/CIK0000077476.json",
+      "entity_name": "PepsiCo, Inc.",
+      "sha256": "7694c322779ef273d15b3791729e5f2d261ce6ed1839be8ff014a33f537375be",
+      "retrieved_at": "2026-10-06T08:10:18.516595+00:00",
+      "raw_folder": "test-output/v8-analyst/raw"
+    },
+    {
+      "ticker": "PFE",
+      "cik": "0000078003",
+      "path": "CIK0000078003.json",
+      "url": "https://data.sec.gov/api/xbrl/companyfacts/CIK0000078003.json",
+      "entity_name": "PFIZER INC",
+      "sha256": "bd072131f9dcf001f22e843fded5910c2c7fc178e2a739ce0c58b1934e84d566",
+      "retrieved_at": "2026-10-06T08:10:19.282607+00:00",
+      "raw_folder": "test-output/v8-analyst/raw"
+    },
+    {
+      "ticker": "QCOM",
+      "cik": "0000804328",
+      "path": "CIK0000804328.json",
+      "url": "https://data.sec.gov/api/xbrl/companyfacts/CIK0000804328.json",
+      "entity_name": "QUALCOMM INC/DE",
+      "sha256": "bb7a668b9d54074b397cd3ada697e4db1ab09a0f8fd7837ef83cf5345a9728f2",
+      "retrieved_at": "2026-10-06T08:10:20.132231+00:00",
+      "raw_folder": "test-output/v8-analyst/raw"
+    },
+    {
+      "ticker": "RTX",
+      "cik": "0000101829",
+      "path": "CIK0000101829.json",
+      "url": "https://data.sec.gov/api/xbrl/companyfacts/CIK0000101829.json",
+      "entity_name": "RTX CORPORATION",
+      "sha256": "6d08f320c9fff931eb211602c6025869e4353fa548d495d8814b4c4842d26f8a",
+      "retrieved_at": "2026-10-06T08:10:20.869904+00:00",
+      "raw_folder": "test-output/v8-analyst/raw"
+    },
+    {
+      "ticker": "SBUX",
+      "cik": "0000829224",
+      "path": "CIK0000829224.json",
+      "url": "https://data.sec.gov/api/xbrl/companyfacts/CIK0000829224.json",
+      "entity_name": "Starbucks Corporation",
+      "sha256": "2488674b57020c5281665b0ff271a29da71da64a2c9fa66bec6a9118772970bb",
+      "retrieved_at": "2026-10-06T08:10:21.592385+00:00",
+      "raw_folder": "test-output/v8-analyst/raw"
+    },
+    {
+      "ticker": "SCHW",
+      "cik": "0000316709",
+      "path": "CIK0000316709.json",
+      "url": "https://data.sec.gov/api/xbrl/companyfacts/CIK0000316709.json",
+      "entity_name": "SCHWAB CHARLES CORP",
+      "sha256": "42680afbccb3c69fbb84c60644649b98a364231a0806305408f755c33640ab5e",
+      "retrieved_at": "2026-10-06T08:10:22.337042+00:00",
+      "raw_folder": "test-output/v8-analyst/raw"
+    },
+    {
+      "ticker": "SO",
+      "cik": "0000092122",
+      "path": "CIK0000092122.json",
+      "url": "https://data.sec.gov/api/xbrl/companyfacts/CIK0000092122.json",
+      "entity_name": "SOUTHERN CO",
+      "sha256": "8a5eaa0e10d41a4bc087833509ed5f2e2983630e9d33d9151d8a9157551febc3",
+      "retrieved_at": "2026-10-06T08:10:23.071557+00:00",
+      "raw_folder": "test-output/v8-analyst/raw"
+    },
+    {
+      "ticker": "T",
+      "cik": "0000732717",
+      "path": "CIK0000732717.json",
+      "url": "https://data.sec.gov/api/xbrl/companyfacts/CIK0000732717.json",
+      "entity_name": "AT&T INC.",
+      "sha256": "483db761a498797a4ba14df701a0404a8cc8d21b7409984eb1e722cb089f3dbb",
+      "retrieved_at": "2026-10-06T08:10:23.788715+00:00",
+      "raw_folder": "test-output/v8-analyst/raw"
+    },
+    {
+      "ticker": "TGT",
+      "cik": "0000027419",
+      "path": "CIK0000027419.json",
+      "url": "https://data.sec.gov/api/xbrl/companyfacts/CIK0000027419.json",
+      "entity_name": "Target Corporation",
+      "sha256": "eb15a2cd524e99ff27675db78840d039ec4a68b9cc2dcb10accbcb299933a487",
+      "retrieved_at": "2026-10-06T08:10:24.634102+00:00",
+      "raw_folder": "test-output/v8-analyst/raw"
+    },
+    {
+      "ticker": "TXN",
+      "cik": "0000097476",
+      "path": "CIK0000097476.json",
+      "url": "https://data.sec.gov/api/xbrl/companyfacts/CIK0000097476.json",
+      "entity_name": "TEXAS INSTRUMENTS INCORPORATED",
+      "sha256": "5ee95bf56949988a4beaf0598e3acb0a012867228760cd9462a1c9e72526446f",
+      "retrieved_at": "2026-10-06T08:10:25.345969+00:00",
+      "raw_folder": "test-output/v8-analyst/raw"
+    },
+    {
+      "ticker": "UNH",
+      "cik": "0000731766",
+      "path": "CIK0000731766.json",
+      "url": "https://data.sec.gov/api/xbrl/companyfacts/CIK0000731766.json",
+      "entity_name": "UnitedHealth Group Incorporated",
+      "sha256": "6c9dff59732b7c597542b2d5eadaae0313ca0de03defdba2c00203e693632d76",
+      "retrieved_at": "2026-10-06T08:10:26.073758+00:00",
+      "raw_folder": "test-output/v8-analyst/raw"
+    },
+    {
+      "ticker": "UNP",
+      "cik": "0000100885",
+      "path": "CIK0000100885.json",
+      "url": "https://data.sec.gov/api/xbrl/companyfacts/CIK0000100885.json",
+      "entity_name": "UNION PACIFIC CORP",
+      "sha256": "99d22f8aa6dd31f102b2691ce5c53ef872908bb7b50860d153e6efbc6eef2b61",
+      "retrieved_at": "2026-10-06T08:10:26.885321+00:00",
+      "raw_folder": "test-output/v8-analyst/raw"
+    },
+    {
+      "ticker": "UPS",
+      "cik": "0001090727",
+      "path": "CIK0001090727.json",
+      "url": "https://data.sec.gov/api/xbrl/companyfacts/CIK0001090727.json",
+      "entity_name": "UNITED PARCEL SERVICE INC",
+      "sha256": "19a5c39708df843df0ecefb17c8a53b8920ee8e43f64d0572b5dac0c167da90d",
+      "retrieved_at": "2026-10-06T08:10:27.750612+00:00",
+      "raw_folder": "test-output/v8-analyst/raw"
+    },
+    {
+      "ticker": "V",
+      "cik": "0001403161",
+      "path": "CIK0001403161.json",
+      "url": "https://data.sec.gov/api/xbrl/companyfacts/CIK0001403161.json",
+      "entity_name": "VISA INC.",
+      "sha256": "df3caf7c5667296569fc3074ce2ff13629c9a555184a06c5ea9925b43e63971d",
+      "retrieved_at": "2026-10-06T08:10:28.471978+00:00",
+      "raw_folder": "test-output/v8-analyst/raw"
+    },
+    {
+      "ticker": "VZ",
+      "cik": "0000732712",
+      "path": "CIK0000732712.json",
+      "url": "https://data.sec.gov/api/xbrl/companyfacts/CIK0000732712.json",
+      "entity_name": "VERIZON COMMUNICATIONS INC",
+      "sha256": "e319d31a81cf3f17423edbb3e18d129653b348cfd8c902034e5a329bf2bf0624",
+      "retrieved_at": "2026-10-06T08:10:29.208376+00:00",
+      "raw_folder": "test-output/v8-analyst/raw"
+    },
+    {
+      "ticker": "WBA",
+      "cik": "0001618921",
+      "path": "CIK0001618921.json",
+      "url": "https://data.sec.gov/api/xbrl/companyfacts/CIK0001618921.json",
+      "entity_name": "WALGREENS BOOTS ALLIANCE, INC.",
+      "sha256": "cfe716ce77152f384dfac58ab96570c4dbea875bb25d3a44d9222497ee23868a",
+      "retrieved_at": "2026-10-06T08:10:30.067003+00:00",
+      "raw_folder": "test-output/v8-analyst/raw"
+    },
+    {
+      "ticker": "WMT",
+      "cik": "0000104169",
+      "path": "CIK0000104169.json",
+      "url": "https://data.sec.gov/api/xbrl/companyfacts/CIK0000104169.json",
+      "entity_name": "WALMART INC.",
+      "sha256": "54ec3fbf36dc203dd00a0333396b3df2b6695ecdf6cbb19b6ec41b053d86b517",
+      "retrieved_at": "2026-10-06T08:10:30.786913+00:00",
+      "raw_folder": "test-output/v8-analyst/raw"
+    }
+  ],
+  "pools": {
+    "additional_training": [
+      {
+        "cik": "0000033185",
+        "ticker": "EFX",
+        "name": "Equifax",
+        "sector": "Industrials"
+      },
+      {
+        "cik": "0000884887",
+        "ticker": "RCL",
+        "name": "Royal Caribbean Group",
+        "sector": "Consumer Discretionary"
+      },
+      {
+        "cik": "0000073124",
+        "ticker": "NTRS",
+        "name": "Northern Trust",
+        "sector": "Financials"
+      },
+      {
+        "cik": "0000040987",
+        "ticker": "GPC",
+        "name": "Genuine Parts Company",
+        "sector": "Consumer Discretionary"
+      },
+      {
+        "cik": "0001051470",
+        "ticker": "CCI",
+        "name": "Crown Castle",
+        "sector": "Real Estate"
+      },
+      {
+        "cik": "0000106535",
+        "ticker": "WY",
+        "name": "Weyerhaeuser",
+        "sector": "Real Estate"
+      },
+      {
+        "cik": "0001041061",
+        "ticker": "YUM",
+        "name": "Yum! Brands",
+        "sector": "Consumer Discretionary"
+      },
+      {
+        "cik": "0001474735",
+        "ticker": "GNRC",
+        "name": "Generac",
+        "sector": "Industrials"
+      },
+      {
+        "cik": "0000943819",
+        "ticker": "RMD",
+        "name": "ResMed|",
+        "sector": "Health Care"
+      },
+      {
+        "cik": "0001121788",
+        "ticker": "GRMN",
+        "name": "Garmin",
+        "sector": "Consumer Discretionary"
+      },
+      {
+        "cik": "0001561550",
+        "ticker": "DDOG",
+        "name": "Datadog",
+        "sector": "Information Technology"
+      },
+      {
+        "cik": "0001679788",
+        "ticker": "COIN",
+        "name": "Coinbase",
+        "sector": "Financials"
+      },
+      {
+        "cik": "0000051434",
+        "ticker": "IP",
+        "name": "International Paper",
+        "sector": "Materials"
+      },
+      {
+        "cik": "0001512673",
+        "ticker": "XYZ",
+        "name": "Block, Inc.",
+        "sector": "Financials"
+      },
+      {
+        "cik": "0001664703",
+        "ticker": "BE",
+        "name": "Bloom Energy",
+        "sector": "Industrials"
+      },
+      {
+        "cik": "0000049071",
+        "ticker": "HUM",
+        "name": "Humana",
+        "sector": "Health Care"
+      },
+      {
+        "cik": "0000008818",
+        "ticker": "AVY",
+        "name": "Avery Dennison",
+        "sector": "Materials"
+      },
+      {
+        "cik": "0001050915",
+        "ticker": "PWR",
+        "name": "Quanta Services",
+        "sector": "Industrials"
+      },
+      {
+        "cik": "0000004977",
+        "ticker": "AFL",
+        "name": "Aflac",
+        "sector": "Financials"
+      },
+      {
+        "cik": "0000027904",
+        "ticker": "DAL",
+        "name": "Delta Air Lines",
+        "sector": "Industrials"
+      },
+      {
+        "cik": "0000277948",
+        "ticker": "CSX",
+        "name": "CSX Corporation",
+        "sector": "Industrials"
+      },
+      {
+        "cik": "0000031791",
+        "ticker": "RVTY",
+        "name": "Revvity",
+        "sector": "Health Care"
+      },
+      {
+        "cik": "0000769397",
+        "ticker": "ADSK",
+        "name": "Autodesk",
+        "sector": "Information Technology"
+      },
+      {
+        "cik": "0001564708",
+        "ticker": "NWSA",
+        "name": "News Corp (Class A)",
+        "sector": "Communication Services"
+      },
+      {
+        "cik": "0001137789",
+        "ticker": "STX",
+        "name": "Seagate Technology",
+        "sector": "Information Technology"
+      },
+      {
+        "cik": "0000080661",
+        "ticker": "PGR",
+        "name": "Progressive Corporation",
+        "sector": "Financials"
+      },
+      {
+        "cik": "0000766704",
+        "ticker": "WELL",
+        "name": "Welltower",
+        "sector": "Real Estate"
+      },
+      {
+        "cik": "0001326160",
+        "ticker": "DUK",
+        "name": "Duke Energy",
+        "sector": "Utilities"
+      },
+      {
+        "cik": "0002011641",
+        "ticker": "FERG",
+        "name": "Ferguson Enterprises",
+        "sector": "Industrials"
+      },
+      {
+        "cik": "0000066740",
+        "ticker": "MMM",
+        "name": "3M",
+        "sector": "Industrials"
+      },
+      {
+        "cik": "0000047111",
+        "ticker": "HSY",
+        "name": "Hershey Company (The)",
+        "sector": "Consumer Staples"
+      },
+      {
+        "cik": "0001111711",
+        "ticker": "NI",
+        "name": "NiSource",
+        "sector": "Utilities"
+      },
+      {
+        "cik": "0000946581",
+        "ticker": "TTWO",
+        "name": "Take-Two Interactive",
+        "sector": "Communication Services"
+      },
+      {
+        "cik": "0000872589",
+        "ticker": "REGN",
+        "name": "Regeneron Pharmaceuticals",
+        "sector": "Health Care"
+      },
+      {
+        "cik": "0000896159",
+        "ticker": "CB",
+        "name": "Chubb Limited",
+        "sector": "Financials"
+      },
+      {
+        "cik": "0000109198",
+        "ticker": "TJX",
+        "name": "TJX Companies",
+        "sector": "Consumer Discretionary"
+      },
+      {
+        "cik": "0000831259",
+        "ticker": "FCX",
+        "name": "Freeport-McMoRan",
+        "sector": "Materials"
+      },
+      {
+        "cik": "0000832101",
+        "ticker": "IEX",
+        "name": "IDEX Corporation",
+        "sector": "Industrials"
+      },
+      {
+        "cik": "0001521332",
+        "ticker": "APTV",
+        "name": "Aptiv",
+        "sector": "Consumer Discretionary"
+      },
+      {
+        "cik": "0000823768",
+        "ticker": "WM",
+        "name": "Waste Management",
+        "sector": "Industrials"
+      },
+      {
+        "cik": "0000860731",
+        "ticker": "TYL",
+        "name": "Tyler Technologies",
+        "sector": "Information Technology"
+      },
+      {
+        "cik": "0000943452",
+        "ticker": "WAB",
+        "name": "Wabtec",
+        "sector": "Industrials"
+      },
+      {
+        "cik": "0001156375",
+        "ticker": "CME",
+        "name": "CME Group",
+        "sector": "Financials"
+      },
+      {
+        "cik": "0001659166",
+        "ticker": "FTV",
+        "name": "Fortive",
+        "sector": "Industrials"
+      },
+      {
+        "cik": "0000033213",
+        "ticker": "EQT",
+        "name": "EQT Corporation",
+        "sector": "Energy"
+      },
+      {
+        "cik": "0000010795",
+        "ticker": "BDX",
+        "name": "Becton Dickinson",
+        "sector": "Health Care"
+      },
+      {
+        "cik": "0001289490",
+        "ticker": "EXR",
+        "name": "Extra Space Storage",
+        "sector": "Real Estate"
+      },
+      {
+        "cik": "0000849395",
+        "ticker": "CRH",
+        "name": "CRH plc",
+        "sector": "Materials"
+      },
+      {
+        "cik": "0001633917",
+        "ticker": "PYPL",
+        "name": "PayPal",
+        "sector": "Financials"
+      },
+      {
+        "cik": "0000820318",
+        "ticker": "COHR",
+        "name": "Coherent Corp.",
+        "sector": "Information Technology"
+      },
+      {
+        "cik": "0001418135",
+        "ticker": "KDP",
+        "name": "Keurig Dr Pepper",
+        "sector": "Consumer Staples"
+      },
+      {
+        "cik": "0000107263",
+        "ticker": "WMB",
+        "name": "Williams Companies",
+        "sector": "Energy"
+      },
+      {
+        "cik": "0002082247",
+        "ticker": "FDXF",
+        "name": "FedEx Freight",
+        "sector": "Industrials"
+      },
+      {
+        "cik": "0001964738",
+        "ticker": "SOLV",
+        "name": "Solventum",
+        "sector": "Health Care"
+      },
+      {
+        "cik": "0001297996",
+        "ticker": "DLR",
+        "name": "Digital Realty",
+        "sector": "Real Estate"
+      },
+      {
+        "cik": "0000702165",
+        "ticker": "NSC",
+        "name": "Norfolk Southern",
+        "sector": "Industrials"
+      },
+      {
+        "cik": "0000091142",
+        "ticker": "AOS",
+        "name": "A. O. Smith",
+        "sector": "Industrials"
+      },
+      {
+        "cik": "0000059478",
+        "ticker": "LLY",
+        "name": "Lilly (Eli)",
+        "sector": "Health Care"
+      },
+      {
+        "cik": "0001868275",
+        "ticker": "CEG",
+        "name": "Constellation Energy",
+        "sector": "Utilities"
+      },
+      {
+        "cik": "0000036270",
+        "ticker": "MTB",
+        "name": "M&T Bank",
+        "sector": "Financials"
+      },
+      {
+        "cik": "0001001250",
+        "ticker": "EL",
+        "name": "Est\u00e9e Lauder Companies (The)",
+        "sector": "Consumer Staples"
+      },
+      {
+        "cik": "0000354190",
+        "ticker": "AJG",
+        "name": "Arthur J. Gallagher & Co.",
+        "sector": "Financials"
+      },
+      {
+        "cik": "0001579241",
+        "ticker": "ALLE",
+        "name": "Allegion",
+        "sector": "Industrials"
+      },
+      {
+        "cik": "0000079879",
+        "ticker": "PPG",
+        "name": "PPG Industries",
+        "sector": "Materials"
+      },
+      {
+        "cik": "0001404912",
+        "ticker": "KKR",
+        "name": "KKR & Co.",
+        "sector": "Financials"
+      },
+      {
+        "cik": "0000004281",
+        "ticker": "HWM",
+        "name": "Howmet Aerospace",
+        "sector": "Industrials"
+      },
+      {
+        "cik": "0000315293",
+        "ticker": "AON",
+        "name": "Aon plc",
+        "sector": "Financials"
+      },
+      {
+        "cik": "0001048695",
+        "ticker": "FFIV",
+        "name": "F5, Inc.",
+        "sector": "Information Technology"
+      },
+      {
+        "cik": "0000063754",
+        "ticker": "MKC",
+        "name": "McCormick & Company",
+        "sector": "Consumer Staples"
+      },
+      {
+        "cik": "0000746515",
+        "ticker": "EXPD",
+        "name": "Expeditors International",
+        "sector": "Industrials"
+      },
+      {
+        "cik": "0000745732",
+        "ticker": "ROST",
+        "name": "Ross Stores",
+        "sector": "Consumer Discretionary"
+      },
+      {
+        "cik": "0000051253",
+        "ticker": "IFF",
+        "name": "International Flavors & Fragrances",
+        "sector": "Materials"
+      },
+      {
+        "cik": "0001048286",
+        "ticker": "MAR",
+        "name": "Marriott International",
+        "sector": "Consumer Discretionary"
+      },
+      {
+        "cik": "0000062709",
+        "ticker": "MRSH",
+        "name": "Marsh McLennan",
+        "sector": "Financials"
+      },
+      {
+        "cik": "0000062996",
+        "ticker": "MAS",
+        "name": "Masco",
+        "sector": "Industrials"
+      },
+      {
+        "cik": "0000726728",
+        "ticker": "O",
+        "name": "Realty Income",
+        "sector": "Real Estate"
+      },
+      {
+        "cik": "0001701605",
+        "ticker": "BKR",
+        "name": "Baker Hughes",
+        "sector": "Energy"
+      },
+      {
+        "cik": "0001932393",
+        "ticker": "GEHC",
+        "name": "GE HealthCare",
+        "sector": "Health Care"
+      },
+      {
+        "cik": "0000217346",
+        "ticker": "TXT",
+        "name": "Textron",
+        "sector": "Industrials"
+      },
+      {
+        "cik": "0000731802",
+        "ticker": "ATO",
+        "name": "Atmos Energy",
+        "sector": "Utilities"
+      },
+      {
+        "cik": "0001341439",
+        "ticker": "ORCL",
+        "name": "Oracle Corporation",
+        "sector": "Information Technology"
+      },
+      {
+        "cik": "0000916076",
+        "ticker": "MLM",
+        "name": "Martin Marietta Materials",
+        "sector": "Materials"
+      },
+      {
+        "cik": "0001099219",
+        "ticker": "MET",
+        "name": "MetLife",
+        "sector": "Financials"
+      },
+      {
+        "cik": "0001140859",
+        "ticker": "COR",
+        "name": "Cencora",
+        "sector": "Health Care"
+      },
+      {
+        "cik": "0001699150",
+        "ticker": "IR",
+        "name": "Ingersoll Rand",
+        "sector": "Industrials"
+      },
+      {
+        "cik": "0000029534",
+        "ticker": "DG",
+        "name": "Dollar General",
+        "sector": "Consumer Staples"
+      },
+      {
+        "cik": "0001466258",
+        "ticker": "TT",
+        "name": "Trane Technologies",
+        "sector": "Industrials"
+      },
+      {
+        "cik": "0001327567",
+        "ticker": "PANW",
+        "name": "Palo Alto Networks",
+        "sector": "Information Technology"
+      },
+      {
+        "cik": "0000940944",
+        "ticker": "DRI",
+        "name": "Darden Restaurants",
+        "sector": "Consumer Discretionary"
+      },
+      {
+        "cik": "0001283699",
+        "ticker": "TMUS",
+        "name": "T-Mobile US",
+        "sector": "Communication Services"
+      },
+      {
+        "cik": "0001413447",
+        "ticker": "NXPI",
+        "name": "NXP Semiconductors",
+        "sector": "Information Technology"
+      },
+      {
+        "cik": "0001004980",
+        "ticker": "PCG",
+        "name": "PG&E Corporation",
+        "sector": "Utilities"
+      },
+      {
+        "cik": "0001063761",
+        "ticker": "SPG",
+        "name": "Simon Property Group",
+        "sector": "Real Estate"
+      },
+      {
+        "cik": "0001374310",
+        "ticker": "CBOE",
+        "name": "Cboe Global Markets",
+        "sector": "Financials"
+      },
+      {
+        "cik": "0001748790",
+        "ticker": "AMCR",
+        "name": "Amcor",
+        "sector": "Materials"
+      },
+      {
+        "cik": "0000091419",
+        "ticker": "SJM",
+        "name": "J.M. Smucker Company (The)",
+        "sector": "Consumer Staples"
+      },
+      {
+        "cik": "0001996862",
+        "ticker": "BG",
+        "name": "Bunge Global",
+        "sector": "Consumer Staples"
+      },
+      {
+        "cik": "0001090872",
+        "ticker": "A",
+        "name": "Agilent Technologies",
+        "sector": "Health Care"
+      },
+      {
+        "cik": "0001318605",
+        "ticker": "TSLA",
+        "name": "Tesla, Inc.",
+        "sector": "Consumer Discretionary"
+      },
+      {
+        "cik": "0000947484",
+        "ticker": "ACGL",
+        "name": "Arch Capital Group",
+        "sector": "Financials"
+      }
+    ],
+    "confirmation_a": [
+      {
+        "cik": "0001792789",
+        "ticker": "DASH",
+        "name": "DoorDash",
+        "sector": "Consumer Discretionary"
+      },
+      {
+        "cik": "0001039684",
+        "ticker": "OKE",
+        "name": "Oneok",
+        "sector": "Energy"
+      },
+      {
+        "cik": "0000072903",
+        "ticker": "XEL",
+        "name": "Xcel Energy",
+        "sector": "Utilities"
+      },
+      {
+        "cik": "0000707549",
+        "ticker": "LRCX",
+        "name": "Lam Research",
+        "sector": "Information Technology"
+      },
+      {
+        "cik": "0000072741",
+        "ticker": "ES",
+        "name": "Eversource Energy",
+        "sector": "Utilities"
+      },
+      {
+        "cik": "0001091667",
+        "ticker": "CHTR",
+        "name": "Charter Communications",
+        "sector": "Communication Services"
+      },
+      {
+        "cik": "0000020286",
+        "ticker": "CINF",
+        "name": "Cincinnati Financial",
+        "sector": "Financials"
+      },
+      {
+        "cik": "0000075362",
+        "ticker": "PCAR",
+        "name": "Paccar",
+        "sector": "Industrials"
+      },
+      {
+        "cik": "0001037540",
+        "ticker": "BXP",
+        "name": "BXP, Inc.",
+        "sector": "Real Estate"
+      },
+      {
+        "cik": "0000820313",
+        "ticker": "APH",
+        "name": "Amphenol",
+        "sector": "Information Technology"
+      },
+      {
+        "cik": "0001053507",
+        "ticker": "AMT",
+        "name": "American Tower",
+        "sector": "Real Estate"
+      },
+      {
+        "cik": "0001413329",
+        "ticker": "PM",
+        "name": "Philip Morris International",
+        "sector": "Consumer Staples"
+      },
+      {
+        "cik": "0000093556",
+        "ticker": "SWK",
+        "name": "Stanley Black & Decker",
+        "sector": "Industrials"
+      },
+      {
+        "cik": "0001126328",
+        "ticker": "PFG",
+        "name": "Principal Financial Group",
+        "sector": "Financials"
+      },
+      {
+        "cik": "0001555280",
+        "ticker": "ZTS",
+        "name": "Zoetis",
+        "sector": "Health Care"
+      },
+      {
+        "cik": "0001070750",
+        "ticker": "HST",
+        "name": "Host Hotels & Resorts",
+        "sector": "Real Estate"
+      },
+      {
+        "cik": "0001058090",
+        "ticker": "CMG",
+        "name": "Chipotle Mexican Grill",
+        "sector": "Consumer Discretionary"
+      },
+      {
+        "cik": "0000814547",
+        "ticker": "FICO",
+        "name": "Fair Isaac",
+        "sector": "Information Technology"
+      },
+      {
+        "cik": "0001633978",
+        "ticker": "LITE",
+        "name": "Lumentum",
+        "sector": "Information Technology"
+      },
+      {
+        "cik": "0001075531",
+        "ticker": "BKNG",
+        "name": "Booking Holdings",
+        "sector": "Consumer Discretionary"
+      },
+      {
+        "cik": "0001045609",
+        "ticker": "PLD",
+        "name": "Prologis",
+        "sector": "Real Estate"
+      },
+      {
+        "cik": "0001585689",
+        "ticker": "HLT",
+        "name": "Hilton Worldwide",
+        "sector": "Consumer Discretionary"
+      },
+      {
+        "cik": "0000089800",
+        "ticker": "SHW",
+        "name": "Sherwin-Williams",
+        "sector": "Materials"
+      },
+      {
+        "cik": "0000916365",
+        "ticker": "TSCO",
+        "name": "Tractor Supply",
+        "sector": "Consumer Discretionary"
+      },
+      {
+        "cik": "0001442145",
+        "ticker": "VRSK",
+        "name": "Verisk Analytics",
+        "sector": "Industrials"
+      },
+      {
+        "cik": "0000875045",
+        "ticker": "BIIB",
+        "name": "Biogen",
+        "sector": "Health Care"
+      },
+      {
+        "cik": "0001713445",
+        "ticker": "RDDT",
+        "name": "Reddit",
+        "sector": "Communication Services"
+      },
+      {
+        "cik": "0000874716",
+        "ticker": "IDXX",
+        "name": "Idexx Laboratories",
+        "sector": "Health Care"
+      },
+      {
+        "cik": "0001754301",
+        "ticker": "FOXA",
+        "name": "Fox Corporation (Class A)",
+        "sector": "Communication Services"
+      },
+      {
+        "cik": "0001048911",
+        "ticker": "FDX",
+        "name": "FedEx",
+        "sector": "Industrials"
+      },
+      {
+        "cik": "0000749251",
+        "ticker": "IT",
+        "name": "Gartner",
+        "sector": "Information Technology"
+      },
+      {
+        "cik": "0001674101",
+        "ticker": "VRT",
+        "name": "Vertiv",
+        "sector": "Industrials"
+      },
+      {
+        "cik": "0001267238",
+        "ticker": "AIZ",
+        "name": "Assurant",
+        "sector": "Financials"
+      },
+      {
+        "cik": "0001601712",
+        "ticker": "SYF",
+        "name": "Synchrony Financial",
+        "sector": "Financials"
+      },
+      {
+        "cik": "0000029905",
+        "ticker": "DOV",
+        "name": "Dover Corporation",
+        "sector": "Industrials"
+      },
+      {
+        "cik": "0001024478",
+        "ticker": "ROK",
+        "name": "Rockwell Automation",
+        "sector": "Industrials"
+      },
+      {
+        "cik": "0002115436",
+        "ticker": "XOM",
+        "name": "ExxonMobil",
+        "sector": "Energy"
+      },
+      {
+        "cik": "0000721371",
+        "ticker": "CAH",
+        "name": "Cardinal Health",
+        "sector": "Health Care"
+      },
+      {
+        "cik": "0000811156",
+        "ticker": "CMS",
+        "name": "CMS Energy",
+        "sector": "Utilities"
+      },
+      {
+        "cik": "0001095073",
+        "ticker": "EG",
+        "name": "Everest Group",
+        "sector": "Financials"
+      },
+      {
+        "cik": "0000813672",
+        "ticker": "CDNS",
+        "name": "Cadence Design Systems",
+        "sector": "Information Technology"
+      },
+      {
+        "cik": "0000788784",
+        "ticker": "PEG",
+        "name": "Public Service Enterprise Group",
+        "sector": "Utilities"
+      },
+      {
+        "cik": "0000882835",
+        "ticker": "ROP",
+        "name": "Roper Technologies",
+        "sector": "Information Technology"
+      },
+      {
+        "cik": "0001094285",
+        "ticker": "TDY",
+        "name": "Teledyne Technologies",
+        "sector": "Information Technology"
+      },
+      {
+        "cik": "0001811074",
+        "ticker": "TPL",
+        "name": "Texas Pacific Land Corporation",
+        "sector": "Energy"
+      },
+      {
+        "cik": "0001034054",
+        "ticker": "SBAC",
+        "name": "SBA Communications",
+        "sector": "Real Estate"
+      },
+      {
+        "cik": "0000040533",
+        "ticker": "GD",
+        "name": "General Dynamics",
+        "sector": "Industrials"
+      },
+      {
+        "cik": "0000026172",
+        "ticker": "CMI",
+        "name": "Cummins",
+        "sector": "Industrials"
+      },
+      {
+        "cik": "0000049196",
+        "ticker": "HBAN",
+        "name": "Huntington Bancshares",
+        "sector": "Financials"
+      },
+      {
+        "cik": "0000936340",
+        "ticker": "DTE",
+        "name": "DTE Energy",
+        "sector": "Utilities"
+      },
+      {
+        "cik": "0000789570",
+        "ticker": "MGM",
+        "name": "MGM Resorts",
+        "sector": "Consumer Discretionary"
+      },
+      {
+        "cik": "0001535527",
+        "ticker": "CRWD",
+        "name": "CrowdStrike",
+        "sector": "Information Technology"
+      },
+      {
+        "cik": "0001506307",
+        "ticker": "KMI",
+        "name": "Kinder Morgan",
+        "sector": "Energy"
+      },
+      {
+        "cik": "0000006951",
+        "ticker": "AMAT",
+        "name": "Applied Materials",
+        "sector": "Information Technology"
+      },
+      {
+        "cik": "0000827052",
+        "ticker": "EIX",
+        "name": "Edison International",
+        "sector": "Utilities"
+      },
+      {
+        "cik": "0001120193",
+        "ticker": "NDAQ",
+        "name": "Nasdaq, Inc.",
+        "sector": "Financials"
+      },
+      {
+        "cik": "0001097864",
+        "ticker": "ON",
+        "name": "ON Semiconductor",
+        "sector": "Information Technology"
+      },
+      {
+        "cik": "0001327811",
+        "ticker": "WDAY",
+        "name": "Workday, Inc.",
+        "sector": "Information Technology"
+      },
+      {
+        "cik": "0001973266",
+        "ticker": "TKO",
+        "name": "TKO Group Holdings",
+        "sector": "Communication Services"
+      },
+      {
+        "cik": "0000065984",
+        "ticker": "ETR",
+        "name": "Entergy",
+        "sector": "Utilities"
+      },
+      {
+        "cik": "0000849399",
+        "ticker": "GEN",
+        "name": "Gen Digital",
+        "sector": "Information Technology"
+      },
+      {
+        "cik": "0001393311",
+        "ticker": "PSA",
+        "name": "Public Storage",
+        "sector": "Real Estate"
+      },
+      {
+        "cik": "0000779152",
+        "ticker": "JKHY",
+        "name": "Jack Henry & Associates",
+        "sector": "Financials"
+      },
+      {
+        "cik": "0001103982",
+        "ticker": "MDLZ",
+        "name": "Mondelez International",
+        "sector": "Consumer Staples"
+      },
+      {
+        "cik": "0001652044",
+        "ticker": "GOOGL",
+        "name": "Alphabet Inc. (Class A)",
+        "sector": "Communication Services"
+      },
+      {
+        "cik": "0000882184",
+        "ticker": "DHI",
+        "name": "D. R. Horton",
+        "sector": "Consumer Discretionary"
+      },
+      {
+        "cik": "0000879169",
+        "ticker": "INCY",
+        "name": "Incyte",
+        "sector": "Health Care"
+      },
+      {
+        "cik": "0001478242",
+        "ticker": "IQV",
+        "name": "IQVIA",
+        "sector": "Health Care"
+      },
+      {
+        "cik": "0000865752",
+        "ticker": "MNST",
+        "name": "Monster Beverage",
+        "sector": "Consumer Staples"
+      },
+      {
+        "cik": "0000048898",
+        "ticker": "HUBB",
+        "name": "Hubbell Incorporated",
+        "sector": "Industrials"
+      },
+      {
+        "cik": "0000764180",
+        "ticker": "MO",
+        "name": "Altria",
+        "sector": "Consumer Staples"
+      },
+      {
+        "cik": "0001783879",
+        "ticker": "HOOD",
+        "name": "Robinhood Markets",
+        "sector": "Financials"
+      },
+      {
+        "cik": "0000900075",
+        "ticker": "CPRT",
+        "name": "Copart",
+        "sector": "Industrials"
+      },
+      {
+        "cik": "0001705696",
+        "ticker": "VICI",
+        "name": "Vici Properties",
+        "sector": "Real Estate"
+      },
+      {
+        "cik": "0000764622",
+        "ticker": "PNW",
+        "name": "Pinnacle West Capital",
+        "sector": "Utilities"
+      },
+      {
+        "cik": "0000833444",
+        "ticker": "JCI",
+        "name": "Johnson Controls",
+        "sector": "Industrials"
+      },
+      {
+        "cik": "0002012383",
+        "ticker": "BLK",
+        "name": "BlackRock",
+        "sector": "Financials"
+      },
+      {
+        "cik": "0000874761",
+        "ticker": "AES",
+        "name": "AES Corporation",
+        "sector": "Utilities"
+      },
+      {
+        "cik": "0000909832",
+        "ticker": "COST",
+        "name": "Costco",
+        "sector": "Consumer Staples"
+      },
+      {
+        "cik": "0000093751",
+        "ticker": "STT",
+        "name": "State Street Corporation",
+        "sector": "Financials"
+      },
+      {
+        "cik": "0000310764",
+        "ticker": "SYK",
+        "name": "Stryker Corporation",
+        "sector": "Health Care"
+      },
+      {
+        "cik": "0001101239",
+        "ticker": "EQIX",
+        "name": "Equinix",
+        "sector": "Real Estate"
+      },
+      {
+        "cik": "0000074208",
+        "ticker": "UDR",
+        "name": "UDR, Inc.",
+        "sector": "Real Estate"
+      },
+      {
+        "cik": "0001739940",
+        "ticker": "CI",
+        "name": "Cigna",
+        "sector": "Health Care"
+      },
+      {
+        "cik": "0000073309",
+        "ticker": "NUE",
+        "name": "Nucor",
+        "sector": "Materials"
+      },
+      {
+        "cik": "0001099800",
+        "ticker": "EW",
+        "name": "Edwards Lifesciences",
+        "sector": "Health Care"
+      },
+      {
+        "cik": "0000320335",
+        "ticker": "GL",
+        "name": "Globe Life",
+        "sector": "Financials"
+      },
+      {
+        "cik": "0001510295",
+        "ticker": "MPC",
+        "name": "Marathon Petroleum",
+        "sector": "Energy"
+      },
+      {
+        "cik": "0001000228",
+        "ticker": "HSIC",
+        "name": "Henry Schein",
+        "sector": "Health Care"
+      },
+      {
+        "cik": "0000016918",
+        "ticker": "STZ",
+        "name": "Constellation Brands",
+        "sector": "Consumer Staples"
+      },
+      {
+        "cik": "0001835632",
+        "ticker": "MRVL",
+        "name": "Marvell Technology",
+        "sector": "Information Technology"
+      },
+      {
+        "cik": "0001393052",
+        "ticker": "VEEV",
+        "name": "Veeva Systems",
+        "sector": "Health Care"
+      },
+      {
+        "cik": "0001002047",
+        "ticker": "NTAP",
+        "name": "NetApp",
+        "sector": "Information Technology"
+      },
+      {
+        "cik": "0001286681",
+        "ticker": "DPZ",
+        "name": "Domino's",
+        "sector": "Consumer Discretionary"
+      },
+      {
+        "cik": "0001156039",
+        "ticker": "ELV",
+        "name": "Elevance Health",
+        "sector": "Health Care"
+      },
+      {
+        "cik": "0000096021",
+        "ticker": "SYY",
+        "name": "Sysco",
+        "sector": "Consumer Staples"
+      },
+      {
+        "cik": "0000914208",
+        "ticker": "IVZ",
+        "name": "Invesco",
+        "sector": "Financials"
+      },
+      {
+        "cik": "0000860730",
+        "ticker": "HCA",
+        "name": "HCA Healthcare",
+        "sector": "Health Care"
+      },
+      {
+        "cik": "0001274494",
+        "ticker": "FSLR",
+        "name": "First Solar",
+        "sector": "Information Technology"
+      },
+      {
+        "cik": "0001013871",
+        "ticker": "NRG",
+        "name": "NRG Energy",
+        "sector": "Utilities"
+      }
+    ],
+    "confirmation_b": [
+      {
+        "cik": "0000004904",
+        "ticker": "AEP",
+        "name": "American Electric Power",
+        "sector": "Utilities"
+      },
+      {
+        "cik": "0001057352",
+        "ticker": "CSGP",
+        "name": "CoStar Group",
+        "sector": "Real Estate"
+      },
+      {
+        "cik": "0001133421",
+        "ticker": "NOC",
+        "name": "Northrop Grumman",
+        "sector": "Industrials"
+      },
+      {
+        "cik": "0000797468",
+        "ticker": "OXY",
+        "name": "Occidental Petroleum",
+        "sector": "Energy"
+      },
+      {
+        "cik": "0001058290",
+        "ticker": "CTSH",
+        "name": "Cognizant",
+        "sector": "Information Technology"
+      },
+      {
+        "cik": "0000920760",
+        "ticker": "LEN",
+        "name": "Lennar",
+        "sector": "Consumer Discretionary"
+      },
+      {
+        "cik": "0000052988",
+        "ticker": "J",
+        "name": "Jacobs Solutions",
+        "sector": "Industrials"
+      },
+      {
+        "cik": "0000927066",
+        "ticker": "DVA",
+        "name": "DaVita",
+        "sector": "Health Care"
+      },
+      {
+        "cik": "0001108524",
+        "ticker": "CRM",
+        "name": "Salesforce",
+        "sector": "Information Technology"
+      },
+      {
+        "cik": "0000719955",
+        "ticker": "WSM",
+        "name": "Williams-Sonoma, Inc.",
+        "sector": "Consumer Discretionary"
+      },
+      {
+        "cik": "0001996810",
+        "ticker": "GEV",
+        "name": "GE Vernova",
+        "sector": "Industrials"
+      },
+      {
+        "cik": "0001397187",
+        "ticker": "LULU",
+        "name": "Lululemon Athletica",
+        "sector": "Consumer Discretionary"
+      },
+      {
+        "cik": "0001113169",
+        "ticker": "TROW",
+        "name": "T. Rowe Price",
+        "sector": "Financials"
+      },
+      {
+        "cik": "0000024741",
+        "ticker": "GLW",
+        "name": "Corning Inc.",
+        "sector": "Information Technology"
+      },
+      {
+        "cik": "0000313616",
+        "ticker": "DHR",
+        "name": "Danaher Corporation",
+        "sector": "Health Care"
+      },
+      {
+        "cik": "0001130310",
+        "ticker": "CNP",
+        "name": "CenterPoint Energy",
+        "sector": "Utilities"
+      },
+      {
+        "cik": "0000075677",
+        "ticker": "PKG",
+        "name": "Packaging Corporation of America",
+        "sector": "Materials"
+      },
+      {
+        "cik": "0000202058",
+        "ticker": "LHX",
+        "name": "L3Harris",
+        "sector": "Industrials"
+      },
+      {
+        "cik": "0001381197",
+        "ticker": "IBKR",
+        "name": "Interactive Brokers",
+        "sector": "Financials"
+      },
+      {
+        "cik": "0001059556",
+        "ticker": "MCO",
+        "name": "Moody's Corporation",
+        "sector": "Financials"
+      },
+      {
+        "cik": "0001637459",
+        "ticker": "KHC",
+        "name": "Kraft Heinz",
+        "sector": "Consumer Staples"
+      },
+      {
+        "cik": "0000002969",
+        "ticker": "APD",
+        "name": "Air Products",
+        "sector": "Materials"
+      },
+      {
+        "cik": "0000922621",
+        "ticker": "ERIE",
+        "name": "Erie Indemnity",
+        "sector": "Financials"
+      },
+      {
+        "cik": "0000906107",
+        "ticker": "VMRK",
+        "name": "Vivmark Residential",
+        "sector": "Real Estate"
+      },
+      {
+        "cik": "0000315189",
+        "ticker": "DE",
+        "name": "Deere & Company",
+        "sector": "Industrials"
+      },
+      {
+        "cik": "0001037868",
+        "ticker": "AME",
+        "name": "Ametek",
+        "sector": "Industrials"
+      },
+      {
+        "cik": "0000715957",
+        "ticker": "D",
+        "name": "Dominion Energy",
+        "sector": "Utilities"
+      },
+      {
+        "cik": "0000060086",
+        "ticker": "L",
+        "name": "Loews Corporation",
+        "sector": "Financials"
+      },
+      {
+        "cik": "0001967680",
+        "ticker": "VLTO",
+        "name": "Veralto",
+        "sector": "Industrials"
+      },
+      {
+        "cik": "0000821189",
+        "ticker": "EOG",
+        "name": "EOG Resources",
+        "sector": "Energy"
+      },
+      {
+        "cik": "0002041610",
+        "ticker": "PSKY",
+        "name": "Paramount Skydance Corporation",
+        "sector": "Communication Services"
+      },
+      {
+        "cik": "0001396009",
+        "ticker": "VMC",
+        "name": "Vulcan Materials Company",
+        "sector": "Materials"
+      },
+      {
+        "cik": "0000105634",
+        "ticker": "EME",
+        "name": "Emcor",
+        "sector": "Industrials"
+      },
+      {
+        "cik": "0001086222",
+        "ticker": "AKAM",
+        "name": "Akamai Technologies",
+        "sector": "Information Technology"
+      },
+      {
+        "cik": "0001174922",
+        "ticker": "WYNN",
+        "name": "Wynn Resorts",
+        "sector": "Consumer Discretionary"
+      },
+      {
+        "cik": "0001262039",
+        "ticker": "FTNT",
+        "name": "Fortinet",
+        "sector": "Information Technology"
+      },
+      {
+        "cik": "0001069202",
+        "ticker": "LII",
+        "name": "Lennox International",
+        "sector": "Industrials"
+      },
+      {
+        "cik": "0000875320",
+        "ticker": "VRTX",
+        "name": "Vertex Pharmaceuticals",
+        "sector": "Health Care"
+      },
+      {
+        "cik": "0001071739",
+        "ticker": "CNC",
+        "name": "Centene Corporation",
+        "sector": "Health Care"
+      },
+      {
+        "cik": "0001300514",
+        "ticker": "LVS",
+        "name": "Las Vegas Sands",
+        "sector": "Consumer Discretionary"
+      },
+      {
+        "cik": "0000720005",
+        "ticker": "RJF",
+        "name": "Raymond James Financial",
+        "sector": "Financials"
+      },
+      {
+        "cik": "0000313927",
+        "ticker": "CHD",
+        "name": "Church & Dwight",
+        "sector": "Consumer Staples"
+      },
+      {
+        "cik": "0001474432",
+        "ticker": "P",
+        "name": "Everpure",
+        "sector": "Information Technology"
+      },
+      {
+        "cik": "0001336920",
+        "ticker": "LDOS",
+        "name": "Leidos",
+        "sector": "Industrials"
+      },
+      {
+        "cik": "0001013237",
+        "ticker": "FDS",
+        "name": "FactSet",
+        "sector": "Financials"
+      },
+      {
+        "cik": "0001032208",
+        "ticker": "SRE",
+        "name": "Sempra",
+        "sector": "Utilities"
+      },
+      {
+        "cik": "0000920522",
+        "ticker": "ESS",
+        "name": "Essex Property Trust",
+        "sector": "Real Estate"
+      },
+      {
+        "cik": "0000100493",
+        "ticker": "TSN",
+        "name": "Tyson Foods",
+        "sector": "Consumer Staples"
+      },
+      {
+        "cik": "0001093557",
+        "ticker": "DXCM",
+        "name": "Dexcom",
+        "sector": "Health Care"
+      },
+      {
+        "cik": "0001065280",
+        "ticker": "NFLX",
+        "name": "Netflix",
+        "sector": "Communication Services"
+      },
+      {
+        "cik": "0001285785",
+        "ticker": "MOS",
+        "name": "Mosaic Company (The)",
+        "sector": "Materials"
+      },
+      {
+        "cik": "0000910606",
+        "ticker": "REG",
+        "name": "Regency Centers",
+        "sector": "Real Estate"
+      },
+      {
+        "cik": "0000087347",
+        "ticker": "SLB",
+        "name": "Schlumberger",
+        "sector": "Energy"
+      },
+      {
+        "cik": "0000920148",
+        "ticker": "LH",
+        "name": "Labcorp",
+        "sector": "Health Care"
+      },
+      {
+        "cik": "0001037038",
+        "ticker": "RL",
+        "name": "Ralph Lauren Corporation",
+        "sector": "Consumer Discretionary"
+      },
+      {
+        "cik": "0000899051",
+        "ticker": "ALL",
+        "name": "Allstate",
+        "sector": "Financials"
+      },
+      {
+        "cik": "0001175454",
+        "ticker": "CPAY",
+        "name": "Corpay",
+        "sector": "Financials"
+      },
+      {
+        "cik": "0001060391",
+        "ticker": "RSG",
+        "name": "Republic Services",
+        "sector": "Industrials"
+      },
+      {
+        "cik": "0000056873",
+        "ticker": "KR",
+        "name": "Kroger",
+        "sector": "Consumer Staples"
+      },
+      {
+        "cik": "0000827054",
+        "ticker": "MCHP",
+        "name": "Microchip Technology",
+        "sector": "Information Technology"
+      },
+      {
+        "cik": "0001415404",
+        "ticker": "ECHO",
+        "name": "EchoStar",
+        "sector": "Communication Services"
+      },
+      {
+        "cik": "0001335258",
+        "ticker": "LYV",
+        "name": "Live Nation Entertainment",
+        "sector": "Communication Services"
+      },
+      {
+        "cik": "0001571996",
+        "ticker": "DELL",
+        "name": "Dell Technologies",
+        "sector": "Information Technology"
+      },
+      {
+        "cik": "0001035002",
+        "ticker": "VLO",
+        "name": "Valero Energy",
+        "sector": "Energy"
+      },
+      {
+        "cik": "0000883241",
+        "ticker": "SNPS",
+        "name": "Synopsys",
+        "sector": "Information Technology"
+      },
+      {
+        "cik": "0001501585",
+        "ticker": "HII",
+        "name": "Huntington Ingalls Industries",
+        "sector": "Industrials"
+      },
+      {
+        "cik": "0000007084",
+        "ticker": "ADM",
+        "name": "Archer Daniels Midland",
+        "sector": "Consumer Staples"
+      },
+      {
+        "cik": "0001524472",
+        "ticker": "XYL",
+        "name": "Xylem Inc.",
+        "sector": "Industrials"
+      },
+      {
+        "cik": "0000877212",
+        "ticker": "ZBRA",
+        "name": "Zebra Technologies",
+        "sector": "Information Technology"
+      },
+      {
+        "cik": "0000049826",
+        "ticker": "ITW",
+        "name": "Illinois Tool Works",
+        "sector": "Industrials"
+      },
+      {
+        "cik": "0001047862",
+        "ticker": "ED",
+        "name": "Consolidated Edison",
+        "sector": "Utilities"
+      },
+      {
+        "cik": "0001110803",
+        "ticker": "ILMN",
+        "name": "Illumina, Inc.",
+        "sector": "Health Care"
+      },
+      {
+        "cik": "0001324404",
+        "ticker": "CF",
+        "name": "CF Industries",
+        "sector": "Materials"
+      },
+      {
+        "cik": "0000072331",
+        "ticker": "NDSN",
+        "name": "Nordson Corporation",
+        "sector": "Industrials"
+      },
+      {
+        "cik": "0001751008",
+        "ticker": "APP",
+        "name": "AppLovin",
+        "sector": "Communication Services"
+      },
+      {
+        "cik": "0001410636",
+        "ticker": "AWK",
+        "name": "American Water Works",
+        "sector": "Utilities"
+      },
+      {
+        "cik": "0002005951",
+        "ticker": "SW",
+        "name": "Smurfit Westrock",
+        "sector": "Materials"
+      },
+      {
+        "cik": "0001145197",
+        "ticker": "PODD",
+        "name": "Insulet Corporation",
+        "sector": "Health Care"
+      },
+      {
+        "cik": "0000935703",
+        "ticker": "DLTR",
+        "name": "Dollar Tree",
+        "sector": "Consumer Staples"
+      },
+      {
+        "cik": "0000906345",
+        "ticker": "CPT",
+        "name": "Camden Property Trust",
+        "sector": "Real Estate"
+      },
+      {
+        "cik": "0001513761",
+        "ticker": "NCLH",
+        "name": "Norwegian Cruise Line Holdings",
+        "sector": "Consumer Discretionary"
+      },
+      {
+        "cik": "0001136869",
+        "ticker": "ZBH",
+        "name": "Zimmer Biomet",
+        "sector": "Health Care"
+      },
+      {
+        "cik": "0000048465",
+        "ticker": "HRL",
+        "name": "Hormel Foods",
+        "sector": "Consumer Staples"
+      },
+      {
+        "cik": "0001176948",
+        "ticker": "ARES",
+        "name": "Ares Management",
+        "sector": "Financials"
+      },
+      {
+        "cik": "0001020569",
+        "ticker": "IRM",
+        "name": "Iron Mountain",
+        "sector": "Real Estate"
+      },
+      {
+        "cik": "0000906163",
+        "ticker": "NVR",
+        "name": "NVR, Inc.",
+        "sector": "Consumer Discretionary"
+      },
+      {
+        "cik": "0000866787",
+        "ticker": "AZO",
+        "name": "AutoZone",
+        "sector": "Consumer Discretionary"
+      },
+      {
+        "cik": "0001164727",
+        "ticker": "NEM",
+        "name": "Newmont",
+        "sector": "Materials"
+      },
+      {
+        "cik": "0001543151",
+        "ticker": "UBER",
+        "name": "Uber",
+        "sector": "Industrials"
+      },
+      {
+        "cik": "0001539838",
+        "ticker": "FANG",
+        "name": "Diamondback Energy",
+        "sector": "Energy"
+      },
+      {
+        "cik": "0001559720",
+        "ticker": "ABNB",
+        "name": "Airbnb",
+        "sector": "Consumer Discretionary"
+      },
+      {
+        "cik": "0000815097",
+        "ticker": "CCL",
+        "name": "Carnival Corporation",
+        "sector": "Consumer Discretionary"
+      },
+      {
+        "cik": "0000277135",
+        "ticker": "GWW",
+        "name": "W. W. Grainger",
+        "sector": "Industrials"
+      },
+      {
+        "cik": "0000091440",
+        "ticker": "SNA",
+        "name": "Snap-on",
+        "sector": "Industrials"
+      },
+      {
+        "cik": "0000822416",
+        "ticker": "PHM",
+        "name": "PulteGroup",
+        "sector": "Consumer Discretionary"
+      },
+      {
+        "cik": "0001280452",
+        "ticker": "MPWR",
+        "name": "Monolithic Power Systems",
+        "sector": "Information Technology"
+      },
+      {
+        "cik": "0001596532",
+        "ticker": "ANET",
+        "name": "Arista Networks",
+        "sector": "Information Technology"
+      },
+      {
+        "cik": "0000765880",
+        "ticker": "DOC",
+        "name": "Healthpeak Properties",
+        "sector": "Real Estate"
+      },
+      {
+        "cik": "0001043277",
+        "ticker": "CHRW",
+        "name": "C.H. Robinson",
+        "sector": "Industrials"
+      },
+      {
+        "cik": "0000864749",
+        "ticker": "TRMB",
+        "name": "Trimble Inc.",
+        "sector": "Information Technology"
+      }
+    ]
+  },
+  "development": "Existing 69-company pool, 2015-2021. All earlier V7/V8 test outcomes are now development data, never fresh confirmation.",
+  "training": "Existing and additional-training companies only. Expanding annual models; target publication strictly before January 1 of each forecast year. All features filed by origin. New confirmation companies excluded from training at every date.",
+  "confirmation": "Companies assigned by seeded SHA256 before downloading outcomes. 2015-2021 targets first filed by 2021-12-31. No exclusions based on errors. Same data eligibility rules as V8.",
+  "hypotheses": [
+    "larger causal training set",
+    "EPS-level and growth-weighted regression",
+    "past-error interval calibration",
+    "simple numeric model ensembles",
+    "compact vs richer financial features"
+  ],
+  "selection": "Select algorithms on development only; freeze prediction source/model hashes and all predictions before scoring each confirmation pool. Do not open confirmation until development lower bound >= .10 or a documented exhausted-search decision.",
+  "confidence": {
+    "primary": "paired calendar-quarter bootstrap",
+    "draws": 20000,
+    "standard": "two-sided 95% interval reported",
+    "sequential": "At most two confirmation looks. Each uses two-sided 97.5% interval (Bonferroni family coverage >=95%). Success requires its lower bound >=.10. If A fails, it becomes development; B remains untouched.",
+    "sensitivity": "circular moving blocks of two adjacent quarters; report without changing primary metric"
+  },
+  "no_codabench_submission": true,
+  "limitations": [
+    "Only EPS families, not full track",
+    "Current constituent universe has survivorship bias",
+    "Current SEC API filtered by original filed dates, not archived API vintages",
+    "Exact-quote judge, no production NLI",
+    "27 or fewer calendar-quarter blocks; firms and dates can remain dependent"
+  ]
+}
