@@ -1,0 +1,10 @@
+FROM python:3.13-slim@sha256:7c61056e61ac89e852de05f3dc6fa51a6dd2181797bceed46aa725dd7cb2cd3b
+LABEL qfbench2.interface_version="2.0"
+WORKDIR /app
+ENV PYTHONDONTWRITEBYTECODE=1
+COPY agent_submit_v7 ./agent_submit_v7
+COPY agent_submit ./agent_submit
+COPY agent_v2/__init__.py agent_v2/indexer.py agent_v2/retriever.py ./agent_v2/
+COPY V7_PROVENANCE.md ./ARTIFACT_PROVENANCE.md
+ENTRYPOINT ["python", "-m", "agent_submit_v7.cli"]
+CMD ["analyze", "--help"]

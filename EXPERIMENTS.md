@@ -66,8 +66,7 @@ possible explanations; the participant report cannot distinguish them.
 
 ## V6 diagnostic — 2026-10-06
 
-Submission **963432** is accepted in Development and currently **Submitted**,
-with no score returned yet. See [V6_SUBMISSION.md](V6_SUBMISSION.md) for the exact
+Submission **963432** is accepted in Development and **Finished**, with leaderboard **0.4394002047** and analysis **0.5585828383**; all 10 units scored and admissible. See [V6_SUBMISSION.md](V6_SUBMISSION.md) for the exact
 image digest, ZIP hash, source commit, and publication workflow.
 
 This version uses deterministic corpus-only extraction and forecasting, with zero
@@ -78,5 +77,4 @@ digest produced byte-identical answers. These checks establish executability and
 format admission, not hidden forecast quality.
 
 The official scoring rules changed after the September submissions. Any numerical
-comparison with V1/V3/V4 needs that caveat; no improvement is claimed while the
-new score and participant report remain unavailable.
+comparison with V1/V3/V4 needs that caveat; the score is now known, but the changed formula prevents a clean comparison with the September values.

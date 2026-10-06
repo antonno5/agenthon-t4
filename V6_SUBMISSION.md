@@ -1,6 +1,6 @@
 # V6 diagnostic Development submission
 
-Submission: **963432**. Current recorded status: **Submitted**. Score pending; no result is available yet.
+Submission: **963432**. Final status: **Finished**. Leaderboard score: **0.4394002047**; analysis score: **0.5585828383**. All **10/10** units scored and admissible. Participant-reported 95% interval: **[0.3544166667, 0.5179441266]** on the leaderboard scale.
 
 - Competition: https://www.codabench.org/competitions/17768/
 - Account: imak_ai_lab; phase: Development (29649).
