@@ -1,0 +1,16 @@
+{
+  "submission_id": 965395,
+  "competition": 17768,
+  "phase": 29649,
+  "account": "imak_ai_lab",
+  "filename": "submission-v11-753007d.zip",
+  "zip_sha256": "77c46ed188f82a73069c03e5164d0b5e38f277c7d7e921ec7285da887c636b2a",
+  "started_at": "2026-10-06T17:57:02.868623+00:00",
+  "state": "submitted",
+  "competition_url": "https://www.codabench.org/competitions/17768/#participate-submit_results",
+  "image": "ghcr.io/antonno5/agenthon-t4@sha256:b6a841f95515f217e6b9fff421191f95e228d8e1d5e1594b9c6da1c3c226c22a",
+  "source_commit": "753007d6d64a94961adb0e655412d8ecb3bdced0",
+  "status": "Submitting",
+  "authorization": "Explicit diagnostic upload requested by the user after the research gate did not pass",
+  "platform_upload_verified": true
+}
