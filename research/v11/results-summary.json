@@ -1,0 +1,729 @@
+{
+  "version": "v11-cpi-development",
+  "baseline": "deployed V8 numeric CPI rule",
+  "development_months": 120,
+  "quarter_blocks": 40,
+  "source_months": 199,
+  "baseline_parity_rows": 2112,
+  "initial_methods": {
+    "boost_causal_width": {
+      "mean": 0.570646039573332,
+      "versus_v8": {
+        "delta": 0.07527227634705465,
+        "ci95": [
+          0.04764440256794675,
+          0.10346055583029432
+        ],
+        "single_quarter_ci95": [
+          0.046972854086286486,
+          0.10432932863922549
+        ],
+        "quarter_blocks": 40
+      },
+      "mae": 0.6686339202254484,
+      "coverage": 0.9189393939393937,
+      "component_mae": {
+        "CPI_ALLITEMS": 0.1832375492615984,
+        "CPI_APPAREL": 0.5311254214066984,
+        "CPI_CORE": 0.07720426809641776,
+        "CPI_ENERGY": 1.7671858465223584,
+        "CPI_FOOD": 0.18223576881552273,
+        "CPI_GASOLINE": 3.2634086610213346,
+        "CPI_MEDICAL": 0.17079577808952084,
+        "CPI_NEWVEH": 0.28520762066439675,
+        "CPI_SHELTER": 0.1114093892377622,
+        "CPI_TRANSPSVC": 0.25453507927784863,
+        "CPI_USEDCARS": 0.5286277400864752
+      }
+    },
+    "boost_v8_width": {
+      "mean": 0.5673963878979286,
+      "versus_v8": {
+        "delta": 0.07202262467165103,
+        "ci95": [
+          0.04562753167380966,
+          0.09915096844565026
+        ],
+        "single_quarter_ci95": [
+          0.04417820355358545,
+          0.10037559586819807
+        ],
+        "quarter_blocks": 40
+      },
+      "mae": 0.6686339202254484,
+      "coverage": 0.85,
+      "component_mae": {
+        "CPI_ALLITEMS": 0.1832375492615984,
+        "CPI_APPAREL": 0.5311254214066984,
+        "CPI_CORE": 0.07720426809641776,
+        "CPI_ENERGY": 1.7671858465223584,
+        "CPI_FOOD": 0.18223576881552273,
+        "CPI_GASOLINE": 3.2634086610213346,
+        "CPI_MEDICAL": 0.17079577808952084,
+        "CPI_NEWVEH": 0.28520762066439675,
+        "CPI_SHELTER": 0.1114093892377622,
+        "CPI_TRANSPSVC": 0.25453507927784863,
+        "CPI_USEDCARS": 0.5286277400864752
+      }
+    },
+    "gas_bridge_causal_width": {
+      "mean": 0.6161246889620152,
+      "versus_v8": {
+        "delta": 0.12075092573573779,
+        "ci95": [
+          0.08991445448050868,
+          0.1515471301703734
+        ],
+        "single_quarter_ci95": [
+          0.08979090020268068,
+          0.15058440274483822
+        ],
+        "quarter_blocks": 40
+      },
+      "mae": 0.5067603431356645,
+      "coverage": 0.9257575757575758,
+      "component_mae": {
+        "CPI_ALLITEMS": 0.14228774727649524,
+        "CPI_APPAREL": 0.5258333333333334,
+        "CPI_CORE": 0.07185185185185185,
+        "CPI_ENERGY": 1.199760057359488,
+        "CPI_FOOD": 0.17203703703703702,
+        "CPI_GASOLINE": 1.9708344883748452,
+        "CPI_MEDICAL": 0.15259259259259259,
+        "CPI_NEWVEH": 0.26879629629629626,
+        "CPI_SHELTER": 0.07277777777777776,
+        "CPI_TRANSPSVC": 0.28435185185185186,
+        "CPI_USEDCARS": 0.7132407407407408
+      }
+    },
+    "gas_bridge_v8_width": {
+      "mean": 0.6076578932743696,
+      "versus_v8": {
+        "delta": 0.11228413004809223,
+        "ci95": [
+          0.0824880193598796,
+          0.1421727594335536
+        ],
+        "single_quarter_ci95": [
+          0.08248238057083522,
+          0.14142764845491707
+        ],
+        "quarter_blocks": 40
+      },
+      "mae": 0.5067603431356645,
+      "coverage": 0.8727272727272727,
+      "component_mae": {
+        "CPI_ALLITEMS": 0.14228774727649524,
+        "CPI_APPAREL": 0.5258333333333334,
+        "CPI_CORE": 0.07185185185185185,
+        "CPI_ENERGY": 1.199760057359488,
+        "CPI_FOOD": 0.17203703703703702,
+        "CPI_GASOLINE": 1.9708344883748452,
+        "CPI_MEDICAL": 0.15259259259259259,
+        "CPI_NEWVEH": 0.26879629629629626,
+        "CPI_SHELTER": 0.07277777777777776,
+        "CPI_TRANSPSVC": 0.28435185185185186,
+        "CPI_USEDCARS": 0.7132407407407408
+      }
+    },
+    "huber_causal_width": {
+      "mean": 0.6263414440066233,
+      "versus_v8": {
+        "delta": 0.13096768078034593,
+        "ci95": [
+          0.09951709125150902,
+          0.1630416741500807
+        ],
+        "single_quarter_ci95": [
+          0.09882452710857105,
+          0.16303174882062346
+        ],
+        "quarter_blocks": 40
+      },
+      "mae": 0.4768738465109453,
+      "coverage": 0.925,
+      "component_mae": {
+        "CPI_ALLITEMS": 0.1346007678623055,
+        "CPI_APPAREL": 0.5672524319792797,
+        "CPI_CORE": 0.081047172853312,
+        "CPI_ENERGY": 1.1714826613537526,
+        "CPI_FOOD": 0.16926963924446667,
+        "CPI_GASOLINE": 1.858965397038879,
+        "CPI_MEDICAL": 0.17176104774029757,
+        "CPI_NEWVEH": 0.2705425590448392,
+        "CPI_SHELTER": 0.1115390482394997,
+        "CPI_TRANSPSVC": 0.2842794531491839,
+        "CPI_USEDCARS": 0.4248721331145819
+      }
+    },
+    "huber_v8_width": {
+      "mean": 0.6178344219642032,
+      "versus_v8": {
+        "delta": 0.12246065873792591,
+        "ci95": [
+          0.09180337786420181,
+          0.15393818298380763
+        ],
+        "single_quarter_ci95": [
+          0.0907909977612104,
+          0.15403328670541297
+        ],
+        "quarter_blocks": 40
+      },
+      "mae": 0.4768738465109453,
+      "coverage": 0.8643939393939394,
+      "component_mae": {
+        "CPI_ALLITEMS": 0.1346007678623055,
+        "CPI_APPAREL": 0.5672524319792797,
+        "CPI_CORE": 0.081047172853312,
+        "CPI_ENERGY": 1.1714826613537526,
+        "CPI_FOOD": 0.16926963924446667,
+        "CPI_GASOLINE": 1.858965397038879,
+        "CPI_MEDICAL": 0.17176104774029757,
+        "CPI_NEWVEH": 0.2705425590448392,
+        "CPI_SHELTER": 0.1115390482394997,
+        "CPI_TRANSPSVC": 0.2842794531491839,
+        "CPI_USEDCARS": 0.4248721331145819
+      }
+    },
+    "mean3_causal_width": {
+      "mean": 0.48477001400594705,
+      "versus_v8": {
+        "delta": -0.01060374922033039,
+        "ci95": [
+          -0.022594963990203415,
+          0.001573269721920521
+        ],
+        "single_quarter_ci95": [
+          -0.024450398399943455,
+          0.002185960077324522
+        ],
+        "quarter_blocks": 40
+      },
+      "mae": 0.9652272727272726,
+      "coverage": 0.9287878787878786,
+      "component_mae": {
+        "CPI_ALLITEMS": 0.27666666666666667,
+        "CPI_APPAREL": 0.5808333333333332,
+        "CPI_CORE": 0.07861111111111112,
+        "CPI_ENERGY": 2.838888888888889,
+        "CPI_FOOD": 0.15555555555555556,
+        "CPI_GASOLINE": 5.23,
+        "CPI_MEDICAL": 0.16833333333333336,
+        "CPI_NEWVEH": 0.2575,
+        "CPI_SHELTER": 0.07777777777777777,
+        "CPI_TRANSPSVC": 0.3277777777777778,
+        "CPI_USEDCARS": 0.6255555555555555
+      }
+    },
+    "mean3_v8_width": {
+      "mean": 0.49234991945273227,
+      "versus_v8": {
+        "delta": -0.003023843773545204,
+        "ci95": [
+          -0.014040570256722701,
+          0.007564357779501754
+        ],
+        "single_quarter_ci95": [
+          -0.016293023432703044,
+          0.008605446174731385
+        ],
+        "quarter_blocks": 40
+      },
+      "mae": 0.9652272727272726,
+      "coverage": 0.8242424242424242,
+      "component_mae": {
+        "CPI_ALLITEMS": 0.27666666666666667,
+        "CPI_APPAREL": 0.5808333333333332,
+        "CPI_CORE": 0.07861111111111112,
+        "CPI_ENERGY": 2.838888888888889,
+        "CPI_FOOD": 0.15555555555555556,
+        "CPI_GASOLINE": 5.23,
+        "CPI_MEDICAL": 0.16833333333333336,
+        "CPI_NEWVEH": 0.2575,
+        "CPI_SHELTER": 0.07777777777777777,
+        "CPI_TRANSPSVC": 0.3277777777777778,
+        "CPI_USEDCARS": 0.6255555555555555
+      }
+    },
+    "mean6_causal_width": {
+      "mean": 0.5057617944694212,
+      "versus_v8": {
+        "delta": 0.010388031243143752,
+        "ci95": [
+          -0.007846148053189755,
+          0.028439687118885594
+        ],
+        "single_quarter_ci95": [
+          -0.009038974468409313,
+          0.030647213963348147
+        ],
+        "quarter_blocks": 40
+      },
+      "mae": 0.9336994949494949,
+      "coverage": 0.9249999999999999,
+      "component_mae": {
+        "CPI_ALLITEMS": 0.2765277777777778,
+        "CPI_APPAREL": 0.5191666666666667,
+        "CPI_CORE": 0.07569444444444445,
+        "CPI_ENERGY": 2.7256944444444446,
+        "CPI_FOOD": 0.1613888888888889,
+        "CPI_GASOLINE": 5.016527777777778,
+        "CPI_MEDICAL": 0.15611111111111112,
+        "CPI_NEWVEH": 0.2708333333333333,
+        "CPI_SHELTER": 0.07055555555555555,
+        "CPI_TRANSPSVC": 0.2965277777777777,
+        "CPI_USEDCARS": 0.7016666666666665
+      }
+    },
+    "mean6_v8_width": {
+      "mean": 0.5119748761875477,
+      "versus_v8": {
+        "delta": 0.01660111296127026,
+        "ci95": [
+          -0.0011936921362223443,
+          0.034523420948026774
+        ],
+        "single_quarter_ci95": [
+          -0.00291691484982568,
+          0.03687246181233257
+        ],
+        "quarter_blocks": 40
+      },
+      "mae": 0.9336994949494949,
+      "coverage": 0.8393939393939394,
+      "component_mae": {
+        "CPI_ALLITEMS": 0.2765277777777778,
+        "CPI_APPAREL": 0.5191666666666667,
+        "CPI_CORE": 0.07569444444444445,
+        "CPI_ENERGY": 2.7256944444444446,
+        "CPI_FOOD": 0.1613888888888889,
+        "CPI_GASOLINE": 5.016527777777778,
+        "CPI_MEDICAL": 0.15611111111111112,
+        "CPI_NEWVEH": 0.2708333333333333,
+        "CPI_SHELTER": 0.07055555555555555,
+        "CPI_TRANSPSVC": 0.2965277777777777,
+        "CPI_USEDCARS": 0.7016666666666665
+      }
+    },
+    "mean9_causal_width": {
+      "mean": 0.5051983261562152,
+      "versus_v8": {
+        "delta": 0.009824562929937698,
+        "ci95": [
+          -0.010542549336626452,
+          0.030154921378043178
+        ],
+        "single_quarter_ci95": [
+          -0.013516211038620328,
+          0.03400753735606165
+        ],
+        "quarter_blocks": 40
+      },
+      "mae": 0.9338636363636363,
+      "coverage": 0.9303030303030302,
+      "component_mae": {
+        "CPI_ALLITEMS": 0.26981481481481484,
+        "CPI_APPAREL": 0.5258333333333334,
+        "CPI_CORE": 0.07185185185185185,
+        "CPI_ENERGY": 2.7449999999999997,
+        "CPI_FOOD": 0.17203703703703702,
+        "CPI_GASOLINE": 4.996203703703704,
+        "CPI_MEDICAL": 0.15259259259259259,
+        "CPI_NEWVEH": 0.26879629629629626,
+        "CPI_SHELTER": 0.07277777777777776,
+        "CPI_TRANSPSVC": 0.28435185185185186,
+        "CPI_USEDCARS": 0.7132407407407408
+      }
+    },
+    "mean9_v8_width": {
+      "mean": 0.5109584147145732,
+      "versus_v8": {
+        "delta": 0.015584651488295742,
+        "ci95": [
+          -0.0034123280630591764,
+          0.03497659666942855
+        ],
+        "single_quarter_ci95": [
+          -0.007148856663321086,
+          0.03908048768287394
+        ],
+        "quarter_blocks": 40
+      },
+      "mae": 0.9338636363636363,
+      "coverage": 0.8401515151515151,
+      "component_mae": {
+        "CPI_ALLITEMS": 0.26981481481481484,
+        "CPI_APPAREL": 0.5258333333333334,
+        "CPI_CORE": 0.07185185185185185,
+        "CPI_ENERGY": 2.7449999999999997,
+        "CPI_FOOD": 0.17203703703703702,
+        "CPI_GASOLINE": 4.996203703703704,
+        "CPI_MEDICAL": 0.15259259259259259,
+        "CPI_NEWVEH": 0.26879629629629626,
+        "CPI_SHELTER": 0.07277777777777776,
+        "CPI_TRANSPSVC": 0.28435185185185186,
+        "CPI_USEDCARS": 0.7132407407407408
+      }
+    },
+    "median9_causal_width": {
+      "mean": 0.5068769886422165,
+      "versus_v8": {
+        "delta": 0.011503225415939032,
+        "ci95": [
+          -0.009724448037632795,
+          0.033325484720512756
+        ],
+        "single_quarter_ci95": [
+          -0.010615623788666194,
+          0.03411390836993017
+        ],
+        "quarter_blocks": 40
+      },
+      "mae": 0.9181060606060606,
+      "coverage": 0.9363636363636363,
+      "component_mae": {
+        "CPI_ALLITEMS": 0.25583333333333336,
+        "CPI_APPAREL": 0.5466666666666666,
+        "CPI_CORE": 0.07166666666666667,
+        "CPI_ENERGY": 2.663333333333333,
+        "CPI_FOOD": 0.17583333333333337,
+        "CPI_GASOLINE": 4.846666666666668,
+        "CPI_MEDICAL": 0.15333333333333332,
+        "CPI_NEWVEH": 0.2916666666666667,
+        "CPI_SHELTER": 0.06916666666666667,
+        "CPI_TRANSPSVC": 0.2833333333333333,
+        "CPI_USEDCARS": 0.7416666666666667
+      }
+    },
+    "median9_v8_width": {
+      "mean": 0.5124741681443962,
+      "versus_v8": {
+        "delta": 0.01710040491811874,
+        "ci95": [
+          -0.0029616580623793728,
+          0.03793396967157362
+        ],
+        "single_quarter_ci95": [
+          -0.004597696194203687,
+          0.039083553486795194
+        ],
+        "quarter_blocks": 40
+      },
+      "mae": 0.9181060606060606,
+      "coverage": 0.834090909090909,
+      "component_mae": {
+        "CPI_ALLITEMS": 0.25583333333333336,
+        "CPI_APPAREL": 0.5466666666666666,
+        "CPI_CORE": 0.07166666666666667,
+        "CPI_ENERGY": 2.663333333333333,
+        "CPI_FOOD": 0.17583333333333337,
+        "CPI_GASOLINE": 4.846666666666668,
+        "CPI_MEDICAL": 0.15333333333333332,
+        "CPI_NEWVEH": 0.2916666666666667,
+        "CPI_SHELTER": 0.06916666666666667,
+        "CPI_TRANSPSVC": 0.2833333333333333,
+        "CPI_USEDCARS": 0.7416666666666667
+      }
+    },
+    "ridge100_causal_width": {
+      "mean": 0.5956509221091608,
+      "versus_v8": {
+        "delta": 0.10027715888288331,
+        "ci95": [
+          0.0752053596718467,
+          0.12550631371693788
+        ],
+        "single_quarter_ci95": [
+          0.07269931664419588,
+          0.12776649446514265
+        ],
+        "quarter_blocks": 40
+      },
+      "mae": 0.597733120505669,
+      "coverage": 0.9196969696969696,
+      "component_mae": {
+        "CPI_ALLITEMS": 0.1667015532483206,
+        "CPI_APPAREL": 0.5184873884275517,
+        "CPI_CORE": 0.07070154236497912,
+        "CPI_ENERGY": 1.6006676248326765,
+        "CPI_FOOD": 0.16391766836193772,
+        "CPI_GASOLINE": 2.782396729135682,
+        "CPI_MEDICAL": 0.16017610129637305,
+        "CPI_NEWVEH": 0.2566540685686122,
+        "CPI_SHELTER": 0.0860216750546521,
+        "CPI_TRANSPSVC": 0.26819481356685965,
+        "CPI_USEDCARS": 0.5011451607047136
+      }
+    },
+    "ridge100_v8_width": {
+      "mean": 0.5895568640202998,
+      "versus_v8": {
+        "delta": 0.0941831007940223,
+        "ci95": [
+          0.07004960777159772,
+          0.1187721921805812
+        ],
+        "single_quarter_ci95": [
+          0.06698637672920393,
+          0.12127886280255995
+        ],
+        "quarter_blocks": 40
+      },
+      "mae": 0.597733120505669,
+      "coverage": 0.8734848484848484,
+      "component_mae": {
+        "CPI_ALLITEMS": 0.1667015532483206,
+        "CPI_APPAREL": 0.5184873884275517,
+        "CPI_CORE": 0.07070154236497912,
+        "CPI_ENERGY": 1.6006676248326765,
+        "CPI_FOOD": 0.16391766836193772,
+        "CPI_GASOLINE": 2.782396729135682,
+        "CPI_MEDICAL": 0.16017610129637305,
+        "CPI_NEWVEH": 0.2566540685686122,
+        "CPI_SHELTER": 0.0860216750546521,
+        "CPI_TRANSPSVC": 0.26819481356685965,
+        "CPI_USEDCARS": 0.5011451607047136
+      }
+    },
+    "ridge10_causal_width": {
+      "mean": 0.6248446176269163,
+      "versus_v8": {
+        "delta": 0.12947085440063882,
+        "ci95": [
+          0.0980684252433792,
+          0.16126601506443083
+        ],
+        "single_quarter_ci95": [
+          0.09772123383302637,
+          0.1604637432903594
+        ],
+        "quarter_blocks": 40
+      },
+      "mae": 0.48636674738372,
+      "coverage": 0.918181818181818,
+      "component_mae": {
+        "CPI_ALLITEMS": 0.13915989176704524,
+        "CPI_APPAREL": 0.5437609076714559,
+        "CPI_CORE": 0.07279328323227174,
+        "CPI_ENERGY": 1.194676062039349,
+        "CPI_FOOD": 0.16762076699303127,
+        "CPI_GASOLINE": 1.9821764149350305,
+        "CPI_MEDICAL": 0.1659116582500877,
+        "CPI_NEWVEH": 0.26600053834531545,
+        "CPI_SHELTER": 0.0986566854174374,
+        "CPI_TRANSPSVC": 0.28037050063848595,
+        "CPI_USEDCARS": 0.43890751193141
+      }
+    },
+    "ridge10_v8_width": {
+      "mean": 0.6156379170107739,
+      "versus_v8": {
+        "delta": 0.12026415378449636,
+        "ci95": [
+          0.09005760906886114,
+          0.1508953706628583
+        ],
+        "single_quarter_ci95": [
+          0.08918931871188271,
+          0.15073130238569393
+        ],
+        "quarter_blocks": 40
+      },
+      "mae": 0.48636674738372,
+      "coverage": 0.8833333333333333,
+      "component_mae": {
+        "CPI_ALLITEMS": 0.13915989176704524,
+        "CPI_APPAREL": 0.5437609076714559,
+        "CPI_CORE": 0.07279328323227174,
+        "CPI_ENERGY": 1.194676062039349,
+        "CPI_FOOD": 0.16762076699303127,
+        "CPI_GASOLINE": 1.9821764149350305,
+        "CPI_MEDICAL": 0.1659116582500877,
+        "CPI_NEWVEH": 0.26600053834531545,
+        "CPI_SHELTER": 0.0986566854174374,
+        "CPI_TRANSPSVC": 0.28037050063848595,
+        "CPI_USEDCARS": 0.43890751193141
+      }
+    },
+    "v8": {
+      "mean": 0.49537376322627746,
+      "versus_v8": {
+        "delta": 0.0,
+        "ci95": [
+          0.0,
+          0.0
+        ],
+        "single_quarter_ci95": [
+          0.0,
+          0.0
+        ],
+        "quarter_blocks": 40
+      },
+      "mae": 0.976489898989899,
+      "coverage": 0.8439393939393939,
+      "component_mae": {
+        "CPI_ALLITEMS": 0.2926388888888889,
+        "CPI_APPAREL": 0.5836111111111111,
+        "CPI_CORE": 0.08194444444444443,
+        "CPI_ENERGY": 2.907777777777778,
+        "CPI_FOOD": 0.15944444444444447,
+        "CPI_GASOLINE": 5.372638888888889,
+        "CPI_MEDICAL": 0.17347222222222222,
+        "CPI_NEWVEH": 0.2448611111111111,
+        "CPI_SHELTER": 0.07416666666666666,
+        "CPI_TRANSPSVC": 0.33305555555555555,
+        "CPI_USEDCARS": 0.5177777777777778
+      }
+    }
+  },
+  "followup_methods": {
+    "online_guard_causal_width": {
+      "mean": 0.6296024454108249,
+      "versus_v8": {
+        "delta": 0.13422868218454748,
+        "ci95": [
+          0.10135430097843245,
+          0.16675286760168748
+        ],
+        "single_quarter_ci95": [
+          0.10187145345577907,
+          0.16660183754366828
+        ],
+        "quarter_blocks": 40
+      },
+      "mae": 0.47085648324074497,
+      "coverage": 0.9287878787878788,
+      "component_mae": {
+        "CPI_ALLITEMS": 0.1379954276999134,
+        "CPI_APPAREL": 0.5470688968810011,
+        "CPI_CORE": 0.08115354382543988,
+        "CPI_ENERGY": 1.169963726553864,
+        "CPI_FOOD": 0.16030958986499833,
+        "CPI_GASOLINE": 1.8591049953458822,
+        "CPI_MEDICAL": 0.15996283248236906,
+        "CPI_NEWVEH": 0.2516959213762033,
+        "CPI_SHELTER": 0.0725,
+        "CPI_TRANSPSVC": 0.2669313363942132,
+        "CPI_USEDCARS": 0.47273504522431
+      }
+    },
+    "online_guard_v8_width": {
+      "mean": 0.6213786712313646,
+      "versus_v8": {
+        "delta": 0.12600490800508723,
+        "ci95": [
+          0.0941836535634625,
+          0.15804036917303427
+        ],
+        "single_quarter_ci95": [
+          0.09426136801984321,
+          0.15769612150520063
+        ],
+        "quarter_blocks": 40
+      },
+      "mae": 0.47085648324074497,
+      "coverage": 0.8878787878787878,
+      "component_mae": {
+        "CPI_ALLITEMS": 0.1379954276999134,
+        "CPI_APPAREL": 0.5470688968810011,
+        "CPI_CORE": 0.08115354382543988,
+        "CPI_ENERGY": 1.169963726553864,
+        "CPI_FOOD": 0.16030958986499833,
+        "CPI_GASOLINE": 1.8591049953458822,
+        "CPI_MEDICAL": 0.15996283248236906,
+        "CPI_NEWVEH": 0.2516959213762033,
+        "CPI_SHELTER": 0.0725,
+        "CPI_TRANSPSVC": 0.2669313363942132,
+        "CPI_USEDCARS": 0.47273504522431
+      }
+    },
+    "physical_causal_width": {
+      "mean": 0.625416863135207,
+      "versus_v8": {
+        "delta": 0.13004309990892954,
+        "ci95": [
+          0.0964149891438392,
+          0.1637180146390442
+        ],
+        "single_quarter_ci95": [
+          0.09659877054555062,
+          0.16386608786535928
+        ],
+        "quarter_blocks": 40
+      },
+      "mae": 0.4848529235989336,
+      "coverage": 0.9234848484848485,
+      "component_mae": {
+        "CPI_ALLITEMS": 0.1346007678623055,
+        "CPI_APPAREL": 0.5836111111111111,
+        "CPI_CORE": 0.08194444444444443,
+        "CPI_ENERGY": 1.1714826613537526,
+        "CPI_FOOD": 0.15944444444444447,
+        "CPI_GASOLINE": 1.858965397038879,
+        "CPI_MEDICAL": 0.17347222222222222,
+        "CPI_NEWVEH": 0.2448611111111111,
+        "CPI_SHELTER": 0.07416666666666666,
+        "CPI_TRANSPSVC": 0.33305555555555555,
+        "CPI_USEDCARS": 0.5177777777777778
+      }
+    },
+    "physical_v8_width": {
+      "mean": 0.6167077860625487,
+      "versus_v8": {
+        "delta": 0.12133402283627134,
+        "ci95": [
+          0.08882969972936305,
+          0.15426699443657368
+        ],
+        "single_quarter_ci95": [
+          0.08845293249741851,
+          0.15444987656748907
+        ],
+        "quarter_blocks": 40
+      },
+      "mae": 0.4848529235989336,
+      "coverage": 0.8825757575757575,
+      "component_mae": {
+        "CPI_ALLITEMS": 0.1346007678623055,
+        "CPI_APPAREL": 0.5836111111111111,
+        "CPI_CORE": 0.08194444444444443,
+        "CPI_ENERGY": 1.1714826613537526,
+        "CPI_FOOD": 0.15944444444444447,
+        "CPI_GASOLINE": 1.858965397038879,
+        "CPI_MEDICAL": 0.17347222222222222,
+        "CPI_NEWVEH": 0.2448611111111111,
+        "CPI_SHELTER": 0.07416666666666666,
+        "CPI_TRANSPSVC": 0.33305555555555555,
+        "CPI_USEDCARS": 0.5177777777777778
+      }
+    }
+  },
+  "fixed_track_weight": 0.1,
+  "full_track_development_contribution": {
+    "delta": 0.013422868218454748,
+    "ci95": [
+      0.010135430097843246,
+      0.01667528676016875
+    ]
+  },
+  "confirmation_opened": false,
+  "submission_gate_passed": false,
+  "codabench_submitted": false,
+  "limitations": [
+    "Published changes rounded to 0.1 percentage point, unlike index-derived targets",
+    "Three-month table histories may miss annual seasonal revisions to older months",
+    "EIA historical archive is not certified original release vintages",
+    "Local fixed naive reference is not the unknown competition reference",
+    "Numeric composite does not include production citation/NLI or leaderboard aggregation",
+    "Hypotheses informed by first development results; intervals are not independent confirmation",
+    "Routing uses up to 36 completed historical forecast errors available before each cutoff. A deployment needs frozen pre-cutoff calibration state; the supplied nine-month corpus cannot reconstruct this state alone. No deployable V11 artifact is exported."
+  ],
+  "sha256": {
+    "development.json": "e0063892526860fabf186fccff8da11f61c830df4599ee0bb4b54c9870c746de",
+    "routing-development.json": "7efe14d261abfcb8d43946f6925f839d426cf1dc587d129513aa914a9cea3513",
+    "dataset.json": "2901100b1f9025de4ce6a24e3f2b8bc5b846fa2e441c015b7f08a363d51204f7",
+    "download-manifest.json": "ae6ea428bb39469859a0f5c013bf537ab42b803f26ebb0145f8e7ac6552e7e8a"
+  },
+  "plan_sha256": "540c106c932c7a1ca8eabcd34879c36baca814c3374422975a63b10e17f38b33"
+}

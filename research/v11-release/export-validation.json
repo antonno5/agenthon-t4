@@ -1,0 +1,26 @@
+{
+  "artifact_sha256": "e68f1cbeec8c42b6cafc53cc3cd6688498003954f2563a4dee8ba7ce19332b1d",
+  "dataset_sha256": "2901100b1f9025de4ce6a24e3f2b8bc5b846fa2e441c015b7f08a363d51204f7",
+  "exported_methods": {
+    "CPI_ALLITEMS": "ridge100",
+    "CPI_APPAREL": "ridge100",
+    "CPI_CORE": "median9",
+    "CPI_ENERGY": "ridge10",
+    "CPI_FOOD": "mean3",
+    "CPI_GASOLINE": "huber",
+    "CPI_MEDICAL": "ridge10",
+    "CPI_NEWVEH": "v8",
+    "CPI_SHELTER": "mean6",
+    "CPI_TRANSPSVC": "ridge100",
+    "CPI_USEDCARS": "boost"
+  },
+  "replay_predictions_checked": 25080,
+  "replay_max_error": 1.3313400382131135e-10,
+  "portable_max_error": 7.105427357601002e-15,
+  "features_max_error": 0.0,
+  "training_cases": 192,
+  "available_after": "2017-01-19",
+  "confirmation_opened": false,
+  "authorization": "User explicitly requested a diagnostic submission despite the unpassed full-track gate",
+  "limitation": "Frozen 2017 calibration/model state; original development metric used annual refits and online selection. No independent performance claim for the deployed artifact."
+}

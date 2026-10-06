@@ -1,0 +1,15 @@
+{
+  "version": "v11-cpi-archive-1",
+  "registered_before": "Fetching the full development archive and scoring any eleven-component cases",
+  "baseline": "Unmodified V8 numeric CPI route, including V7 in-corpus selector and residual intervals",
+  "parent_plan": "research/v10/plan.json",
+  "submission_gate": "Unchanged: lower endpoint of paired 95% CI >= +0.10 on the fixed-weight full-track analogue. CPI weight is 0.10; all unchanged families contribute zero. This development pilot cannot authorize a submission.",
+  "development": {"archive_start_release":"2000-07-18", "last_target_month":"2016-12", "evaluation_years":[2007,2016], "fit":"Annual expanding window; targets must have been released before January 1 of each evaluation year"},
+  "confirmation": "CPI 2017-2021 remains unopened. No confirmation until complete coverage, input equivalence, frozen model and an attainable full-track gate are established. V10 COT confirmation is consumed development and cannot be reused as fresh.",
+  "entities": ["CPI_ALLITEMS","CPI_APPAREL","CPI_CORE","CPI_ENERGY","CPI_FOOD","CPI_GASOLINE","CPI_MEDICAL","CPI_NEWVEH","CPI_SHELTER","CPI_TRANSPSVC","CPI_USEDCARS"],
+  "source": "Original BLS monthly news releases preserved by FRASER, Federal Reserve Bank of St. Louis. Use PDF embargo header, not FRASER item metadata, as publication date. Record SHA256, source URL, table and line for every extracted row.",
+  "availability": "Month-end forecast before target CPI release. Nine preceding monthly SA rates reconstructed only from releases available by cutoff. Current-month EIA weekly gasoline with two-day publication buffer. Exclude only missing or ambiguous required inputs; retain all forecast errors.",
+  "limitations": ["Published changes rounded to 0.1 percentage point, unlike index-derived targets", "Three-month table histories may miss annual seasonal revisions to older months", "EIA historical archive is not certified original release vintages", "Local fixed naive reference is not the unknown competition reference", "Numeric composite does not include production citation/NLI or leaderboard aggregation"],
+  "hypotheses": ["Robust per-component long/short means", "Gasoline bridge with causal month effects; shrink volatile energy without oversmoothing shelter", "Separate regularized regressions per component", "Residual-calibrated intervals based only on in-corpus or pre-cutoff errors", "Reconcile headline, food, energy and core using component weights available in supplied corpus; otherwise omit reconciliation"],
+  "metric": "Unmodified official numeric regression composite 5.2.2, fixed mean3 point and +/-1 interval naive reference. Pair by month; primary equal-quarter mean and two-quarter circular block bootstrap, seed10, 20000 draws. Report MAE, component MAE, interval coverage and exclusions. Development intervals are descriptive after model selection."
+}
