@@ -1,6 +1,6 @@
 # Track 4 Development experiments
 
-As of 2026-09-28. The CodaBench score is the only result that measures hidden
+Historical results through 2026-09-28; V6 diagnostic upload added 2026-10-06. The CodaBench score is the only result that measures hidden
 forecast quality. Local schema, smoke and NLI checks do not use resolution
 labels and cannot predict the leaderboard score.
 
@@ -9,7 +9,7 @@ labels and cannot predict the leaderboard score.
 | V1 official minimal baseline | `sha256:cfea7eaa99421714c7789190c6dc79ad30a14a9744ae621ec09e7d67b2b2db8d` | ID 949583, `0.1388` | 11/11 public structural and smoke |
 | V2 BM25 + House | `sha256:3e3f1471568f848a631763dcc89f2ccee270ac2e1158555a5fed5f6c0ce8fbdc` | Not submitted | 11/11 public structural and smoke; House route checked with a local fake server |
 | V3 House + cited historical forecasts | `sha256:5641c8876673e5b3029e2d1d0b0f48ac6f28661d01e49fb24deb9f09118a0161` | ID 949827, `0.1023` | Published digest ran offline on 11/11 public units; official smoke 11/11; local published NLI on targeted public families: CPI 11/11, macro revisions 12/12, Treasury auctions 7/7 |
-| V4 policy-regime rate forecasts + interval floor | `sha256:e330b1614d1c5982ebb0ad13768eb5db73ce36447e9d2e88aa441afec7268cb5` | `0.1129` (ID not recorded) | Anonymous GHCR digest pull; `linux/amd64`, interface `2.0`; published image structural 11/11, local official smoke 11/11, fake House route, public FOMC NLI 6/6 in each of two units |
+| V4 policy-regime rate forecasts + interval floor | `sha256:e330b1614d1c5982ebb0ad13768eb5db73ce36447e9d2e88aa441afec7268cb5` | ID 950051, `0.1129` | Anonymous GHCR digest pull; `linux/amd64`, interface `2.0`; published image structural 11/11, local official smoke 11/11, fake House route, public FOMC NLI 6/6 in each of two units |
 | V5 House thinking enabled globally | `sha256:60f651c1cebe0524ea6f63a0af67950de706838eec7576bdce4377f9cae3d7ec` | Not submitted | Anonymous digest pull; `linux/amd64`, interface `2.0`; exact published image structural and smoke 11/11; fake House route passed; hidden quality unknown |
 
 V3 uses only the pre-cutoff frozen corpus for its historical estimates and
@@ -62,3 +62,21 @@ other House-driven families changed substantially. The classification code and
 retrieval for those changed families did not change between V3 and V4. Model
 output variance, call failures, and platform execution differences remain
 possible explanations; the participant report cannot distinguish them.
+
+
+## V6 diagnostic — 2026-10-06
+
+Submission **963432** is accepted in Development and currently **Submitted**,
+with no score returned yet. See [V6_SUBMISSION.md](V6_SUBMISSION.md) for the exact
+image digest, ZIP hash, source commit, and publication workflow.
+
+This version uses deterministic corpus-only extraction and forecasting, with zero
+neural calls and no external fitted model. It is an adaptation for the official
+input contract, not the independently tested laboratory Ridge candidate. Six
+unit tests, 11 public tasks, and all 11 official smoke checks passed; the published
+digest produced byte-identical answers. These checks establish executability and
+format admission, not hidden forecast quality.
+
+The official scoring rules changed after the September submissions. Any numerical
+comparison with V1/V3/V4 needs that caveat; no improvement is claimed while the
+new score and participant report remain unavailable.

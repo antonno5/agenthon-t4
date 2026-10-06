@@ -1,6 +1,6 @@
 # V6 diagnostic Development submission
 
-Submission: **963432**. Current recorded status: **Submitting**.
+Submission: **963432**. Current recorded status: **Submitted**. Score pending; no result is available yet.
 
 - Competition: https://www.codabench.org/competitions/17768/
 - Account: imak_ai_lab; phase: Development (29649).
