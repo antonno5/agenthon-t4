@@ -1,3 +1,7 @@
+# Current V6 diagnostic
+
+For Dockerfile.v6, the authoritative record is [V6_PROVENANCE.md](V6_PROVENANCE.md). It uses no House calls or offline-fitted models. The historical V2–V5 record below applies only to those earlier images.
+
 # Track 4 V2/V3/V4 artifact provenance
 
 The V2 image contains Python source, a deterministic BM25 index built at runtime

@@ -1,17 +1,9 @@
-name: Publish T4 image
-
+name: Publish T4 V6 diagnostic image
 on:
   workflow_dispatch:
-    inputs:
-      dockerfile:
-        description: Docker build recipe
-        required: false
-        default: Dockerfile
-
 permissions:
   contents: read
   packages: write
-
 jobs:
   publish:
     runs-on: ubuntu-latest
@@ -27,8 +19,8 @@ jobs:
         uses: docker/build-push-action@v6
         with:
           context: .
-          file: ${{ inputs.dockerfile || 'Dockerfile' }}
+          file: Dockerfile.v6
           platforms: linux/amd64
           push: true
-          tags: ghcr.io/antonno5/agenthon-t4:dev-${{ github.sha }}
+          tags: ghcr.io/antonno5/agenthon-t4:v6-${{ github.sha }}
       - run: echo "Image digest=${{ steps.build.outputs.digest }}"
