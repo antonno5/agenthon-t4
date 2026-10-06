@@ -1,0 +1,9 @@
+{
+  "cases": 38,
+  "predictions": 1069,
+  "max_absolute_error": 4.547473508864641e-13,
+  "label_mismatches": 0,
+  "image_id": "sha256:fe128cf1d3087a273fdafeb8b93eef3ca024479959f0bf7627c9911241319466",
+  "truth_available_to_candidate": false,
+  "network": "none"
+}

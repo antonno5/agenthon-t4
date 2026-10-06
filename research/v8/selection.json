@@ -1,0 +1,20 @@
+{
+  "method": "selected_by_family",
+  "family_methods": {
+    "eps_direction": "tree_label",
+    "eps_growth": "compact_huber"
+  },
+  "development_score": 0.667863528064338,
+  "rule": "Select independently by target family using dev only; deploy one frozen dispatch pipeline.",
+  "development_reports": {
+    "dev.json": "40c103e9dc1f117a1f0f4f22094f5b6db54c8f048c1888681b4d963f896c048c",
+    "dev-agent.json": "1d01d3da98bbf02b8ac0a01e441109848fe303ea53997ee93442d71a915938d7",
+    "dev-compact.json": "7cb66abc98686d1177233997a4c399aef541a33794c7bae1d5e16e76cbffed11"
+  },
+  "dataset_sha256": "7c18005966bfeceeb14db90baaa9a10013af8d72485f6be0abc1bf5c0531ef87",
+  "numeric_source_sha256": "2a9c98f0d153da2c10b965067c161a65316f15ad749b08e52a2de5cd04fe425d",
+  "handbook_sha256": "f03cd5db99f3e542f475503c37b2cb95b00fe2a1f50240d7ba698e5c310d0e9c",
+  "primary_threshold": "delta >= .03 and quarterly paired 95% CI lower > 0 versus V7",
+  "agent_model": "Fresh Codex session subagent, inherited model; research proxy, not House",
+  "no_codabench_submission": true
+}

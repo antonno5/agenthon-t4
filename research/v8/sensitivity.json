@@ -1,0 +1,132 @@
+{
+  "source_report_sha256": "363e5c9049d65fe1a634ed7d71e0e90009bf17dbc3041549baaac7474329a4ff",
+  "comparisons": {
+    "selected_by_family vs v7": {
+      "delta": 0.06849335062797655,
+      "quarterly_ci95": [
+        0.02911333816095277,
+        0.11525915961472936
+      ],
+      "two_quarter_block_ci95": [
+        0.0300056316438092,
+        0.11430808342010214
+      ],
+      "positive_blocks": 14,
+      "blocks": 19,
+      "confirmatory": true
+    },
+    "selected_by_family vs v6": {
+      "delta": 0.06360216475893267,
+      "quarterly_ci95": [
+        0.03358324234100703,
+        0.09210956142781872
+      ],
+      "two_quarter_block_ci95": [
+        0.03589981922297738,
+        0.09183701579544097
+      ],
+      "positive_blocks": 16,
+      "blocks": 19,
+      "confirmatory": true
+    },
+    "compact_huber vs v7": {
+      "delta": 0.062275570057490355,
+      "quarterly_ci95": [
+        0.030288904898781003,
+        0.09546520950441192
+      ],
+      "two_quarter_block_ci95": [
+        0.02993209203584648,
+        0.09526682994143967
+      ],
+      "positive_blocks": 14,
+      "blocks": 19,
+      "confirmatory": false
+    },
+    "compact_huber vs v6": {
+      "delta": 0.05738438418844647,
+      "quarterly_ci95": [
+        0.016684710000102652,
+        0.09653919511519354
+      ],
+      "two_quarter_block_ci95": [
+        0.021281634229124775,
+        0.09257796036710096
+      ],
+      "positive_blocks": 15,
+      "blocks": 19,
+      "confirmatory": false
+    },
+    "agent_selector vs quant_ensemble": {
+      "delta": -0.0162400850340355,
+      "quarterly_ci95": [
+        -0.041664265816537455,
+        0.005908428254884819
+      ],
+      "two_quarter_block_ci95": [
+        -0.041618598510997945,
+        0.005874645483050772
+      ],
+      "positive_blocks": 8,
+      "blocks": 19,
+      "confirmatory": false
+    },
+    "agent_quality vs quant_ensemble": {
+      "delta": -0.03388462172447221,
+      "quarterly_ci95": [
+        -0.056799629370727286,
+        -0.014094518255837183
+      ],
+      "two_quarter_block_ci95": [
+        -0.05552421797804229,
+        -0.014750476661294986
+      ],
+      "positive_blocks": 5,
+      "blocks": 19,
+      "confirmatory": false
+    },
+    "agent_guard vs quant_ensemble": {
+      "delta": -0.012801020360348336,
+      "quarterly_ci95": [
+        -0.03326929499525701,
+        0.005504547453308482
+      ],
+      "two_quarter_block_ci95": [
+        -0.03333499131583887,
+        0.005635513576927429
+      ],
+      "positive_blocks": 7,
+      "blocks": 19,
+      "confirmatory": false
+    }
+  },
+  "agent_routed_rows": 218,
+  "agent_routed": {
+    "quant_ensemble": {
+      "routed_accuracy": 0.6972477064220184,
+      "changed_from_algorithm": 0,
+      "helped_direction": 0,
+      "harmed_direction": 0
+    },
+    "agent_selector": {
+      "routed_accuracy": 0.6146788990825688,
+      "changed_from_algorithm": 152,
+      "helped_direction": 15,
+      "harmed_direction": 33
+    },
+    "agent_quality": {
+      "routed_accuracy": 0.555045871559633,
+      "changed_from_algorithm": 196,
+      "helped_direction": 11,
+      "harmed_direction": 42
+    },
+    "agent_guard": {
+      "routed_accuracy": 0.6284403669724771,
+      "changed_from_algorithm": 69,
+      "helped_direction": 10,
+      "harmed_direction": 25
+    }
+  },
+  "posthoc": true,
+  "used_for_selection": false
+}

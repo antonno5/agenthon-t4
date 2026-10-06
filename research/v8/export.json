@@ -1,0 +1,6 @@
+{
+  "rows": 972,
+  "max_absolute_difference": 1.7763568394002505e-15,
+  "exported_model_sha256": "efe932096f0c1210057a8823f2f536d123c2c93be10be4640ab1ce817bf9f8b9",
+  "verification": "All inputs, no holdout labels used"
+}

@@ -1,0 +1,7492 @@
+{
+  "split": "holdout",
+  "scorer_version": "5.2.2",
+  "rankable": false,
+  "methods": {
+    "v6": {
+      "mean": 0.5,
+      "families": {
+        "eps_direction": 0.5,
+        "eps_growth": 0.5
+      },
+      "direction_accuracy": 0.6037383177570094,
+      "eps_mae": 0.8206542056074767,
+      "growth_mae": 120.60707001459777
+    },
+    "v7": {
+      "mean": 0.4951088141309561,
+      "families": {
+        "eps_direction": 0.5336298522225296,
+        "eps_growth": 0.45658777603938266
+      },
+      "direction_accuracy": 0.6355140186915887,
+      "eps_mae": 0.8951775700934579,
+      "growth_mae": 135.6672775974912
+    },
+    "trend": {
+      "mean": 0.47368817645707767,
+      "families": {
+        "eps_direction": 0.5336298522225296,
+        "eps_growth": 0.4137465006916258
+      },
+      "direction_accuracy": 0.6355140186915887,
+      "eps_mae": 1.065177570093458,
+      "growth_mae": 163.77954596886954
+    },
+    "robust": {
+      "mean": 0.4904938648574775,
+      "families": {
+        "eps_direction": 0.48314840194130804,
+        "eps_growth": 0.49783932777364687
+      },
+      "direction_accuracy": 0.5607476635514018,
+      "eps_mae": 0.8169766355140188,
+      "growth_mae": 126.61801012565324
+    },
+    "core": {
+      "mean": 0.5040312226131806,
+      "families": {
+        "eps_direction": 0.5075930838802692,
+        "eps_growth": 0.5004693613460919
+      },
+      "direction_accuracy": 0.5887850467289719,
+      "eps_mae": 0.8311216410228376,
+      "growth_mae": 126.56333036790929
+    },
+    "ensemble": {
+      "mean": 0.5079635585008928,
+      "families": {
+        "eps_direction": 0.5153509819699751,
+        "eps_growth": 0.5005761350318104
+      },
+      "direction_accuracy": 0.6,
+      "eps_mae": 0.8212540609097501,
+      "growth_mae": 126.0765591469174
+    },
+    "drift": {
+      "mean": 0.502714963198689,
+      "families": {
+        "eps_direction": 0.5,
+        "eps_growth": 0.505429926397378
+      },
+      "direction_accuracy": 0.6037383177570094,
+      "eps_mae": 0.8116836448598131,
+      "growth_mae": 118.71730479202765
+    },
+    "huber": {
+      "mean": 0.5317655890976503,
+      "families": {
+        "eps_direction": 0.5749347410789059,
+        "eps_growth": 0.48859643711639467
+      },
+      "direction_accuracy": 0.6747663551401869,
+      "eps_mae": 0.7160648702050066,
+      "growth_mae": 128.7714388860127
+    },
+    "tree": {
+      "mean": 0.5957331146642941,
+      "families": {
+        "eps_direction": 0.6530762429789888,
+        "eps_growth": 0.5383899863495996
+      },
+      "direction_accuracy": 0.7289719626168224,
+      "eps_mae": 0.7082816399072869,
+      "growth_mae": 105.73283259388609
+    },
+    "quant_ensemble": {
+      "mean": 0.557610798010942,
+      "families": {
+        "eps_direction": 0.5931113794672147,
+        "eps_growth": 0.5221102165546694
+      },
+      "direction_accuracy": 0.685981308411215,
+      "eps_mae": 0.740589702930115,
+      "growth_mae": 113.96425740056019
+    },
+    "logit": {
+      "mean": 0.5642302028585042,
+      "families": {
+        "eps_direction": 0.6039455014855474,
+        "eps_growth": 0.524514904231461
+      },
+      "direction_accuracy": 0.6953271028037383,
+      "eps_mae": 0.740915692887838,
+      "growth_mae": 113.56720986894113
+    },
+    "tree_label": {
+      "mean": 0.5721978059082202,
+      "families": {
+        "eps_direction": 0.6221122470207139,
+        "eps_growth": 0.5222833647957266
+      },
+      "direction_accuracy": 0.702803738317757,
+      "eps_mae": 0.752879446011513,
+      "growth_mae": 111.36462831260529
+    },
+    "agent_selector": {
+      "mean": 0.5413707129769065,
+      "families": {
+        "eps_direction": 0.5605992405763572,
+        "eps_growth": 0.5221421853774558
+      },
+      "direction_accuracy": 0.6523364485981309,
+      "eps_mae": 0.7767596517776699,
+      "growth_mae": 114.78524090936666
+    },
+    "agent_quality": {
+      "mean": 0.5237261762864699,
+      "families": {
+        "eps_direction": 0.5376760253476501,
+        "eps_growth": 0.5097763272252896
+      },
+      "direction_accuracy": 0.6280373831775701,
+      "eps_mae": 0.7978962185872852,
+      "growth_mae": 121.75698507229524
+    },
+    "agent_guard": {
+      "mean": 0.5448097776505938,
+      "families": {
+        "eps_direction": 0.5650998315185959,
+        "eps_growth": 0.5245197237825917
+      },
+      "direction_accuracy": 0.6579439252336449,
+      "eps_mae": 0.7690651028497811,
+      "growth_mae": 115.27094655573325
+    },
+    "compact_huber": {
+      "mean": 0.5573843841884464,
+      "families": {
+        "eps_direction": 0.6096766858797414,
+        "eps_growth": 0.5050920824971513
+      },
+      "direction_accuracy": 0.708411214953271,
+      "eps_mae": 0.694988376661692,
+      "growth_mae": 123.82742404864243
+    },
+    "compact_tree": {
+      "mean": 0.5674823346054183,
+      "families": {
+        "eps_direction": 0.6221467235819773,
+        "eps_growth": 0.5128179456288592
+      },
+      "direction_accuracy": 0.719626168224299,
+      "eps_mae": 0.7227418077011962,
+      "growth_mae": 120.6878672953853
+    },
+    "compact_quant_ensemble": {
+      "mean": 0.5508032219775565,
+      "families": {
+        "eps_direction": 0.589578508829081,
+        "eps_growth": 0.5120279351260321
+      },
+      "direction_accuracy": 0.6878504672897197,
+      "eps_mae": 0.7785533198651292,
+      "growth_mae": 118.3610162864677
+    },
+    "compact_logit": {
+      "mean": 0.5417345818148591,
+      "families": {
+        "eps_direction": 0.5755506507222754,
+        "eps_growth": 0.5079185129074428
+      },
+      "direction_accuracy": 0.6747663551401869,
+      "eps_mae": 0.7871736988141941,
+      "growth_mae": 119.85831209860024
+    },
+    "compact_tree_label": {
+      "mean": 0.5633969481039478,
+      "families": {
+        "eps_direction": 0.6128735406245837,
+        "eps_growth": 0.5139203555833118
+      },
+      "direction_accuracy": 0.7065420560747664,
+      "eps_mae": 0.7668597116920948,
+      "growth_mae": 115.71092558323515
+    },
+    "selected_by_family": {
+      "mean": 0.5636021647589327,
+      "families": {
+        "eps_direction": 0.6221122470207139,
+        "eps_growth": 0.5050920824971513
+      },
+      "direction_accuracy": 0.702803738317757,
+      "eps_mae": 0.752879446011513,
+      "growth_mae": 123.82742404864243
+    }
+  },
+  "rows": [
+    {
+      "block": "2017-Q1",
+      "family": "eps_direction",
+      "method": "v6",
+      "rows": 22,
+      "score": 0.5,
+      "mae": 0.1968181818181818,
+      "accuracy": 0.6363636363636364
+    },
+    {
+      "block": "2017-Q1",
+      "family": "eps_direction",
+      "method": "v7",
+      "rows": 22,
+      "score": 0.5,
+      "mae": 0.26772727272727276,
+      "accuracy": 0.6363636363636364
+    },
+    {
+      "block": "2017-Q1",
+      "family": "eps_direction",
+      "method": "trend",
+      "rows": 22,
+      "score": 0.5,
+      "mae": 0.465909090909091,
+      "accuracy": 0.6363636363636364
+    },
+    {
+      "block": "2017-Q1",
+      "family": "eps_direction",
+      "method": "robust",
+      "rows": 22,
+      "score": 0.5,
+      "mae": 0.16988636363636367,
+      "accuracy": 0.6363636363636364
+    },
+    {
+      "block": "2017-Q1",
+      "family": "eps_direction",
+      "method": "core",
+      "rows": 22,
+      "score": 0.5625,
+      "mae": 0.15325529493074097,
+      "accuracy": 0.6818181818181818
+    },
+    {
+      "block": "2017-Q1",
+      "family": "eps_direction",
+      "method": "ensemble",
+      "rows": 22,
+      "score": 0.5625,
+      "mae": 0.15607368942999914,
+      "accuracy": 0.6818181818181818
+    },
+    {
+      "block": "2017-Q1",
+      "family": "eps_direction",
+      "method": "drift",
+      "rows": 22,
+      "score": 0.5,
+      "mae": 0.1972272727272727,
+      "accuracy": 0.6363636363636364
+    },
+    {
+      "block": "2017-Q1",
+      "family": "eps_direction",
+      "method": "huber",
+      "rows": 22,
+      "score": 0.5,
+      "mae": 0.26803803428386536,
+      "accuracy": 0.6363636363636364
+    },
+    {
+      "block": "2017-Q1",
+      "family": "eps_direction",
+      "method": "tree",
+      "rows": 22,
+      "score": 0.625,
+      "mae": 0.19839255161917863,
+      "accuracy": 0.7272727272727273
+    },
+    {
+      "block": "2017-Q1",
+      "family": "eps_direction",
+      "method": "quant_ensemble",
+      "rows": 22,
+      "score": 0.6875,
+      "mae": 0.1568280228518454,
+      "accuracy": 0.7727272727272727
+    },
+    {
+      "block": "2017-Q1",
+      "family": "eps_direction",
+      "method": "logit",
+      "rows": 22,
+      "score": 0.5,
+      "mae": 0.17973884544659155,
+      "accuracy": 0.6363636363636364
+    },
+    {
+      "block": "2017-Q1",
+      "family": "eps_direction",
+      "method": "tree_label",
+      "rows": 22,
+      "score": 0.5625,
+      "mae": 0.1767161181738643,
+      "accuracy": 0.6818181818181818
+    },
+    {
+      "block": "2017-Q1",
+      "family": "eps_direction",
+      "method": "agent_selector",
+      "rows": 22,
+      "score": 0.625,
+      "mae": 0.16445334929585137,
+      "accuracy": 0.7272727272727273
+    },
+    {
+      "block": "2017-Q1",
+      "family": "eps_direction",
+      "method": "agent_quality",
+      "rows": 22,
+      "score": 0.5625,
+      "mae": 0.1697698368415401,
+      "accuracy": 0.6818181818181818
+    },
+    {
+      "block": "2017-Q1",
+      "family": "eps_direction",
+      "method": "agent_guard",
+      "rows": 22,
+      "score": 0.625,
+      "mae": 0.16445334929585137,
+      "accuracy": 0.7272727272727273
+    },
+    {
+      "block": "2017-Q1",
+      "family": "eps_direction",
+      "method": "compact_huber",
+      "rows": 22,
+      "score": 0.5,
+      "mae": 0.25106120192296527,
+      "accuracy": 0.6363636363636364
+    },
+    {
+      "block": "2017-Q1",
+      "family": "eps_direction",
+      "method": "compact_tree",
+      "rows": 22,
+      "score": 0.4642857142857143,
+      "mae": 0.23189621366016777,
+      "accuracy": 0.5909090909090909
+    },
+    {
+      "block": "2017-Q1",
+      "family": "eps_direction",
+      "method": "compact_quant_ensemble",
+      "rows": 22,
+      "score": 0.5625,
+      "mae": 0.2277478863143167,
+      "accuracy": 0.6818181818181818
+    },
+    {
+      "block": "2017-Q1",
+      "family": "eps_direction",
+      "method": "compact_logit",
+      "rows": 22,
+      "score": 0.4642857142857143,
+      "mae": 0.24127978941089676,
+      "accuracy": 0.5909090909090909
+    },
+    {
+      "block": "2017-Q1",
+      "family": "eps_direction",
+      "method": "compact_tree_label",
+      "rows": 22,
+      "score": 0.5,
+      "mae": 0.23515395191332453,
+      "accuracy": 0.6363636363636364
+    },
+    {
+      "block": "2017-Q1",
+      "family": "eps_direction",
+      "method": "selected_by_family",
+      "rows": 22,
+      "score": 0.5625,
+      "mae": 0.1767161181738643,
+      "accuracy": 0.6818181818181818
+    },
+    {
+      "block": "2017-Q1",
+      "family": "eps_growth",
+      "method": "v6",
+      "rows": 22,
+      "score": 0.5,
+      "mae": 56.6700649389916,
+      "accuracy": null
+    },
+    {
+      "block": "2017-Q1",
+      "family": "eps_growth",
+      "method": "v7",
+      "rows": 22,
+      "score": 0.32549485065869227,
+      "mae": 119.21790623174523,
+      "accuracy": null
+    },
+    {
+      "block": "2017-Q1",
+      "family": "eps_growth",
+      "method": "trend",
+      "rows": 22,
+      "score": 0.23423609026315242,
+      "mae": 192.22195897818293,
+      "accuracy": null
+    },
+    {
+      "block": "2017-Q1",
+      "family": "eps_growth",
+      "method": "robust",
+      "rows": 22,
+      "score": 0.661261242543592,
+      "mae": 29.029899451792666,
+      "accuracy": null
+    },
+    {
+      "block": "2017-Q1",
+      "family": "eps_growth",
+      "method": "core",
+      "rows": 22,
+      "score": 0.6771477207455037,
+      "mae": 27.019303278331606,
+      "accuracy": null
+    },
+    {
+      "block": "2017-Q1",
+      "family": "eps_growth",
+      "method": "ensemble",
+      "rows": 22,
+      "score": 0.6745109658779069,
+      "mae": 27.346456371722624,
+      "accuracy": null
+    },
+    {
+      "block": "2017-Q1",
+      "family": "eps_growth",
+      "method": "drift",
+      "rows": 22,
+      "score": 0.5361727246985097,
+      "mae": 49.023608626475955,
+      "accuracy": null
+    },
+    {
+      "block": "2017-Q1",
+      "family": "eps_growth",
+      "method": "huber",
+      "rows": 22,
+      "score": 0.32759039855683886,
+      "mae": 139.88267169199673,
+      "accuracy": null
+    },
+    {
+      "block": "2017-Q1",
+      "family": "eps_growth",
+      "method": "tree",
+      "rows": 22,
+      "score": 0.4103673699620142,
+      "mae": 95.68791088217814,
+      "accuracy": null
+    },
+    {
+      "block": "2017-Q1",
+      "family": "eps_growth",
+      "method": "quant_ensemble",
+      "rows": 22,
+      "score": 0.49992549085681803,
+      "mae": 56.694198293622776,
+      "accuracy": null
+    },
+    {
+      "block": "2017-Q1",
+      "family": "eps_growth",
+      "method": "logit",
+      "rows": 22,
+      "score": 0.4942292522898273,
+      "mae": 58.57012802373304,
+      "accuracy": null
+    },
+    {
+      "block": "2017-Q1",
+      "family": "eps_growth",
+      "method": "tree_label",
+      "rows": 22,
+      "score": 0.4948530748664304,
+      "mae": 58.36166407388978,
+      "accuracy": null
+    },
+    {
+      "block": "2017-Q1",
+      "family": "eps_growth",
+      "method": "agent_selector",
+      "rows": 22,
+      "score": 0.6971841031795343,
+      "mae": 24.614153505671194,
+      "accuracy": null
+    },
+    {
+      "block": "2017-Q1",
+      "family": "eps_growth",
+      "method": "agent_quality",
+      "rows": 22,
+      "score": 0.6648881386108628,
+      "mae": 28.562415004764343,
+      "accuracy": null
+    },
+    {
+      "block": "2017-Q1",
+      "family": "eps_growth",
+      "method": "agent_guard",
+      "rows": 22,
+      "score": 0.6971841031795343,
+      "mae": 24.614153505671194,
+      "accuracy": null
+    },
+    {
+      "block": "2017-Q1",
+      "family": "eps_growth",
+      "method": "compact_huber",
+      "rows": 22,
+      "score": 0.36994387784685545,
+      "mae": 119.27445261723682,
+      "accuracy": null
+    },
+    {
+      "block": "2017-Q1",
+      "family": "eps_growth",
+      "method": "compact_tree",
+      "rows": 22,
+      "score": 0.24821245150566854,
+      "mae": 198.65989038626734,
+      "accuracy": null
+    },
+    {
+      "block": "2017-Q1",
+      "family": "eps_growth",
+      "method": "compact_quant_ensemble",
+      "rows": 22,
+      "score": 0.7052698857143368,
+      "mae": 23.682245696805627,
+      "accuracy": null
+    },
+    {
+      "block": "2017-Q1",
+      "family": "eps_growth",
+      "method": "compact_logit",
+      "rows": 22,
+      "score": 0.6910780916621508,
+      "mae": 25.33233916369271,
+      "accuracy": null
+    },
+    {
+      "block": "2017-Q1",
+      "family": "eps_growth",
+      "method": "compact_tree_label",
+      "rows": 22,
+      "score": 0.6970894946491337,
+      "mae": 24.625185346648365,
+      "accuracy": null
+    },
+    {
+      "block": "2017-Q1",
+      "family": "eps_growth",
+      "method": "selected_by_family",
+      "rows": 22,
+      "score": 0.36994387784685545,
+      "mae": 119.27445261723682,
+      "accuracy": null
+    },
+    {
+      "block": "2017-Q2",
+      "family": "eps_direction",
+      "method": "v6",
+      "rows": 35,
+      "score": 0.5,
+      "mae": 0.4585714285714286,
+      "accuracy": 0.5714285714285714
+    },
+    {
+      "block": "2017-Q2",
+      "family": "eps_direction",
+      "method": "v7",
+      "rows": 35,
+      "score": 0.5333333333333333,
+      "mae": 0.43842857142857145,
+      "accuracy": 0.6
+    },
+    {
+      "block": "2017-Q2",
+      "family": "eps_direction",
+      "method": "trend",
+      "rows": 35,
+      "score": 0.5333333333333333,
+      "mae": 0.472,
+      "accuracy": 0.6
+    },
+    {
+      "block": "2017-Q2",
+      "family": "eps_direction",
+      "method": "robust",
+      "rows": 35,
+      "score": 0.475,
+      "mae": 0.4555714285714286,
+      "accuracy": 0.5428571428571428
+    },
+    {
+      "block": "2017-Q2",
+      "family": "eps_direction",
+      "method": "core",
+      "rows": 35,
+      "score": 0.44999999999999996,
+      "mae": 0.44940567579656765,
+      "accuracy": 0.5142857142857142
+    },
+    {
+      "block": "2017-Q2",
+      "family": "eps_direction",
+      "method": "ensemble",
+      "rows": 35,
+      "score": 0.475,
+      "mae": 0.4480848939187863,
+      "accuracy": 0.5428571428571428
+    },
+    {
+      "block": "2017-Q2",
+      "family": "eps_direction",
+      "method": "drift",
+      "rows": 35,
+      "score": 0.5,
+      "mae": 0.4542142857142857,
+      "accuracy": 0.5714285714285714
+    },
+    {
+      "block": "2017-Q2",
+      "family": "eps_direction",
+      "method": "huber",
+      "rows": 35,
+      "score": 0.6666666666666667,
+      "mae": 0.35822020821095546,
+      "accuracy": 0.7142857142857143
+    },
+    {
+      "block": "2017-Q2",
+      "family": "eps_direction",
+      "method": "tree",
+      "rows": 35,
+      "score": 0.6666666666666667,
+      "mae": 0.3315442564510636,
+      "accuracy": 0.7142857142857143
+    },
+    {
+      "block": "2017-Q2",
+      "family": "eps_direction",
+      "method": "quant_ensemble",
+      "rows": 35,
+      "score": 0.6,
+      "mae": 0.3927134727279638,
+      "accuracy": 0.6571428571428571
+    },
+    {
+      "block": "2017-Q2",
+      "family": "eps_direction",
+      "method": "logit",
+      "rows": 35,
+      "score": 0.6666666666666667,
+      "mae": 0.3954726673219242,
+      "accuracy": 0.7142857142857143
+    },
+    {
+      "block": "2017-Q2",
+      "family": "eps_direction",
+      "method": "tree_label",
+      "rows": 35,
+      "score": 0.6666666666666667,
+      "mae": 0.3856150145097574,
+      "accuracy": 0.7142857142857143
+    },
+    {
+      "block": "2017-Q2",
+      "family": "eps_direction",
+      "method": "agent_selector",
+      "rows": 35,
+      "score": 0.5333333333333333,
+      "mae": 0.3883976018745443,
+      "accuracy": 0.6
+    },
+    {
+      "block": "2017-Q2",
+      "family": "eps_direction",
+      "method": "agent_quality",
+      "rows": 35,
+      "score": 0.5,
+      "mae": 0.38819042606434767,
+      "accuracy": 0.5714285714285714
+    },
+    {
+      "block": "2017-Q2",
+      "family": "eps_direction",
+      "method": "agent_guard",
+      "rows": 35,
+      "score": 0.5333333333333333,
+      "mae": 0.3906908717782117,
+      "accuracy": 0.6
+    },
+    {
+      "block": "2017-Q2",
+      "family": "eps_direction",
+      "method": "compact_huber",
+      "rows": 35,
+      "score": 0.7666666666666667,
+      "mae": 0.30573017009073,
+      "accuracy": 0.8
+    },
+    {
+      "block": "2017-Q2",
+      "family": "eps_direction",
+      "method": "compact_tree",
+      "rows": 35,
+      "score": 0.7000000000000001,
+      "mae": 0.313820835098459,
+      "accuracy": 0.7428571428571429
+    },
+    {
+      "block": "2017-Q2",
+      "family": "eps_direction",
+      "method": "compact_quant_ensemble",
+      "rows": 35,
+      "score": 0.6333333333333333,
+      "mae": 0.38348677834501155,
+      "accuracy": 0.6857142857142857
+    },
+    {
+      "block": "2017-Q2",
+      "family": "eps_direction",
+      "method": "compact_logit",
+      "rows": 35,
+      "score": 0.6333333333333333,
+      "mae": 0.3970184741783005,
+      "accuracy": 0.6857142857142857
+    },
+    {
+      "block": "2017-Q2",
+      "family": "eps_direction",
+      "method": "compact_tree_label",
+      "rows": 35,
+      "score": 0.7000000000000001,
+      "mae": 0.3657661415729595,
+      "accuracy": 0.7428571428571429
+    },
+    {
+      "block": "2017-Q2",
+      "family": "eps_direction",
+      "method": "selected_by_family",
+      "rows": 35,
+      "score": 0.6666666666666667,
+      "mae": 0.3856150145097574,
+      "accuracy": 0.7142857142857143
+    },
+    {
+      "block": "2017-Q2",
+      "family": "eps_growth",
+      "method": "v6",
+      "rows": 35,
+      "score": 0.5,
+      "mae": 88.98602965651659,
+      "accuracy": null
+    },
+    {
+      "block": "2017-Q2",
+      "family": "eps_growth",
+      "method": "v7",
+      "rows": 35,
+      "score": 0.507457873723729,
+      "mae": 86.21622458586155,
+      "accuracy": null
+    },
+    {
+      "block": "2017-Q2",
+      "family": "eps_growth",
+      "method": "trend",
+      "rows": 35,
+      "score": 0.5036344569526289,
+      "mae": 87.70170174881588,
+      "accuracy": null
+    },
+    {
+      "block": "2017-Q2",
+      "family": "eps_growth",
+      "method": "robust",
+      "rows": 35,
+      "score": 0.502495049561795,
+      "mae": 88.10234113264356,
+      "accuracy": null
+    },
+    {
+      "block": "2017-Q2",
+      "family": "eps_growth",
+      "method": "core",
+      "rows": 35,
+      "score": 0.5040027120310626,
+      "mae": 87.28045383060716,
+      "accuracy": null
+    },
+    {
+      "block": "2017-Q2",
+      "family": "eps_growth",
+      "method": "ensemble",
+      "rows": 35,
+      "score": 0.5022614303799158,
+      "mae": 88.09328972191568,
+      "accuracy": null
+    },
+    {
+      "block": "2017-Q2",
+      "family": "eps_growth",
+      "method": "drift",
+      "rows": 35,
+      "score": 0.5071661644613791,
+      "mae": 86.47131724875574,
+      "accuracy": null
+    },
+    {
+      "block": "2017-Q2",
+      "family": "eps_growth",
+      "method": "huber",
+      "rows": 35,
+      "score": 0.6124093515787719,
+      "mae": 56.31878880700526,
+      "accuracy": null
+    },
+    {
+      "block": "2017-Q2",
+      "family": "eps_growth",
+      "method": "tree",
+      "rows": 35,
+      "score": 0.6309224755333396,
+      "mae": 52.05511740563832,
+      "accuracy": null
+    },
+    {
+      "block": "2017-Q2",
+      "family": "eps_growth",
+      "method": "quant_ensemble",
+      "rows": 35,
+      "score": 0.5507883859644704,
+      "mae": 72.57516503115926,
+      "accuracy": null
+    },
+    {
+      "block": "2017-Q2",
+      "family": "eps_growth",
+      "method": "logit",
+      "rows": 35,
+      "score": 0.5517762857485453,
+      "mae": 72.28590600812913,
+      "accuracy": null
+    },
+    {
+      "block": "2017-Q2",
+      "family": "eps_growth",
+      "method": "tree_label",
+      "rows": 35,
+      "score": 0.5524778035569048,
+      "mae": 72.08112830642061,
+      "accuracy": null
+    },
+    {
+      "block": "2017-Q2",
+      "family": "eps_growth",
+      "method": "agent_selector",
+      "rows": 35,
+      "score": 0.5521009541918058,
+      "mae": 72.19106844645437,
+      "accuracy": null
+    },
+    {
+      "block": "2017-Q2",
+      "family": "eps_growth",
+      "method": "agent_quality",
+      "rows": 35,
+      "score": 0.5513164797148533,
+      "mae": 72.42040916885846,
+      "accuracy": null
+    },
+    {
+      "block": "2017-Q2",
+      "family": "eps_growth",
+      "method": "agent_guard",
+      "rows": 35,
+      "score": 0.5518938345870572,
+      "mae": 72.25155641490323,
+      "accuracy": null
+    },
+    {
+      "block": "2017-Q2",
+      "family": "eps_growth",
+      "method": "compact_huber",
+      "rows": 35,
+      "score": 0.6373076792605014,
+      "mae": 50.64202215006344,
+      "accuracy": null
+    },
+    {
+      "block": "2017-Q2",
+      "family": "eps_growth",
+      "method": "compact_tree",
+      "rows": 35,
+      "score": 0.6451344217092914,
+      "mae": 48.94806076257318,
+      "accuracy": null
+    },
+    {
+      "block": "2017-Q2",
+      "family": "eps_growth",
+      "method": "compact_quant_ensemble",
+      "rows": 35,
+      "score": 0.5553415302115827,
+      "mae": 71.2505541671591,
+      "accuracy": null
+    },
+    {
+      "block": "2017-Q2",
+      "family": "eps_growth",
+      "method": "compact_logit",
+      "rows": 35,
+      "score": 0.5551831711153989,
+      "mae": 71.29625966024689,
+      "accuracy": null
+    },
+    {
+      "block": "2017-Q2",
+      "family": "eps_growth",
+      "method": "compact_tree_label",
+      "rows": 35,
+      "score": 0.5598259970151988,
+      "mae": 69.96698454961124,
+      "accuracy": null
+    },
+    {
+      "block": "2017-Q2",
+      "family": "eps_growth",
+      "method": "selected_by_family",
+      "rows": 35,
+      "score": 0.6373076792605014,
+      "mae": 50.64202215006344,
+      "accuracy": null
+    },
+    {
+      "block": "2017-Q3",
+      "family": "eps_direction",
+      "method": "v6",
+      "rows": 34,
+      "score": 0.5,
+      "mae": 0.4547058823529411,
+      "accuracy": 0.5882352941176471
+    },
+    {
+      "block": "2017-Q3",
+      "family": "eps_direction",
+      "method": "v7",
+      "rows": 34,
+      "score": 0.5714285714285714,
+      "mae": 0.555735294117647,
+      "accuracy": 0.6470588235294118
+    },
+    {
+      "block": "2017-Q3",
+      "family": "eps_direction",
+      "method": "trend",
+      "rows": 34,
+      "score": 0.5714285714285714,
+      "mae": 0.7047058823529412,
+      "accuracy": 0.6470588235294118
+    },
+    {
+      "block": "2017-Q3",
+      "family": "eps_direction",
+      "method": "robust",
+      "rows": 34,
+      "score": 0.45,
+      "mae": 0.47970588235294126,
+      "accuracy": 0.5294117647058824
+    },
+    {
+      "block": "2017-Q3",
+      "family": "eps_direction",
+      "method": "core",
+      "rows": 34,
+      "score": 0.5357142857142857,
+      "mae": 0.5512978536643762,
+      "accuracy": 0.6176470588235294
+    },
+    {
+      "block": "2017-Q3",
+      "family": "eps_direction",
+      "method": "ensemble",
+      "rows": 34,
+      "score": 0.5,
+      "mae": 0.5425716724995698,
+      "accuracy": 0.5882352941176471
+    },
+    {
+      "block": "2017-Q3",
+      "family": "eps_direction",
+      "method": "drift",
+      "rows": 34,
+      "score": 0.5,
+      "mae": 0.46214705882352947,
+      "accuracy": 0.5882352941176471
+    },
+    {
+      "block": "2017-Q3",
+      "family": "eps_direction",
+      "method": "huber",
+      "rows": 34,
+      "score": 0.6071428571428572,
+      "mae": 0.28614325469574725,
+      "accuracy": 0.6764705882352942
+    },
+    {
+      "block": "2017-Q3",
+      "family": "eps_direction",
+      "method": "tree",
+      "rows": 34,
+      "score": 0.6785714285714286,
+      "mae": 0.3570164267645344,
+      "accuracy": 0.7352941176470589
+    },
+    {
+      "block": "2017-Q3",
+      "family": "eps_direction",
+      "method": "quant_ensemble",
+      "rows": 34,
+      "score": 0.6785714285714286,
+      "mae": 0.4167375351520024,
+      "accuracy": 0.7352941176470589
+    },
+    {
+      "block": "2017-Q3",
+      "family": "eps_direction",
+      "method": "logit",
+      "rows": 34,
+      "score": 0.6428571428571429,
+      "mae": 0.42358748316208183,
+      "accuracy": 0.7058823529411765
+    },
+    {
+      "block": "2017-Q3",
+      "family": "eps_direction",
+      "method": "tree_label",
+      "rows": 34,
+      "score": 0.6428571428571429,
+      "mae": 0.42646696798643935,
+      "accuracy": 0.7058823529411765
+    },
+    {
+      "block": "2017-Q3",
+      "family": "eps_direction",
+      "method": "agent_selector",
+      "rows": 34,
+      "score": 0.6071428571428572,
+      "mae": 0.4375328866301936,
+      "accuracy": 0.6764705882352942
+    },
+    {
+      "block": "2017-Q3",
+      "family": "eps_direction",
+      "method": "agent_quality",
+      "rows": 34,
+      "score": 0.6071428571428572,
+      "mae": 0.46345893193118437,
+      "accuracy": 0.6764705882352942
+    },
+    {
+      "block": "2017-Q3",
+      "family": "eps_direction",
+      "method": "agent_guard",
+      "rows": 34,
+      "score": 0.6071428571428572,
+      "mae": 0.4394162856178432,
+      "accuracy": 0.6764705882352942
+    },
+    {
+      "block": "2017-Q3",
+      "family": "eps_direction",
+      "method": "compact_huber",
+      "rows": 34,
+      "score": 0.7142857142857142,
+      "mae": 0.3861526660920622,
+      "accuracy": 0.7647058823529411
+    },
+    {
+      "block": "2017-Q3",
+      "family": "eps_direction",
+      "method": "compact_tree",
+      "rows": 34,
+      "score": 0.75,
+      "mae": 0.41359309764531366,
+      "accuracy": 0.7941176470588235
+    },
+    {
+      "block": "2017-Q3",
+      "family": "eps_direction",
+      "method": "compact_quant_ensemble",
+      "rows": 34,
+      "score": 0.5714285714285714,
+      "mae": 0.49758914714503816,
+      "accuracy": 0.6470588235294118
+    },
+    {
+      "block": "2017-Q3",
+      "family": "eps_direction",
+      "method": "compact_logit",
+      "rows": 34,
+      "score": 0.5714285714285714,
+      "mae": 0.5015252487523579,
+      "accuracy": 0.6470588235294118
+    },
+    {
+      "block": "2017-Q3",
+      "family": "eps_direction",
+      "method": "compact_tree_label",
+      "rows": 34,
+      "score": 0.7142857142857142,
+      "mae": 0.42237740419892694,
+      "accuracy": 0.7647058823529411
+    },
+    {
+      "block": "2017-Q3",
+      "family": "eps_direction",
+      "method": "selected_by_family",
+      "rows": 34,
+      "score": 0.6428571428571429,
+      "mae": 0.42646696798643935,
+      "accuracy": 0.7058823529411765
+    },
+    {
+      "block": "2017-Q3",
+      "family": "eps_growth",
+      "method": "v6",
+      "rows": 34,
+      "score": 0.5,
+      "mae": 53.21862849200504,
+      "accuracy": null
+    },
+    {
+      "block": "2017-Q3",
+      "family": "eps_growth",
+      "method": "v7",
+      "rows": 34,
+      "score": 0.46794768201288417,
+      "mae": 61.465826474149615,
+      "accuracy": null
+    },
+    {
+      "block": "2017-Q3",
+      "family": "eps_growth",
+      "method": "trend",
+      "rows": 34,
+      "score": 0.41328982777087087,
+      "mae": 76.55846840605321,
+      "accuracy": null
+    },
+    {
+      "block": "2017-Q3",
+      "family": "eps_growth",
+      "method": "robust",
+      "rows": 34,
+      "score": 0.4723100652128088,
+      "mae": 59.30532248780334,
+      "accuracy": null
+    },
+    {
+      "block": "2017-Q3",
+      "family": "eps_growth",
+      "method": "core",
+      "rows": 34,
+      "score": 0.45589132212072037,
+      "mae": 63.55578850374794,
+      "accuracy": null
+    },
+    {
+      "block": "2017-Q3",
+      "family": "eps_growth",
+      "method": "ensemble",
+      "rows": 34,
+      "score": 0.4575936060414484,
+      "mae": 63.319663048096494,
+      "accuracy": null
+    },
+    {
+      "block": "2017-Q3",
+      "family": "eps_growth",
+      "method": "drift",
+      "rows": 34,
+      "score": 0.5024240819761471,
+      "mae": 52.705092924142406,
+      "accuracy": null
+    },
+    {
+      "block": "2017-Q3",
+      "family": "eps_growth",
+      "method": "huber",
+      "rows": 34,
+      "score": 0.5403175391982216,
+      "mae": 45.27646861510772,
+      "accuracy": null
+    },
+    {
+      "block": "2017-Q3",
+      "family": "eps_growth",
+      "method": "tree",
+      "rows": 34,
+      "score": 0.5562044827512153,
+      "mae": 42.46313989066584,
+      "accuracy": null
+    },
+    {
+      "block": "2017-Q3",
+      "family": "eps_growth",
+      "method": "quant_ensemble",
+      "rows": 34,
+      "score": 0.5141191376077661,
+      "mae": 50.29556617430364,
+      "accuracy": null
+    },
+    {
+      "block": "2017-Q3",
+      "family": "eps_growth",
+      "method": "logit",
+      "rows": 34,
+      "score": 0.5099741950229925,
+      "mae": 51.13690363370504,
+      "accuracy": null
+    },
+    {
+      "block": "2017-Q3",
+      "family": "eps_growth",
+      "method": "tree_label",
+      "rows": 34,
+      "score": 0.5108142283770449,
+      "mae": 50.96529109279364,
+      "accuracy": null
+    },
+    {
+      "block": "2017-Q3",
+      "family": "eps_growth",
+      "method": "agent_selector",
+      "rows": 34,
+      "score": 0.5084089696284159,
+      "mae": 51.45818028047055,
+      "accuracy": null
+    },
+    {
+      "block": "2017-Q3",
+      "family": "eps_growth",
+      "method": "agent_quality",
+      "rows": 34,
+      "score": 0.4917180119385496,
+      "mae": 55.28038675392984,
+      "accuracy": null
+    },
+    {
+      "block": "2017-Q3",
+      "family": "eps_growth",
+      "method": "agent_guard",
+      "rows": 34,
+      "score": 0.5063738338471903,
+      "mae": 51.87888037348061,
+      "accuracy": null
+    },
+    {
+      "block": "2017-Q3",
+      "family": "eps_growth",
+      "method": "compact_huber",
+      "rows": 34,
+      "score": 0.5103748483495036,
+      "mae": 50.73576431607677,
+      "accuracy": null
+    },
+    {
+      "block": "2017-Q3",
+      "family": "eps_growth",
+      "method": "compact_tree",
+      "rows": 34,
+      "score": 0.5183285566442414,
+      "mae": 49.454912855113946,
+      "accuracy": null
+    },
+    {
+      "block": "2017-Q3",
+      "family": "eps_growth",
+      "method": "compact_quant_ensemble",
+      "rows": 34,
+      "score": 0.49410997460969047,
+      "mae": 54.25420228637095,
+      "accuracy": null
+    },
+    {
+      "block": "2017-Q3",
+      "family": "eps_growth",
+      "method": "compact_logit",
+      "rows": 34,
+      "score": 0.49171018357384455,
+      "mae": 55.00345146115552,
+      "accuracy": null
+    },
+    {
+      "block": "2017-Q3",
+      "family": "eps_growth",
+      "method": "compact_tree_label",
+      "rows": 34,
+      "score": 0.5194205505297435,
+      "mae": 49.239059094149844,
+      "accuracy": null
+    },
+    {
+      "block": "2017-Q3",
+      "family": "eps_growth",
+      "method": "selected_by_family",
+      "rows": 34,
+      "score": 0.5103748483495036,
+      "mae": 50.73576431607677,
+      "accuracy": null
+    },
+    {
+      "block": "2017-Q4",
+      "family": "eps_direction",
+      "method": "v6",
+      "rows": 23,
+      "score": 0.5,
+      "mae": 2.022173913043478,
+      "accuracy": 0.4782608695652174
+    },
+    {
+      "block": "2017-Q4",
+      "family": "eps_direction",
+      "method": "v7",
+      "rows": 23,
+      "score": 0.6666666666666666,
+      "mae": 1.92,
+      "accuracy": 0.6521739130434783
+    },
+    {
+      "block": "2017-Q4",
+      "family": "eps_direction",
+      "method": "trend",
+      "rows": 23,
+      "score": 0.6666666666666666,
+      "mae": 1.8195652173913046,
+      "accuracy": 0.6521739130434783
+    },
+    {
+      "block": "2017-Q4",
+      "family": "eps_direction",
+      "method": "robust",
+      "rows": 23,
+      "score": 0.625,
+      "mae": 1.9856521739130433,
+      "accuracy": 0.6086956521739131
+    },
+    {
+      "block": "2017-Q4",
+      "family": "eps_direction",
+      "method": "core",
+      "rows": 23,
+      "score": 0.7083333333333333,
+      "mae": 1.986776235297061,
+      "accuracy": 0.6956521739130435
+    },
+    {
+      "block": "2017-Q4",
+      "family": "eps_direction",
+      "method": "ensemble",
+      "rows": 23,
+      "score": 0.625,
+      "mae": 1.990343278778217,
+      "accuracy": 0.6086956521739131
+    },
+    {
+      "block": "2017-Q4",
+      "family": "eps_direction",
+      "method": "drift",
+      "rows": 23,
+      "score": 0.5,
+      "mae": 2.0293260869565217,
+      "accuracy": 0.4782608695652174
+    },
+    {
+      "block": "2017-Q4",
+      "family": "eps_direction",
+      "method": "huber",
+      "rows": 23,
+      "score": 0.5416666666666666,
+      "mae": 2.041639759798511,
+      "accuracy": 0.5217391304347826
+    },
+    {
+      "block": "2017-Q4",
+      "family": "eps_direction",
+      "method": "tree",
+      "rows": 23,
+      "score": 0.45454545454545453,
+      "mae": 2.031263356218535,
+      "accuracy": 0.43478260869565216
+    },
+    {
+      "block": "2017-Q4",
+      "family": "eps_direction",
+      "method": "quant_ensemble",
+      "rows": 23,
+      "score": 0.5833333333333333,
+      "mae": 1.9953548438128732,
+      "accuracy": 0.5652173913043478
+    },
+    {
+      "block": "2017-Q4",
+      "family": "eps_direction",
+      "method": "logit",
+      "rows": 23,
+      "score": 0.625,
+      "mae": 1.9887496752382263,
+      "accuracy": 0.6086956521739131
+    },
+    {
+      "block": "2017-Q4",
+      "family": "eps_direction",
+      "method": "tree_label",
+      "rows": 23,
+      "score": 0.5416666666666666,
+      "mae": 2.006974097249839,
+      "accuracy": 0.5217391304347826
+    },
+    {
+      "block": "2017-Q4",
+      "family": "eps_direction",
+      "method": "agent_selector",
+      "rows": 23,
+      "score": 0.5416666666666666,
+      "mae": 1.9931190123592741,
+      "accuracy": 0.5217391304347826
+    },
+    {
+      "block": "2017-Q4",
+      "family": "eps_direction",
+      "method": "agent_quality",
+      "rows": 23,
+      "score": 0.5833333333333333,
+      "mae": 1.989627526889752,
+      "accuracy": 0.5652173913043478
+    },
+    {
+      "block": "2017-Q4",
+      "family": "eps_direction",
+      "method": "agent_guard",
+      "rows": 23,
+      "score": 0.5833333333333333,
+      "mae": 1.99137195008295,
+      "accuracy": 0.5652173913043478
+    },
+    {
+      "block": "2017-Q4",
+      "family": "eps_direction",
+      "method": "compact_huber",
+      "rows": 23,
+      "score": 0.5,
+      "mae": 2.0185125120592637,
+      "accuracy": 0.4782608695652174
+    },
+    {
+      "block": "2017-Q4",
+      "family": "eps_direction",
+      "method": "compact_tree",
+      "rows": 23,
+      "score": 0.45454545454545453,
+      "mae": 2.0092346432775186,
+      "accuracy": 0.43478260869565216
+    },
+    {
+      "block": "2017-Q4",
+      "family": "eps_direction",
+      "method": "compact_quant_ensemble",
+      "rows": 23,
+      "score": 0.625,
+      "mae": 1.9416865157230767,
+      "accuracy": 0.6086956521739131
+    },
+    {
+      "block": "2017-Q4",
+      "family": "eps_direction",
+      "method": "compact_logit",
+      "rows": 23,
+      "score": 0.5416666666666666,
+      "mae": 2.065966872741152,
+      "accuracy": 0.5217391304347826
+    },
+    {
+      "block": "2017-Q4",
+      "family": "eps_direction",
+      "method": "compact_tree_label",
+      "rows": 23,
+      "score": 0.5416666666666666,
+      "mae": 2.0333203505196233,
+      "accuracy": 0.5217391304347826
+    },
+    {
+      "block": "2017-Q4",
+      "family": "eps_direction",
+      "method": "selected_by_family",
+      "rows": 23,
+      "score": 0.5416666666666666,
+      "mae": 2.006974097249839,
+      "accuracy": 0.5217391304347826
+    },
+    {
+      "block": "2017-Q4",
+      "family": "eps_growth",
+      "method": "v6",
+      "rows": 23,
+      "score": 0.5,
+      "mae": 227.96407219670363,
+      "accuracy": null
+    },
+    {
+      "block": "2017-Q4",
+      "family": "eps_growth",
+      "method": "v7",
+      "rows": 23,
+      "score": 0.5049715191507282,
+      "mae": 223.33789158308426,
+      "accuracy": null
+    },
+    {
+      "block": "2017-Q4",
+      "family": "eps_growth",
+      "method": "trend",
+      "rows": 23,
+      "score": 0.5098055410850437,
+      "mae": 219.1948027569045,
+      "accuracy": null
+    },
+    {
+      "block": "2017-Q4",
+      "family": "eps_growth",
+      "method": "robust",
+      "rows": 23,
+      "score": 0.5026663983940024,
+      "mae": 225.51029211019866,
+      "accuracy": null
+    },
+    {
+      "block": "2017-Q4",
+      "family": "eps_growth",
+      "method": "core",
+      "rows": 23,
+      "score": 0.5048082399499902,
+      "mae": 223.6043200892237,
+      "accuracy": null
+    },
+    {
+      "block": "2017-Q4",
+      "family": "eps_growth",
+      "method": "ensemble",
+      "rows": 23,
+      "score": 0.5023904548705308,
+      "mae": 225.65022178162266,
+      "accuracy": null
+    },
+    {
+      "block": "2017-Q4",
+      "family": "eps_growth",
+      "method": "drift",
+      "rows": 23,
+      "score": 0.5008304140152116,
+      "mae": 227.0761087401439,
+      "accuracy": null
+    },
+    {
+      "block": "2017-Q4",
+      "family": "eps_growth",
+      "method": "huber",
+      "rows": 23,
+      "score": 0.5211448772069447,
+      "mae": 209.03258366308143,
+      "accuracy": null
+    },
+    {
+      "block": "2017-Q4",
+      "family": "eps_growth",
+      "method": "tree",
+      "rows": 23,
+      "score": 0.5237106218693592,
+      "mae": 207.3222532610407,
+      "accuracy": null
+    },
+    {
+      "block": "2017-Q4",
+      "family": "eps_growth",
+      "method": "quant_ensemble",
+      "rows": 23,
+      "score": 0.5182064607233476,
+      "mae": 211.94567319415071,
+      "accuracy": null
+    },
+    {
+      "block": "2017-Q4",
+      "family": "eps_growth",
+      "method": "logit",
+      "rows": 23,
+      "score": 0.5180651910982585,
+      "mae": 212.06563084788277,
+      "accuracy": null
+    },
+    {
+      "block": "2017-Q4",
+      "family": "eps_growth",
+      "method": "tree_label",
+      "rows": 23,
+      "score": 0.5173873666822929,
+      "mae": 212.6421097023749,
+      "accuracy": null
+    },
+    {
+      "block": "2017-Q4",
+      "family": "eps_growth",
+      "method": "agent_selector",
+      "rows": 23,
+      "score": 0.5128549735906621,
+      "mae": 216.53599884804814,
+      "accuracy": null
+    },
+    {
+      "block": "2017-Q4",
+      "family": "eps_growth",
+      "method": "agent_quality",
+      "rows": 23,
+      "score": 0.5147760594095201,
+      "mae": 214.87717504038127,
+      "accuracy": null
+    },
+    {
+      "block": "2017-Q4",
+      "family": "eps_growth",
+      "method": "agent_guard",
+      "rows": 23,
+      "score": 0.5146609366001941,
+      "mae": 214.97623274000804,
+      "accuracy": null
+    },
+    {
+      "block": "2017-Q4",
+      "family": "eps_growth",
+      "method": "compact_huber",
+      "rows": 23,
+      "score": 0.5175572359808707,
+      "mae": 212.49749678255665,
+      "accuracy": null
+    },
+    {
+      "block": "2017-Q4",
+      "family": "eps_growth",
+      "method": "compact_tree",
+      "rows": 23,
+      "score": 0.5101592545069736,
+      "mae": 218.8847699692821,
+      "accuracy": null
+    },
+    {
+      "block": "2017-Q4",
+      "family": "eps_growth",
+      "method": "compact_quant_ensemble",
+      "rows": 23,
+      "score": 0.520468774928116,
+      "mae": 210.0335237747139,
+      "accuracy": null
+    },
+    {
+      "block": "2017-Q4",
+      "family": "eps_growth",
+      "method": "compact_logit",
+      "rows": 23,
+      "score": 0.510222845580339,
+      "mae": 218.82907744639417,
+      "accuracy": null
+    },
+    {
+      "block": "2017-Q4",
+      "family": "eps_growth",
+      "method": "compact_tree_label",
+      "rows": 23,
+      "score": 0.5182339049481833,
+      "mae": 211.9223767987496,
+      "accuracy": null
+    },
+    {
+      "block": "2017-Q4",
+      "family": "eps_growth",
+      "method": "selected_by_family",
+      "rows": 23,
+      "score": 0.5175572359808707,
+      "mae": 212.49749678255665,
+      "accuracy": null
+    },
+    {
+      "block": "2018-Q1",
+      "family": "eps_direction",
+      "method": "v6",
+      "rows": 23,
+      "score": 0.5,
+      "mae": 0.3817391304347826,
+      "accuracy": 0.7391304347826086
+    },
+    {
+      "block": "2018-Q1",
+      "family": "eps_direction",
+      "method": "v7",
+      "rows": 23,
+      "score": 0.5,
+      "mae": 1.0817391304347828,
+      "accuracy": 0.7391304347826086
+    },
+    {
+      "block": "2018-Q1",
+      "family": "eps_direction",
+      "method": "trend",
+      "rows": 23,
+      "score": 0.5,
+      "mae": 1.6595652173913045,
+      "accuracy": 0.7391304347826086
+    },
+    {
+      "block": "2018-Q1",
+      "family": "eps_direction",
+      "method": "robust",
+      "rows": 23,
+      "score": 0.6666666666666667,
+      "mae": 0.36043478260869555,
+      "accuracy": 0.8260869565217391
+    },
+    {
+      "block": "2018-Q1",
+      "family": "eps_direction",
+      "method": "core",
+      "rows": 23,
+      "score": 0.6666666666666667,
+      "mae": 0.36157808078083853,
+      "accuracy": 0.8260869565217391
+    },
+    {
+      "block": "2018-Q1",
+      "family": "eps_direction",
+      "method": "ensemble",
+      "rows": 23,
+      "score": 0.6666666666666667,
+      "mae": 0.3612825312080079,
+      "accuracy": 0.8260869565217391
+    },
+    {
+      "block": "2018-Q1",
+      "family": "eps_direction",
+      "method": "drift",
+      "rows": 23,
+      "score": 0.5,
+      "mae": 0.35371739130434776,
+      "accuracy": 0.7391304347826086
+    },
+    {
+      "block": "2018-Q1",
+      "family": "eps_direction",
+      "method": "huber",
+      "rows": 23,
+      "score": 0.5833333333333335,
+      "mae": 0.5125597230589679,
+      "accuracy": 0.782608695652174
+    },
+    {
+      "block": "2018-Q1",
+      "family": "eps_direction",
+      "method": "tree",
+      "rows": 23,
+      "score": 0.5833333333333335,
+      "mae": 0.3026174262971812,
+      "accuracy": 0.782608695652174
+    },
+    {
+      "block": "2018-Q1",
+      "family": "eps_direction",
+      "method": "quant_ensemble",
+      "rows": 23,
+      "score": 0.6666666666666667,
+      "mae": 0.3484180389694242,
+      "accuracy": 0.8260869565217391
+    },
+    {
+      "block": "2018-Q1",
+      "family": "eps_direction",
+      "method": "logit",
+      "rows": 23,
+      "score": 0.6666666666666667,
+      "mae": 0.34717167895052864,
+      "accuracy": 0.8260869565217391
+    },
+    {
+      "block": "2018-Q1",
+      "family": "eps_direction",
+      "method": "tree_label",
+      "rows": 23,
+      "score": 0.5833333333333335,
+      "mae": 0.25306306078599894,
+      "accuracy": 0.782608695652174
+    },
+    {
+      "block": "2018-Q1",
+      "family": "eps_direction",
+      "method": "agent_selector",
+      "rows": 23,
+      "score": 0.6666666666666667,
+      "mae": 0.34251368358272144,
+      "accuracy": 0.8260869565217391
+    },
+    {
+      "block": "2018-Q1",
+      "family": "eps_direction",
+      "method": "agent_quality",
+      "rows": 23,
+      "score": 0.6666666666666667,
+      "mae": 0.3673176595862218,
+      "accuracy": 0.8260869565217391
+    },
+    {
+      "block": "2018-Q1",
+      "family": "eps_direction",
+      "method": "agent_guard",
+      "rows": 23,
+      "score": 0.6666666666666667,
+      "mae": 0.349190969263197,
+      "accuracy": 0.8260869565217391
+    },
+    {
+      "block": "2018-Q1",
+      "family": "eps_direction",
+      "method": "compact_huber",
+      "rows": 23,
+      "score": 0.47058823529411764,
+      "mae": 0.8313133688215238,
+      "accuracy": 0.6956521739130435
+    },
+    {
+      "block": "2018-Q1",
+      "family": "eps_direction",
+      "method": "compact_tree",
+      "rows": 23,
+      "score": 0.411764705882353,
+      "mae": 0.4877674717787568,
+      "accuracy": 0.6086956521739131
+    },
+    {
+      "block": "2018-Q1",
+      "family": "eps_direction",
+      "method": "compact_quant_ensemble",
+      "rows": 23,
+      "score": 0.5,
+      "mae": 0.8265339417999245,
+      "accuracy": 0.7391304347826086
+    },
+    {
+      "block": "2018-Q1",
+      "family": "eps_direction",
+      "method": "compact_logit",
+      "rows": 23,
+      "score": 0.5833333333333335,
+      "mae": 0.819577420060794,
+      "accuracy": 0.782608695652174
+    },
+    {
+      "block": "2018-Q1",
+      "family": "eps_direction",
+      "method": "compact_tree_label",
+      "rows": 23,
+      "score": 0.411764705882353,
+      "mae": 0.8506586605059065,
+      "accuracy": 0.6086956521739131
+    },
+    {
+      "block": "2018-Q1",
+      "family": "eps_direction",
+      "method": "selected_by_family",
+      "rows": 23,
+      "score": 0.5833333333333335,
+      "mae": 0.25306306078599894,
+      "accuracy": 0.782608695652174
+    },
+    {
+      "block": "2018-Q1",
+      "family": "eps_growth",
+      "method": "v6",
+      "rows": 23,
+      "score": 0.5,
+      "mae": 44.835665520508876,
+      "accuracy": null
+    },
+    {
+      "block": "2018-Q1",
+      "family": "eps_growth",
+      "method": "v7",
+      "rows": 23,
+      "score": 0.22754055472494644,
+      "mae": 148.19771094111056,
+      "accuracy": null
+    },
+    {
+      "block": "2018-Q1",
+      "family": "eps_growth",
+      "method": "trend",
+      "rows": 23,
+      "score": 0.1820055721885581,
+      "mae": 192.12617834718864,
+      "accuracy": null
+    },
+    {
+      "block": "2018-Q1",
+      "family": "eps_growth",
+      "method": "robust",
+      "rows": 23,
+      "score": 0.5372075426380085,
+      "mae": 38.1599712521221,
+      "accuracy": null
+    },
+    {
+      "block": "2018-Q1",
+      "family": "eps_growth",
+      "method": "core",
+      "rows": 23,
+      "score": 0.5365000864327699,
+      "mae": 38.31553259094951,
+      "accuracy": null
+    },
+    {
+      "block": "2018-Q1",
+      "family": "eps_growth",
+      "method": "ensemble",
+      "rows": 23,
+      "score": 0.5368216781240205,
+      "mae": 38.24474611205333,
+      "accuracy": null
+    },
+    {
+      "block": "2018-Q1",
+      "family": "eps_growth",
+      "method": "drift",
+      "rows": 23,
+      "score": 0.5079352260605297,
+      "mae": 42.816397320580336,
+      "accuracy": null
+    },
+    {
+      "block": "2018-Q1",
+      "family": "eps_growth",
+      "method": "huber",
+      "rows": 23,
+      "score": 0.4648046181157116,
+      "mae": 52.257772466179006,
+      "accuracy": null
+    },
+    {
+      "block": "2018-Q1",
+      "family": "eps_growth",
+      "method": "tree",
+      "rows": 23,
+      "score": 0.4800461989884954,
+      "mae": 45.9798777880505,
+      "accuracy": null
+    },
+    {
+      "block": "2018-Q1",
+      "family": "eps_growth",
+      "method": "quant_ensemble",
+      "rows": 23,
+      "score": 0.5479772789446188,
+      "mae": 36.180853537202395,
+      "accuracy": null
+    },
+    {
+      "block": "2018-Q1",
+      "family": "eps_growth",
+      "method": "logit",
+      "rows": 23,
+      "score": 0.5489383937062112,
+      "mae": 35.98034881999319,
+      "accuracy": null
+    },
+    {
+      "block": "2018-Q1",
+      "family": "eps_growth",
+      "method": "tree_label",
+      "rows": 23,
+      "score": 0.5259378339999292,
+      "mae": 37.85473659016368,
+      "accuracy": null
+    },
+    {
+      "block": "2018-Q1",
+      "family": "eps_growth",
+      "method": "agent_selector",
+      "rows": 23,
+      "score": 0.5489920493086637,
+      "mae": 35.96918460291854,
+      "accuracy": null
+    },
+    {
+      "block": "2018-Q1",
+      "family": "eps_growth",
+      "method": "agent_quality",
+      "rows": 23,
+      "score": 0.5335572324064098,
+      "mae": 39.19592996231199,
+      "accuracy": null
+    },
+    {
+      "block": "2018-Q1",
+      "family": "eps_growth",
+      "method": "agent_guard",
+      "rows": 23,
+      "score": 0.547472429098767,
+      "mae": 36.28657278681955,
+      "accuracy": null
+    },
+    {
+      "block": "2018-Q1",
+      "family": "eps_growth",
+      "method": "compact_huber",
+      "rows": 23,
+      "score": 0.32288244292980073,
+      "mae": 93.60958852842077,
+      "accuracy": null
+    },
+    {
+      "block": "2018-Q1",
+      "family": "eps_growth",
+      "method": "compact_tree",
+      "rows": 23,
+      "score": 0.3381884503653154,
+      "mae": 82.86266890000253,
+      "accuracy": null
+    },
+    {
+      "block": "2018-Q1",
+      "family": "eps_growth",
+      "method": "compact_quant_ensemble",
+      "rows": 23,
+      "score": 0.3158275560799802,
+      "mae": 97.63350849052404,
+      "accuracy": null
+    },
+    {
+      "block": "2018-Q1",
+      "family": "eps_growth",
+      "method": "compact_logit",
+      "rows": 23,
+      "score": 0.3175211845198411,
+      "mae": 96.54655196878491,
+      "accuracy": null
+    },
+    {
+      "block": "2018-Q1",
+      "family": "eps_growth",
+      "method": "compact_tree_label",
+      "rows": 23,
+      "score": 0.2509003207256471,
+      "mae": 124.83949353820248,
+      "accuracy": null
+    },
+    {
+      "block": "2018-Q1",
+      "family": "eps_growth",
+      "method": "selected_by_family",
+      "rows": 23,
+      "score": 0.32288244292980073,
+      "mae": 93.60958852842077,
+      "accuracy": null
+    },
+    {
+      "block": "2018-Q2",
+      "family": "eps_direction",
+      "method": "v6",
+      "rows": 35,
+      "score": 0.5,
+      "mae": 0.5731428571428571,
+      "accuracy": 0.7142857142857143
+    },
+    {
+      "block": "2018-Q2",
+      "family": "eps_direction",
+      "method": "v7",
+      "rows": 35,
+      "score": 0.65,
+      "mae": 0.4652857142857143,
+      "accuracy": 0.8
+    },
+    {
+      "block": "2018-Q2",
+      "family": "eps_direction",
+      "method": "trend",
+      "rows": 35,
+      "score": 0.65,
+      "mae": 0.4751428571428571,
+      "accuracy": 0.8
+    },
+    {
+      "block": "2018-Q2",
+      "family": "eps_direction",
+      "method": "robust",
+      "rows": 35,
+      "score": 0.5,
+      "mae": 0.5483571428571429,
+      "accuracy": 0.7142857142857143
+    },
+    {
+      "block": "2018-Q2",
+      "family": "eps_direction",
+      "method": "core",
+      "rows": 35,
+      "score": 0.55,
+      "mae": 0.4996189761545484,
+      "accuracy": 0.7428571428571429
+    },
+    {
+      "block": "2018-Q2",
+      "family": "eps_direction",
+      "method": "ensemble",
+      "rows": 35,
+      "score": 0.6000000000000001,
+      "mae": 0.4869500776539357,
+      "accuracy": 0.7714285714285715
+    },
+    {
+      "block": "2018-Q2",
+      "family": "eps_direction",
+      "method": "drift",
+      "rows": 35,
+      "score": 0.5,
+      "mae": 0.5503428571428571,
+      "accuracy": 0.7142857142857143
+    },
+    {
+      "block": "2018-Q2",
+      "family": "eps_direction",
+      "method": "huber",
+      "rows": 35,
+      "score": 0.44,
+      "mae": 0.4786315003553167,
+      "accuracy": 0.6285714285714286
+    },
+    {
+      "block": "2018-Q2",
+      "family": "eps_direction",
+      "method": "tree",
+      "rows": 35,
+      "score": 0.7499999999999999,
+      "mae": 0.447834673227885,
+      "accuracy": 0.8571428571428571
+    },
+    {
+      "block": "2018-Q2",
+      "family": "eps_direction",
+      "method": "quant_ensemble",
+      "rows": 35,
+      "score": 0.6000000000000001,
+      "mae": 0.4864347908720369,
+      "accuracy": 0.7714285714285715
+    },
+    {
+      "block": "2018-Q2",
+      "family": "eps_direction",
+      "method": "logit",
+      "rows": 35,
+      "score": 0.65,
+      "mae": 0.48051942822739396,
+      "accuracy": 0.8
+    },
+    {
+      "block": "2018-Q2",
+      "family": "eps_direction",
+      "method": "tree_label",
+      "rows": 35,
+      "score": 0.48,
+      "mae": 0.5191262335929389,
+      "accuracy": 0.6857142857142857
+    },
+    {
+      "block": "2018-Q2",
+      "family": "eps_direction",
+      "method": "agent_selector",
+      "rows": 35,
+      "score": 0.7000000000000001,
+      "mae": 0.47421480250200454,
+      "accuracy": 0.8285714285714286
+    },
+    {
+      "block": "2018-Q2",
+      "family": "eps_direction",
+      "method": "agent_quality",
+      "rows": 35,
+      "score": 0.55,
+      "mae": 0.4756020308044188,
+      "accuracy": 0.7428571428571429
+    },
+    {
+      "block": "2018-Q2",
+      "family": "eps_direction",
+      "method": "agent_guard",
+      "rows": 35,
+      "score": 0.65,
+      "mae": 0.482695097753533,
+      "accuracy": 0.8
+    },
+    {
+      "block": "2018-Q2",
+      "family": "eps_direction",
+      "method": "compact_huber",
+      "rows": 35,
+      "score": 0.7499999999999999,
+      "mae": 0.34609345462290547,
+      "accuracy": 0.8571428571428571
+    },
+    {
+      "block": "2018-Q2",
+      "family": "eps_direction",
+      "method": "compact_tree",
+      "rows": 35,
+      "score": 0.8499999999999999,
+      "mae": 0.36962957885016,
+      "accuracy": 0.9142857142857143
+    },
+    {
+      "block": "2018-Q2",
+      "family": "eps_direction",
+      "method": "compact_quant_ensemble",
+      "rows": 35,
+      "score": 0.7000000000000001,
+      "mae": 0.4232086138080335,
+      "accuracy": 0.8285714285714286
+    },
+    {
+      "block": "2018-Q2",
+      "family": "eps_direction",
+      "method": "compact_logit",
+      "rows": 35,
+      "score": 0.65,
+      "mae": 0.4297650646782845,
+      "accuracy": 0.8
+    },
+    {
+      "block": "2018-Q2",
+      "family": "eps_direction",
+      "method": "compact_tree_label",
+      "rows": 35,
+      "score": 0.7999999999999999,
+      "mae": 0.4213922732364648,
+      "accuracy": 0.8857142857142857
+    },
+    {
+      "block": "2018-Q2",
+      "family": "eps_direction",
+      "method": "selected_by_family",
+      "rows": 35,
+      "score": 0.48,
+      "mae": 0.5191262335929389,
+      "accuracy": 0.6857142857142857
+    },
+    {
+      "block": "2018-Q2",
+      "family": "eps_growth",
+      "method": "v6",
+      "rows": 35,
+      "score": 0.5,
+      "mae": 58.83023092750329,
+      "accuracy": null
+    },
+    {
+      "block": "2018-Q2",
+      "family": "eps_growth",
+      "method": "v7",
+      "rows": 35,
+      "score": 0.5341255209626995,
+      "mae": 50.137294304650226,
+      "accuracy": null
+    },
+    {
+      "block": "2018-Q2",
+      "family": "eps_growth",
+      "method": "trend",
+      "rows": 35,
+      "score": 0.533756942540713,
+      "mae": 50.06219750213552,
+      "accuracy": null
+    },
+    {
+      "block": "2018-Q2",
+      "family": "eps_growth",
+      "method": "robust",
+      "rows": 35,
+      "score": 0.509518711753261,
+      "mae": 55.55545409681886,
+      "accuracy": null
+    },
+    {
+      "block": "2018-Q2",
+      "family": "eps_growth",
+      "method": "core",
+      "rows": 35,
+      "score": 0.5424964535812511,
+      "mae": 49.613299973279126,
+      "accuracy": null
+    },
+    {
+      "block": "2018-Q2",
+      "family": "eps_growth",
+      "method": "ensemble",
+      "rows": 35,
+      "score": 0.528546092192606,
+      "mae": 51.548609553620146,
+      "accuracy": null
+    },
+    {
+      "block": "2018-Q2",
+      "family": "eps_growth",
+      "method": "drift",
+      "rows": 35,
+      "score": 0.508208874283384,
+      "mae": 56.70554631985339,
+      "accuracy": null
+    },
+    {
+      "block": "2018-Q2",
+      "family": "eps_growth",
+      "method": "huber",
+      "rows": 35,
+      "score": 0.5020742200912203,
+      "mae": 58.344140058552526,
+      "accuracy": null
+    },
+    {
+      "block": "2018-Q2",
+      "family": "eps_growth",
+      "method": "tree",
+      "rows": 35,
+      "score": 0.5521043476255588,
+      "mae": 47.72613143500137,
+      "accuracy": null
+    },
+    {
+      "block": "2018-Q2",
+      "family": "eps_growth",
+      "method": "quant_ensemble",
+      "rows": 35,
+      "score": 0.5417985548656237,
+      "mae": 49.63225734451006,
+      "accuracy": null
+    },
+    {
+      "block": "2018-Q2",
+      "family": "eps_growth",
+      "method": "logit",
+      "rows": 35,
+      "score": 0.5432626558948241,
+      "mae": 49.37057414303257,
+      "accuracy": null
+    },
+    {
+      "block": "2018-Q2",
+      "family": "eps_growth",
+      "method": "tree_label",
+      "rows": 35,
+      "score": 0.5094646643511654,
+      "mae": 56.145108760556084,
+      "accuracy": null
+    },
+    {
+      "block": "2018-Q2",
+      "family": "eps_growth",
+      "method": "agent_selector",
+      "rows": 35,
+      "score": 0.5448214793558996,
+      "mae": 48.84617069095239,
+      "accuracy": null
+    },
+    {
+      "block": "2018-Q2",
+      "family": "eps_growth",
+      "method": "agent_quality",
+      "rows": 35,
+      "score": 0.556528861690867,
+      "mae": 46.878987366698134,
+      "accuracy": null
+    },
+    {
+      "block": "2018-Q2",
+      "family": "eps_growth",
+      "method": "agent_guard",
+      "rows": 35,
+      "score": 0.539967923441125,
+      "mae": 49.714139080795626,
+      "accuracy": null
+    },
+    {
+      "block": "2018-Q2",
+      "family": "eps_growth",
+      "method": "compact_huber",
+      "rows": 35,
+      "score": 0.5874539665214451,
+      "mae": 40.831998190018716,
+      "accuracy": null
+    },
+    {
+      "block": "2018-Q2",
+      "family": "eps_growth",
+      "method": "compact_tree",
+      "rows": 35,
+      "score": 0.6040688564422966,
+      "mae": 37.71410548974223,
+      "accuracy": null
+    },
+    {
+      "block": "2018-Q2",
+      "family": "eps_growth",
+      "method": "compact_quant_ensemble",
+      "rows": 35,
+      "score": 0.5595899215881621,
+      "mae": 45.594263948679604,
+      "accuracy": null
+    },
+    {
+      "block": "2018-Q2",
+      "family": "eps_growth",
+      "method": "compact_logit",
+      "rows": 35,
+      "score": 0.5574953934304541,
+      "mae": 46.151841312492685,
+      "accuracy": null
+    },
+    {
+      "block": "2018-Q2",
+      "family": "eps_growth",
+      "method": "compact_tree_label",
+      "rows": 35,
+      "score": 0.5601956839583082,
+      "mae": 45.43410844139565,
+      "accuracy": null
+    },
+    {
+      "block": "2018-Q2",
+      "family": "eps_growth",
+      "method": "selected_by_family",
+      "rows": 35,
+      "score": 0.5874539665214451,
+      "mae": 40.831998190018716,
+      "accuracy": null
+    },
+    {
+      "block": "2018-Q3",
+      "family": "eps_direction",
+      "method": "v6",
+      "rows": 34,
+      "score": 0.5,
+      "mae": 0.5070588235294117,
+      "accuracy": 0.7647058823529411
+    },
+    {
+      "block": "2018-Q3",
+      "family": "eps_direction",
+      "method": "v7",
+      "rows": 34,
+      "score": 0.48076923076923084,
+      "mae": 0.47147058823529403,
+      "accuracy": 0.7352941176470589
+    },
+    {
+      "block": "2018-Q3",
+      "family": "eps_direction",
+      "method": "trend",
+      "rows": 34,
+      "score": 0.48076923076923084,
+      "mae": 0.5245588235294116,
+      "accuracy": 0.7352941176470589
+    },
+    {
+      "block": "2018-Q3",
+      "family": "eps_direction",
+      "method": "robust",
+      "rows": 34,
+      "score": 0.5625,
+      "mae": 0.42301470588235296,
+      "accuracy": 0.7941176470588235
+    },
+    {
+      "block": "2018-Q3",
+      "family": "eps_direction",
+      "method": "core",
+      "rows": 34,
+      "score": 0.42307692307692313,
+      "mae": 0.5089078448852887,
+      "accuracy": 0.6470588235294118
+    },
+    {
+      "block": "2018-Q3",
+      "family": "eps_direction",
+      "method": "ensemble",
+      "rows": 34,
+      "score": 0.4615384615384616,
+      "mae": 0.4756532365079618,
+      "accuracy": 0.7058823529411765
+    },
+    {
+      "block": "2018-Q3",
+      "family": "eps_direction",
+      "method": "drift",
+      "rows": 34,
+      "score": 0.5,
+      "mae": 0.4754044117647059,
+      "accuracy": 0.7647058823529411
+    },
+    {
+      "block": "2018-Q3",
+      "family": "eps_direction",
+      "method": "huber",
+      "rows": 34,
+      "score": 0.42307692307692313,
+      "mae": 0.6071340526125795,
+      "accuracy": 0.6470588235294118
+    },
+    {
+      "block": "2018-Q3",
+      "family": "eps_direction",
+      "method": "tree",
+      "rows": 34,
+      "score": 0.5625,
+      "mae": 0.4023114760414228,
+      "accuracy": 0.7941176470588235
+    },
+    {
+      "block": "2018-Q3",
+      "family": "eps_direction",
+      "method": "quant_ensemble",
+      "rows": 34,
+      "score": 0.48076923076923084,
+      "mae": 0.424318040706632,
+      "accuracy": 0.7352941176470589
+    },
+    {
+      "block": "2018-Q3",
+      "family": "eps_direction",
+      "method": "logit",
+      "rows": 34,
+      "score": 0.5,
+      "mae": 0.4283679247095303,
+      "accuracy": 0.7647058823529411
+    },
+    {
+      "block": "2018-Q3",
+      "family": "eps_direction",
+      "method": "tree_label",
+      "rows": 34,
+      "score": 0.5625,
+      "mae": 0.4355381264676265,
+      "accuracy": 0.7941176470588235
+    },
+    {
+      "block": "2018-Q3",
+      "family": "eps_direction",
+      "method": "agent_selector",
+      "rows": 34,
+      "score": 0.44230769230769235,
+      "mae": 0.43986820751081973,
+      "accuracy": 0.6764705882352942
+    },
+    {
+      "block": "2018-Q3",
+      "family": "eps_direction",
+      "method": "agent_quality",
+      "rows": 34,
+      "score": 0.42307692307692313,
+      "mae": 0.4683276343957957,
+      "accuracy": 0.6470588235294118
+    },
+    {
+      "block": "2018-Q3",
+      "family": "eps_direction",
+      "method": "agent_guard",
+      "rows": 34,
+      "score": 0.44230769230769235,
+      "mae": 0.44122673822101854,
+      "accuracy": 0.6764705882352942
+    },
+    {
+      "block": "2018-Q3",
+      "family": "eps_direction",
+      "method": "compact_huber",
+      "rows": 34,
+      "score": 0.5625,
+      "mae": 0.4550070462026304,
+      "accuracy": 0.7941176470588235
+    },
+    {
+      "block": "2018-Q3",
+      "family": "eps_direction",
+      "method": "compact_tree",
+      "rows": 34,
+      "score": 0.5625,
+      "mae": 0.37597398683973626,
+      "accuracy": 0.7941176470588235
+    },
+    {
+      "block": "2018-Q3",
+      "family": "eps_direction",
+      "method": "compact_quant_ensemble",
+      "rows": 34,
+      "score": 0.625,
+      "mae": 0.4064034139623974,
+      "accuracy": 0.8235294117647058
+    },
+    {
+      "block": "2018-Q3",
+      "family": "eps_direction",
+      "method": "compact_logit",
+      "rows": 34,
+      "score": 0.48076923076923084,
+      "mae": 0.44142884423583206,
+      "accuracy": 0.7352941176470589
+    },
+    {
+      "block": "2018-Q3",
+      "family": "eps_direction",
+      "method": "compact_tree_label",
+      "rows": 34,
+      "score": 0.5625,
+      "mae": 0.41052106102122093,
+      "accuracy": 0.7941176470588235
+    },
+    {
+      "block": "2018-Q3",
+      "family": "eps_direction",
+      "method": "selected_by_family",
+      "rows": 34,
+      "score": 0.5625,
+      "mae": 0.4355381264676265,
+      "accuracy": 0.7941176470588235
+    },
+    {
+      "block": "2018-Q3",
+      "family": "eps_growth",
+      "method": "v6",
+      "rows": 34,
+      "score": 0.5,
+      "mae": 203.88047586341503,
+      "accuracy": null
+    },
+    {
+      "block": "2018-Q3",
+      "family": "eps_growth",
+      "method": "v7",
+      "rows": 34,
+      "score": 0.4971413291367196,
+      "mae": 207.1712544339372,
+      "accuracy": null
+    },
+    {
+      "block": "2018-Q3",
+      "family": "eps_growth",
+      "method": "trend",
+      "rows": 34,
+      "score": 0.4771894106795067,
+      "mae": 226.34113719690117,
+      "accuracy": null
+    },
+    {
+      "block": "2018-Q3",
+      "family": "eps_growth",
+      "method": "robust",
+      "rows": 34,
+      "score": 0.4981326741213752,
+      "mae": 206.0676379256199,
+      "accuracy": null
+    },
+    {
+      "block": "2018-Q3",
+      "family": "eps_growth",
+      "method": "core",
+      "rows": 34,
+      "score": 0.4809849645470544,
+      "mae": 222.54738359636497,
+      "accuracy": null
+    },
+    {
+      "block": "2018-Q3",
+      "family": "eps_growth",
+      "method": "ensemble",
+      "rows": 34,
+      "score": 0.48299177515128927,
+      "mae": 220.04584621967467,
+      "accuracy": null
+    },
+    {
+      "block": "2018-Q3",
+      "family": "eps_growth",
+      "method": "drift",
+      "rows": 34,
+      "score": 0.5079336638040555,
+      "mae": 197.47365198949066,
+      "accuracy": null
+    },
+    {
+      "block": "2018-Q3",
+      "family": "eps_growth",
+      "method": "huber",
+      "rows": 34,
+      "score": 0.6183687074717429,
+      "mae": 125.82649895586235,
+      "accuracy": null
+    },
+    {
+      "block": "2018-Q3",
+      "family": "eps_growth",
+      "method": "tree",
+      "rows": 34,
+      "score": 0.6710099852564645,
+      "mae": 99.96071926498612,
+      "accuracy": null
+    },
+    {
+      "block": "2018-Q3",
+      "family": "eps_growth",
+      "method": "quant_ensemble",
+      "rows": 34,
+      "score": 0.557430190449113,
+      "mae": 161.87021248583216,
+      "accuracy": null
+    },
+    {
+      "block": "2018-Q3",
+      "family": "eps_growth",
+      "method": "logit",
+      "rows": 34,
+      "score": 0.559405433743188,
+      "mae": 160.57875811144217,
+      "accuracy": null
+    },
+    {
+      "block": "2018-Q3",
+      "family": "eps_growth",
+      "method": "tree_label",
+      "rows": 34,
+      "score": 0.5583567024189575,
+      "mae": 161.26330226291128,
+      "accuracy": null
+    },
+    {
+      "block": "2018-Q3",
+      "family": "eps_growth",
+      "method": "agent_selector",
+      "rows": 34,
+      "score": 0.5552113727652106,
+      "mae": 163.3318794022841,
+      "accuracy": null
+    },
+    {
+      "block": "2018-Q3",
+      "family": "eps_growth",
+      "method": "agent_quality",
+      "rows": 34,
+      "score": 0.5518121769121564,
+      "mae": 165.59392936681053,
+      "accuracy": null
+    },
+    {
+      "block": "2018-Q3",
+      "family": "eps_growth",
+      "method": "agent_guard",
+      "rows": 34,
+      "score": 0.5558519187926809,
+      "mae": 162.90871559291136,
+      "accuracy": null
+    },
+    {
+      "block": "2018-Q3",
+      "family": "eps_growth",
+      "method": "compact_huber",
+      "rows": 34,
+      "score": 0.5932133676752716,
+      "mae": 139.8077937762206,
+      "accuracy": null
+    },
+    {
+      "block": "2018-Q3",
+      "family": "eps_growth",
+      "method": "compact_tree",
+      "rows": 34,
+      "score": 0.6824756891545336,
+      "mae": 94.85613718134674,
+      "accuracy": null
+    },
+    {
+      "block": "2018-Q3",
+      "family": "eps_growth",
+      "method": "compact_quant_ensemble",
+      "rows": 34,
+      "score": 0.5507128202446053,
+      "mae": 166.33149009891574,
+      "accuracy": null
+    },
+    {
+      "block": "2018-Q3",
+      "family": "eps_growth",
+      "method": "compact_logit",
+      "rows": 34,
+      "score": 0.5465449283732747,
+      "mae": 169.15468607695965,
+      "accuracy": null
+    },
+    {
+      "block": "2018-Q3",
+      "family": "eps_growth",
+      "method": "compact_tree_label",
+      "rows": 34,
+      "score": 0.5501355721220169,
+      "mae": 166.71994736861606,
+      "accuracy": null
+    },
+    {
+      "block": "2018-Q3",
+      "family": "eps_growth",
+      "method": "selected_by_family",
+      "rows": 34,
+      "score": 0.5932133676752716,
+      "mae": 139.8077937762206,
+      "accuracy": null
+    },
+    {
+      "block": "2018-Q4",
+      "family": "eps_direction",
+      "method": "v6",
+      "rows": 24,
+      "score": 0.5,
+      "mae": 2.044166666666667,
+      "accuracy": 0.5833333333333334
+    },
+    {
+      "block": "2018-Q4",
+      "family": "eps_direction",
+      "method": "v7",
+      "rows": 24,
+      "score": 0.2857142857142857,
+      "mae": 2.0725,
+      "accuracy": 0.3333333333333333
+    },
+    {
+      "block": "2018-Q4",
+      "family": "eps_direction",
+      "method": "trend",
+      "rows": 24,
+      "score": 0.2857142857142857,
+      "mae": 2.0360416666666663,
+      "accuracy": 0.3333333333333333
+    },
+    {
+      "block": "2018-Q4",
+      "family": "eps_direction",
+      "method": "robust",
+      "rows": 24,
+      "score": 0.2857142857142857,
+      "mae": 2.055729166666667,
+      "accuracy": 0.3333333333333333
+    },
+    {
+      "block": "2018-Q4",
+      "family": "eps_direction",
+      "method": "core",
+      "rows": 24,
+      "score": 0.3214285714285714,
+      "mae": 2.0692558273003367,
+      "accuracy": 0.375
+    },
+    {
+      "block": "2018-Q4",
+      "family": "eps_direction",
+      "method": "ensemble",
+      "rows": 24,
+      "score": 0.25,
+      "mae": 2.052308332580241,
+      "accuracy": 0.2916666666666667
+    },
+    {
+      "block": "2018-Q4",
+      "family": "eps_direction",
+      "method": "drift",
+      "rows": 24,
+      "score": 0.5,
+      "mae": 2.028364583333333,
+      "accuracy": 0.5833333333333334
+    },
+    {
+      "block": "2018-Q4",
+      "family": "eps_direction",
+      "method": "huber",
+      "rows": 24,
+      "score": 0.85,
+      "mae": 0.9108852909675349,
+      "accuracy": 0.875
+    },
+    {
+      "block": "2018-Q4",
+      "family": "eps_direction",
+      "method": "tree",
+      "rows": 24,
+      "score": 0.75,
+      "mae": 1.7082172332927439,
+      "accuracy": 0.7916666666666666
+    },
+    {
+      "block": "2018-Q4",
+      "family": "eps_direction",
+      "method": "quant_ensemble",
+      "rows": 24,
+      "score": 0.7,
+      "mae": 1.8643133010336406,
+      "accuracy": 0.75
+    },
+    {
+      "block": "2018-Q4",
+      "family": "eps_direction",
+      "method": "logit",
+      "rows": 24,
+      "score": 0.8,
+      "mae": 1.801898221281235,
+      "accuracy": 0.8333333333333334
+    },
+    {
+      "block": "2018-Q4",
+      "family": "eps_direction",
+      "method": "tree_label",
+      "rows": 24,
+      "score": 0.75,
+      "mae": 1.862689286300661,
+      "accuracy": 0.7916666666666666
+    },
+    {
+      "block": "2018-Q4",
+      "family": "eps_direction",
+      "method": "agent_selector",
+      "rows": 24,
+      "score": 0.35714285714285715,
+      "mae": 2.0261497212062185,
+      "accuracy": 0.4166666666666667
+    },
+    {
+      "block": "2018-Q4",
+      "family": "eps_direction",
+      "method": "agent_quality",
+      "rows": 24,
+      "score": 0.3928571428571428,
+      "mae": 2.0458519346263393,
+      "accuracy": 0.4583333333333333
+    },
+    {
+      "block": "2018-Q4",
+      "family": "eps_direction",
+      "method": "agent_guard",
+      "rows": 24,
+      "score": 0.42857142857142855,
+      "mae": 2.0366956017414997,
+      "accuracy": 0.5
+    },
+    {
+      "block": "2018-Q4",
+      "family": "eps_direction",
+      "method": "compact_huber",
+      "rows": 24,
+      "score": 0.7,
+      "mae": 1.1171434556910071,
+      "accuracy": 0.75
+    },
+    {
+      "block": "2018-Q4",
+      "family": "eps_direction",
+      "method": "compact_tree",
+      "rows": 24,
+      "score": 0.75,
+      "mae": 1.6473373678746093,
+      "accuracy": 0.7916666666666666
+    },
+    {
+      "block": "2018-Q4",
+      "family": "eps_direction",
+      "method": "compact_quant_ensemble",
+      "rows": 24,
+      "score": 0.5999999999999999,
+      "mae": 1.8395522451308095,
+      "accuracy": 0.6666666666666666
+    },
+    {
+      "block": "2018-Q4",
+      "family": "eps_direction",
+      "method": "compact_logit",
+      "rows": 24,
+      "score": 0.7,
+      "mae": 1.8378828404452998,
+      "accuracy": 0.75
+    },
+    {
+      "block": "2018-Q4",
+      "family": "eps_direction",
+      "method": "compact_tree_label",
+      "rows": 24,
+      "score": 0.7,
+      "mae": 1.787527986572843,
+      "accuracy": 0.75
+    },
+    {
+      "block": "2018-Q4",
+      "family": "eps_direction",
+      "method": "selected_by_family",
+      "rows": 24,
+      "score": 0.75,
+      "mae": 1.862689286300661,
+      "accuracy": 0.7916666666666666
+    },
+    {
+      "block": "2018-Q4",
+      "family": "eps_growth",
+      "method": "v6",
+      "rows": 24,
+      "score": 0.5,
+      "mae": 286.6106327319747,
+      "accuracy": null
+    },
+    {
+      "block": "2018-Q4",
+      "family": "eps_growth",
+      "method": "v7",
+      "rows": 24,
+      "score": 0.46261093894717453,
+      "mae": 338.2871804176529,
+      "accuracy": null
+    },
+    {
+      "block": "2018-Q4",
+      "family": "eps_growth",
+      "method": "trend",
+      "rows": 24,
+      "score": 0.43617979336019336,
+      "mae": 382.7044062594669,
+      "accuracy": null
+    },
+    {
+      "block": "2018-Q4",
+      "family": "eps_growth",
+      "method": "robust",
+      "rows": 24,
+      "score": 0.4837743126408345,
+      "mae": 307.76186015170333,
+      "accuracy": null
+    },
+    {
+      "block": "2018-Q4",
+      "family": "eps_growth",
+      "method": "core",
+      "rows": 24,
+      "score": 0.4861237773113166,
+      "mae": 304.51536381843454,
+      "accuracy": null
+    },
+    {
+      "block": "2018-Q4",
+      "family": "eps_growth",
+      "method": "ensemble",
+      "rows": 24,
+      "score": 0.48409523107343677,
+      "mae": 307.42415056519343,
+      "accuracy": null
+    },
+    {
+      "block": "2018-Q4",
+      "family": "eps_growth",
+      "method": "drift",
+      "rows": 24,
+      "score": 0.49652168517793566,
+      "mae": 290.9855812493193,
+      "accuracy": null
+    },
+    {
+      "block": "2018-Q4",
+      "family": "eps_growth",
+      "method": "huber",
+      "rows": 24,
+      "score": 0.445612479042376,
+      "mae": 375.241070367772,
+      "accuracy": null
+    },
+    {
+      "block": "2018-Q4",
+      "family": "eps_growth",
+      "method": "tree",
+      "rows": 24,
+      "score": 0.45288901091013656,
+      "mae": 359.29918832896755,
+      "accuracy": null
+    },
+    {
+      "block": "2018-Q4",
+      "family": "eps_growth",
+      "method": "quant_ensemble",
+      "rows": 24,
+      "score": 0.47203052588758765,
+      "mae": 328.33323399099527,
+      "accuracy": null
+    },
+    {
+      "block": "2018-Q4",
+      "family": "eps_growth",
+      "method": "logit",
+      "rows": 24,
+      "score": 0.472772460946017,
+      "mae": 327.0158173888381,
+      "accuracy": null
+    },
+    {
+      "block": "2018-Q4",
+      "family": "eps_growth",
+      "method": "tree_label",
+      "rows": 24,
+      "score": 0.4721483491604021,
+      "mae": 328.1893900726108,
+      "accuracy": null
+    },
+    {
+      "block": "2018-Q4",
+      "family": "eps_growth",
+      "method": "agent_selector",
+      "rows": 24,
+      "score": 0.46454088527853765,
+      "mae": 337.27033077322085,
+      "accuracy": null
+    },
+    {
+      "block": "2018-Q4",
+      "family": "eps_growth",
+      "method": "agent_quality",
+      "rows": 24,
+      "score": 0.4644194931149729,
+      "mae": 337.6288003934704,
+      "accuracy": null
+    },
+    {
+      "block": "2018-Q4",
+      "family": "eps_growth",
+      "method": "agent_guard",
+      "rows": 24,
+      "score": 0.46518196843142223,
+      "mae": 336.668189707748,
+      "accuracy": null
+    },
+    {
+      "block": "2018-Q4",
+      "family": "eps_growth",
+      "method": "compact_huber",
+      "rows": 24,
+      "score": 0.4422718117250768,
+      "mae": 380.17883265738897,
+      "accuracy": null
+    },
+    {
+      "block": "2018-Q4",
+      "family": "eps_growth",
+      "method": "compact_tree",
+      "rows": 24,
+      "score": 0.4420660338011763,
+      "mae": 379.0521694279773,
+      "accuracy": null
+    },
+    {
+      "block": "2018-Q4",
+      "family": "eps_growth",
+      "method": "compact_quant_ensemble",
+      "rows": 24,
+      "score": 0.4590486834208292,
+      "mae": 346.80664641569797,
+      "accuracy": null
+    },
+    {
+      "block": "2018-Q4",
+      "family": "eps_growth",
+      "method": "compact_logit",
+      "rows": 24,
+      "score": 0.4590159324437695,
+      "mae": 346.84891685723437,
+      "accuracy": null
+    },
+    {
+      "block": "2018-Q4",
+      "family": "eps_growth",
+      "method": "compact_tree_label",
+      "rows": 24,
+      "score": 0.4632791521886075,
+      "mae": 341.34136274759857,
+      "accuracy": null
+    },
+    {
+      "block": "2018-Q4",
+      "family": "eps_growth",
+      "method": "selected_by_family",
+      "rows": 24,
+      "score": 0.4422718117250768,
+      "mae": 380.17883265738897,
+      "accuracy": null
+    },
+    {
+      "block": "2019-Q1",
+      "family": "eps_direction",
+      "method": "v6",
+      "rows": 23,
+      "score": 0.5,
+      "mae": 0.3060869565217392,
+      "accuracy": 0.6521739130434783
+    },
+    {
+      "block": "2019-Q1",
+      "family": "eps_direction",
+      "method": "v7",
+      "rows": 23,
+      "score": 0.39999999999999997,
+      "mae": 0.9756521739130434,
+      "accuracy": 0.5217391304347826
+    },
+    {
+      "block": "2019-Q1",
+      "family": "eps_direction",
+      "method": "trend",
+      "rows": 23,
+      "score": 0.39999999999999997,
+      "mae": 1.6863043478260868,
+      "accuracy": 0.5217391304347826
+    },
+    {
+      "block": "2019-Q1",
+      "family": "eps_direction",
+      "method": "robust",
+      "rows": 23,
+      "score": 0.3666666666666667,
+      "mae": 0.3450000000000001,
+      "accuracy": 0.4782608695652174
+    },
+    {
+      "block": "2019-Q1",
+      "family": "eps_direction",
+      "method": "core",
+      "rows": 23,
+      "score": 0.3666666666666667,
+      "mae": 0.3485981851031546,
+      "accuracy": 0.4782608695652174
+    },
+    {
+      "block": "2019-Q1",
+      "family": "eps_direction",
+      "method": "ensemble",
+      "rows": 23,
+      "score": 0.39999999999999997,
+      "mae": 0.3350557415946116,
+      "accuracy": 0.5217391304347826
+    },
+    {
+      "block": "2019-Q1",
+      "family": "eps_direction",
+      "method": "drift",
+      "rows": 23,
+      "score": 0.5,
+      "mae": 0.29914130434782615,
+      "accuracy": 0.6521739130434783
+    },
+    {
+      "block": "2019-Q1",
+      "family": "eps_direction",
+      "method": "huber",
+      "rows": 23,
+      "score": 0.3666666666666667,
+      "mae": 0.7131014626762872,
+      "accuracy": 0.4782608695652174
+    },
+    {
+      "block": "2019-Q1",
+      "family": "eps_direction",
+      "method": "tree",
+      "rows": 23,
+      "score": 0.4666666666666667,
+      "mae": 0.3157315520794554,
+      "accuracy": 0.6086956521739131
+    },
+    {
+      "block": "2019-Q1",
+      "family": "eps_direction",
+      "method": "quant_ensemble",
+      "rows": 23,
+      "score": 0.4333333333333333,
+      "mae": 0.3284198743971151,
+      "accuracy": 0.5652173913043478
+    },
+    {
+      "block": "2019-Q1",
+      "family": "eps_direction",
+      "method": "logit",
+      "rows": 23,
+      "score": 0.4666666666666667,
+      "mae": 0.2978483915627924,
+      "accuracy": 0.6086956521739131
+    },
+    {
+      "block": "2019-Q1",
+      "family": "eps_direction",
+      "method": "tree_label",
+      "rows": 23,
+      "score": 0.4333333333333333,
+      "mae": 0.3021962176497489,
+      "accuracy": 0.5652173913043478
+    },
+    {
+      "block": "2019-Q1",
+      "family": "eps_direction",
+      "method": "agent_selector",
+      "rows": 23,
+      "score": 0.39999999999999997,
+      "mae": 0.43541660958296624,
+      "accuracy": 0.5217391304347826
+    },
+    {
+      "block": "2019-Q1",
+      "family": "eps_direction",
+      "method": "agent_quality",
+      "rows": 23,
+      "score": 0.3666666666666667,
+      "mae": 0.35681261228935,
+      "accuracy": 0.4782608695652174
+    },
+    {
+      "block": "2019-Q1",
+      "family": "eps_direction",
+      "method": "agent_guard",
+      "rows": 23,
+      "score": 0.39999999999999997,
+      "mae": 0.3345361896180956,
+      "accuracy": 0.5217391304347826
+    },
+    {
+      "block": "2019-Q1",
+      "family": "eps_direction",
+      "method": "compact_huber",
+      "rows": 23,
+      "score": 0.3666666666666667,
+      "mae": 0.5208089121888585,
+      "accuracy": 0.4782608695652174
+    },
+    {
+      "block": "2019-Q1",
+      "family": "eps_direction",
+      "method": "compact_tree",
+      "rows": 23,
+      "score": 0.4666666666666667,
+      "mae": 0.3650930229104787,
+      "accuracy": 0.6086956521739131
+    },
+    {
+      "block": "2019-Q1",
+      "family": "eps_direction",
+      "method": "compact_quant_ensemble",
+      "rows": 23,
+      "score": 0.39999999999999997,
+      "mae": 0.5016770162678632,
+      "accuracy": 0.5217391304347826
+    },
+    {
+      "block": "2019-Q1",
+      "family": "eps_direction",
+      "method": "compact_logit",
+      "rows": 23,
+      "score": 0.4666666666666667,
+      "mae": 0.5090749418185843,
+      "accuracy": 0.6086956521739131
+    },
+    {
+      "block": "2019-Q1",
+      "family": "eps_direction",
+      "method": "compact_tree_label",
+      "rows": 23,
+      "score": 0.3666666666666667,
+      "mae": 0.54193441721951,
+      "accuracy": 0.4782608695652174
+    },
+    {
+      "block": "2019-Q1",
+      "family": "eps_direction",
+      "method": "selected_by_family",
+      "rows": 23,
+      "score": 0.4333333333333333,
+      "mae": 0.3021962176497489,
+      "accuracy": 0.5652173913043478
+    },
+    {
+      "block": "2019-Q1",
+      "family": "eps_growth",
+      "method": "v6",
+      "rows": 23,
+      "score": 0.5,
+      "mae": 44.44004839205756,
+      "accuracy": null
+    },
+    {
+      "block": "2019-Q1",
+      "family": "eps_growth",
+      "method": "v7",
+      "rows": 23,
+      "score": 0.27587484659403194,
+      "mae": 125.20753631273246,
+      "accuracy": null
+    },
+    {
+      "block": "2019-Q1",
+      "family": "eps_growth",
+      "method": "trend",
+      "rows": 23,
+      "score": 0.21674521550475492,
+      "mae": 172.8405869362381,
+      "accuracy": null
+    },
+    {
+      "block": "2019-Q1",
+      "family": "eps_growth",
+      "method": "robust",
+      "rows": 23,
+      "score": 0.47670014131459926,
+      "mae": 48.52581128138452,
+      "accuracy": null
+    },
+    {
+      "block": "2019-Q1",
+      "family": "eps_growth",
+      "method": "core",
+      "rows": 23,
+      "score": 0.49799178680712575,
+      "mae": 44.95296332198587,
+      "accuracy": null
+    },
+    {
+      "block": "2019-Q1",
+      "family": "eps_growth",
+      "method": "ensemble",
+      "rows": 23,
+      "score": 0.5024554860233117,
+      "mae": 44.00569382438975,
+      "accuracy": null
+    },
+    {
+      "block": "2019-Q1",
+      "family": "eps_growth",
+      "method": "drift",
+      "rows": 23,
+      "score": 0.5118947168862732,
+      "mae": 42.330568411146885,
+      "accuracy": null
+    },
+    {
+      "block": "2019-Q1",
+      "family": "eps_growth",
+      "method": "huber",
+      "rows": 23,
+      "score": 0.32210179410470857,
+      "mae": 94.26737472488752,
+      "accuracy": null
+    },
+    {
+      "block": "2019-Q1",
+      "family": "eps_growth",
+      "method": "tree",
+      "rows": 23,
+      "score": 0.5577574526426217,
+      "mae": 35.23624850277236,
+      "accuracy": null
+    },
+    {
+      "block": "2019-Q1",
+      "family": "eps_growth",
+      "method": "quant_ensemble",
+      "rows": 23,
+      "score": 0.499522351272781,
+      "mae": 44.561509766271364,
+      "accuracy": null
+    },
+    {
+      "block": "2019-Q1",
+      "family": "eps_growth",
+      "method": "logit",
+      "rows": 23,
+      "score": 0.5274861984045908,
+      "mae": 39.80869314178501,
+      "accuracy": null
+    },
+    {
+      "block": "2019-Q1",
+      "family": "eps_growth",
+      "method": "tree_label",
+      "rows": 23,
+      "score": 0.525045116304544,
+      "mae": 40.20038918565497,
+      "accuracy": null
+    },
+    {
+      "block": "2019-Q1",
+      "family": "eps_growth",
+      "method": "agent_selector",
+      "rows": 23,
+      "score": 0.44978506695481596,
+      "mae": 54.66794184622312,
+      "accuracy": null
+    },
+    {
+      "block": "2019-Q1",
+      "family": "eps_growth",
+      "method": "agent_quality",
+      "rows": 23,
+      "score": 0.49573940159536,
+      "mae": 45.53533113048795,
+      "accuracy": null
+    },
+    {
+      "block": "2019-Q1",
+      "family": "eps_growth",
+      "method": "agent_guard",
+      "rows": 23,
+      "score": 0.4965322186612581,
+      "mae": 45.32948009397622,
+      "accuracy": null
+    },
+    {
+      "block": "2019-Q1",
+      "family": "eps_growth",
+      "method": "compact_huber",
+      "rows": 23,
+      "score": 0.418696371537728,
+      "mae": 62.297309194126754,
+      "accuracy": null
+    },
+    {
+      "block": "2019-Q1",
+      "family": "eps_growth",
+      "method": "compact_tree",
+      "rows": 23,
+      "score": 0.5146399274343133,
+      "mae": 41.91168225116916,
+      "accuracy": null
+    },
+    {
+      "block": "2019-Q1",
+      "family": "eps_growth",
+      "method": "compact_quant_ensemble",
+      "rows": 23,
+      "score": 0.42985762482165835,
+      "mae": 64.11306637202203,
+      "accuracy": null
+    },
+    {
+      "block": "2019-Q1",
+      "family": "eps_growth",
+      "method": "compact_logit",
+      "rows": 23,
+      "score": 0.3873921191862011,
+      "mae": 73.62792029084851,
+      "accuracy": null
+    },
+    {
+      "block": "2019-Q1",
+      "family": "eps_growth",
+      "method": "compact_tree_label",
+      "rows": 23,
+      "score": 0.4116837913704916,
+      "mae": 68.44344255734495,
+      "accuracy": null
+    },
+    {
+      "block": "2019-Q1",
+      "family": "eps_growth",
+      "method": "selected_by_family",
+      "rows": 23,
+      "score": 0.418696371537728,
+      "mae": 62.297309194126754,
+      "accuracy": null
+    },
+    {
+      "block": "2019-Q2",
+      "family": "eps_direction",
+      "method": "v6",
+      "rows": 34,
+      "score": 0.5,
+      "mae": 0.6723529411764706,
+      "accuracy": 0.5882352941176471
+    },
+    {
+      "block": "2019-Q2",
+      "family": "eps_direction",
+      "method": "v7",
+      "rows": 34,
+      "score": 0.6785714285714286,
+      "mae": 0.6222058823529413,
+      "accuracy": 0.7352941176470589
+    },
+    {
+      "block": "2019-Q2",
+      "family": "eps_direction",
+      "method": "trend",
+      "rows": 34,
+      "score": 0.6785714285714286,
+      "mae": 0.687205882352941,
+      "accuracy": 0.7352941176470589
+    },
+    {
+      "block": "2019-Q2",
+      "family": "eps_direction",
+      "method": "robust",
+      "rows": 34,
+      "score": 0.475,
+      "mae": 0.6481617647058824,
+      "accuracy": 0.5588235294117647
+    },
+    {
+      "block": "2019-Q2",
+      "family": "eps_direction",
+      "method": "core",
+      "rows": 34,
+      "score": 0.7142857142857142,
+      "mae": 0.588268164385311,
+      "accuracy": 0.7647058823529411
+    },
+    {
+      "block": "2019-Q2",
+      "family": "eps_direction",
+      "method": "ensemble",
+      "rows": 34,
+      "score": 0.75,
+      "mae": 0.5879400664576732,
+      "accuracy": 0.7941176470588235
+    },
+    {
+      "block": "2019-Q2",
+      "family": "eps_direction",
+      "method": "drift",
+      "rows": 34,
+      "score": 0.5,
+      "mae": 0.6578014705882353,
+      "accuracy": 0.5882352941176471
+    },
+    {
+      "block": "2019-Q2",
+      "family": "eps_direction",
+      "method": "huber",
+      "rows": 34,
+      "score": 0.6428571428571429,
+      "mae": 0.5562829473932878,
+      "accuracy": 0.7058823529411765
+    },
+    {
+      "block": "2019-Q2",
+      "family": "eps_direction",
+      "method": "tree",
+      "rows": 34,
+      "score": 0.6071428571428572,
+      "mae": 0.5785543629884904,
+      "accuracy": 0.6764705882352942
+    },
+    {
+      "block": "2019-Q2",
+      "family": "eps_direction",
+      "method": "quant_ensemble",
+      "rows": 34,
+      "score": 0.7142857142857142,
+      "mae": 0.5515572452190144,
+      "accuracy": 0.7647058823529411
+    },
+    {
+      "block": "2019-Q2",
+      "family": "eps_direction",
+      "method": "logit",
+      "rows": 34,
+      "score": 0.5357142857142857,
+      "mae": 0.5751287344573223,
+      "accuracy": 0.6176470588235294
+    },
+    {
+      "block": "2019-Q2",
+      "family": "eps_direction",
+      "method": "tree_label",
+      "rows": 34,
+      "score": 0.6785714285714286,
+      "mae": 0.567560257534708,
+      "accuracy": 0.7352941176470589
+    },
+    {
+      "block": "2019-Q2",
+      "family": "eps_direction",
+      "method": "agent_selector",
+      "rows": 34,
+      "score": 0.75,
+      "mae": 0.5634768453347765,
+      "accuracy": 0.7941176470588235
+    },
+    {
+      "block": "2019-Q2",
+      "family": "eps_direction",
+      "method": "agent_quality",
+      "rows": 34,
+      "score": 0.75,
+      "mae": 0.571129477057435,
+      "accuracy": 0.7941176470588235
+    },
+    {
+      "block": "2019-Q2",
+      "family": "eps_direction",
+      "method": "agent_guard",
+      "rows": 34,
+      "score": 0.75,
+      "mae": 0.5600910065691285,
+      "accuracy": 0.7941176470588235
+    },
+    {
+      "block": "2019-Q2",
+      "family": "eps_direction",
+      "method": "compact_huber",
+      "rows": 34,
+      "score": 0.5357142857142857,
+      "mae": 0.5435855552541505,
+      "accuracy": 0.6176470588235294
+    },
+    {
+      "block": "2019-Q2",
+      "family": "eps_direction",
+      "method": "compact_tree",
+      "rows": 34,
+      "score": 0.5357142857142857,
+      "mae": 0.6024478063981629,
+      "accuracy": 0.6176470588235294
+    },
+    {
+      "block": "2019-Q2",
+      "family": "eps_direction",
+      "method": "compact_quant_ensemble",
+      "rows": 34,
+      "score": 0.6785714285714286,
+      "mae": 0.5910944634135291,
+      "accuracy": 0.7352941176470589
+    },
+    {
+      "block": "2019-Q2",
+      "family": "eps_direction",
+      "method": "compact_logit",
+      "rows": 34,
+      "score": 0.5357142857142857,
+      "mae": 0.5823677578793365,
+      "accuracy": 0.6176470588235294
+    },
+    {
+      "block": "2019-Q2",
+      "family": "eps_direction",
+      "method": "compact_tree_label",
+      "rows": 34,
+      "score": 0.5,
+      "mae": 0.602230484733475,
+      "accuracy": 0.5882352941176471
+    },
+    {
+      "block": "2019-Q2",
+      "family": "eps_direction",
+      "method": "selected_by_family",
+      "rows": 34,
+      "score": 0.6785714285714286,
+      "mae": 0.567560257534708,
+      "accuracy": 0.7352941176470589
+    },
+    {
+      "block": "2019-Q2",
+      "family": "eps_growth",
+      "method": "v6",
+      "rows": 34,
+      "score": 0.5,
+      "mae": 67.39213713906813,
+      "accuracy": null
+    },
+    {
+      "block": "2019-Q2",
+      "family": "eps_growth",
+      "method": "v7",
+      "rows": 34,
+      "score": 0.5118899298489672,
+      "mae": 64.26143369588095,
+      "accuracy": null
+    },
+    {
+      "block": "2019-Q2",
+      "family": "eps_growth",
+      "method": "trend",
+      "rows": 34,
+      "score": 0.501582313945001,
+      "mae": 66.96694065420859,
+      "accuracy": null
+    },
+    {
+      "block": "2019-Q2",
+      "family": "eps_growth",
+      "method": "robust",
+      "rows": 34,
+      "score": 0.5182547374235842,
+      "mae": 62.644565417857315,
+      "accuracy": null
+    },
+    {
+      "block": "2019-Q2",
+      "family": "eps_growth",
+      "method": "core",
+      "rows": 34,
+      "score": 0.572513896098819,
+      "mae": 50.32052904822715,
+      "accuracy": null
+    },
+    {
+      "block": "2019-Q2",
+      "family": "eps_growth",
+      "method": "ensemble",
+      "rows": 34,
+      "score": 0.5491120208020782,
+      "mae": 55.337168696614775,
+      "accuracy": null
+    },
+    {
+      "block": "2019-Q2",
+      "family": "eps_growth",
+      "method": "drift",
+      "rows": 34,
+      "score": 0.5061260252569098,
+      "mae": 65.7318232596586,
+      "accuracy": null
+    },
+    {
+      "block": "2019-Q2",
+      "family": "eps_growth",
+      "method": "huber",
+      "rows": 34,
+      "score": 0.6157712377424569,
+      "mae": 42.051326615655896,
+      "accuracy": null
+    },
+    {
+      "block": "2019-Q2",
+      "family": "eps_growth",
+      "method": "tree",
+      "rows": 34,
+      "score": 0.594078573770783,
+      "mae": 46.04763348135901,
+      "accuracy": null
+    },
+    {
+      "block": "2019-Q2",
+      "family": "eps_growth",
+      "method": "quant_ensemble",
+      "rows": 34,
+      "score": 0.592654302882959,
+      "mae": 46.32025271660316,
+      "accuracy": null
+    },
+    {
+      "block": "2019-Q2",
+      "family": "eps_growth",
+      "method": "logit",
+      "rows": 34,
+      "score": 0.5857988554051621,
+      "mae": 47.650998430831564,
+      "accuracy": null
+    },
+    {
+      "block": "2019-Q2",
+      "family": "eps_growth",
+      "method": "tree_label",
+      "rows": 34,
+      "score": 0.5875337473427384,
+      "mae": 47.311294695894794,
+      "accuracy": null
+    },
+    {
+      "block": "2019-Q2",
+      "family": "eps_growth",
+      "method": "agent_selector",
+      "rows": 34,
+      "score": 0.5882077817415688,
+      "mae": 47.17985464848204,
+      "accuracy": null
+    },
+    {
+      "block": "2019-Q2",
+      "family": "eps_growth",
+      "method": "agent_quality",
+      "rows": 34,
+      "score": 0.5805900819736293,
+      "mae": 48.683109806209735,
+      "accuracy": null
+    },
+    {
+      "block": "2019-Q2",
+      "family": "eps_growth",
+      "method": "agent_guard",
+      "rows": 34,
+      "score": 0.5936484386606705,
+      "mae": 46.12982763036922,
+      "accuracy": null
+    },
+    {
+      "block": "2019-Q2",
+      "family": "eps_growth",
+      "method": "compact_huber",
+      "rows": 34,
+      "score": 0.5909459560382764,
+      "mae": 46.64898024308217,
+      "accuracy": null
+    },
+    {
+      "block": "2019-Q2",
+      "family": "eps_growth",
+      "method": "compact_tree",
+      "rows": 34,
+      "score": 0.5920929647225053,
+      "mae": 46.42805859768182,
+      "accuracy": null
+    },
+    {
+      "block": "2019-Q2",
+      "family": "eps_growth",
+      "method": "compact_quant_ensemble",
+      "rows": 34,
+      "score": 0.5552581983535885,
+      "mae": 53.97867258313755,
+      "accuracy": null
+    },
+    {
+      "block": "2019-Q2",
+      "family": "eps_growth",
+      "method": "compact_logit",
+      "rows": 34,
+      "score": 0.5534835706341689,
+      "mae": 54.36782235142182,
+      "accuracy": null
+    },
+    {
+      "block": "2019-Q2",
+      "family": "eps_growth",
+      "method": "compact_tree_label",
+      "rows": 34,
+      "score": 0.5488227315818438,
+      "mae": 55.40186037781169,
+      "accuracy": null
+    },
+    {
+      "block": "2019-Q2",
+      "family": "eps_growth",
+      "method": "selected_by_family",
+      "rows": 34,
+      "score": 0.5909459560382764,
+      "mae": 46.64898024308217,
+      "accuracy": null
+    },
+    {
+      "block": "2019-Q3",
+      "family": "eps_direction",
+      "method": "v6",
+      "rows": 34,
+      "score": 0.5,
+      "mae": 0.49352941176470594,
+      "accuracy": 0.6470588235294118
+    },
+    {
+      "block": "2019-Q3",
+      "family": "eps_direction",
+      "method": "v7",
+      "rows": 34,
+      "score": 0.5833333333333334,
+      "mae": 0.5126470588235295,
+      "accuracy": 0.7058823529411765
+    },
+    {
+      "block": "2019-Q3",
+      "family": "eps_direction",
+      "method": "trend",
+      "rows": 34,
+      "score": 0.5833333333333334,
+      "mae": 0.7605882352941178,
+      "accuracy": 0.7058823529411765
+    },
+    {
+      "block": "2019-Q3",
+      "family": "eps_direction",
+      "method": "robust",
+      "rows": 34,
+      "score": 0.5833333333333334,
+      "mae": 0.45463235294117643,
+      "accuracy": 0.7058823529411765
+    },
+    {
+      "block": "2019-Q3",
+      "family": "eps_direction",
+      "method": "core",
+      "rows": 34,
+      "score": 0.6666666666666665,
+      "mae": 0.492590493251675,
+      "accuracy": 0.7647058823529411
+    },
+    {
+      "block": "2019-Q3",
+      "family": "eps_direction",
+      "method": "ensemble",
+      "rows": 34,
+      "score": 0.7499999999999999,
+      "mae": 0.47230162377080837,
+      "accuracy": 0.8235294117647058
+    },
+    {
+      "block": "2019-Q3",
+      "family": "eps_direction",
+      "method": "drift",
+      "rows": 34,
+      "score": 0.5,
+      "mae": 0.4831470588235294,
+      "accuracy": 0.6470588235294118
+    },
+    {
+      "block": "2019-Q3",
+      "family": "eps_direction",
+      "method": "huber",
+      "rows": 34,
+      "score": 0.4318181818181818,
+      "mae": 0.507532105471209,
+      "accuracy": 0.5588235294117647
+    },
+    {
+      "block": "2019-Q3",
+      "family": "eps_direction",
+      "method": "tree",
+      "rows": 34,
+      "score": 0.6666666666666665,
+      "mae": 0.40352170333241616,
+      "accuracy": 0.7647058823529411
+    },
+    {
+      "block": "2019-Q3",
+      "family": "eps_direction",
+      "method": "quant_ensemble",
+      "rows": 34,
+      "score": 0.625,
+      "mae": 0.3708849052322891,
+      "accuracy": 0.7352941176470589
+    },
+    {
+      "block": "2019-Q3",
+      "family": "eps_direction",
+      "method": "logit",
+      "rows": 34,
+      "score": 0.8333333333333333,
+      "mae": 0.362466569032753,
+      "accuracy": 0.8823529411764706
+    },
+    {
+      "block": "2019-Q3",
+      "family": "eps_direction",
+      "method": "tree_label",
+      "rows": 34,
+      "score": 0.625,
+      "mae": 0.48804567563666373,
+      "accuracy": 0.7352941176470589
+    },
+    {
+      "block": "2019-Q3",
+      "family": "eps_direction",
+      "method": "agent_selector",
+      "rows": 34,
+      "score": 0.7083333333333333,
+      "mae": 0.4645743306543226,
+      "accuracy": 0.7941176470588235
+    },
+    {
+      "block": "2019-Q3",
+      "family": "eps_direction",
+      "method": "agent_quality",
+      "rows": 34,
+      "score": 0.625,
+      "mae": 0.4879586141605993,
+      "accuracy": 0.7352941176470589
+    },
+    {
+      "block": "2019-Q3",
+      "family": "eps_direction",
+      "method": "agent_guard",
+      "rows": 34,
+      "score": 0.6666666666666665,
+      "mae": 0.4034818024220852,
+      "accuracy": 0.7647058823529411
+    },
+    {
+      "block": "2019-Q3",
+      "family": "eps_direction",
+      "method": "compact_huber",
+      "rows": 34,
+      "score": 0.7499999999999999,
+      "mae": 0.37549325443421955,
+      "accuracy": 0.8235294117647058
+    },
+    {
+      "block": "2019-Q3",
+      "family": "eps_direction",
+      "method": "compact_tree",
+      "rows": 34,
+      "score": 0.7499999999999999,
+      "mae": 0.34531146474308066,
+      "accuracy": 0.8235294117647058
+    },
+    {
+      "block": "2019-Q3",
+      "family": "eps_direction",
+      "method": "compact_quant_ensemble",
+      "rows": 34,
+      "score": 0.7083333333333333,
+      "mae": 0.43548984582450534,
+      "accuracy": 0.7941176470588235
+    },
+    {
+      "block": "2019-Q3",
+      "family": "eps_direction",
+      "method": "compact_logit",
+      "rows": 34,
+      "score": 0.7083333333333333,
+      "mae": 0.44016678367773876,
+      "accuracy": 0.7941176470588235
+    },
+    {
+      "block": "2019-Q3",
+      "family": "eps_direction",
+      "method": "compact_tree_label",
+      "rows": 34,
+      "score": 0.7083333333333333,
+      "mae": 0.43461645851076186,
+      "accuracy": 0.7941176470588235
+    },
+    {
+      "block": "2019-Q3",
+      "family": "eps_direction",
+      "method": "selected_by_family",
+      "rows": 34,
+      "score": 0.625,
+      "mae": 0.48804567563666373,
+      "accuracy": 0.7352941176470589
+    },
+    {
+      "block": "2019-Q3",
+      "family": "eps_growth",
+      "method": "v6",
+      "rows": 34,
+      "score": 0.5,
+      "mae": 39.87219261625035,
+      "accuracy": null
+    },
+    {
+      "block": "2019-Q3",
+      "family": "eps_growth",
+      "method": "v7",
+      "rows": 34,
+      "score": 0.5212004948423311,
+      "mae": 36.62848804467675,
+      "accuracy": null
+    },
+    {
+      "block": "2019-Q3",
+      "family": "eps_growth",
+      "method": "trend",
+      "rows": 34,
+      "score": 0.45680121769295656,
+      "mae": 48.51972633087935,
+      "accuracy": null
+    },
+    {
+      "block": "2019-Q3",
+      "family": "eps_growth",
+      "method": "robust",
+      "rows": 34,
+      "score": 0.5297966818313607,
+      "mae": 35.38723044850573,
+      "accuracy": null
+    },
+    {
+      "block": "2019-Q3",
+      "family": "eps_growth",
+      "method": "core",
+      "rows": 34,
+      "score": 0.5191671788757892,
+      "mae": 36.928102623117574,
+      "accuracy": null
+    },
+    {
+      "block": "2019-Q3",
+      "family": "eps_growth",
+      "method": "ensemble",
+      "rows": 34,
+      "score": 0.5249812734877145,
+      "mae": 36.0775500314432,
+      "accuracy": null
+    },
+    {
+      "block": "2019-Q3",
+      "family": "eps_growth",
+      "method": "drift",
+      "rows": 34,
+      "score": 0.5054387396345674,
+      "mae": 38.90543648293762,
+      "accuracy": null
+    },
+    {
+      "block": "2019-Q3",
+      "family": "eps_growth",
+      "method": "huber",
+      "rows": 34,
+      "score": 0.48669429420778476,
+      "mae": 43.02358349735009,
+      "accuracy": null
+    },
+    {
+      "block": "2019-Q3",
+      "family": "eps_growth",
+      "method": "tree",
+      "rows": 34,
+      "score": 0.5664443409349504,
+      "mae": 30.51811713675892,
+      "accuracy": null
+    },
+    {
+      "block": "2019-Q3",
+      "family": "eps_growth",
+      "method": "quant_ensemble",
+      "rows": 34,
+      "score": 0.576724955817446,
+      "mae": 29.263349749409528,
+      "accuracy": null
+    },
+    {
+      "block": "2019-Q3",
+      "family": "eps_growth",
+      "method": "logit",
+      "rows": 34,
+      "score": 0.5845576235477122,
+      "mae": 28.336981313025998,
+      "accuracy": null
+    },
+    {
+      "block": "2019-Q3",
+      "family": "eps_growth",
+      "method": "tree_label",
+      "rows": 34,
+      "score": 0.5566204355442899,
+      "mae": 31.760449791607773,
+      "accuracy": null
+    },
+    {
+      "block": "2019-Q3",
+      "family": "eps_growth",
+      "method": "agent_selector",
+      "rows": 34,
+      "score": 0.543584977490984,
+      "mae": 33.47823881084271,
+      "accuracy": null
+    },
+    {
+      "block": "2019-Q3",
+      "family": "eps_growth",
+      "method": "agent_quality",
+      "rows": 34,
+      "score": 0.5218845895024682,
+      "mae": 36.52820972991203,
+      "accuracy": null
+    },
+    {
+      "block": "2019-Q3",
+      "family": "eps_growth",
+      "method": "agent_guard",
+      "rows": 34,
+      "score": 0.5576728560153386,
+      "mae": 31.625267204805883,
+      "accuracy": null
+    },
+    {
+      "block": "2019-Q3",
+      "family": "eps_growth",
+      "method": "compact_huber",
+      "rows": 34,
+      "score": 0.579409857593995,
+      "mae": 28.94298560978123,
+      "accuracy": null
+    },
+    {
+      "block": "2019-Q3",
+      "family": "eps_growth",
+      "method": "compact_tree",
+      "rows": 34,
+      "score": 0.6096361897693569,
+      "mae": 25.531064745054202,
+      "accuracy": null
+    },
+    {
+      "block": "2019-Q3",
+      "family": "eps_growth",
+      "method": "compact_quant_ensemble",
+      "rows": 34,
+      "score": 0.5653401088529132,
+      "mae": 30.655604707650575,
+      "accuracy": null
+    },
+    {
+      "block": "2019-Q3",
+      "family": "eps_growth",
+      "method": "compact_logit",
+      "rows": 34,
+      "score": 0.5590799611029702,
+      "mae": 31.445320781277346,
+      "accuracy": null
+    },
+    {
+      "block": "2019-Q3",
+      "family": "eps_growth",
+      "method": "compact_tree_label",
+      "rows": 34,
+      "score": 0.566069154649969,
+      "mae": 30.564771293054118,
+      "accuracy": null
+    },
+    {
+      "block": "2019-Q3",
+      "family": "eps_growth",
+      "method": "selected_by_family",
+      "rows": 34,
+      "score": 0.579409857593995,
+      "mae": 28.94298560978123,
+      "accuracy": null
+    },
+    {
+      "block": "2019-Q4",
+      "family": "eps_direction",
+      "method": "v6",
+      "rows": 24,
+      "score": 0.5,
+      "mae": 0.9354166666666668,
+      "accuracy": 0.5416666666666666
+    },
+    {
+      "block": "2019-Q4",
+      "family": "eps_direction",
+      "method": "v7",
+      "rows": 24,
+      "score": 0.5,
+      "mae": 0.98875,
+      "accuracy": 0.5416666666666666
+    },
+    {
+      "block": "2019-Q4",
+      "family": "eps_direction",
+      "method": "trend",
+      "rows": 24,
+      "score": 0.5,
+      "mae": 1.0133333333333334,
+      "accuracy": 0.5416666666666666
+    },
+    {
+      "block": "2019-Q4",
+      "family": "eps_direction",
+      "method": "robust",
+      "rows": 24,
+      "score": 0.5,
+      "mae": 0.925625,
+      "accuracy": 0.5416666666666666
+    },
+    {
+      "block": "2019-Q4",
+      "family": "eps_direction",
+      "method": "core",
+      "rows": 24,
+      "score": 0.3461538461538462,
+      "mae": 1.000031650493414,
+      "accuracy": 0.375
+    },
+    {
+      "block": "2019-Q4",
+      "family": "eps_direction",
+      "method": "ensemble",
+      "rows": 24,
+      "score": 0.4230769230769231,
+      "mae": 1.0055135823777814,
+      "accuracy": 0.4583333333333333
+    },
+    {
+      "block": "2019-Q4",
+      "family": "eps_direction",
+      "method": "drift",
+      "rows": 24,
+      "score": 0.5,
+      "mae": 0.9309479166666668,
+      "accuracy": 0.5416666666666666
+    },
+    {
+      "block": "2019-Q4",
+      "family": "eps_direction",
+      "method": "huber",
+      "rows": 24,
+      "score": 0.5909090909090909,
+      "mae": 0.7438443960707476,
+      "accuracy": 0.625
+    },
+    {
+      "block": "2019-Q4",
+      "family": "eps_direction",
+      "method": "tree",
+      "rows": 24,
+      "score": 0.7272727272727273,
+      "mae": 0.5968190687496246,
+      "accuracy": 0.75
+    },
+    {
+      "block": "2019-Q4",
+      "family": "eps_direction",
+      "method": "quant_ensemble",
+      "rows": 24,
+      "score": 0.5909090909090909,
+      "mae": 0.7890149732375393,
+      "accuracy": 0.625
+    },
+    {
+      "block": "2019-Q4",
+      "family": "eps_direction",
+      "method": "logit",
+      "rows": 24,
+      "score": 0.6363636363636364,
+      "mae": 0.7899940395873076,
+      "accuracy": 0.6666666666666666
+    },
+    {
+      "block": "2019-Q4",
+      "family": "eps_direction",
+      "method": "tree_label",
+      "rows": 24,
+      "score": 0.5909090909090909,
+      "mae": 0.8188237746405287,
+      "accuracy": 0.625
+    },
+    {
+      "block": "2019-Q4",
+      "family": "eps_direction",
+      "method": "agent_selector",
+      "rows": 24,
+      "score": 0.46153846153846156,
+      "mae": 0.9379435464632396,
+      "accuracy": 0.5
+    },
+    {
+      "block": "2019-Q4",
+      "family": "eps_direction",
+      "method": "agent_quality",
+      "rows": 24,
+      "score": 0.4230769230769231,
+      "mae": 0.9607929892040393,
+      "accuracy": 0.4583333333333333
+    },
+    {
+      "block": "2019-Q4",
+      "family": "eps_direction",
+      "method": "agent_guard",
+      "rows": 24,
+      "score": 0.5,
+      "mae": 0.9007778203060482,
+      "accuracy": 0.5416666666666666
+    },
+    {
+      "block": "2019-Q4",
+      "family": "eps_direction",
+      "method": "compact_huber",
+      "rows": 24,
+      "score": 0.6363636363636364,
+      "mae": 0.7540042507914766,
+      "accuracy": 0.6666666666666666
+    },
+    {
+      "block": "2019-Q4",
+      "family": "eps_direction",
+      "method": "compact_tree",
+      "rows": 24,
+      "score": 0.6363636363636364,
+      "mae": 0.660083976980196,
+      "accuracy": 0.6666666666666666
+    },
+    {
+      "block": "2019-Q4",
+      "family": "eps_direction",
+      "method": "compact_quant_ensemble",
+      "rows": 24,
+      "score": 0.5909090909090909,
+      "mae": 0.8634844054622652,
+      "accuracy": 0.625
+    },
+    {
+      "block": "2019-Q4",
+      "family": "eps_direction",
+      "method": "compact_logit",
+      "rows": 24,
+      "score": 0.5909090909090909,
+      "mae": 0.8096611521903331,
+      "accuracy": 0.625
+    },
+    {
+      "block": "2019-Q4",
+      "family": "eps_direction",
+      "method": "compact_tree_label",
+      "rows": 24,
+      "score": 0.5909090909090909,
+      "mae": 0.8079277008265651,
+      "accuracy": 0.625
+    },
+    {
+      "block": "2019-Q4",
+      "family": "eps_direction",
+      "method": "selected_by_family",
+      "rows": 24,
+      "score": 0.5909090909090909,
+      "mae": 0.8188237746405287,
+      "accuracy": 0.625
+    },
+    {
+      "block": "2019-Q4",
+      "family": "eps_growth",
+      "method": "v6",
+      "rows": 23,
+      "score": 0.5,
+      "mae": 82.80931278560469,
+      "accuracy": null
+    },
+    {
+      "block": "2019-Q4",
+      "family": "eps_growth",
+      "method": "v7",
+      "rows": 23,
+      "score": 0.39165695614379326,
+      "mae": 130.66771359772596,
+      "accuracy": null
+    },
+    {
+      "block": "2019-Q4",
+      "family": "eps_growth",
+      "method": "trend",
+      "rows": 23,
+      "score": 0.384267534647743,
+      "mae": 133.43294670798383,
+      "accuracy": null
+    },
+    {
+      "block": "2019-Q4",
+      "family": "eps_growth",
+      "method": "robust",
+      "rows": 23,
+      "score": 0.4335314052469351,
+      "mae": 109.1282017056312,
+      "accuracy": null
+    },
+    {
+      "block": "2019-Q4",
+      "family": "eps_growth",
+      "method": "core",
+      "rows": 23,
+      "score": 0.4255321870534837,
+      "mae": 112.54331121858323,
+      "accuracy": null
+    },
+    {
+      "block": "2019-Q4",
+      "family": "eps_growth",
+      "method": "ensemble",
+      "rows": 23,
+      "score": 0.42853660248904324,
+      "mae": 110.99747847499798,
+      "accuracy": null
+    },
+    {
+      "block": "2019-Q4",
+      "family": "eps_growth",
+      "method": "drift",
+      "rows": 23,
+      "score": 0.503108637790535,
+      "mae": 81.78597850033353,
+      "accuracy": null
+    },
+    {
+      "block": "2019-Q4",
+      "family": "eps_growth",
+      "method": "huber",
+      "rows": 23,
+      "score": 0.4454553297179919,
+      "mae": 111.52598007103771,
+      "accuracy": null
+    },
+    {
+      "block": "2019-Q4",
+      "family": "eps_growth",
+      "method": "tree",
+      "rows": 23,
+      "score": 0.5867962192174732,
+      "mae": 58.31176140269822,
+      "accuracy": null
+    },
+    {
+      "block": "2019-Q4",
+      "family": "eps_growth",
+      "method": "quant_ensemble",
+      "rows": 23,
+      "score": 0.4976138492250255,
+      "mae": 83.94618064238888,
+      "accuracy": null
+    },
+    {
+      "block": "2019-Q4",
+      "family": "eps_growth",
+      "method": "logit",
+      "rows": 23,
+      "score": 0.5007926333810591,
+      "mae": 82.5471786358538,
+      "accuracy": null
+    },
+    {
+      "block": "2019-Q4",
+      "family": "eps_growth",
+      "method": "tree_label",
+      "rows": 23,
+      "score": 0.49067459787238854,
+      "mae": 87.34284799169123,
+      "accuracy": null
+    },
+    {
+      "block": "2019-Q4",
+      "family": "eps_growth",
+      "method": "agent_selector",
+      "rows": 23,
+      "score": 0.4540353759203979,
+      "mae": 100.3571021837787,
+      "accuracy": null
+    },
+    {
+      "block": "2019-Q4",
+      "family": "eps_growth",
+      "method": "agent_quality",
+      "rows": 23,
+      "score": 0.43080029951356913,
+      "mae": 110.65383920350966,
+      "accuracy": null
+    },
+    {
+      "block": "2019-Q4",
+      "family": "eps_growth",
+      "method": "agent_guard",
+      "rows": 23,
+      "score": 0.46114025628857996,
+      "mae": 97.15897062647346,
+      "accuracy": null
+    },
+    {
+      "block": "2019-Q4",
+      "family": "eps_growth",
+      "method": "compact_huber",
+      "rows": 23,
+      "score": 0.49227685532478793,
+      "mae": 86.54633615220803,
+      "accuracy": null
+    },
+    {
+      "block": "2019-Q4",
+      "family": "eps_growth",
+      "method": "compact_tree",
+      "rows": 23,
+      "score": 0.44981881826707604,
+      "mae": 107.57968579466694,
+      "accuracy": null
+    },
+    {
+      "block": "2019-Q4",
+      "family": "eps_growth",
+      "method": "compact_quant_ensemble",
+      "rows": 23,
+      "score": 0.41952304534620766,
+      "mae": 118.94225364088436,
+      "accuracy": null
+    },
+    {
+      "block": "2019-Q4",
+      "family": "eps_growth",
+      "method": "compact_logit",
+      "rows": 23,
+      "score": 0.41752506027870195,
+      "mae": 119.67910439699719,
+      "accuracy": null
+    },
+    {
+      "block": "2019-Q4",
+      "family": "eps_growth",
+      "method": "compact_tree_label",
+      "rows": 23,
+      "score": 0.41806009022271234,
+      "mae": 119.25202404689615,
+      "accuracy": null
+    },
+    {
+      "block": "2019-Q4",
+      "family": "eps_growth",
+      "method": "selected_by_family",
+      "rows": 23,
+      "score": 0.49227685532478793,
+      "mae": 86.54633615220803,
+      "accuracy": null
+    },
+    {
+      "block": "2020-Q1",
+      "family": "eps_direction",
+      "method": "v6",
+      "rows": 23,
+      "score": 0.5,
+      "mae": 0.6030434782608696,
+      "accuracy": 0.34782608695652173
+    },
+    {
+      "block": "2020-Q1",
+      "family": "eps_direction",
+      "method": "v7",
+      "rows": 23,
+      "score": 0.6,
+      "mae": 0.5719565217391305,
+      "accuracy": 0.4782608695652174
+    },
+    {
+      "block": "2020-Q1",
+      "family": "eps_direction",
+      "method": "trend",
+      "rows": 23,
+      "score": 0.6,
+      "mae": 0.8843478260869565,
+      "accuracy": 0.4782608695652174
+    },
+    {
+      "block": "2020-Q1",
+      "family": "eps_direction",
+      "method": "robust",
+      "rows": 23,
+      "score": 0.5666666666666667,
+      "mae": 0.5417391304347826,
+      "accuracy": 0.43478260869565216
+    },
+    {
+      "block": "2020-Q1",
+      "family": "eps_direction",
+      "method": "core",
+      "rows": 23,
+      "score": 0.5666666666666667,
+      "mae": 0.5451310585232018,
+      "accuracy": 0.43478260869565216
+    },
+    {
+      "block": "2020-Q1",
+      "family": "eps_direction",
+      "method": "ensemble",
+      "rows": 23,
+      "score": 0.5666666666666667,
+      "mae": 0.5444708596960564,
+      "accuracy": 0.43478260869565216
+    },
+    {
+      "block": "2020-Q1",
+      "family": "eps_direction",
+      "method": "drift",
+      "rows": 23,
+      "score": 0.5,
+      "mae": 0.63725,
+      "accuracy": 0.34782608695652173
+    },
+    {
+      "block": "2020-Q1",
+      "family": "eps_direction",
+      "method": "huber",
+      "rows": 23,
+      "score": 0.6333333333333333,
+      "mae": 0.6364606270840983,
+      "accuracy": 0.5217391304347826
+    },
+    {
+      "block": "2020-Q1",
+      "family": "eps_direction",
+      "method": "tree",
+      "rows": 23,
+      "score": 0.5333333333333333,
+      "mae": 0.6462317611656999,
+      "accuracy": 0.391304347826087
+    },
+    {
+      "block": "2020-Q1",
+      "family": "eps_direction",
+      "method": "quant_ensemble",
+      "rows": 23,
+      "score": 0.5666666666666667,
+      "mae": 0.569209837777772,
+      "accuracy": 0.43478260869565216
+    },
+    {
+      "block": "2020-Q1",
+      "family": "eps_direction",
+      "method": "logit",
+      "rows": 23,
+      "score": 0.5666666666666667,
+      "mae": 0.557932883028978,
+      "accuracy": 0.43478260869565216
+    },
+    {
+      "block": "2020-Q1",
+      "family": "eps_direction",
+      "method": "tree_label",
+      "rows": 23,
+      "score": 0.5666666666666667,
+      "mae": 0.7001340483603604,
+      "accuracy": 0.43478260869565216
+    },
+    {
+      "block": "2020-Q1",
+      "family": "eps_direction",
+      "method": "agent_selector",
+      "rows": 23,
+      "score": 0.5666666666666667,
+      "mae": 0.48254525616320265,
+      "accuracy": 0.43478260869565216
+    },
+    {
+      "block": "2020-Q1",
+      "family": "eps_direction",
+      "method": "agent_quality",
+      "rows": 23,
+      "score": 0.5666666666666667,
+      "mae": 0.5232291045750042,
+      "accuracy": 0.43478260869565216
+    },
+    {
+      "block": "2020-Q1",
+      "family": "eps_direction",
+      "method": "agent_guard",
+      "rows": 23,
+      "score": 0.5666666666666667,
+      "mae": 0.569209837777772,
+      "accuracy": 0.43478260869565216
+    },
+    {
+      "block": "2020-Q1",
+      "family": "eps_direction",
+      "method": "compact_huber",
+      "rows": 23,
+      "score": 0.5666666666666667,
+      "mae": 0.5125060652448435,
+      "accuracy": 0.43478260869565216
+    },
+    {
+      "block": "2020-Q1",
+      "family": "eps_direction",
+      "method": "compact_tree",
+      "rows": 23,
+      "score": 0.6,
+      "mae": 0.6157113950424072,
+      "accuracy": 0.4782608695652174
+    },
+    {
+      "block": "2020-Q1",
+      "family": "eps_direction",
+      "method": "compact_quant_ensemble",
+      "rows": 23,
+      "score": 0.5333333333333333,
+      "mae": 0.5391779093542148,
+      "accuracy": 0.391304347826087
+    },
+    {
+      "block": "2020-Q1",
+      "family": "eps_direction",
+      "method": "compact_logit",
+      "rows": 23,
+      "score": 0.5666666666666667,
+      "mae": 0.5327990455464292,
+      "accuracy": 0.43478260869565216
+    },
+    {
+      "block": "2020-Q1",
+      "family": "eps_direction",
+      "method": "compact_tree_label",
+      "rows": 23,
+      "score": 0.6,
+      "mae": 0.5282498257401772,
+      "accuracy": 0.4782608695652174
+    },
+    {
+      "block": "2020-Q1",
+      "family": "eps_direction",
+      "method": "selected_by_family",
+      "rows": 23,
+      "score": 0.5666666666666667,
+      "mae": 0.7001340483603604,
+      "accuracy": 0.43478260869565216
+    },
+    {
+      "block": "2020-Q1",
+      "family": "eps_growth",
+      "method": "v6",
+      "rows": 23,
+      "score": 0.5,
+      "mae": 39.2913332089224,
+      "accuracy": null
+    },
+    {
+      "block": "2020-Q1",
+      "family": "eps_growth",
+      "method": "v7",
+      "rows": 23,
+      "score": 0.478778918351519,
+      "mae": 44.36346249436971,
+      "accuracy": null
+    },
+    {
+      "block": "2020-Q1",
+      "family": "eps_growth",
+      "method": "trend",
+      "rows": 23,
+      "score": 0.3877831048606808,
+      "mae": 62.95115154754723,
+      "accuracy": null
+    },
+    {
+      "block": "2020-Q1",
+      "family": "eps_growth",
+      "method": "robust",
+      "rows": 23,
+      "score": 0.49565609669459476,
+      "mae": 40.27889138499484,
+      "accuracy": null
+    },
+    {
+      "block": "2020-Q1",
+      "family": "eps_growth",
+      "method": "core",
+      "rows": 23,
+      "score": 0.49821060550945395,
+      "mae": 39.69515603371769,
+      "accuracy": null
+    },
+    {
+      "block": "2020-Q1",
+      "family": "eps_growth",
+      "method": "ensemble",
+      "rows": 23,
+      "score": 0.4987606192104237,
+      "mae": 39.57059021727514,
+      "accuracy": null
+    },
+    {
+      "block": "2020-Q1",
+      "family": "eps_growth",
+      "method": "drift",
+      "rows": 23,
+      "score": 0.4856281525024259,
+      "mae": 41.61091301298889,
+      "accuracy": null
+    },
+    {
+      "block": "2020-Q1",
+      "family": "eps_growth",
+      "method": "huber",
+      "rows": 23,
+      "score": 0.4351853340510868,
+      "mae": 48.62905187357654,
+      "accuracy": null
+    },
+    {
+      "block": "2020-Q1",
+      "family": "eps_growth",
+      "method": "tree",
+      "rows": 23,
+      "score": 0.46441715250216203,
+      "mae": 45.01154694512886,
+      "accuracy": null
+    },
+    {
+      "block": "2020-Q1",
+      "family": "eps_growth",
+      "method": "quant_ensemble",
+      "rows": 23,
+      "score": 0.4891130558343968,
+      "mae": 41.81416471586705,
+      "accuracy": null
+    },
+    {
+      "block": "2020-Q1",
+      "family": "eps_growth",
+      "method": "logit",
+      "rows": 23,
+      "score": 0.49034348880907247,
+      "mae": 41.17947882098163,
+      "accuracy": null
+    },
+    {
+      "block": "2020-Q1",
+      "family": "eps_growth",
+      "method": "tree_label",
+      "rows": 23,
+      "score": 0.46084537207483894,
+      "mae": 44.80440214601256,
+      "accuracy": null
+    },
+    {
+      "block": "2020-Q1",
+      "family": "eps_growth",
+      "method": "agent_selector",
+      "rows": 23,
+      "score": 0.4986511549071829,
+      "mae": 39.59535011087819,
+      "accuracy": null
+    },
+    {
+      "block": "2020-Q1",
+      "family": "eps_growth",
+      "method": "agent_quality",
+      "rows": 23,
+      "score": 0.5040207779880713,
+      "mae": 38.66444743520872,
+      "accuracy": null
+    },
+    {
+      "block": "2020-Q1",
+      "family": "eps_growth",
+      "method": "agent_guard",
+      "rows": 23,
+      "score": 0.4891130558343968,
+      "mae": 41.81416471586705,
+      "accuracy": null
+    },
+    {
+      "block": "2020-Q1",
+      "family": "eps_growth",
+      "method": "compact_huber",
+      "rows": 23,
+      "score": 0.49119061342757053,
+      "mae": 41.32030194112941,
+      "accuracy": null
+    },
+    {
+      "block": "2020-Q1",
+      "family": "eps_growth",
+      "method": "compact_tree",
+      "rows": 23,
+      "score": 0.46933756251724956,
+      "mae": 45.22605349898193,
+      "accuracy": null
+    },
+    {
+      "block": "2020-Q1",
+      "family": "eps_growth",
+      "method": "compact_quant_ensemble",
+      "rows": 23,
+      "score": 0.4903830060484735,
+      "mae": 41.511564578309894,
+      "accuracy": null
+    },
+    {
+      "block": "2020-Q1",
+      "family": "eps_growth",
+      "method": "compact_logit",
+      "rows": 23,
+      "score": 0.4942828184287774,
+      "mae": 40.596281780890045,
+      "accuracy": null
+    },
+    {
+      "block": "2020-Q1",
+      "family": "eps_growth",
+      "method": "compact_tree_label",
+      "rows": 23,
+      "score": 0.49303353130072924,
+      "mae": 40.88722292800999,
+      "accuracy": null
+    },
+    {
+      "block": "2020-Q1",
+      "family": "eps_growth",
+      "method": "selected_by_family",
+      "rows": 23,
+      "score": 0.49119061342757053,
+      "mae": 41.32030194112941,
+      "accuracy": null
+    },
+    {
+      "block": "2020-Q2",
+      "family": "eps_direction",
+      "method": "v6",
+      "rows": 34,
+      "score": 0.5,
+      "mae": 1.3094117647058823,
+      "accuracy": 0.38235294117647056
+    },
+    {
+      "block": "2020-Q2",
+      "family": "eps_direction",
+      "method": "v7",
+      "rows": 34,
+      "score": 0.6904761904761905,
+      "mae": 1.3125,
+      "accuracy": 0.6176470588235294
+    },
+    {
+      "block": "2020-Q2",
+      "family": "eps_direction",
+      "method": "trend",
+      "rows": 34,
+      "score": 0.6904761904761905,
+      "mae": 1.4476470588235295,
+      "accuracy": 0.6176470588235294
+    },
+    {
+      "block": "2020-Q2",
+      "family": "eps_direction",
+      "method": "robust",
+      "rows": 34,
+      "score": 0.5952380952380952,
+      "mae": 1.3853676470588234,
+      "accuracy": 0.5
+    },
+    {
+      "block": "2020-Q2",
+      "family": "eps_direction",
+      "method": "core",
+      "rows": 34,
+      "score": 0.5476190476190477,
+      "mae": 1.4063541604573917,
+      "accuracy": 0.4411764705882353
+    },
+    {
+      "block": "2020-Q2",
+      "family": "eps_direction",
+      "method": "ensemble",
+      "rows": 34,
+      "score": 0.5952380952380952,
+      "mae": 1.3821942207568276,
+      "accuracy": 0.5
+    },
+    {
+      "block": "2020-Q2",
+      "family": "eps_direction",
+      "method": "drift",
+      "rows": 34,
+      "score": 0.5,
+      "mae": 1.3109264705882353,
+      "accuracy": 0.38235294117647056
+    },
+    {
+      "block": "2020-Q2",
+      "family": "eps_direction",
+      "method": "huber",
+      "rows": 34,
+      "score": 0.7380952380952381,
+      "mae": 1.323963340187976,
+      "accuracy": 0.6764705882352942
+    },
+    {
+      "block": "2020-Q2",
+      "family": "eps_direction",
+      "method": "tree",
+      "rows": 34,
+      "score": 0.7142857142857143,
+      "mae": 1.2601731678661627,
+      "accuracy": 0.6470588235294118
+    },
+    {
+      "block": "2020-Q2",
+      "family": "eps_direction",
+      "method": "quant_ensemble",
+      "rows": 34,
+      "score": 0.7142857142857143,
+      "mae": 1.2547079213841288,
+      "accuracy": 0.6470588235294118
+    },
+    {
+      "block": "2020-Q2",
+      "family": "eps_direction",
+      "method": "logit",
+      "rows": 34,
+      "score": 0.5714285714285714,
+      "mae": 1.2722244679175723,
+      "accuracy": 0.47058823529411764
+    },
+    {
+      "block": "2020-Q2",
+      "family": "eps_direction",
+      "method": "tree_label",
+      "rows": 34,
+      "score": 0.6904761904761905,
+      "mae": 1.2597435463800655,
+      "accuracy": 0.6176470588235294
+    },
+    {
+      "block": "2020-Q2",
+      "family": "eps_direction",
+      "method": "agent_selector",
+      "rows": 34,
+      "score": 0.6904761904761905,
+      "mae": 1.320830944380582,
+      "accuracy": 0.6176470588235294
+    },
+    {
+      "block": "2020-Q2",
+      "family": "eps_direction",
+      "method": "agent_quality",
+      "rows": 34,
+      "score": 0.6666666666666667,
+      "mae": 1.3317556578972876,
+      "accuracy": 0.5882352941176471
+    },
+    {
+      "block": "2020-Q2",
+      "family": "eps_direction",
+      "method": "agent_guard",
+      "rows": 34,
+      "score": 0.6904761904761905,
+      "mae": 1.320167648992122,
+      "accuracy": 0.6176470588235294
+    },
+    {
+      "block": "2020-Q2",
+      "family": "eps_direction",
+      "method": "compact_huber",
+      "rows": 34,
+      "score": 0.7380952380952381,
+      "mae": 1.259139178250274,
+      "accuracy": 0.6764705882352942
+    },
+    {
+      "block": "2020-Q2",
+      "family": "eps_direction",
+      "method": "compact_tree",
+      "rows": 34,
+      "score": 0.7857142857142858,
+      "mae": 1.3148138458010004,
+      "accuracy": 0.7352941176470589
+    },
+    {
+      "block": "2020-Q2",
+      "family": "eps_direction",
+      "method": "compact_quant_ensemble",
+      "rows": 34,
+      "score": 0.7380952380952381,
+      "mae": 1.209894355766868,
+      "accuracy": 0.6764705882352942
+    },
+    {
+      "block": "2020-Q2",
+      "family": "eps_direction",
+      "method": "compact_logit",
+      "rows": 34,
+      "score": 0.6428571428571429,
+      "mae": 1.2365442067727108,
+      "accuracy": 0.5588235294117647
+    },
+    {
+      "block": "2020-Q2",
+      "family": "eps_direction",
+      "method": "compact_tree_label",
+      "rows": 34,
+      "score": 0.761904761904762,
+      "mae": 1.218666000195326,
+      "accuracy": 0.7058823529411765
+    },
+    {
+      "block": "2020-Q2",
+      "family": "eps_direction",
+      "method": "selected_by_family",
+      "rows": 34,
+      "score": 0.6904761904761905,
+      "mae": 1.2597435463800655,
+      "accuracy": 0.6176470588235294
+    },
+    {
+      "block": "2020-Q2",
+      "family": "eps_growth",
+      "method": "v6",
+      "rows": 34,
+      "score": 0.5,
+      "mae": 182.84081439715993,
+      "accuracy": null
+    },
+    {
+      "block": "2020-Q2",
+      "family": "eps_growth",
+      "method": "v7",
+      "rows": 34,
+      "score": 0.43060571494968425,
+      "mae": 248.5405765972786,
+      "accuracy": null
+    },
+    {
+      "block": "2020-Q2",
+      "family": "eps_growth",
+      "method": "trend",
+      "rows": 34,
+      "score": 0.36839454047781695,
+      "mae": 329.11818157959664,
+      "accuracy": null
+    },
+    {
+      "block": "2020-Q2",
+      "family": "eps_growth",
+      "method": "robust",
+      "rows": 34,
+      "score": 0.46907436218386417,
+      "mae": 209.36978195941415,
+      "accuracy": null
+    },
+    {
+      "block": "2020-Q2",
+      "family": "eps_growth",
+      "method": "core",
+      "rows": 34,
+      "score": 0.4542146360030029,
+      "mae": 223.18753156096156,
+      "accuracy": null
+    },
+    {
+      "block": "2020-Q2",
+      "family": "eps_growth",
+      "method": "ensemble",
+      "rows": 34,
+      "score": 0.4572296106491167,
+      "mae": 220.61164632116333,
+      "accuracy": null
+    },
+    {
+      "block": "2020-Q2",
+      "family": "eps_growth",
+      "method": "drift",
+      "rows": 34,
+      "score": 0.494180796305176,
+      "mae": 186.932785013869,
+      "accuracy": null
+    },
+    {
+      "block": "2020-Q2",
+      "family": "eps_growth",
+      "method": "huber",
+      "rows": 34,
+      "score": 0.4050096703556418,
+      "mae": 276.63105649446544,
+      "accuracy": null
+    },
+    {
+      "block": "2020-Q2",
+      "family": "eps_growth",
+      "method": "tree",
+      "rows": 34,
+      "score": 0.4671347862171541,
+      "mae": 212.36163129152857,
+      "accuracy": null
+    },
+    {
+      "block": "2020-Q2",
+      "family": "eps_growth",
+      "method": "quant_ensemble",
+      "rows": 34,
+      "score": 0.44951125579199114,
+      "mae": 226.750616964766,
+      "accuracy": null
+    },
+    {
+      "block": "2020-Q2",
+      "family": "eps_growth",
+      "method": "logit",
+      "rows": 34,
+      "score": 0.4473051448053621,
+      "mae": 228.80188371620207,
+      "accuracy": null
+    },
+    {
+      "block": "2020-Q2",
+      "family": "eps_growth",
+      "method": "tree_label",
+      "rows": 34,
+      "score": 0.4814657214719197,
+      "mae": 200.20511385105937,
+      "accuracy": null
+    },
+    {
+      "block": "2020-Q2",
+      "family": "eps_growth",
+      "method": "agent_selector",
+      "rows": 34,
+      "score": 0.457068060039149,
+      "mae": 219.92784781164352,
+      "accuracy": null
+    },
+    {
+      "block": "2020-Q2",
+      "family": "eps_growth",
+      "method": "agent_quality",
+      "rows": 34,
+      "score": 0.45583599723605817,
+      "mae": 221.09501138381916,
+      "accuracy": null
+    },
+    {
+      "block": "2020-Q2",
+      "family": "eps_growth",
+      "method": "agent_guard",
+      "rows": 34,
+      "score": 0.45048313897514103,
+      "mae": 226.474357917101,
+      "accuracy": null
+    },
+    {
+      "block": "2020-Q2",
+      "family": "eps_growth",
+      "method": "compact_huber",
+      "rows": 34,
+      "score": 0.37680114216457483,
+      "mae": 315.49627068319097,
+      "accuracy": null
+    },
+    {
+      "block": "2020-Q2",
+      "family": "eps_growth",
+      "method": "compact_tree",
+      "rows": 34,
+      "score": 0.40558765634983307,
+      "mae": 280.8136067810934,
+      "accuracy": null
+    },
+    {
+      "block": "2020-Q2",
+      "family": "eps_growth",
+      "method": "compact_quant_ensemble",
+      "rows": 34,
+      "score": 0.4076923077036076,
+      "mae": 274.07382419533536,
+      "accuracy": null
+    },
+    {
+      "block": "2020-Q2",
+      "family": "eps_growth",
+      "method": "compact_logit",
+      "rows": 34,
+      "score": 0.4015539384720709,
+      "mae": 281.11543049409767,
+      "accuracy": null
+    },
+    {
+      "block": "2020-Q2",
+      "family": "eps_growth",
+      "method": "compact_tree_label",
+      "rows": 34,
+      "score": 0.4406472506234479,
+      "mae": 240.4596031874768,
+      "accuracy": null
+    },
+    {
+      "block": "2020-Q2",
+      "family": "eps_growth",
+      "method": "selected_by_family",
+      "rows": 34,
+      "score": 0.37680114216457483,
+      "mae": 315.49627068319097,
+      "accuracy": null
+    },
+    {
+      "block": "2020-Q3",
+      "family": "eps_direction",
+      "method": "v6",
+      "rows": 34,
+      "score": 0.5,
+      "mae": 0.6123529411764705,
+      "accuracy": 0.3235294117647059
+    },
+    {
+      "block": "2020-Q3",
+      "family": "eps_direction",
+      "method": "v7",
+      "rows": 34,
+      "score": 0.6956521739130435,
+      "mae": 0.8876470588235295,
+      "accuracy": 0.5882352941176471
+    },
+    {
+      "block": "2020-Q3",
+      "family": "eps_direction",
+      "method": "trend",
+      "rows": 34,
+      "score": 0.6956521739130435,
+      "mae": 1.2355882352941179,
+      "accuracy": 0.5882352941176471
+    },
+    {
+      "block": "2020-Q3",
+      "family": "eps_direction",
+      "method": "robust",
+      "rows": 34,
+      "score": 0.6739130434782609,
+      "mae": 0.5738970588235294,
+      "accuracy": 0.5588235294117647
+    },
+    {
+      "block": "2020-Q3",
+      "family": "eps_direction",
+      "method": "core",
+      "rows": 34,
+      "score": 0.717391304347826,
+      "mae": 0.7410628474667026,
+      "accuracy": 0.6176470588235294
+    },
+    {
+      "block": "2020-Q3",
+      "family": "eps_direction",
+      "method": "ensemble",
+      "rows": 34,
+      "score": 0.6956521739130435,
+      "mae": 0.7120768606591199,
+      "accuracy": 0.5882352941176471
+    },
+    {
+      "block": "2020-Q3",
+      "family": "eps_direction",
+      "method": "drift",
+      "rows": 34,
+      "score": 0.5,
+      "mae": 0.6416985294117648,
+      "accuracy": 0.3235294117647059
+    },
+    {
+      "block": "2020-Q3",
+      "family": "eps_direction",
+      "method": "huber",
+      "rows": 34,
+      "score": 0.8043478260869565,
+      "mae": 0.5208229272708519,
+      "accuracy": 0.7352941176470589
+    },
+    {
+      "block": "2020-Q3",
+      "family": "eps_direction",
+      "method": "tree",
+      "rows": 34,
+      "score": 0.7391304347826086,
+      "mae": 0.6725184061857834,
+      "accuracy": 0.6470588235294118
+    },
+    {
+      "block": "2020-Q3",
+      "family": "eps_direction",
+      "method": "quant_ensemble",
+      "rows": 34,
+      "score": 0.6956521739130435,
+      "mae": 0.6098621695304329,
+      "accuracy": 0.5882352941176471
+    },
+    {
+      "block": "2020-Q3",
+      "family": "eps_direction",
+      "method": "logit",
+      "rows": 34,
+      "score": 0.6956521739130435,
+      "mae": 0.5915175091588097,
+      "accuracy": 0.5882352941176471
+    },
+    {
+      "block": "2020-Q3",
+      "family": "eps_direction",
+      "method": "tree_label",
+      "rows": 34,
+      "score": 0.6956521739130435,
+      "mae": 0.638247836285357,
+      "accuracy": 0.5882352941176471
+    },
+    {
+      "block": "2020-Q3",
+      "family": "eps_direction",
+      "method": "agent_selector",
+      "rows": 34,
+      "score": 0.6739130434782609,
+      "mae": 0.6725995645745723,
+      "accuracy": 0.5588235294117647
+    },
+    {
+      "block": "2020-Q3",
+      "family": "eps_direction",
+      "method": "agent_quality",
+      "rows": 34,
+      "score": 0.6956521739130435,
+      "mae": 0.7274093985650643,
+      "accuracy": 0.5882352941176471
+    },
+    {
+      "block": "2020-Q3",
+      "family": "eps_direction",
+      "method": "agent_guard",
+      "rows": 34,
+      "score": 0.717391304347826,
+      "mae": 0.6029284216185755,
+      "accuracy": 0.6176470588235294
+    },
+    {
+      "block": "2020-Q3",
+      "family": "eps_direction",
+      "method": "compact_huber",
+      "rows": 34,
+      "score": 0.7391304347826086,
+      "mae": 0.5422135728062891,
+      "accuracy": 0.6470588235294118
+    },
+    {
+      "block": "2020-Q3",
+      "family": "eps_direction",
+      "method": "compact_tree",
+      "rows": 34,
+      "score": 0.7391304347826086,
+      "mae": 0.642380128203539,
+      "accuracy": 0.6470588235294118
+    },
+    {
+      "block": "2020-Q3",
+      "family": "eps_direction",
+      "method": "compact_quant_ensemble",
+      "rows": 34,
+      "score": 0.6956521739130435,
+      "mae": 0.7046166256384001,
+      "accuracy": 0.5882352941176471
+    },
+    {
+      "block": "2020-Q3",
+      "family": "eps_direction",
+      "method": "compact_logit",
+      "rows": 34,
+      "score": 0.6956521739130435,
+      "mae": 0.6970324098934837,
+      "accuracy": 0.5882352941176471
+    },
+    {
+      "block": "2020-Q3",
+      "family": "eps_direction",
+      "method": "compact_tree_label",
+      "rows": 34,
+      "score": 0.7391304347826086,
+      "mae": 0.6551121446323345,
+      "accuracy": 0.6470588235294118
+    },
+    {
+      "block": "2020-Q3",
+      "family": "eps_direction",
+      "method": "selected_by_family",
+      "rows": 34,
+      "score": 0.6956521739130435,
+      "mae": 0.638247836285357,
+      "accuracy": 0.5882352941176471
+    },
+    {
+      "block": "2020-Q3",
+      "family": "eps_growth",
+      "method": "v6",
+      "rows": 34,
+      "score": 0.5,
+      "mae": 72.16345283234442,
+      "accuracy": null
+    },
+    {
+      "block": "2020-Q3",
+      "family": "eps_growth",
+      "method": "v7",
+      "rows": 34,
+      "score": 0.43046442145930647,
+      "mae": 99.50177921339858,
+      "accuracy": null
+    },
+    {
+      "block": "2020-Q3",
+      "family": "eps_growth",
+      "method": "trend",
+      "rows": 34,
+      "score": 0.3846504572173268,
+      "mae": 121.63104853962116,
+      "accuracy": null
+    },
+    {
+      "block": "2020-Q3",
+      "family": "eps_growth",
+      "method": "robust",
+      "rows": 34,
+      "score": 0.500248495080559,
+      "mae": 72.0917594111694,
+      "accuracy": null
+    },
+    {
+      "block": "2020-Q3",
+      "family": "eps_growth",
+      "method": "core",
+      "rows": 34,
+      "score": 0.44352419193405124,
+      "mae": 91.31235765760066,
+      "accuracy": null
+    },
+    {
+      "block": "2020-Q3",
+      "family": "eps_growth",
+      "method": "ensemble",
+      "rows": 34,
+      "score": 0.46708912821107684,
+      "mae": 82.74198033468015,
+      "accuracy": null
+    },
+    {
+      "block": "2020-Q3",
+      "family": "eps_growth",
+      "method": "drift",
+      "rows": 34,
+      "score": 0.4951608998706019,
+      "mae": 73.96461840229641,
+      "accuracy": null
+    },
+    {
+      "block": "2020-Q3",
+      "family": "eps_growth",
+      "method": "huber",
+      "rows": 34,
+      "score": 0.5188254348145624,
+      "mae": 66.9265916989861,
+      "accuracy": null
+    },
+    {
+      "block": "2020-Q3",
+      "family": "eps_growth",
+      "method": "tree",
+      "rows": 34,
+      "score": 0.4919522387235782,
+      "mae": 74.9009257929049,
+      "accuracy": null
+    },
+    {
+      "block": "2020-Q3",
+      "family": "eps_growth",
+      "method": "quant_ensemble",
+      "rows": 34,
+      "score": 0.49809037765647923,
+      "mae": 72.9552296280262,
+      "accuracy": null
+    },
+    {
+      "block": "2020-Q3",
+      "family": "eps_growth",
+      "method": "logit",
+      "rows": 34,
+      "score": 0.5114574916656499,
+      "mae": 68.93029202088209,
+      "accuracy": null
+    },
+    {
+      "block": "2020-Q3",
+      "family": "eps_growth",
+      "method": "tree_label",
+      "rows": 34,
+      "score": 0.5128175594331063,
+      "mae": 68.55609060941575,
+      "accuracy": null
+    },
+    {
+      "block": "2020-Q3",
+      "family": "eps_growth",
+      "method": "agent_selector",
+      "rows": 34,
+      "score": 0.4802393277797997,
+      "mae": 78.63936849080498,
+      "accuracy": null
+    },
+    {
+      "block": "2020-Q3",
+      "family": "eps_growth",
+      "method": "agent_quality",
+      "rows": 34,
+      "score": 0.4440694979165789,
+      "mae": 91.03867920863843,
+      "accuracy": null
+    },
+    {
+      "block": "2020-Q3",
+      "family": "eps_growth",
+      "method": "agent_guard",
+      "rows": 34,
+      "score": 0.4993231150294182,
+      "mae": 72.44311572635809,
+      "accuracy": null
+    },
+    {
+      "block": "2020-Q3",
+      "family": "eps_growth",
+      "method": "compact_huber",
+      "rows": 34,
+      "score": 0.5255131147443306,
+      "mae": 65.15653178393472,
+      "accuracy": null
+    },
+    {
+      "block": "2020-Q3",
+      "family": "eps_growth",
+      "method": "compact_tree",
+      "rows": 34,
+      "score": 0.5167829462911284,
+      "mae": 67.47631924266389,
+      "accuracy": null
+    },
+    {
+      "block": "2020-Q3",
+      "family": "eps_growth",
+      "method": "compact_quant_ensemble",
+      "rows": 34,
+      "score": 0.4887004985196788,
+      "mae": 76.97839137343298,
+      "accuracy": null
+    },
+    {
+      "block": "2020-Q3",
+      "family": "eps_growth",
+      "method": "compact_logit",
+      "rows": 34,
+      "score": 0.4935935492645468,
+      "mae": 74.8544905800564,
+      "accuracy": null
+    },
+    {
+      "block": "2020-Q3",
+      "family": "eps_growth",
+      "method": "compact_tree_label",
+      "rows": 34,
+      "score": 0.5022527374393114,
+      "mae": 71.5161081796334,
+      "accuracy": null
+    },
+    {
+      "block": "2020-Q3",
+      "family": "eps_growth",
+      "method": "selected_by_family",
+      "rows": 34,
+      "score": 0.5255131147443306,
+      "mae": 65.15653178393472,
+      "accuracy": null
+    },
+    {
+      "block": "2020-Q4",
+      "family": "eps_direction",
+      "method": "v6",
+      "rows": 17,
+      "score": 0.5,
+      "mae": 1.7123529411764704,
+      "accuracy": 0.4117647058823529
+    },
+    {
+      "block": "2020-Q4",
+      "family": "eps_direction",
+      "method": "v7",
+      "rows": 17,
+      "score": 0.7000000000000001,
+      "mae": 1.5597058823529415,
+      "accuracy": 0.6470588235294118
+    },
+    {
+      "block": "2020-Q4",
+      "family": "eps_direction",
+      "method": "trend",
+      "rows": 17,
+      "score": 0.7000000000000001,
+      "mae": 1.5588235294117647,
+      "accuracy": 0.6470588235294118
+    },
+    {
+      "block": "2020-Q4",
+      "family": "eps_direction",
+      "method": "robust",
+      "rows": 17,
+      "score": 0.6,
+      "mae": 1.5364705882352943,
+      "accuracy": 0.5294117647058824
+    },
+    {
+      "block": "2020-Q4",
+      "family": "eps_direction",
+      "method": "core",
+      "rows": 17,
+      "score": 0.6,
+      "mae": 1.6591391485285316,
+      "accuracy": 0.5294117647058824
+    },
+    {
+      "block": "2020-Q4",
+      "family": "eps_direction",
+      "method": "ensemble",
+      "rows": 17,
+      "score": 0.55,
+      "mae": 1.6075608248857827,
+      "accuracy": 0.47058823529411764
+    },
+    {
+      "block": "2020-Q4",
+      "family": "eps_direction",
+      "method": "drift",
+      "rows": 17,
+      "score": 0.5,
+      "mae": 1.7289705882352941,
+      "accuracy": 0.4117647058823529
+    },
+    {
+      "block": "2020-Q4",
+      "family": "eps_direction",
+      "method": "huber",
+      "rows": 17,
+      "score": 0.7000000000000001,
+      "mae": 1.9282693710784797,
+      "accuracy": 0.6470588235294118
+    },
+    {
+      "block": "2020-Q4",
+      "family": "eps_direction",
+      "method": "tree",
+      "rows": 17,
+      "score": 0.8,
+      "mae": 1.7743229724182457,
+      "accuracy": 0.7647058823529411
+    },
+    {
+      "block": "2020-Q4",
+      "family": "eps_direction",
+      "method": "quant_ensemble",
+      "rows": 17,
+      "score": 0.7000000000000001,
+      "mae": 1.6971710145253833,
+      "accuracy": 0.6470588235294118
+    },
+    {
+      "block": "2020-Q4",
+      "family": "eps_direction",
+      "method": "logit",
+      "rows": 17,
+      "score": 0.65,
+      "mae": 1.7245385439612357,
+      "accuracy": 0.5882352941176471
+    },
+    {
+      "block": "2020-Q4",
+      "family": "eps_direction",
+      "method": "tree_label",
+      "rows": 17,
+      "score": 0.75,
+      "mae": 1.6952585492026357,
+      "accuracy": 0.7058823529411765
+    },
+    {
+      "block": "2020-Q4",
+      "family": "eps_direction",
+      "method": "agent_selector",
+      "rows": 17,
+      "score": 0.75,
+      "mae": 1.5630459979528062,
+      "accuracy": 0.7058823529411765
+    },
+    {
+      "block": "2020-Q4",
+      "family": "eps_direction",
+      "method": "agent_quality",
+      "rows": 17,
+      "score": 0.75,
+      "mae": 1.6408819232135723,
+      "accuracy": 0.7058823529411765
+    },
+    {
+      "block": "2020-Q4",
+      "family": "eps_direction",
+      "method": "agent_guard",
+      "rows": 17,
+      "score": 0.75,
+      "mae": 1.6227337242352504,
+      "accuracy": 0.7058823529411765
+    },
+    {
+      "block": "2020-Q4",
+      "family": "eps_direction",
+      "method": "compact_huber",
+      "rows": 17,
+      "score": 0.8,
+      "mae": 1.7144542966889291,
+      "accuracy": 0.7647058823529411
+    },
+    {
+      "block": "2020-Q4",
+      "family": "eps_direction",
+      "method": "compact_tree",
+      "rows": 17,
+      "score": 0.8,
+      "mae": 1.9161819763457097,
+      "accuracy": 0.7647058823529411
+    },
+    {
+      "block": "2020-Q4",
+      "family": "eps_direction",
+      "method": "compact_quant_ensemble",
+      "rows": 17,
+      "score": 0.75,
+      "mae": 1.662504044827464,
+      "accuracy": 0.7058823529411765
+    },
+    {
+      "block": "2020-Q4",
+      "family": "eps_direction",
+      "method": "compact_logit",
+      "rows": 17,
+      "score": 0.7000000000000001,
+      "mae": 1.7023663433908534,
+      "accuracy": 0.6470588235294118
+    },
+    {
+      "block": "2020-Q4",
+      "family": "eps_direction",
+      "method": "compact_tree_label",
+      "rows": 17,
+      "score": 0.8,
+      "mae": 1.6595692907710662,
+      "accuracy": 0.7647058823529411
+    },
+    {
+      "block": "2020-Q4",
+      "family": "eps_direction",
+      "method": "selected_by_family",
+      "rows": 17,
+      "score": 0.75,
+      "mae": 1.6952585492026357,
+      "accuracy": 0.7058823529411765
+    },
+    {
+      "block": "2020-Q4",
+      "family": "eps_growth",
+      "method": "v6",
+      "rows": 17,
+      "score": 0.5,
+      "mae": 303.2180784353604,
+      "accuracy": null
+    },
+    {
+      "block": "2020-Q4",
+      "family": "eps_growth",
+      "method": "v7",
+      "rows": 17,
+      "score": 0.5066501144105495,
+      "mae": 295.1154912769704,
+      "accuracy": null
+    },
+    {
+      "block": "2020-Q4",
+      "family": "eps_growth",
+      "method": "trend",
+      "rows": 17,
+      "score": 0.49958030385704455,
+      "mae": 303.9461483900436,
+      "accuracy": null
+    },
+    {
+      "block": "2020-Q4",
+      "family": "eps_growth",
+      "method": "robust",
+      "rows": 17,
+      "score": 0.512399641665932,
+      "mae": 288.54283195389553,
+      "accuracy": null
+    },
+    {
+      "block": "2020-Q4",
+      "family": "eps_growth",
+      "method": "core",
+      "rows": 17,
+      "score": 0.5023361045374968,
+      "mae": 300.3978585766422,
+      "accuracy": null
+    },
+    {
+      "block": "2020-Q4",
+      "family": "eps_growth",
+      "method": "ensemble",
+      "rows": 17,
+      "score": 0.5043768483057487,
+      "mae": 297.955586561159,
+      "accuracy": null
+    },
+    {
+      "block": "2020-Q4",
+      "family": "eps_growth",
+      "method": "drift",
+      "rows": 17,
+      "score": 0.49571608933626543,
+      "mae": 308.4501902959377,
+      "accuracy": null
+    },
+    {
+      "block": "2020-Q4",
+      "family": "eps_growth",
+      "method": "huber",
+      "rows": 17,
+      "score": 0.43627519812226445,
+      "mae": 401.16691147711754,
+      "accuracy": null
+    },
+    {
+      "block": "2020-Q4",
+      "family": "eps_growth",
+      "method": "tree",
+      "rows": 17,
+      "score": 0.4577489163092854,
+      "mae": 363.03099085927397,
+      "accuracy": null
+    },
+    {
+      "block": "2020-Q4",
+      "family": "eps_growth",
+      "method": "quant_ensemble",
+      "rows": 17,
+      "score": 0.47993784683076224,
+      "mae": 330.4419758483092,
+      "accuracy": null
+    },
+    {
+      "block": "2020-Q4",
+      "family": "eps_growth",
+      "method": "logit",
+      "rows": 17,
+      "score": 0.47877601510923073,
+      "mae": 332.5516839415524,
+      "accuracy": null
+    },
+    {
+      "block": "2020-Q4",
+      "family": "eps_growth",
+      "method": "tree_label",
+      "rows": 17,
+      "score": 0.4799463568664789,
+      "mae": 330.68284328463415,
+      "accuracy": null
+    },
+    {
+      "block": "2020-Q4",
+      "family": "eps_growth",
+      "method": "agent_selector",
+      "rows": 17,
+      "score": 0.4903007415299531,
+      "mae": 317.4407007942548,
+      "accuracy": null
+    },
+    {
+      "block": "2020-Q4",
+      "family": "eps_growth",
+      "method": "agent_quality",
+      "rows": 17,
+      "score": 0.4870214486972706,
+      "mae": 321.911708634824,
+      "accuracy": null
+    },
+    {
+      "block": "2020-Q4",
+      "family": "eps_growth",
+      "method": "agent_guard",
+      "rows": 17,
+      "score": 0.48450951982564683,
+      "mae": 324.9858210076833,
+      "accuracy": null
+    },
+    {
+      "block": "2020-Q4",
+      "family": "eps_growth",
+      "method": "compact_huber",
+      "rows": 17,
+      "score": 0.4473359038281618,
+      "mae": 382.2686121380065,
+      "accuracy": null
+    },
+    {
+      "block": "2020-Q4",
+      "family": "eps_growth",
+      "method": "compact_tree",
+      "rows": 17,
+      "score": 0.4354482169449809,
+      "mae": 403.1717911969531,
+      "accuracy": null
+    },
+    {
+      "block": "2020-Q4",
+      "family": "eps_growth",
+      "method": "compact_quant_ensemble",
+      "rows": 17,
+      "score": 0.4756417007059233,
+      "mae": 337.88888809028646,
+      "accuracy": null
+    },
+    {
+      "block": "2020-Q4",
+      "family": "eps_growth",
+      "method": "compact_logit",
+      "rows": 17,
+      "score": 0.4742169591628651,
+      "mae": 340.0761493774048,
+      "accuracy": null
+    },
+    {
+      "block": "2020-Q4",
+      "family": "eps_growth",
+      "method": "compact_tree_label",
+      "rows": 17,
+      "score": 0.47551546432813585,
+      "mae": 337.8408438864154,
+      "accuracy": null
+    },
+    {
+      "block": "2020-Q4",
+      "family": "eps_growth",
+      "method": "selected_by_family",
+      "rows": 17,
+      "score": 0.4473359038281618,
+      "mae": 382.2686121380065,
+      "accuracy": null
+    },
+    {
+      "block": "2021-Q1",
+      "family": "eps_direction",
+      "method": "v6",
+      "rows": 16,
+      "score": 0.5,
+      "mae": 0.754375,
+      "accuracy": 0.8125
+    },
+    {
+      "block": "2021-Q1",
+      "family": "eps_direction",
+      "method": "v7",
+      "rows": 16,
+      "score": 0.23076923076923078,
+      "mae": 1.438125,
+      "accuracy": 0.375
+    },
+    {
+      "block": "2021-Q1",
+      "family": "eps_direction",
+      "method": "trend",
+      "rows": 16,
+      "score": 0.23076923076923078,
+      "mae": 1.8790624999999999,
+      "accuracy": 0.375
+    },
+    {
+      "block": "2021-Q1",
+      "family": "eps_direction",
+      "method": "robust",
+      "rows": 16,
+      "score": 0.23076923076923078,
+      "mae": 0.99984375,
+      "accuracy": 0.375
+    },
+    {
+      "block": "2021-Q1",
+      "family": "eps_direction",
+      "method": "core",
+      "rows": 16,
+      "score": 0.23076923076923078,
+      "mae": 0.9845836263251682,
+      "accuracy": 0.375
+    },
+    {
+      "block": "2021-Q1",
+      "family": "eps_direction",
+      "method": "ensemble",
+      "rows": 16,
+      "score": 0.23076923076923078,
+      "mae": 0.9852400635652677,
+      "accuracy": 0.375
+    },
+    {
+      "block": "2021-Q1",
+      "family": "eps_direction",
+      "method": "drift",
+      "rows": 16,
+      "score": 0.5,
+      "mae": 0.7017499999999999,
+      "accuracy": 0.8125
+    },
+    {
+      "block": "2021-Q1",
+      "family": "eps_direction",
+      "method": "huber",
+      "rows": 16,
+      "score": 0.4230769230769231,
+      "mae": 0.7391279286635728,
+      "accuracy": 0.6875
+    },
+    {
+      "block": "2021-Q1",
+      "family": "eps_direction",
+      "method": "tree",
+      "rows": 16,
+      "score": 0.6666666666666666,
+      "mae": 0.6889174846547007,
+      "accuracy": 0.875
+    },
+    {
+      "block": "2021-Q1",
+      "family": "eps_direction",
+      "method": "quant_ensemble",
+      "rows": 16,
+      "score": 0.3076923076923077,
+      "mae": 0.7294411010360291,
+      "accuracy": 0.5
+    },
+    {
+      "block": "2021-Q1",
+      "family": "eps_direction",
+      "method": "logit",
+      "rows": 16,
+      "score": 0.38461538461538464,
+      "mae": 0.7310165238716717,
+      "accuracy": 0.625
+    },
+    {
+      "block": "2021-Q1",
+      "family": "eps_direction",
+      "method": "tree_label",
+      "rows": 16,
+      "score": 0.8333333333333333,
+      "mae": 0.6587580001669142,
+      "accuracy": 0.9375
+    },
+    {
+      "block": "2021-Q1",
+      "family": "eps_direction",
+      "method": "agent_selector",
+      "rows": 16,
+      "score": 0.2692307692307692,
+      "mae": 0.916357439615566,
+      "accuracy": 0.4375
+    },
+    {
+      "block": "2021-Q1",
+      "family": "eps_direction",
+      "method": "agent_quality",
+      "rows": 16,
+      "score": 0.2692307692307692,
+      "mae": 0.9157010023754664,
+      "accuracy": 0.4375
+    },
+    {
+      "block": "2021-Q1",
+      "family": "eps_direction",
+      "method": "agent_guard",
+      "rows": 16,
+      "score": 0.2692307692307692,
+      "mae": 0.8761594975230027,
+      "accuracy": 0.4375
+    },
+    {
+      "block": "2021-Q1",
+      "family": "eps_direction",
+      "method": "compact_huber",
+      "rows": 16,
+      "score": 0.4230769230769231,
+      "mae": 1.0036035612596657,
+      "accuracy": 0.6875
+    },
+    {
+      "block": "2021-Q1",
+      "family": "eps_direction",
+      "method": "compact_tree",
+      "rows": 16,
+      "score": 0.5,
+      "mae": 0.6412844207239345,
+      "accuracy": 0.8125
+    },
+    {
+      "block": "2021-Q1",
+      "family": "eps_direction",
+      "method": "compact_quant_ensemble",
+      "rows": 16,
+      "score": 0.34615384615384615,
+      "mae": 1.021908203755444,
+      "accuracy": 0.5625
+    },
+    {
+      "block": "2021-Q1",
+      "family": "eps_direction",
+      "method": "compact_logit",
+      "rows": 16,
+      "score": 0.4230769230769231,
+      "mae": 1.00410084978544,
+      "accuracy": 0.6875
+    },
+    {
+      "block": "2021-Q1",
+      "family": "eps_direction",
+      "method": "compact_tree_label",
+      "rows": 16,
+      "score": 0.6666666666666666,
+      "mae": 0.8748820997854401,
+      "accuracy": 0.875
+    },
+    {
+      "block": "2021-Q1",
+      "family": "eps_direction",
+      "method": "selected_by_family",
+      "rows": 16,
+      "score": 0.8333333333333333,
+      "mae": 0.6587580001669142,
+      "accuracy": 0.9375
+    },
+    {
+      "block": "2021-Q1",
+      "family": "eps_growth",
+      "method": "v6",
+      "rows": 16,
+      "score": 0.5,
+      "mae": 155.44592700922584,
+      "accuracy": null
+    },
+    {
+      "block": "2021-Q1",
+      "family": "eps_growth",
+      "method": "v7",
+      "rows": 16,
+      "score": 0.37287024998864005,
+      "mae": 273.0096377666295,
+      "accuracy": null
+    },
+    {
+      "block": "2021-Q1",
+      "family": "eps_growth",
+      "method": "trend",
+      "rows": 16,
+      "score": 0.31927961409753053,
+      "mae": 350.0684367770129,
+      "accuracy": null
+    },
+    {
+      "block": "2021-Q1",
+      "family": "eps_growth",
+      "method": "robust",
+      "rows": 16,
+      "score": 0.40606718285429855,
+      "mae": 232.72694517128096,
+      "accuracy": null
+    },
+    {
+      "block": "2021-Q1",
+      "family": "eps_growth",
+      "method": "core",
+      "rows": 16,
+      "score": 0.41095770831897227,
+      "mae": 228.6298336990111,
+      "accuracy": null
+    },
+    {
+      "block": "2021-Q1",
+      "family": "eps_growth",
+      "method": "ensemble",
+      "rows": 16,
+      "score": 0.41068706113318976,
+      "mae": 228.86427557047523,
+      "accuracy": null
+    },
+    {
+      "block": "2021-Q1",
+      "family": "eps_growth",
+      "method": "drift",
+      "rows": 16,
+      "score": 0.5167940749548472,
+      "mae": 145.28472608872852,
+      "accuracy": null
+    },
+    {
+      "block": "2021-Q1",
+      "family": "eps_growth",
+      "method": "huber",
+      "rows": 16,
+      "score": 0.5557807483533773,
+      "mae": 124.24337037966107,
+      "accuracy": null
+    },
+    {
+      "block": "2021-Q1",
+      "family": "eps_growth",
+      "method": "tree",
+      "rows": 16,
+      "score": 0.532823310320916,
+      "mae": 136.29417519388875,
+      "accuracy": null
+    },
+    {
+      "block": "2021-Q1",
+      "family": "eps_growth",
+      "method": "quant_ensemble",
+      "rows": 16,
+      "score": 0.5212359767025265,
+      "mae": 142.77970199017096,
+      "accuracy": null
+    },
+    {
+      "block": "2021-Q1",
+      "family": "eps_growth",
+      "method": "logit",
+      "rows": 16,
+      "score": 0.5223298846752479,
+      "mae": 142.1551323402166,
+      "accuracy": null
+    },
+    {
+      "block": "2021-Q1",
+      "family": "eps_growth",
+      "method": "tree_label",
+      "rows": 16,
+      "score": 0.5438005200807875,
+      "mae": 130.40508134606716,
+      "accuracy": null
+    },
+    {
+      "block": "2021-Q1",
+      "family": "eps_growth",
+      "method": "agent_selector",
+      "rows": 16,
+      "score": 0.4273521472253019,
+      "mae": 214.1808848075351,
+      "accuracy": null
+    },
+    {
+      "block": "2021-Q1",
+      "family": "eps_growth",
+      "method": "agent_quality",
+      "rows": 16,
+      "score": 0.42764529219680236,
+      "mae": 213.94644293607098,
+      "accuracy": null
+    },
+    {
+      "block": "2021-Q1",
+      "family": "eps_growth",
+      "method": "agent_guard",
+      "rows": 16,
+      "score": 0.43699769657645154,
+      "mae": 205.436874625567,
+      "accuracy": null
+    },
+    {
+      "block": "2021-Q1",
+      "family": "eps_growth",
+      "method": "compact_huber",
+      "rows": 16,
+      "score": 0.5035438486082404,
+      "mae": 153.25792755848937,
+      "accuracy": null
+    },
+    {
+      "block": "2021-Q1",
+      "family": "eps_growth",
+      "method": "compact_tree",
+      "rows": 16,
+      "score": 0.602796400311152,
+      "mae": 102.42874996128631,
+      "accuracy": null
+    },
+    {
+      "block": "2021-Q1",
+      "family": "eps_growth",
+      "method": "compact_quant_ensemble",
+      "rows": 16,
+      "score": 0.4706128531100955,
+      "mae": 178.4331924066029,
+      "accuracy": null
+    },
+    {
+      "block": "2021-Q1",
+      "family": "eps_growth",
+      "method": "compact_logit",
+      "rows": 16,
+      "score": 0.4749058079984374,
+      "mae": 175.12829911983215,
+      "accuracy": null
+    },
+    {
+      "block": "2021-Q1",
+      "family": "eps_growth",
+      "method": "compact_tree_label",
+      "rows": 16,
+      "score": 0.5219435754252889,
+      "mae": 142.37539760917906,
+      "accuracy": null
+    },
+    {
+      "block": "2021-Q1",
+      "family": "eps_growth",
+      "method": "selected_by_family",
+      "rows": 16,
+      "score": 0.5035438486082404,
+      "mae": 153.25792755848937,
+      "accuracy": null
+    },
+    {
+      "block": "2021-Q2",
+      "family": "eps_direction",
+      "method": "v6",
+      "rows": 34,
+      "score": 0.5,
+      "mae": 1.3547058823529412,
+      "accuracy": 0.8235294117647058
+    },
+    {
+      "block": "2021-Q2",
+      "family": "eps_direction",
+      "method": "v7",
+      "rows": 34,
+      "score": 0.41071428571428575,
+      "mae": 1.2541176470588233,
+      "accuracy": 0.6764705882352942
+    },
+    {
+      "block": "2021-Q2",
+      "family": "eps_direction",
+      "method": "trend",
+      "rows": 34,
+      "score": 0.41071428571428575,
+      "mae": 1.332058823529412,
+      "accuracy": 0.6764705882352942
+    },
+    {
+      "block": "2021-Q2",
+      "family": "eps_direction",
+      "method": "robust",
+      "rows": 34,
+      "score": 0.19642857142857145,
+      "mae": 1.487720588235294,
+      "accuracy": 0.3235294117647059
+    },
+    {
+      "block": "2021-Q2",
+      "family": "eps_direction",
+      "method": "core",
+      "rows": 34,
+      "score": 0.2857142857142857,
+      "mae": 1.38522438063389,
+      "accuracy": 0.47058823529411764
+    },
+    {
+      "block": "2021-Q2",
+      "family": "eps_direction",
+      "method": "ensemble",
+      "rows": 34,
+      "score": 0.2857142857142857,
+      "mae": 1.405926883273341,
+      "accuracy": 0.47058823529411764
+    },
+    {
+      "block": "2021-Q2",
+      "family": "eps_direction",
+      "method": "drift",
+      "rows": 34,
+      "score": 0.5,
+      "mae": 1.3160882352941174,
+      "accuracy": 0.8235294117647058
+    },
+    {
+      "block": "2021-Q2",
+      "family": "eps_direction",
+      "method": "huber",
+      "rows": 34,
+      "score": 0.5,
+      "mae": 0.6500544203107254,
+      "accuracy": 0.8235294117647058
+    },
+    {
+      "block": "2021-Q2",
+      "family": "eps_direction",
+      "method": "tree",
+      "rows": 34,
+      "score": 0.6666666666666666,
+      "mae": 0.938017697801375,
+      "accuracy": 0.8823529411764706
+    },
+    {
+      "block": "2021-Q2",
+      "family": "eps_direction",
+      "method": "quant_ensemble",
+      "rows": 34,
+      "score": 0.48214285714285715,
+      "mae": 1.1643271703619875,
+      "accuracy": 0.7941176470588235
+    },
+    {
+      "block": "2021-Q2",
+      "family": "eps_direction",
+      "method": "logit",
+      "rows": 34,
+      "score": 0.5833333333333334,
+      "mae": 1.15375916501718,
+      "accuracy": 0.8529411764705882
+    },
+    {
+      "block": "2021-Q2",
+      "family": "eps_direction",
+      "method": "tree_label",
+      "rows": 34,
+      "score": 0.5833333333333334,
+      "mae": 1.147402414176764,
+      "accuracy": 0.8529411764705882
+    },
+    {
+      "block": "2021-Q2",
+      "family": "eps_direction",
+      "method": "agent_selector",
+      "rows": 34,
+      "score": 0.4464285714285715,
+      "mae": 1.2562301439490355,
+      "accuracy": 0.7352941176470589
+    },
+    {
+      "block": "2021-Q2",
+      "family": "eps_direction",
+      "method": "agent_quality",
+      "rows": 34,
+      "score": 0.37500000000000006,
+      "mae": 1.3361131541117803,
+      "accuracy": 0.6176470588235294
+    },
+    {
+      "block": "2021-Q2",
+      "family": "eps_direction",
+      "method": "agent_guard",
+      "rows": 34,
+      "score": 0.4285714285714286,
+      "mae": 1.2642992663684631,
+      "accuracy": 0.7058823529411765
+    },
+    {
+      "block": "2021-Q2",
+      "family": "eps_direction",
+      "method": "compact_huber",
+      "rows": 34,
+      "score": 0.5833333333333334,
+      "mae": 0.63571724055446,
+      "accuracy": 0.8529411764705882
+    },
+    {
+      "block": "2021-Q2",
+      "family": "eps_direction",
+      "method": "compact_tree",
+      "rows": 34,
+      "score": 0.5833333333333334,
+      "mae": 0.9612565777957419,
+      "accuracy": 0.8529411764705882
+    },
+    {
+      "block": "2021-Q2",
+      "family": "eps_direction",
+      "method": "compact_quant_ensemble",
+      "rows": 34,
+      "score": 0.48214285714285715,
+      "mae": 1.0768532902953738,
+      "accuracy": 0.7941176470588235
+    },
+    {
+      "block": "2021-Q2",
+      "family": "eps_direction",
+      "method": "compact_logit",
+      "rows": 34,
+      "score": 0.5,
+      "mae": 1.0706054025164256,
+      "accuracy": 0.8235294117647058
+    },
+    {
+      "block": "2021-Q2",
+      "family": "eps_direction",
+      "method": "compact_tree_label",
+      "rows": 34,
+      "score": 0.5,
+      "mae": 1.0626946034255456,
+      "accuracy": 0.8235294117647058
+    },
+    {
+      "block": "2021-Q2",
+      "family": "eps_direction",
+      "method": "selected_by_family",
+      "rows": 34,
+      "score": 0.5833333333333334,
+      "mae": 1.147402414176764,
+      "accuracy": 0.8529411764705882
+    },
+    {
+      "block": "2021-Q2",
+      "family": "eps_growth",
+      "method": "v6",
+      "rows": 34,
+      "score": 0.5,
+      "mae": 145.95680445284106,
+      "accuracy": null
+    },
+    {
+      "block": "2021-Q2",
+      "family": "eps_growth",
+      "method": "v7",
+      "rows": 34,
+      "score": 0.6080167885344813,
+      "mae": 94.09710064514897,
+      "accuracy": null
+    },
+    {
+      "block": "2021-Q2",
+      "family": "eps_growth",
+      "method": "trend",
+      "rows": 34,
+      "score": 0.49337565172270814,
+      "mae": 151.5883552123981,
+      "accuracy": null
+    },
+    {
+      "block": "2021-Q2",
+      "family": "eps_growth",
+      "method": "robust",
+      "rows": 34,
+      "score": 0.4441992334036542,
+      "mae": 182.83616434900875,
+      "accuracy": null
+    },
+    {
+      "block": "2021-Q2",
+      "family": "eps_growth",
+      "method": "core",
+      "rows": 34,
+      "score": 0.4594152347409207,
+      "mae": 172.22142854099297,
+      "accuracy": null
+    },
+    {
+      "block": "2021-Q2",
+      "family": "eps_growth",
+      "method": "ensemble",
+      "rows": 34,
+      "score": 0.45931120280843796,
+      "mae": 172.3078896169241,
+      "accuracy": null
+    },
+    {
+      "block": "2021-Q2",
+      "family": "eps_growth",
+      "method": "drift",
+      "rows": 34,
+      "score": 0.5139269110636426,
+      "mae": 138.04623432705725,
+      "accuracy": null
+    },
+    {
+      "block": "2021-Q2",
+      "family": "eps_growth",
+      "method": "huber",
+      "rows": 34,
+      "score": 0.5173346135965166,
+      "mae": 136.17549564234787,
+      "accuracy": null
+    },
+    {
+      "block": "2021-Q2",
+      "family": "eps_growth",
+      "method": "tree",
+      "rows": 34,
+      "score": 0.6183487095566623,
+      "mae": 90.08606617510566,
+      "accuracy": null
+    },
+    {
+      "block": "2021-Q2",
+      "family": "eps_growth",
+      "method": "quant_ensemble",
+      "rows": 34,
+      "score": 0.5744304932766642,
+      "mae": 108.13277846653845,
+      "accuracy": null
+    },
+    {
+      "block": "2021-Q2",
+      "family": "eps_growth",
+      "method": "logit",
+      "rows": 34,
+      "score": 0.586301658065927,
+      "mae": 102.98809011614009,
+      "accuracy": null
+    },
+    {
+      "block": "2021-Q2",
+      "family": "eps_growth",
+      "method": "tree_label",
+      "rows": 34,
+      "score": 0.5868204251301169,
+      "mae": 102.76801527455297,
+      "accuracy": null
+    },
+    {
+      "block": "2021-Q2",
+      "family": "eps_growth",
+      "method": "agent_selector",
+      "rows": 34,
+      "score": 0.5706474552782557,
+      "mae": 109.8172344967771,
+      "accuracy": null
+    },
+    {
+      "block": "2021-Q2",
+      "family": "eps_growth",
+      "method": "agent_quality",
+      "rows": 34,
+      "score": 0.4653441225708034,
+      "mae": 168.08578950513694,
+      "accuracy": null
+    },
+    {
+      "block": "2021-Q2",
+      "family": "eps_growth",
+      "method": "agent_guard",
+      "rows": 34,
+      "score": 0.5613430411155591,
+      "mae": 114.05675902303379,
+      "accuracy": null
+    },
+    {
+      "block": "2021-Q2",
+      "family": "eps_growth",
+      "method": "compact_huber",
+      "rows": 34,
+      "score": 0.6419655109963256,
+      "mae": 81.40245699146486,
+      "accuracy": null
+    },
+    {
+      "block": "2021-Q2",
+      "family": "eps_growth",
+      "method": "compact_tree",
+      "rows": 34,
+      "score": 0.5648282332487699,
+      "mae": 112.45238237786862,
+      "accuracy": null
+    },
+    {
+      "block": "2021-Q2",
+      "family": "eps_growth",
+      "method": "compact_quant_ensemble",
+      "rows": 34,
+      "score": 0.6278161625800437,
+      "mae": 86.52654521599169,
+      "accuracy": null
+    },
+    {
+      "block": "2021-Q2",
+      "family": "eps_growth",
+      "method": "compact_logit",
+      "rows": 34,
+      "score": 0.6355404975559719,
+      "mae": 83.70095144805126,
+      "accuracy": null
+    },
+    {
+      "block": "2021-Q2",
+      "family": "eps_growth",
+      "method": "compact_tree_label",
+      "rows": 34,
+      "score": 0.6352912298030327,
+      "mae": 83.79106173145026,
+      "accuracy": null
+    },
+    {
+      "block": "2021-Q2",
+      "family": "eps_growth",
+      "method": "selected_by_family",
+      "rows": 34,
+      "score": 0.6419655109963256,
+      "mae": 81.40245699146486,
+      "accuracy": null
+    },
+    {
+      "block": "2021-Q3",
+      "family": "eps_direction",
+      "method": "v6",
+      "rows": 32,
+      "score": 0.5,
+      "mae": 0.811875,
+      "accuracy": 0.8125
+    },
+    {
+      "block": "2021-Q3",
+      "family": "eps_direction",
+      "method": "v7",
+      "rows": 32,
+      "score": 0.46153846153846156,
+      "mae": 0.7129687499999999,
+      "accuracy": 0.75
+    },
+    {
+      "block": "2021-Q3",
+      "family": "eps_direction",
+      "method": "trend",
+      "rows": 32,
+      "score": 0.46153846153846156,
+      "mae": 0.9385937499999999,
+      "accuracy": 0.75
+    },
+    {
+      "block": "2021-Q3",
+      "family": "eps_direction",
+      "method": "robust",
+      "rows": 32,
+      "score": 0.3269230769230769,
+      "mae": 0.774921875,
+      "accuracy": 0.53125
+    },
+    {
+      "block": "2021-Q3",
+      "family": "eps_direction",
+      "method": "core",
+      "rows": 32,
+      "score": 0.38461538461538464,
+      "mae": 0.7177212010218599,
+      "accuracy": 0.625
+    },
+    {
+      "block": "2021-Q3",
+      "family": "eps_direction",
+      "method": "ensemble",
+      "rows": 32,
+      "score": 0.40384615384615385,
+      "mae": 0.7106211181964733,
+      "accuracy": 0.65625
+    },
+    {
+      "block": "2021-Q3",
+      "family": "eps_direction",
+      "method": "drift",
+      "rows": 32,
+      "score": 0.5,
+      "mae": 0.779875,
+      "accuracy": 0.8125
+    },
+    {
+      "block": "2021-Q3",
+      "family": "eps_direction",
+      "method": "huber",
+      "rows": 32,
+      "score": 0.4807692307692308,
+      "mae": 0.701115017171633,
+      "accuracy": 0.78125
+    },
+    {
+      "block": "2021-Q3",
+      "family": "eps_direction",
+      "method": "tree",
+      "rows": 32,
+      "score": 0.75,
+      "mae": 0.5676397732995223,
+      "accuracy": 0.90625
+    },
+    {
+      "block": "2021-Q3",
+      "family": "eps_direction",
+      "method": "quant_ensemble",
+      "rows": 32,
+      "score": 0.4423076923076923,
+      "mae": 0.6343297697155841,
+      "accuracy": 0.71875
+    },
+    {
+      "block": "2021-Q3",
+      "family": "eps_direction",
+      "method": "logit",
+      "rows": 32,
+      "score": 0.5,
+      "mae": 0.6783800119180888,
+      "accuracy": 0.8125
+    },
+    {
+      "block": "2021-Q3",
+      "family": "eps_direction",
+      "method": "tree_label",
+      "rows": 32,
+      "score": 0.5833333333333334,
+      "mae": 0.617011054565003,
+      "accuracy": 0.84375
+    },
+    {
+      "block": "2021-Q3",
+      "family": "eps_direction",
+      "method": "agent_selector",
+      "rows": 32,
+      "score": 0.46153846153846156,
+      "mae": 0.602461004320553,
+      "accuracy": 0.75
+    },
+    {
+      "block": "2021-Q3",
+      "family": "eps_direction",
+      "method": "agent_quality",
+      "rows": 32,
+      "score": 0.4423076923076923,
+      "mae": 0.6444131670572204,
+      "accuracy": 0.71875
+    },
+    {
+      "block": "2021-Q3",
+      "family": "eps_direction",
+      "method": "agent_guard",
+      "rows": 32,
+      "score": 0.46153846153846156,
+      "mae": 0.6082835767632586,
+      "accuracy": 0.75
+    },
+    {
+      "block": "2021-Q3",
+      "family": "eps_direction",
+      "method": "compact_huber",
+      "rows": 32,
+      "score": 0.4807692307692308,
+      "mae": 0.6671860632451398,
+      "accuracy": 0.78125
+    },
+    {
+      "block": "2021-Q3",
+      "family": "eps_direction",
+      "method": "compact_tree",
+      "rows": 32,
+      "score": 0.4807692307692308,
+      "mae": 0.6607707566789065,
+      "accuracy": 0.78125
+    },
+    {
+      "block": "2021-Q3",
+      "family": "eps_direction",
+      "method": "compact_quant_ensemble",
+      "rows": 32,
+      "score": 0.46153846153846156,
+      "mae": 0.5887663007900048,
+      "accuracy": 0.75
+    },
+    {
+      "block": "2021-Q3",
+      "family": "eps_direction",
+      "method": "compact_logit",
+      "rows": 32,
+      "score": 0.4807692307692308,
+      "mae": 0.5951884284537097,
+      "accuracy": 0.78125
+    },
+    {
+      "block": "2021-Q3",
+      "family": "eps_direction",
+      "method": "compact_tree_label",
+      "rows": 32,
+      "score": 0.4807692307692308,
+      "mae": 0.5839723152352696,
+      "accuracy": 0.78125
+    },
+    {
+      "block": "2021-Q3",
+      "family": "eps_direction",
+      "method": "selected_by_family",
+      "rows": 32,
+      "score": 0.5833333333333334,
+      "mae": 0.617011054565003,
+      "accuracy": 0.84375
+    },
+    {
+      "block": "2021-Q3",
+      "family": "eps_growth",
+      "method": "v6",
+      "rows": 32,
+      "score": 0.5,
+      "mae": 229.29701100713683,
+      "accuracy": null
+    },
+    {
+      "block": "2021-Q3",
+      "family": "eps_growth",
+      "method": "v7",
+      "rows": 32,
+      "score": 0.6198690403073921,
+      "mae": 140.6150124961323,
+      "accuracy": null
+    },
+    {
+      "block": "2021-Q3",
+      "family": "eps_growth",
+      "method": "trend",
+      "rows": 32,
+      "score": 0.558625924276659,
+      "mae": 181.16910064717615,
+      "accuracy": null
+    },
+    {
+      "block": "2021-Q3",
+      "family": "eps_growth",
+      "method": "robust",
+      "rows": 32,
+      "score": 0.5056532531342313,
+      "mae": 224.1698847081912,
+      "accuracy": null
+    },
+    {
+      "block": "2021-Q3",
+      "family": "eps_growth",
+      "method": "core",
+      "rows": 32,
+      "score": 0.5370990589769623,
+      "mae": 197.6205327396156,
+      "accuracy": null
+    },
+    {
+      "block": "2021-Q3",
+      "family": "eps_growth",
+      "method": "ensemble",
+      "rows": 32,
+      "score": 0.5391954787731001,
+      "mae": 195.96065533844427,
+      "accuracy": null
+    },
+    {
+      "block": "2021-Q3",
+      "family": "eps_growth",
+      "method": "drift",
+      "rows": 32,
+      "score": 0.5080007234717863,
+      "mae": 222.07441508074692,
+      "accuracy": null
+    },
+    {
+      "block": "2021-Q3",
+      "family": "eps_growth",
+      "method": "huber",
+      "rows": 32,
+      "score": 0.5125764588832795,
+      "mae": 218.04505286113553,
+      "accuracy": null
+    },
+    {
+      "block": "2021-Q3",
+      "family": "eps_growth",
+      "method": "tree",
+      "rows": 32,
+      "score": 0.6146535475502227,
+      "mae": 143.75381074607407,
+      "accuracy": null
+    },
+    {
+      "block": "2021-Q3",
+      "family": "eps_growth",
+      "method": "quant_ensemble",
+      "rows": 32,
+      "score": 0.5389836239483426,
+      "mae": 196.12780863286238,
+      "accuracy": null
+    },
+    {
+      "block": "2021-Q3",
+      "family": "eps_growth",
+      "method": "logit",
+      "rows": 32,
+      "score": 0.5322103180788801,
+      "mae": 201.54208252045652,
+      "accuracy": null
+    },
+    {
+      "block": "2021-Q3",
+      "family": "eps_growth",
+      "method": "tree_label",
+      "rows": 32,
+      "score": 0.5563740555844668,
+      "mae": 182.83042143804073,
+      "accuracy": null
+    },
+    {
+      "block": "2021-Q3",
+      "family": "eps_growth",
+      "method": "agent_selector",
+      "rows": 32,
+      "score": 0.5767146460055224,
+      "mae": 168.29478347096136,
+      "accuracy": null
+    },
+    {
+      "block": "2021-Q3",
+      "family": "eps_growth",
+      "method": "agent_quality",
+      "rows": 32,
+      "score": 0.5437822542917007,
+      "mae": 192.37362866058436,
+      "accuracy": null
+    },
+    {
+      "block": "2021-Q3",
+      "family": "eps_growth",
+      "method": "agent_guard",
+      "rows": 32,
+      "score": 0.5565244669088099,
+      "mae": 182.71903615922906,
+      "accuracy": null
+    },
+    {
+      "block": "2021-Q3",
+      "family": "eps_growth",
+      "method": "compact_huber",
+      "rows": 32,
+      "score": 0.5480651628925615,
+      "mae": 189.07844237318773,
+      "accuracy": null
+    },
+    {
+      "block": "2021-Q3",
+      "family": "eps_growth",
+      "method": "compact_tree",
+      "rows": 32,
+      "score": 0.5939383369624602,
+      "mae": 156.7649700729454,
+      "accuracy": null
+    },
+    {
+      "block": "2021-Q3",
+      "family": "eps_growth",
+      "method": "compact_quant_ensemble",
+      "rows": 32,
+      "score": 0.6373361145551161,
+      "mae": 130.47706388142421,
+      "accuracy": null
+    },
+    {
+      "block": "2021-Q3",
+      "family": "eps_growth",
+      "method": "compact_logit",
+      "rows": 32,
+      "score": 0.6301057324576289,
+      "mae": 134.6054250376833,
+      "accuracy": null
+    },
+    {
+      "block": "2021-Q3",
+      "family": "eps_growth",
+      "method": "compact_tree_label",
+      "rows": 32,
+      "score": 0.6320865232011246,
+      "mae": 133.46505176536186,
+      "accuracy": null
+    },
+    {
+      "block": "2021-Q3",
+      "family": "eps_growth",
+      "method": "selected_by_family",
+      "rows": 32,
+      "score": 0.5480651628925615,
+      "mae": 189.07844237318773,
+      "accuracy": null
+    }
+  ],
+  "model_provenance": {
+    "train_input_sha256": "3e488303b9c48ab8d9bc01a9916ff322c30f4442811d63d51c2a94852713097d",
+    "train_truth_sha256": "25b33d5ea178056cbb996f5132554db633eedb53f28649474c36a2c3648b942d",
+    "model_sha256": "9e63855d374c084bb76a793785856135841ecf75a3beab2ff710dae1040e8f36",
+    "features": [
+      "eps_lag1",
+      "eps_lag2",
+      "eps_lag3",
+      "eps_lag4",
+      "eps_lag5",
+      "eps_lag6",
+      "eps_lag7",
+      "eps_lag8",
+      "prior",
+      "eps_delta",
+      "median_delta",
+      "delta_dispersion",
+      "up_fraction",
+      "history_count",
+      "split_warning",
+      "revenue_growth",
+      "operating_growth",
+      "net_growth",
+      "shares_growth",
+      "tax_growth",
+      "pretax_growth",
+      "operating_eps_delta",
+      "operating_margin_change",
+      "net_margin_change",
+      "net_operating_gap",
+      "tax_rate_change"
+    ],
+    "training_rows": 306,
+    "latest_target_publication": "2014-11-06"
+  },
+  "dataset_sha256": "7c18005966bfeceeb14db90baaa9a10013af8d72485f6be0abc1bf5c0531ef87",
+  "limitations": [
+    "Synthetic source presentations from SEC XBRL, not full filing extraction",
+    "Only EPS task families; does not establish full track score",
+    "Current API extraction filtered by original filing dates, not archived API vintages",
+    "Agent proxy is stronger/different than runtime House; pretraining leakage mitigated by anonymous normalized inputs but not excluded",
+    "Historical corpora end before 2022; selected surviving US companies are not a random market sample",
+    "Exact-quote research judge, not production NLI verifier"
+  ],
+  "selection": {
+    "method": "selected_by_family",
+    "family_methods": {
+      "eps_direction": "tree_label",
+      "eps_growth": "compact_huber"
+    },
+    "development_score": 0.667863528064338,
+    "rule": "Select independently by target family using dev only; deploy one frozen dispatch pipeline.",
+    "development_reports": {
+      "dev.json": "40c103e9dc1f117a1f0f4f22094f5b6db54c8f048c1888681b4d963f896c048c",
+      "dev-agent.json": "1d01d3da98bbf02b8ac0a01e441109848fe303ea53997ee93442d71a915938d7",
+      "dev-compact.json": "7cb66abc98686d1177233997a4c399aef541a33794c7bae1d5e16e76cbffed11"
+    },
+    "dataset_sha256": "7c18005966bfeceeb14db90baaa9a10013af8d72485f6be0abc1bf5c0531ef87",
+    "numeric_source_sha256": "2a9c98f0d153da2c10b965067c161a65316f15ad749b08e52a2de5cd04fe425d",
+    "handbook_sha256": "f03cd5db99f3e542f475503c37b2cb95b00fe2a1f50240d7ba698e5c310d0e9c",
+    "primary_threshold": "delta >= .03 and quarterly paired 95% CI lower > 0 versus V7",
+    "agent_model": "Fresh Codex session subagent, inherited model; research proxy, not House",
+    "no_codabench_submission": true
+  },
+  "comparisons": {
+    "v6": {
+      "delta": 0.06360216475893267,
+      "ci95": [
+        0.03358324234100703,
+        0.09210956142781872
+      ],
+      "blocks": 19
+    },
+    "v7": {
+      "delta": 0.06849335062797655,
+      "ci95": [
+        0.02911333816095277,
+        0.11525915961472936
+      ],
+      "blocks": 19
+    },
+    "quant_ensemble": {
+      "delta": 0.005991366747990582,
+      "ci95": [
+        -0.029839159071357015,
+        0.0448037222971348
+      ],
+      "blocks": 19
+    }
+  },
+  "meaningful_gain": true
+}

@@ -1,0 +1,34 @@
+{
+  "model": "Fresh Codex collaboration subagent, inherited session model; not NVIDIA House",
+  "handbook_sha256": "f03cd5db99f3e542f475503c37b2cb95b00fe2a1f50240d7ba698e5c310d0e9c",
+  "roles": [
+    "selector",
+    "quality",
+    "guard"
+  ],
+  "ground_truth_present_in_local_agent_packets": false,
+  "identity_and_dates_removed": true,
+  "decision_guard": "Exact IDs and fields; candidate-name allowlist; complete coverage; no free numeric output",
+  "sessions": [
+    "financial_analyst_dev",
+    "financial_analyst_test_a",
+    "financial_analyst_test_b",
+    "financial_analyst_test_c"
+  ],
+  "files": {
+    "packets/dev/batch-00.jsonl": "e42b9000022931d573c0a7c39ed0cc0c5f66821496642db47983d03eb2c13968",
+    "packets/dev/manifest.json": "e6fe75f37f90c6fa82595206cb958f24694ba7666b8383d749a2ceaddb6389f4",
+    "packets/holdout/batch-00.jsonl": "204a17b78dc4ac49e13dfe3686889bcdaabd11fa601ffe3be54a441fe6ce508c",
+    "packets/holdout/batch-01.jsonl": "4acb9591da4a7cd42044c7d4aa0cbfeeb9d16e15b338b2ada28efd5a654056f0",
+    "packets/holdout/batch-02.jsonl": "1741bbaf321a04925faaaf701fce5cb986a56260f7362d17a5a16fb4509096a7",
+    "packets/holdout/batch-03.jsonl": "c9e373b076d6284c4917922440b3f268d0026990983d82f4373f1fa6bac53e1b",
+    "packets/holdout/batch-04.jsonl": "4748af6a68ea3e1259e2e84e1fa5630f75c36726437f6a10b09baad79b05b37a",
+    "packets/holdout/batch-05.jsonl": "5aa489c2055298c2a9d86ec28d0e6558227f5657eeef51e0ba965367e905d927",
+    "packets/holdout/manifest.json": "601d40809b7386f441980cb6c2e24461cf86551f9a0538307031098def7bf9f1",
+    "decisions/dev/decisions-00.jsonl": "12f505bfc67624575d7fac07b6267b27d6a72cf3aec0a2d6f349d8ea34c06a71",
+    "decisions/holdout/decisions-a.jsonl": "0591e174248ca3f57b08cd4142f63062f53f449642104b30cc009a2ebac0377a",
+    "decisions/holdout/decisions-b.jsonl": "38f268035734e1d94f779a1ff268f666bcc0ccec83ea80f5526c7dafc089b3b3",
+    "decisions/holdout/decisions-c.jsonl": "3522765b66adbf0b5ba124507b2e356bc39f2ec170e7c333370e35b81ae6f6db"
+  },
+  "no_codabench_submission": true
+}
