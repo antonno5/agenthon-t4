@@ -1,0 +1,10 @@
+FROM agenthon-t4:checker
+RUN pip install --no-cache-dir 'qfbench2-common @ git+https://github.com/Agenthon-2026/Agenthon2026-public.git@v2.5.1#subdirectory=common'
+RUN pip install --no-cache-dir numpy==2.2.6 scipy==1.15.3 scikit-learn==1.6.1 joblib==1.5.1 threadpoolctl==3.6.0
+WORKDIR /app
+ENV PYTHONPATH=/app:/official OMP_NUM_THREADS=1 OPENBLAS_NUM_THREADS=1 MKL_NUM_THREADS=1 PYTHONDONTWRITEBYTECODE=1
+COPY agent_v6 /app/agent_v6
+COPY lab /app/lab
+COPY baseline_agent /app/baseline_agent
+COPY tests/test_lab.py /app/tests/test_lab.py
+ENTRYPOINT ["python"]

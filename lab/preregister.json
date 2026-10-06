@@ -1,0 +1,21 @@
+{
+  "version": 2,
+  "amendment": "v1 exposed 2020-2021 holdout before audit found 33 training examples whose next auction outcome was already published at their origin. v2 excludes noncausal historical examples, keeps all forecasting methods/hyperparameters/selection unchanged, and uses previously unscored 2022-2024 holdout. v1 artifacts retained separately.",
+  "development_years": [2017, 2018, 2019],
+  "holdout_years": [2022, 2023, 2024],
+  "months": [3, 6, 9, 12],
+  "families": ["auction_btc", "yield_change", "yield_direction", "yield_ranking"],
+  "methods": ["legacy_v1", "naive", "rules", "ridge", "trees", "ensemble"],
+  "selection": "Highest equal-family development mean among naive/rules/ridge/trees/ensemble. One global method. No selection on holdout.",
+  "metric": "Official 5.2.2 predictive/interval composite via imported _composite. Separate exact citation audit. Non-rankable demo, no production NLI judge.",
+  "scorer_commit": "1c744e1d6725340643a533f436517d72b53ca0e1",
+  "submission_threshold_raw_literal": 2.0,
+  "submission_requires": ["score > 2.0", "positive paired lower 95% time-block-bootstrap bound versus naive", "representative task coverage", "certified vintages", "official full verifier"],
+  "seed": 20261006,
+  "yield_horizon_observations": 20,
+  "yield_publication_lag_calendar_days": 2,
+  "yield_maturities_years": [2, 3, 5, 7, 10, 30],
+  "auction_reference": "Last six available auctions of the same tenor; 90% empirical absolute-error interval.",
+  "yield_reference": "Zero change; 90% empirical absolute-error interval. Direction zero means non-up.",
+  "limitations": ["Two Treasury sources only; three rate targets share the same underlying observations.", "Historical downloads are current snapshots, not certified historical vintages.", "Task templates are authored by us; do not establish generalization to organizer corpora.", "No earnings, CPI, credit or COT coverage in v1."]
+}
