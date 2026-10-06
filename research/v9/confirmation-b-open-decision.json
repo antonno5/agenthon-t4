@@ -1,0 +1,20 @@
+{
+  "date": "2026-10-06",
+  "confirmation_look": 2,
+  "status_at_registration": "B not downloaded, no B input, truth, predictions or score inspected",
+  "primary_comparator": "V7",
+  "target": "Lower endpoint of two-sided 97.5% paired-quarter bootstrap CI of equal-family composite improvement >= 0.10",
+  "multiple_looks": "Original plan: two confirmation looks, Bonferroni coverage at least 95%; A failed and remains reported",
+  "development_pools": ["existing", "opened_a_training"],
+  "selection_rule": "Maximize minimum 97.5% quarterly bootstrap lower endpoint across the two consumed development cohorts. Tie by equal-cohort average score then method names.",
+  "selected_direction": "rich_trees",
+  "selected_growth": "rich_xgb_growth5:q1.0",
+  "selection_artifact": "test-output/v9/r7/development-selection-ci.json",
+  "training_change": "R7 adds causally available historical examples from opened A and weights errors by past-quarter naive loss. No R7 method displaced the older models in the selected pair.",
+  "solver_failure": "Huber weighted fit failed numerically in 2020. The unit_huber candidate was discarded in ALL years before evaluation; cached earlier models are not used.",
+  "development_threshold_met": false,
+  "reason_to_open": "Seven substantial model/feature rounds, additional company training, historical seasonality, modern boosting, causal out-of-time stacking, and metric-related weighting show diminishing development gains. The selected robust pair is the final candidate for the already reserved second look; no claim of meeting the target is made in advance.",
+  "unchanged": ["B company membership", "2015-2021 evaluation period", "official scorer and reference", "27 quarterly aggregation units where eligible", "bootstrap seed and draw count", "97.5% success threshold"],
+  "no_codabench_submission": true,
+  "scope": "Historical new-company EPS research; not a full-track competition score and not a deployable candidate with guaranteed corpus-equivalent feature availability."
+}

@@ -1,0 +1,175 @@
+{
+  "families": {
+    "eps_direction": {
+      "method": "rich_trees",
+      "config": {
+        "point": "rich_trees"
+      },
+      "development_score": 0.6472540988172812
+    },
+    "eps_growth": {
+      "method": "rich_xgb_growth5:q1.0",
+      "config": {
+        "point": "rich_xgb_growth5",
+        "interval": "quantile",
+        "view": "rich",
+        "factor": 1.0
+      },
+      "development_score": 0.5647651300933658
+    }
+  },
+  "report_sha256": "82f0284b04219250f1e535649f7eda00541f4906c618f086fbc5c4a36b812598",
+  "report_sha256_by_pool": {
+    "existing": "82f0284b04219250f1e535649f7eda00541f4906c618f086fbc5c4a36b812598",
+    "opened_a_training": "69f77320721e4c4f00f500ea6590143d8c034913482b8104e2cd164094f72594"
+  },
+  "rule": "Maximize MINIMUM paired-quarter 97.5% bootstrap lower bound across consumed DEVELOPMENT cohorts. Tie: equal-cohort score, method name. No confirmation data.",
+  "comparisons_tested": 23005,
+  "development_primary_mean": 0.6060096144553235,
+  "development_by_pool": {
+    "existing": {
+      "primary_mean": 0.6186393090321883,
+      "v7_mean": 0.509994251784781,
+      "interval": {
+        "delta": 0.10864505724740743,
+        "ci95": [
+          0.07653185351001383,
+          0.14180939957254396
+        ],
+        "ci97_5": [
+          0.07232659853099523,
+          0.14640282989072037
+        ],
+        "moving_two_quarter_ci97_5": [
+          0.07614665613084959,
+          0.14363195852012137
+        ],
+        "quarter_blocks": 27,
+        "positive_blocks": 23
+      }
+    },
+    "opened_a_training": {
+      "primary_mean": 0.5933799198784588,
+      "v7_mean": 0.4939831295183798,
+      "interval": {
+        "delta": 0.099396790360079,
+        "ci95": [
+          0.07691038897211049,
+          0.12309561950427952
+        ],
+        "ci97_5": [
+          0.07369348593797687,
+          0.1269901500600456
+        ],
+        "moving_two_quarter_ci97_5": [
+          0.07778584484633834,
+          0.12162267141901939
+        ],
+        "quarter_blocks": 27,
+        "positive_blocks": 26
+      }
+    }
+  },
+  "top10": [
+    {
+      "direction": "rich_trees",
+      "growth": "rich_xgb_growth5:q1.0",
+      "development_worst_lcb97_5": 0.07232659853099535,
+      "mean": 0.6060096144553235,
+      "cohort_lcbs": {
+        "existing": 0.07232659853099535,
+        "opened_a_training": 0.07369348593797687
+      }
+    },
+    {
+      "direction": "rich_trees",
+      "growth": "rich_xgb_growth5:q1.25",
+      "development_worst_lcb97_5": 0.07232659853099535,
+      "mean": 0.605909807857691,
+      "cohort_lcbs": {
+        "existing": 0.07232659853099535,
+        "opened_a_training": 0.07330883719070014
+      }
+    },
+    {
+      "direction": "rich_trees",
+      "growth": "rich_xgb_growth5:q0.75",
+      "development_worst_lcb97_5": 0.07227969463679966,
+      "mean": 0.6059865459925505,
+      "cohort_lcbs": {
+        "existing": 0.07227969463679966,
+        "opened_a_training": 0.07369620731563531
+      }
+    },
+    {
+      "direction": "rich_trees",
+      "growth": "rich_unit_blend0.25:q1.0",
+      "development_worst_lcb97_5": 0.07214532745988582,
+      "mean": 0.605708868861819,
+      "cohort_lcbs": {
+        "existing": 0.07214532745988582,
+        "opened_a_training": 0.07341319429847228
+      }
+    },
+    {
+      "direction": "rich_trees",
+      "growth": "rich_unit_blend0.25:q1.25",
+      "development_worst_lcb97_5": 0.07214532745988582,
+      "mean": 0.6056128760058133,
+      "cohort_lcbs": {
+        "existing": 0.07214532745988582,
+        "opened_a_training": 0.07310179934526902
+      }
+    },
+    {
+      "direction": "rich_trees",
+      "growth": "rich_unit_blend0.25:q0.75",
+      "development_worst_lcb97_5": 0.07214464614204855,
+      "mean": 0.6056874634960733,
+      "cohort_lcbs": {
+        "existing": 0.07214464614204855,
+        "opened_a_training": 0.07341458900452218
+      }
+    },
+    {
+      "direction": "rich_trees",
+      "growth": "rich_unit_blend0.5:q1.0",
+      "development_worst_lcb97_5": 0.07182222533171334,
+      "mean": 0.6052465023496774,
+      "cohort_lcbs": {
+        "existing": 0.07182222533171334,
+        "opened_a_training": 0.0730734332656464
+      }
+    },
+    {
+      "direction": "rich_trees",
+      "growth": "rich_unit_blend0.5:q1.25",
+      "development_worst_lcb97_5": 0.07182022429256843,
+      "mean": 0.6051496656844974,
+      "cohort_lcbs": {
+        "existing": 0.07182022429256843,
+        "opened_a_training": 0.07267096259298961
+      }
+    },
+    {
+      "direction": "rich_trees",
+      "growth": "rich_unit_blend0.5:q0.75",
+      "development_worst_lcb97_5": 0.0717839747127063,
+      "mean": 0.6052267641380743,
+      "cohort_lcbs": {
+        "existing": 0.0717839747127063,
+        "opened_a_training": 0.07307613763469448
+      }
+    },
+    {
+      "direction": "rich_median7",
+      "growth": "rich_growth15:q0.75",
+      "development_worst_lcb97_5": 0.07174796537443494,
+      "mean": 0.6046435241128391,
+      "cohort_lcbs": {
+        "existing": 0.0718991522534632,
+        "opened_a_training": 0.07174796537443494
+      }
+    }
+  ]
+}

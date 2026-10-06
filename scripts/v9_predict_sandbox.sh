@@ -5,7 +5,7 @@ pool="$1"
 case "$pool" in confirmation_a|confirmation_b) ;; *) exit 2;; esac
 root="$PWD/test-output/v9"
 mounts=(-v "$PWD/lab:/app/lab:ro" -v "$PWD/agent_submit_v8:/app/agent_submit_v8:ro")
-for round in r4 r5 r6; do
+for round in r4 r5 r6 r7; do
   mkdir -p "$root/$round/predictions"
   mounts+=(-v "$root/r4/inputs:/experiment/$round/inputs:ro")
   mounts+=(-v "$root/r4/manifests:/experiment/$round/manifests:ro")
@@ -25,3 +25,4 @@ run_predict() {
 run_predict lab.v9_models r4
 run_predict lab.v9_advanced r5
 run_predict lab.v9_stack r6
+run_predict lab.v9_weighted r7

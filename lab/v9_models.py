@@ -20,8 +20,10 @@ def feature_function(root):
     return vector
 
 def training_pools(root):
+    if (root/'training-pools.json').exists():return read(root/'training-pools.json')['pools']
     pools=['existing','additional_training']
     if (root/'manifests/training_extension.json').exists():pools.append('training_extension')
+    if (root/'manifests/opened_a_training.json').exists():pools.append('opened_a_training')
     return pools
 
 def checked(root,pool,truth=False):
