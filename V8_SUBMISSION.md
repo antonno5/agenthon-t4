@@ -17,3 +17,7 @@ The descriptor declares the actual local Huber model in `models[]`. Fitted coeff
 Validation before upload: 31 tests, 11/11 public structure checks, 11/11 official smoke checks. The published image was pulled anonymously by digest, checked for linux/amd64 and interface 2.0, and produced byte-identical answers to the local image on all 11 public units. The official toolkit packed exactly `submission.json` and `team-claim.json`; the team secret is absent. A receipt prevents duplicate submission POSTs.
 
 The previous actual submission was V6 **963432**, leaderboard score **0.4394002047**, analysis score **0.5585828383**, with 10/10 units admissible. The new score will be compared with this result after evaluation completes.
+
+## Queue monitoring
+
+CodaBench Server Status confirmed submission 964546 in queue `agenthon2026-rehearsal-20260909` with no ingestion/scoring worker assigned. The current status is Submitted; there is no numerical result yet. A read-only watcher on cero checks every 45 seconds for up to six hours, stops on a terminal status, and saves `result-summary.json`, `detailed-result.html`, and `RESULT.md` under `test-output/submission-v8/`. It never submits or reruns a job. Its current state is in `watch-state.json`.
