@@ -15,4 +15,4 @@ Validation: six new numerical/input tests; 11/11 public schema/structure/exact-q
 
 Cero again accepted TCP connections but did not send an SSH banner. Publication therefore used the existing local GitHub SSH identity and GitHub Actions; CodaBench authentication/upload used the authorized local handoff file. Credentials and cookies remain outside version control. No production service was restarted.
 
-Local audit artifacts: `test-output/submission-v11/`. The upload receipt prevents a duplicate POST. Waiting for platform evaluation; no score or rank improvement is claimed yet.
+Local audit artifacts: `test-output/submission-v11/`. The upload receipt prevents a duplicate POST. Latest platform check: 2026-10-06T18:26:50.850951+00:00, status **Submitted**, no scores returned. The API exposes no error; the four execution log files were created but remain empty at the last log check. No score or rank improvement is claimed. The local read-only watcher continues to save any terminal result under `test-output/submission-v11/`; it never creates another submission.

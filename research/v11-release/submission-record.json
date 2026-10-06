@@ -10,7 +10,9 @@
   "competition_url": "https://www.codabench.org/competitions/17768/#participate-submit_results",
   "image": "ghcr.io/antonno5/agenthon-t4@sha256:b6a841f95515f217e6b9fff421191f95e228d8e1d5e1594b9c6da1c3c226c22a",
   "source_commit": "753007d6d64a94961adb0e655412d8ecb3bdced0",
-  "status": "Submitting",
+  "status": "Submitted",
   "authorization": "Explicit diagnostic upload requested by the user after the research gate did not pass",
-  "platform_upload_verified": true
+  "platform_upload_verified": true,
+  "last_checked": "2026-10-06T18:26:50.850951+00:00",
+  "scores_available": false
 }
