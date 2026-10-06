@@ -17,6 +17,11 @@ def predict(task,entity,corpus,allowed):
     prediction,route,ncal,preferred,details=v7.predict(task,entity,corpus,allowed)
     name=task['target']['name'].lower()
     if 'eps' not in name or not any(k in name for k in ['growth','direction']):return prediction,route,ncal,preferred,details
+    # The submission choice also considered historical validation through 2021.
+    # Keep that selection information out of tasks with an earlier cutoff.
+    try:cutoff=dt.date.fromisoformat(str(task.get('cutoff_date',''))[:10])
+    except ValueError:return prediction,route,ncal,preferred,details
+    if cutoff<dt.date(2022,1,1):return prediction,route,ncal,preferred,details
     prior=v6.number(entity.get('prior_year_q_eps'));pair=latest_pair(task,corpus,allowed)
     if pair is None or prior is None:return prediction,route,ncal,preferred,details
     dates=re.findall(r'\d{4}-\d{2}-\d{2}',str(entity.get('quarter_reported','')))
