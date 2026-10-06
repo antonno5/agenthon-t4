@@ -78,3 +78,15 @@ format admission, not hidden forecast quality.
 
 The official scoring rules changed after the September submissions. Any numerical
 comparison with V1/V3/V4 needs that caveat; the score is now known, but the changed formula prevents a clean comparison with the September values.
+
+
+## V7 prepared candidate — 2026-10-06
+
+V7 is built, published, anonymously pullable, and packed; it has not been submitted.
+It adds checked quarterly EPS pairs and conservative selection among simple
+numerical forecasters. The independent EPS holdout gives 0.5118 against V6 0.5000
+(95% paired delta interval [-0.0331, 0.0554]); growth MAE improves but direction
+accuracy falls slightly. This is not evidence of reaching 0.7 on the leaderboard.
+All 24 unit tests and all 11 official public smoke checks pass. The published
+image matches the tested source and all 11 public answers byte for byte.
+See [V7_CANDIDATE.md](V7_CANDIDATE.md) for the full result, limitations, digest and ZIP.
