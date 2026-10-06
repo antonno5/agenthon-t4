@@ -1,0 +1,1 @@
+"""Constrained research analyst candidates."""
