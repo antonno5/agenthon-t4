@@ -1,6 +1,7 @@
 import unittest
 from lab.v9_accounting import flow_at,unique_latest
 from lab.v9_features import vector
+from lab.v9_features_long import history_signals,vector as long_vector
 
 def record(start,end,filed,value,accn='A'):
     return dict(start=start,end=end,filed=filed,val=value,accn=accn,form='10-Q')
@@ -29,5 +30,15 @@ class QuarterlyAccounting(unittest.TestCase):
     def test_compact_never_uses_accounting(self):
         row=dict(eps=[1.]*8,prior=1.,scale=1.,metrics={},split_warning=False)
         self.assertEqual(vector(row,'compact'),vector(dict(row,accounting={'operating':[1e9]*8,'shares':[1.]*8}),'compact'))
+    def test_repeating_seasonality_is_recovered(self):
+        history=[1.,1.,1.,4.]*6
+        row=dict(eps=history[:8],long_eps=history,prior=4.,scale=1.,metrics={},split_warning=False,block='2018-Q4')
+        signals=history_signals(row)
+        self.assertEqual(signals['seasonal_trend'],0.)
+        self.assertEqual(signals['seasonal_offset'],3.)
+        self.assertEqual(signals['seasonal_level'],4.)
+    def test_history_features_do_not_encode_calendar_year_or_target(self):
+        row=dict(eps=[1.]*8,long_eps=[1.]*24,prior=1.,scale=1.,metrics={},split_warning=False,block='2015-Q1')
+        self.assertEqual(long_vector(row),long_vector(dict(row,block='2021-Q1',y=999,cik='X')))
 
 if __name__=='__main__':unittest.main()

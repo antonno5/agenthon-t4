@@ -129,11 +129,12 @@ def evaluate(root,pool):
 def freeze(root,pool):
     path=root/f'selection-{pool}.json'
     if path.exists():raise RuntimeError('Already frozen')
-    development=read(root/'development-selection.json')
+    selection_file=root/'development-selection-ci.json' if (root/'development-selection-ci.json').exists() else root/'development-selection.json'
+    development=read(selection_file)
     write(path,dict(families=development['families'],development_report_sha256=development['report_sha256'],
           prediction_sha256=sha(root/'predictions'/f'{pool}.json'),
           plan_sha256=sha(root/'plan.json'),evaluation_code_sha256=sha(Path('/app/lab/v9_evaluate.py')),
-          pool=pool,threshold=.1,confidence_level=.975,no_codabench_submission=True))
+          development_selection_sha256=sha(selection_file),pool=pool,threshold=.1,confidence_level=.975,no_codabench_submission=True))
     print('frozen',pool,flush=True)
 
 if __name__=='__main__':

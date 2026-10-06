@@ -1,0 +1,7 @@
+{
+  "decision": "Open confirmation A after six substantial development rounds showed diminishing gains; development CI target not met",
+  "development_lcb95": 0.08065133788747035,
+  "selection_sha256": "6725bf1f96ec4b286797e557aee420546b47e90b14e0fe87993e5867a9275602",
+  "confirmation_outcomes_not_yet_downloaded": true,
+  "no_codabench_submission": true
+}
