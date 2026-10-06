@@ -1,0 +1,16 @@
+{
+  "source_commit": "753007d6d64a94961adb0e655412d8ecb3bdced0",
+  "build_url": "https://github.com/antonno5/agenthon-t4/actions/runs/37507184581",
+  "status": "verified",
+  "stage": "complete",
+  "image": "ghcr.io/antonno5/agenthon-t4@sha256:b6a841f95515f217e6b9fff421191f95e228d8e1d5e1594b9c6da1c3c226c22a",
+  "digest": "sha256:b6a841f95515f217e6b9fff421191f95e228d8e1d5e1594b9c6da1c3c226c22a",
+  "tag": "ghcr.io/antonno5/agenthon-t4:v11-753007d6d64a",
+  "image_id": "sha256:7638eaa838648a7bb99b65906d607b1bf48c83fa9df708a325eb19760c66a764",
+  "platform": "linux/amd64",
+  "interface": "2.0",
+  "anonymous_pull": true,
+  "public_task_answer_parity": 11,
+  "cpi_model_sha256": "e68f1cbeec8c42b6cafc53cc3cd6688498003954f2563a4dee8ba7ce19332b1d",
+  "eps_model_sha256": "efe932096f0c1210057a8823f2f536d123c2c93be10be4640ab1ce817bf9f8b9"
+}
