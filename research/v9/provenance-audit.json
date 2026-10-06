@@ -1,0 +1,568 @@
+{
+  "training_configs": {
+    "r4": {
+      "pools": [
+        "existing",
+        "additional_training",
+        "training_extension"
+      ],
+      "frozen_for_reproducibility": true
+    },
+    "r5": {
+      "pools": [
+        "existing",
+        "additional_training",
+        "training_extension"
+      ],
+      "frozen_for_reproducibility": true
+    },
+    "r6": {
+      "pools": [
+        "existing",
+        "additional_training",
+        "training_extension"
+      ],
+      "frozen_for_reproducibility": true
+    },
+    "r7": {
+      "pools": [
+        "existing",
+        "additional_training",
+        "training_extension",
+        "opened_a_training"
+      ],
+      "frozen_for_reproducibility": true
+    }
+  },
+  "models": {
+    "r4/2015": {
+      "year": 2015,
+      "training_rows": 2569,
+      "training_companies": 214,
+      "latest_target_publication": "2014-11-26",
+      "model_sha256": "7260fb543fbd6f29c8ea22f2e4f4f2fc4b9a59c52f80d295f16a9a417c2a15d3",
+      "training_ids_sha256": "c5afcab4f6fc262aef61fec89ca787491a580822915b4af42e9aec623ae406c6",
+      "feature_source_sha256": "f9f4d8527b0906f8d88f7757952ffc4899670da3a5d4e9b93918d145b415d1e5",
+      "training_pools": [
+        "existing",
+        "additional_training",
+        "training_extension"
+      ],
+      "feature_version": 3,
+      "seconds": 25.10972073301673
+    },
+    "r4/2016": {
+      "year": 2016,
+      "training_rows": 3257,
+      "training_companies": 217,
+      "latest_target_publication": "2015-11-24",
+      "model_sha256": "d46dab48dbd137cf2e137f530fd9cf109925ce32e3ec97f74f38d62ba000d9f6",
+      "training_ids_sha256": "15bf2505394ee2855f5bf4c52a8c4ceea4fea178594110694efb3b6736a7bee8",
+      "feature_source_sha256": "f9f4d8527b0906f8d88f7757952ffc4899670da3a5d4e9b93918d145b415d1e5",
+      "training_pools": [
+        "existing",
+        "additional_training",
+        "training_extension"
+      ],
+      "feature_version": 3,
+      "seconds": 35.23631117399782
+    },
+    "r4/2017": {
+      "year": 2017,
+      "training_rows": 3947,
+      "training_companies": 219,
+      "latest_target_publication": "2016-11-23",
+      "model_sha256": "2d5e57e95112a755be8ce38fb60cb5bccf4a519f0d27354636d3236b75acc491",
+      "training_ids_sha256": "5e95a7910f4c3c048d5b9f8338d4b21625f895c7e27777d3902323b69e3dbf72",
+      "feature_source_sha256": "f9f4d8527b0906f8d88f7757952ffc4899670da3a5d4e9b93918d145b415d1e5",
+      "training_pools": [
+        "existing",
+        "additional_training",
+        "training_extension"
+      ],
+      "feature_version": 3,
+      "seconds": 39.75185326859355
+    },
+    "r4/2018": {
+      "year": 2018,
+      "training_rows": 4658,
+      "training_companies": 222,
+      "latest_target_publication": "2017-11-22",
+      "model_sha256": "949685eaaded0b5e6eb05713409c73dc361303482dd9464706adc30547d9112b",
+      "training_ids_sha256": "c3488cb6aad590ff0e84fe54a4300ec7fc75186446e8633f409370a8b5fd63a3",
+      "feature_source_sha256": "f9f4d8527b0906f8d88f7757952ffc4899670da3a5d4e9b93918d145b415d1e5",
+      "training_pools": [
+        "existing",
+        "additional_training",
+        "training_extension"
+      ],
+      "feature_version": 3,
+      "seconds": 45.16668416187167
+    },
+    "r4/2019": {
+      "year": 2019,
+      "training_rows": 5372,
+      "training_companies": 225,
+      "latest_target_publication": "2018-11-21",
+      "model_sha256": "5a122052b39dd42a5297c7bccc74e1b8e07cc262cab173b657eb03960bdc2419",
+      "training_ids_sha256": "eb62443e4eddc2a828ed76103855037ecb7517dd72cff07f9e140d5eb48ec8a3",
+      "feature_source_sha256": "f9f4d8527b0906f8d88f7757952ffc4899670da3a5d4e9b93918d145b415d1e5",
+      "training_pools": [
+        "existing",
+        "additional_training",
+        "training_extension"
+      ],
+      "feature_version": 3,
+      "seconds": 48.854465344920754
+    },
+    "r4/2020": {
+      "year": 2020,
+      "training_rows": 6101,
+      "training_companies": 232,
+      "latest_target_publication": "2019-11-27",
+      "model_sha256": "2c178915bc761e5d1fcdf73e5ac46e3294239b1be56b101769686fb575c3bd74",
+      "training_ids_sha256": "23feee3386860766a8bd135a749274ab055d6b1d6788081a3cb7215fc4fac462",
+      "feature_source_sha256": "f9f4d8527b0906f8d88f7757952ffc4899670da3a5d4e9b93918d145b415d1e5",
+      "training_pools": [
+        "existing",
+        "additional_training",
+        "training_extension"
+      ],
+      "feature_version": 3,
+      "seconds": 54.83109683357179
+    },
+    "r4/2021": {
+      "year": 2021,
+      "training_rows": 6847,
+      "training_companies": 236,
+      "latest_target_publication": "2020-11-25",
+      "model_sha256": "4e0b27aba33fbb0a63e7fd8a58d88ba054ecceb35cf85ad5f2a0f9048e9162f5",
+      "training_ids_sha256": "5611cf2eafc1955255efc0c11179f62cf63ec90234637c3d6fb03112532d5b9c",
+      "feature_source_sha256": "f9f4d8527b0906f8d88f7757952ffc4899670da3a5d4e9b93918d145b415d1e5",
+      "training_pools": [
+        "existing",
+        "additional_training",
+        "training_extension"
+      ],
+      "feature_version": 3,
+      "seconds": 61.86593053210527
+    },
+    "r5/2015": {
+      "year": 2015,
+      "rows": 2569,
+      "latest_target_publication": "2014-11-26",
+      "model_sha256": "447f75094892e88e44c8ae64e54f701bf249dc2dbba94241d66ca7cf54688e24",
+      "feature_code_sha256": "f9f4d8527b0906f8d88f7757952ffc4899670da3a5d4e9b93918d145b415d1e5",
+      "advanced_code_sha256": "89ec4ab48a34aebd0ebe3e834b3709a2390cdb7dd1693c5f4182fa289900e2b3",
+      "seconds": 50.15048723574728
+    },
+    "r5/2016": {
+      "year": 2016,
+      "rows": 3257,
+      "latest_target_publication": "2015-11-24",
+      "model_sha256": "6e161cb38b2e84d0d2f41c1b5f103f1be8da1e85bcfad1446dbce33b6fff4898",
+      "feature_code_sha256": "f9f4d8527b0906f8d88f7757952ffc4899670da3a5d4e9b93918d145b415d1e5",
+      "advanced_code_sha256": "89ec4ab48a34aebd0ebe3e834b3709a2390cdb7dd1693c5f4182fa289900e2b3",
+      "seconds": 52.518653182312846
+    },
+    "r5/2017": {
+      "year": 2017,
+      "rows": 3947,
+      "latest_target_publication": "2016-11-23",
+      "model_sha256": "f856eeeda4d2973dd4bbc808ff35c4c867030bf13cc185f030a07a57cd0902cb",
+      "feature_code_sha256": "f9f4d8527b0906f8d88f7757952ffc4899670da3a5d4e9b93918d145b415d1e5",
+      "advanced_code_sha256": "89ec4ab48a34aebd0ebe3e834b3709a2390cdb7dd1693c5f4182fa289900e2b3",
+      "seconds": 53.77360862493515
+    },
+    "r5/2018": {
+      "year": 2018,
+      "rows": 4658,
+      "latest_target_publication": "2017-11-22",
+      "model_sha256": "c7ff240b8d90802063b5211ac437c032212f47af5259a04b21226748627e862b",
+      "feature_code_sha256": "f9f4d8527b0906f8d88f7757952ffc4899670da3a5d4e9b93918d145b415d1e5",
+      "advanced_code_sha256": "89ec4ab48a34aebd0ebe3e834b3709a2390cdb7dd1693c5f4182fa289900e2b3",
+      "seconds": 55.52598305884749
+    },
+    "r5/2019": {
+      "year": 2019,
+      "rows": 5372,
+      "latest_target_publication": "2018-11-21",
+      "model_sha256": "ce7f1411917684ae657cdb47e7ce109de9c180b772b54f2b4c6fb38531db06c2",
+      "feature_code_sha256": "f9f4d8527b0906f8d88f7757952ffc4899670da3a5d4e9b93918d145b415d1e5",
+      "advanced_code_sha256": "884b563d459c645bb090e2241d889f7170321f4d55074e72226e27851f674065",
+      "seconds": 55.578382117673755
+    },
+    "r5/2020": {
+      "year": 2020,
+      "rows": 6101,
+      "latest_target_publication": "2019-11-27",
+      "model_sha256": "ebc5a2808e2cd6dee0f971d7d8d6728a250421d3a17b8427754c3fbe5d3b2b2f",
+      "feature_code_sha256": "f9f4d8527b0906f8d88f7757952ffc4899670da3a5d4e9b93918d145b415d1e5",
+      "advanced_code_sha256": "884b563d459c645bb090e2241d889f7170321f4d55074e72226e27851f674065",
+      "seconds": 52.171730424277484
+    },
+    "r5/2021": {
+      "year": 2021,
+      "rows": 6847,
+      "latest_target_publication": "2020-11-25",
+      "model_sha256": "634e394ac4ee118fb1a8e7223f380132177cbc4d667518cb67c94dd88800e19b",
+      "feature_code_sha256": "f9f4d8527b0906f8d88f7757952ffc4899670da3a5d4e9b93918d145b415d1e5",
+      "advanced_code_sha256": "884b563d459c645bb090e2241d889f7170321f4d55074e72226e27851f674065",
+      "seconds": 50.496722121722996
+    },
+    "r6/2015": {
+      "year": 2015,
+      "rows": 1327,
+      "latest_target_publication": "2014-11-26",
+      "model_sha256": "cbedc003d7c5eed051f40f3a765b4a7637e55aab0c79e7df68cfc9340937b75d",
+      "training_predictions": "earlier annual out-of-time forecasts",
+      "model_features": [
+        "v7",
+        "rich_median7",
+        "rich_median15",
+        "rich_growth7",
+        "rich_growth15",
+        "rich_huber",
+        "rich_delta7",
+        "rich_cat_mae4",
+        "rich_cat_mae6",
+        "rich_cat_growth4",
+        "rich_cat_growth6",
+        "rich_cat_asinh6",
+        "rich_xgb_mae3",
+        "rich_xgb_growth5",
+        "rich_history_trend",
+        "rich_history_level",
+        "compact_huber",
+        "rich_clf7",
+        "rich_clf15",
+        "rich_cat_clf4",
+        "rich_cat_clf6",
+        "rich_xgb_clf3",
+        "rich_xgb_clf5",
+        "rich_logit"
+      ]
+    },
+    "r6/2016": {
+      "year": 2016,
+      "rows": 2015,
+      "latest_target_publication": "2015-11-24",
+      "model_sha256": "05b9f1306af32573f5b685a0865ae8688aa0a7442d37b19fad89ed041817cda1",
+      "training_predictions": "earlier annual out-of-time forecasts",
+      "model_features": [
+        "v7",
+        "rich_median7",
+        "rich_median15",
+        "rich_growth7",
+        "rich_growth15",
+        "rich_huber",
+        "rich_delta7",
+        "rich_cat_mae4",
+        "rich_cat_mae6",
+        "rich_cat_growth4",
+        "rich_cat_growth6",
+        "rich_cat_asinh6",
+        "rich_xgb_mae3",
+        "rich_xgb_growth5",
+        "rich_history_trend",
+        "rich_history_level",
+        "compact_huber",
+        "rich_clf7",
+        "rich_clf15",
+        "rich_cat_clf4",
+        "rich_cat_clf6",
+        "rich_xgb_clf3",
+        "rich_xgb_clf5",
+        "rich_logit"
+      ]
+    },
+    "r6/2017": {
+      "year": 2017,
+      "rows": 2705,
+      "latest_target_publication": "2016-11-23",
+      "model_sha256": "b22e8bb9d37c0f7a543630b2096ab25254ce397c09dc8486a1740970d92f9081",
+      "training_predictions": "earlier annual out-of-time forecasts",
+      "model_features": [
+        "v7",
+        "rich_median7",
+        "rich_median15",
+        "rich_growth7",
+        "rich_growth15",
+        "rich_huber",
+        "rich_delta7",
+        "rich_cat_mae4",
+        "rich_cat_mae6",
+        "rich_cat_growth4",
+        "rich_cat_growth6",
+        "rich_cat_asinh6",
+        "rich_xgb_mae3",
+        "rich_xgb_growth5",
+        "rich_history_trend",
+        "rich_history_level",
+        "compact_huber",
+        "rich_clf7",
+        "rich_clf15",
+        "rich_cat_clf4",
+        "rich_cat_clf6",
+        "rich_xgb_clf3",
+        "rich_xgb_clf5",
+        "rich_logit"
+      ]
+    },
+    "r6/2018": {
+      "year": 2018,
+      "rows": 3416,
+      "latest_target_publication": "2017-11-22",
+      "model_sha256": "eaff66899e4411dde3280cd8a85fa94e0dc3f60512854c3733074b75ee458952",
+      "training_predictions": "earlier annual out-of-time forecasts",
+      "model_features": [
+        "v7",
+        "rich_median7",
+        "rich_median15",
+        "rich_growth7",
+        "rich_growth15",
+        "rich_huber",
+        "rich_delta7",
+        "rich_cat_mae4",
+        "rich_cat_mae6",
+        "rich_cat_growth4",
+        "rich_cat_growth6",
+        "rich_cat_asinh6",
+        "rich_xgb_mae3",
+        "rich_xgb_growth5",
+        "rich_history_trend",
+        "rich_history_level",
+        "compact_huber",
+        "rich_clf7",
+        "rich_clf15",
+        "rich_cat_clf4",
+        "rich_cat_clf6",
+        "rich_xgb_clf3",
+        "rich_xgb_clf5",
+        "rich_logit"
+      ]
+    },
+    "r6/2019": {
+      "year": 2019,
+      "rows": 4130,
+      "latest_target_publication": "2018-11-21",
+      "model_sha256": "01a5339c7e799d8940bc8f4567e958b055b6077b0d11601480756614b56154d5",
+      "training_predictions": "earlier annual out-of-time forecasts",
+      "model_features": [
+        "v7",
+        "rich_median7",
+        "rich_median15",
+        "rich_growth7",
+        "rich_growth15",
+        "rich_huber",
+        "rich_delta7",
+        "rich_cat_mae4",
+        "rich_cat_mae6",
+        "rich_cat_growth4",
+        "rich_cat_growth6",
+        "rich_cat_asinh6",
+        "rich_xgb_mae3",
+        "rich_xgb_growth5",
+        "rich_history_trend",
+        "rich_history_level",
+        "compact_huber",
+        "rich_clf7",
+        "rich_clf15",
+        "rich_cat_clf4",
+        "rich_cat_clf6",
+        "rich_xgb_clf3",
+        "rich_xgb_clf5",
+        "rich_logit"
+      ]
+    },
+    "r6/2020": {
+      "year": 2020,
+      "rows": 4859,
+      "latest_target_publication": "2019-11-27",
+      "model_sha256": "848f9d3699e64c28c4b7201e6abe6fee18280ef905b8176fe8920d107b200ba1",
+      "training_predictions": "earlier annual out-of-time forecasts",
+      "model_features": [
+        "v7",
+        "rich_median7",
+        "rich_median15",
+        "rich_growth7",
+        "rich_growth15",
+        "rich_huber",
+        "rich_delta7",
+        "rich_cat_mae4",
+        "rich_cat_mae6",
+        "rich_cat_growth4",
+        "rich_cat_growth6",
+        "rich_cat_asinh6",
+        "rich_xgb_mae3",
+        "rich_xgb_growth5",
+        "rich_history_trend",
+        "rich_history_level",
+        "compact_huber",
+        "rich_clf7",
+        "rich_clf15",
+        "rich_cat_clf4",
+        "rich_cat_clf6",
+        "rich_xgb_clf3",
+        "rich_xgb_clf5",
+        "rich_logit"
+      ]
+    },
+    "r6/2021": {
+      "year": 2021,
+      "rows": 5605,
+      "latest_target_publication": "2020-11-25",
+      "model_sha256": "59f12c64bb263d4fdf91e5e08efc3a50fd262d33758848b6d71d1e5881c23a62",
+      "training_predictions": "earlier annual out-of-time forecasts",
+      "model_features": [
+        "v7",
+        "rich_median7",
+        "rich_median15",
+        "rich_growth7",
+        "rich_growth15",
+        "rich_huber",
+        "rich_delta7",
+        "rich_cat_mae4",
+        "rich_cat_mae6",
+        "rich_cat_growth4",
+        "rich_cat_growth6",
+        "rich_cat_asinh6",
+        "rich_xgb_mae3",
+        "rich_xgb_growth5",
+        "rich_history_trend",
+        "rich_history_level",
+        "compact_huber",
+        "rich_clf7",
+        "rich_clf15",
+        "rich_cat_clf4",
+        "rich_cat_clf6",
+        "rich_xgb_clf3",
+        "rich_xgb_clf5",
+        "rich_logit"
+      ]
+    },
+    "r7/2015": {
+      "year": 2015,
+      "rows": 3416,
+      "latest_target_publication": "2014-11-26",
+      "training_pools": [
+        "existing",
+        "additional_training",
+        "training_extension",
+        "opened_a_training"
+      ],
+      "model_sha256": "1fe9438ffe19cfb48b26688a3e54b68dadf8519aff3f6b7d0914df38a1330ad7",
+      "weighting": "past-quarter baseline-relative EPS error; exact nonzero growth denominators"
+    },
+    "r7/2016": {
+      "year": 2016,
+      "rows": 4339,
+      "latest_target_publication": "2015-11-24",
+      "training_pools": [
+        "existing",
+        "additional_training",
+        "training_extension",
+        "opened_a_training"
+      ],
+      "model_sha256": "9ffef9dc7fe9c9d58ff8e5d7e11e81a00d0d8590b9eb0bf8d495159bb419a343",
+      "weighting": "past-quarter baseline-relative EPS error; exact nonzero growth denominators"
+    },
+    "r7/2017": {
+      "year": 2017,
+      "rows": 5282,
+      "latest_target_publication": "2016-11-23",
+      "training_pools": [
+        "existing",
+        "additional_training",
+        "training_extension",
+        "opened_a_training"
+      ],
+      "model_sha256": "ea4556b6b9e1db896e9a4e2037ddeaa731d7c9bfd15446edf68c910a1eea1954",
+      "weighting": "past-quarter baseline-relative EPS error; exact nonzero growth denominators"
+    },
+    "r7/2018": {
+      "year": 2018,
+      "rows": 6247,
+      "latest_target_publication": "2017-11-22",
+      "training_pools": [
+        "existing",
+        "additional_training",
+        "training_extension",
+        "opened_a_training"
+      ],
+      "model_sha256": "01c1eac9329554c0db1a5aca6eafbd022943d6ac1a686dbbc7bcc07bf1d77538",
+      "weighting": "past-quarter baseline-relative EPS error; exact nonzero growth denominators"
+    },
+    "r7/2019": {
+      "year": 2019,
+      "rows": 7216,
+      "latest_target_publication": "2018-11-21",
+      "training_pools": [
+        "existing",
+        "additional_training",
+        "training_extension",
+        "opened_a_training"
+      ],
+      "model_sha256": "725f2961a6d87ed80c69b3bad41da0520422cc8a7a1519211359b37da646d7c4",
+      "weighting": "past-quarter baseline-relative EPS error; exact nonzero growth denominators"
+    },
+    "r7/2020": {
+      "year": 2020,
+      "rows": 8209,
+      "latest_target_publication": "2019-11-27",
+      "training_pools": [
+        "existing",
+        "additional_training",
+        "training_extension",
+        "opened_a_training"
+      ],
+      "model_sha256": "88172747751599d89d3ebe5c4a0651e6e9e6c5febc13232562279c38c6d9c9b6",
+      "weighting": "past-quarter baseline-relative EPS error; exact nonzero growth denominators"
+    },
+    "r7/2021": {
+      "year": 2021,
+      "rows": 9222,
+      "latest_target_publication": "2020-11-25",
+      "training_pools": [
+        "existing",
+        "additional_training",
+        "training_extension",
+        "opened_a_training"
+      ],
+      "model_sha256": "7bd946592a49d16f9e41b417ab75f1917ffb6b84b28cc55f62fc8948b3c56a64",
+      "weighting": "past-quarter baseline-relative EPS error; exact nonzero growth denominators"
+    }
+  },
+  "confirmations": {
+    "confirmation_a": {
+      "rows": 1712,
+      "companies": 82,
+      "full_scored_answers": 162,
+      "input_sha256": "3a3eac299b46d8b559235fffd48490370ce2df0d5d9c36380e44b10191407c4c",
+      "truth_sha256": "52dbd852cc17d305e3a7f5c2ef6e6b9999b80bdf733965f986ad1bf5667233da",
+      "prediction_sha256": "775578a2802cb02359bca81fbd2fb6c6bf277fef65d88218caa242a28599e6c1",
+      "report_sha256": "a0b73155c0a67e715b824259ff689c0cefb85fe83bf1989c31af1d2b223ada38",
+      "selection_sha256": "07083267302abd6200b51b4fb7a03037a6a3bd153b851362446417baf853d617",
+      "target_met": false
+    },
+    "confirmation_b": {
+      "rows": 1711,
+      "companies": 77,
+      "full_scored_answers": 162,
+      "input_sha256": "9108b87879128992d9cfd16d085f53f3259219f535e26614f2b7cf3d6f8bd448",
+      "truth_sha256": "78211de6fd5b91bed9ba7bc8f46db08d005197ae2fdad40e714f58c67cdd0eee",
+      "prediction_sha256": "8b63d0aee19a7c978d8c5a24850a75a493aa9477c63897eeb04e396f4278c5a7",
+      "report_sha256": "1ad00b800cfd00d6652537dfbf3415c2f28992efe85f0228df74c88aebbb3016",
+      "selection_sha256": "4378b451613d9a9ce60c317fa71ea3991f169cf7a1cf40b2c3cd30e33c5a4f8c",
+      "target_met": false
+    }
+  },
+  "no_confirmation_b_training_companies": true,
+  "annual_publication_cutoffs_valid": true,
+  "models_match_hashes": true,
+  "predictions_and_selection_match_hashes": true,
+  "paired_quarters": 27,
+  "bootstrap_draws": 20000,
+  "seed": 9,
+  "no_codabench_submission": true
+}
