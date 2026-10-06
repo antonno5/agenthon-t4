@@ -1,0 +1,24 @@
+{
+  "candidate": "v7",
+  "registered_at": "2026-10-06",
+  "baseline_submission": 963432,
+  "baseline_leaderboard": 0.4394002047,
+  "target_leaderboard": 0.7,
+  "hypotheses": [
+    "Explicit quarterly GAAP diluted EPS tables supply useful current/prior-year pairs that V6 misses.",
+    "A 50/50 blend of seasonal no-change and continuation of the most recent year-over-year EPS difference can improve forecasts without a language model.",
+    "Simple series forecasters may replace V6 only when completed historical forecast windows support the change. Sparse histories retain V6."
+  ],
+  "eps_forecast": "target_prior_year_eps + 0.5 * (recent_quarter_eps - recent_same_quarter_previous_year_eps)",
+  "eps_data": "SEC companyfacts, earliest reported target and only versions filed by each simulated origin for features; quarterly USD/shares observations only",
+  "eps_development_years": [2012, 2016],
+  "eps_holdout_years": [2017, 2021],
+  "latest_permitted_label_availability": "2021-12-31",
+  "eps_predictors": ["v6", "v7"],
+  "eps_holdout_policy": "Lock candidate source hash before scoring. Publish all failures and both models; do not claim a new independent holdout after revising on these results.",
+  "series_policy": "Runtime selection sees only the current task's frozen pre-cutoff history. Compare last, moving means, robust medians, damped drift and the existing V6 rule. Require at least four completed origins and an advantage larger than one standard error of paired historical errors.",
+  "verification": ["negative and parenthesized numbers", "quarter versus year-to-date periods", "reported versus adjusted or prospective EPS", "exact source offsets", "identity and document-order invariance", "future rows and future filings rejected", "all public official smoke checks", "container sees input but never truth"],
+  "neural_calls": 0,
+  "limitations": ["SEC XBRL extraction may be corrected after initial publication; filing dates are checked but current API is not an independently archived historical API snapshot", "synthetic format validation is not a full real-document forecasting benchmark", "the official development report is diagnostic, not a source of fitted outcomes or entity-specific rules"],
+  "submission": "Prepare a candidate and reproducible evidence; no automatic CodaBench POST in this experiment."
+}
