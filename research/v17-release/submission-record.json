@@ -40,6 +40,15 @@
     "t4-eps-yoy-2023Q2-mixed"
   ],
   "interpretation_limit": "Current public units contain none of the three validated guidance issuers; this submission cannot establish the effect of source guidance.",
-  "remote_result_directory": "/home/antonnos/t4-v17-20261009/submission-watch/output",
-  "local_result_directory": "test-output/submission-v17"
+  "local_result_directory": "test-output/submission-v17",
+  "latest_status": "Submitted",
+  "status_checked_at": "2026-10-08T22:13:58.901510+00:00",
+  "result_watcher": {
+    "host": "local",
+    "read_only": true,
+    "interval_seconds": 60,
+    "duration_seconds": 21600,
+    "state_at_record": "waiting",
+    "reason": "Direct CodaBench requests from cero timed out; local authenticated reads succeed."
+  }
 }
