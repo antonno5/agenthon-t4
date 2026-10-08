@@ -1,0 +1,20 @@
+{
+  "created_utc": "2026-10-08T21:53:55.188219+00:00",
+  "authorization": "User explicitly requests assembling all deployable developments and submitting one diagnostic version, overriding prior research promotion gate.",
+  "version": "v17",
+  "base_commit": "f71ec3a",
+  "changes": [
+    "Fixed V12/V15 compact HGB bank expert and V16 pooled compact HGB; fit labels published before 2022; use only for tasks dated 2023 onward.",
+    "V13-inspired typed semantic/family routing, preserves canonical routes.",
+    "V16 literal-bound next-quarter GAAP guidance from supplied corpus only; no external evidence bundled.",
+    "V14-style exact source-span binding; no one-off normalization."
+  ],
+  "excluded": [
+    "V14 unconstrained text forecasts and residual corrections: no reliable gain.",
+    "V15 market context: degraded results.",
+    "Third-party NVIDIA credentials and API access: research only."
+  ],
+  "no_public_outcome_training": true,
+  "fit_hyperparameters": "V12 fixed HGB parameters; no tuning",
+  "frozen_research_reserves": "Treasury2004-2012 and CPI2017-2021 remain closed"
+}
