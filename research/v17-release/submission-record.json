@@ -1,0 +1,45 @@
+{
+  "version": "V17",
+  "intent": "User-authorized diagnostic submission of integrated V12–V16 research; quality improvement is not yet established.",
+  "submission_id": 970286,
+  "competition": 17768,
+  "phase": 29649,
+  "submitted_at": "2026-10-08T22:10:41.178865+00:00",
+  "competition_url": "https://www.codabench.org/competitions/17768/#participate-submit_results",
+  "source_commit": "579870d372a2248f1c1d983dabac3c4650e30246",
+  "branch": "submission/t4-v17",
+  "image": "ghcr.io/antonno5/agenthon-t4@sha256:4d9d679c3eb8ec551e49058da3ac8383a73207a76ab62a449b6a469a8b01a24b",
+  "build_url": "https://github.com/antonno5/agenthon-t4/actions/runs/37851269855",
+  "filename": "submission-v17-579870d.zip",
+  "zip_sha256": "69da11f6988331acb1a74a092cf951df57a37937ab443bd994801383ff8f70ac",
+  "platform_verification": {
+    "submission_id": 970286,
+    "owner": "imak_ai_lab",
+    "phase": 29649,
+    "status": "Submitting",
+    "stored_zip_sha256": "69da11f6988331acb1a74a092cf951df57a37937ab443bd994801383ff8f70ac",
+    "stored_matches_local": true,
+    "checked_at": "2026-10-08T22:11:27.648846+00:00"
+  },
+  "baseline": {
+    "version": "V11",
+    "submission_id": 965395,
+    "scores": {
+      "leaderboard_score": 0.4863492434,
+      "primary": 0.5955505854,
+      "ci_lo": 0.4112226044,
+      "ci_hi": 0.5710159101,
+      "admissible": 10.0,
+      "n_units": 10.0
+    }
+  },
+  "result": null,
+  "result_status": "pending",
+  "changed_public_units": [
+    "t4-eps-growth-2024Q3-banks",
+    "t4-eps-yoy-2023Q2-mixed"
+  ],
+  "interpretation_limit": "Current public units contain none of the three validated guidance issuers; this submission cannot establish the effect of source guidance.",
+  "remote_result_directory": "/home/antonnos/t4-v17-20261009/submission-watch/output",
+  "local_result_directory": "test-output/submission-v17"
+}
