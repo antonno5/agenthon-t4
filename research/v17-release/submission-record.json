@@ -33,22 +33,26 @@
       "n_units": 10.0
     }
   },
-  "result": null,
-  "result_status": "pending",
+  "result": {
+    "scores": {},
+    "status_details": "Submission processing failed. Diagnostic details are available to the organizers."
+  },
+  "result_status": "failed",
   "changed_public_units": [
     "t4-eps-growth-2024Q3-banks",
     "t4-eps-yoy-2023Q2-mixed"
   ],
   "interpretation_limit": "Current public units contain none of the three validated guidance issuers; this submission cannot establish the effect of source guidance.",
   "local_result_directory": "test-output/submission-v17",
-  "latest_status": "Submitted",
-  "status_checked_at": "2026-10-08T22:13:58.901510+00:00",
+  "latest_status": "Failed",
+  "status_checked_at": "2026-10-09T01:11:27.391482+00:00",
   "result_watcher": {
     "host": "local",
     "read_only": true,
     "interval_seconds": 60,
     "duration_seconds": 21600,
-    "state_at_record": "waiting",
+    "state_at_record": "complete",
     "reason": "Direct CodaBench requests from cero timed out; local authenticated reads succeed."
-  }
+  },
+  "retry_submission_id": 971361
 }

@@ -1,0 +1,83 @@
+{
+  "submission_id": 970286,
+  "checked_at": "2026-10-09T08:01:36.843385+00:00",
+  "status": "Failed",
+  "available_error": "Submission processing failed. Diagnostic details are available to the organizers.",
+  "root_cause": "undetermined: organizer diagnostics are withheld",
+  "logs": [
+    {
+      "name": "prediction_ingestion_stderr.txt",
+      "bytes": 51,
+      "sha256": "45ea46cad78a6bde4e8f493cdbdbb8108fc064e30c753b74d1cb4db5473e23cb",
+      "withheld": true
+    },
+    {
+      "name": "prediction_ingestion_stdout.txt",
+      "bytes": 51,
+      "sha256": "45ea46cad78a6bde4e8f493cdbdbb8108fc064e30c753b74d1cb4db5473e23cb",
+      "withheld": true
+    },
+    {
+      "name": "prediction_stderr.txt",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "withheld": false
+    },
+    {
+      "name": "prediction_stdout.txt",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "withheld": false
+    },
+    {
+      "name": "scoring_ingestion_stderr.txt",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "withheld": false
+    },
+    {
+      "name": "scoring_ingestion_stdout.txt",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "withheld": false
+    },
+    {
+      "name": "scoring_stderr.txt",
+      "bytes": 51,
+      "sha256": "45ea46cad78a6bde4e8f493cdbdbb8108fc064e30c753b74d1cb4db5473e23cb",
+      "withheld": true
+    },
+    {
+      "name": "scoring_stdout.txt",
+      "bytes": 51,
+      "sha256": "45ea46cad78a6bde4e8f493cdbdbb8108fc064e30c753b74d1cb4db5473e23cb",
+      "withheld": true
+    }
+  ],
+  "descriptor_validation": {
+    "submission_id": 970286,
+    "descriptor_parser": true,
+    "descriptor_digest": true,
+    "team_alias": true,
+    "team_proof": true,
+    "zip_members": true,
+    "secret_absent": true
+  },
+  "cero_docker_pull": {
+    "status": "failed",
+    "error": "dial tcp 140.82.121.34:443: i/o timeout",
+    "interpretation": "Observed on cero only; not proof of the CodaBench failure cause. Subsequent user-space HTTPS reads succeeded."
+  },
+  "retry_authorization": "User explicitly requested investigation and resubmission.",
+  "prediction_changes": false,
+  "clean_host_validation": {
+    "status": "verified",
+    "build_url": "https://github.com/antonno5/agenthon-t4/actions/runs/37902319856",
+    "image_initially_absent": true,
+    "anonymous_cold_pull": true,
+    "declared_volumes": false,
+    "answer_parity": 11,
+    "smoke_admissible": 11
+  },
+  "decision": "One explicitly authorized retry of the same image and descriptor after independent clean-host verification; no established runtime defect to patch."
+}
