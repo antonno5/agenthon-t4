@@ -1,0 +1,36 @@
+name: Compare V11 and V17 under official runtime restrictions
+on:
+  push:
+    branches: [submission/t4-v17]
+    paths:
+      - '.github/workflows/verify-runtime-diff.yml'
+      - 'scripts/verify_runtime_diff.py'
+permissions:
+  contents: write
+jobs:
+  verify:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.13'
+      - name: Install pinned official verifier
+        run: |
+          git clone https://github.com/Agenthon-2026/track4-analysis-public.git test-output/runtime-official
+          git -C test-output/runtime-official checkout --detach 458bc07efc05983de342ccb371e2b3cd793d621f
+          python -m pip install 'qfbench2-common @ git+https://github.com/Agenthon-2026/Agenthon2026-public.git@v2.6.0#subdirectory=common'
+          python -m pip install ./test-output/runtime-official
+      - name: Compare both frozen images as uid 65534
+        run: python scripts/verify_runtime_diff.py
+      - name: Save diagnostic receipt
+        if: always()
+        run: |
+          if test -f research/v17-release/runtime-diff-validation.json; then
+            git config user.name 'github-actions[bot]'
+            git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+            git add research/v17-release/runtime-diff-validation.json
+            git commit -m 'Record V11 versus V17 strict runtime diagnostics'
+            git push origin HEAD:refs/heads/submission/t4-v17
+          fi
