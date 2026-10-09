@@ -1,0 +1,61 @@
+{
+  "version": "V17 retry 2",
+  "submission_id": 972162,
+  "previous_failed_submission_ids": [
+    970286,
+    971361
+  ],
+  "authorized_by": "Explicit user request to resend after reviewing the second failure investigation",
+  "submitted_at": "2026-10-09T13:16:02.389041Z",
+  "competition_url": "https://www.codabench.org/competitions/17768/#participate-submit_results",
+  "competition": 17768,
+  "phase": 29649,
+  "image": "ghcr.io/antonno5/agenthon-t4@sha256:4d9d679c3eb8ec551e49058da3ac8383a73207a76ab62a449b6a469a8b01a24b",
+  "source_commit": "579870d372a2248f1c1d983dabac3c4650e30246",
+  "filename": "submission-v17-retry2-579870d.zip",
+  "zip_sha256": "69da11f6988331acb1a74a092cf951df57a37937ab443bd994801383ff8f70ac",
+  "prediction_changes": false,
+  "reason": "User requested another submission of the unchanged image after strict V11/V17 runtime comparison passed 22 checks. Exact cause of previous platform processing failures remains unconfirmed.",
+  "strict_validation_url": "https://github.com/antonno5/agenthon-t4/actions/runs/37933821586",
+  "platform_verification": {
+    "submission_id": 972162,
+    "status": "Submitting",
+    "stored_zip_sha256": "69da11f6988331acb1a74a092cf951df57a37937ab443bd994801383ff8f70ac",
+    "stored_matches_local": true,
+    "checked_at": "2026-10-09T13:16:41.699062+00:00"
+  },
+  "baseline": {
+    "version": "V11",
+    "submission_id": 965395,
+    "scores": {
+      "leaderboard_score": 0.4863492434,
+      "primary": 0.5955505854,
+      "ci_lo": 0.4112226044,
+      "ci_hi": 0.5710159101,
+      "admissible": 10.0,
+      "n_units": 10.0
+    }
+  },
+  "result_status": "pending",
+  "latest_status": "Submitting",
+  "scores": [],
+  "upload_recovery": {
+    "transient_http_status": 500,
+    "phase_history_checked_before_repeating_post": true,
+    "same_uploaded_dataset_reused": true,
+    "new_submissions_created": 1
+  },
+  "watcher": {
+    "host": "cero",
+    "read_only": true,
+    "duration_seconds": 43200,
+    "interval_seconds": 60,
+    "directory": "/home/antonnos/t4-v17-20261009/submission-watch/retry2-output",
+    "pid": 391222,
+    "last_verified": "2026-10-09T13:17:11.237117+00:00",
+    "last_checked": "2026-10-09T13:16:55.850552+00:00",
+    "last_fetch_returncode": 0,
+    "state": "waiting"
+  },
+  "local_result_directory": "test-output/submission-v17-retry2"
+}
