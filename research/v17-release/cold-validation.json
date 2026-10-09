@@ -1,0 +1,74 @@
+{
+  "image": "ghcr.io/antonno5/agenthon-t4@sha256:4d9d679c3eb8ec551e49058da3ac8383a73207a76ab62a449b6a469a8b01a24b",
+  "source_commit": "579870d372a2248f1c1d983dabac3c4650e30246",
+  "check_commit": "cab54d94ef33baf8d5e2f8e0a6a6a7f126ce7d0c",
+  "build_url": "https://github.com/antonno5/agenthon-t4/actions/runs/37902319856",
+  "status": "verified",
+  "scored": false,
+  "image_initially_absent": true,
+  "anonymous_cold_pull": true,
+  "platform": "linux/amd64",
+  "interface": "2.0",
+  "declared_volumes": false,
+  "image_id": "sha256:8ec451e9143080610c2d08ccfcd21166b77af5ecf98931e1152b6469a3caee48",
+  "image_size_bytes": 118704197,
+  "answer_parity": 11,
+  "smoke_admissible": 11,
+  "records": [
+    {
+      "unit": "t4-EXAMPLE-eps-beat",
+      "output_sha256": "ea494a73e592e70e6df6f72779f790830f4616334036778907eef5606166be89",
+      "smoke_admissible": true
+    },
+    {
+      "unit": "t4-auction-btc-202411-us7",
+      "output_sha256": "65147f5b0b1b12c7bc1e0e7a4473ff2041a6bba65909d65467c297c22fc25e5a",
+      "smoke_admissible": true
+    },
+    {
+      "unit": "t4-cotpos-202411-us10",
+      "output_sha256": "fd9345cefe61ac2f34ac87f6406f9f048bc9a9da0d4d7572a381c64b82944dc3",
+      "smoke_admissible": true
+    },
+    {
+      "unit": "t4-cpicomp-202410-us11",
+      "output_sha256": "116ea6be2378de7b1f427130a8bc46e910cba82e8736d8405de403a8a6f70b57",
+      "smoke_admissible": true
+    },
+    {
+      "unit": "t4-credit-event-2023",
+      "output_sha256": "807b816722dd6bfc2931ac77066634a7ae245a8b6bf596b84dee47ec5cbf349b",
+      "smoke_admissible": true
+    },
+    {
+      "unit": "t4-eps-growth-2024Q3-banks",
+      "output_sha256": "8d591d50e9c62162d8e2852f6bb8d17b700f22a0d18bd89f98a18887ab5a19c8",
+      "smoke_admissible": true
+    },
+    {
+      "unit": "t4-eps-yoy-2023Q2-mixed",
+      "output_sha256": "5addc3c695f81661bd51d684926ab79705146a1677056e322266e66f4207cea1",
+      "smoke_admissible": true
+    },
+    {
+      "unit": "t4-fomc-curve-20220728",
+      "output_sha256": "d5d385e9445dd8cd1c9c9e1282a64e6afa0eb3272eab78ba892b77ae661105be",
+      "smoke_admissible": true
+    },
+    {
+      "unit": "t4-fomc-curve-20240918",
+      "output_sha256": "266a7b56079717f9b2931e7846a194f32cc3bdb3422f48219658e1b8043f405d",
+      "smoke_admissible": true
+    },
+    {
+      "unit": "t4-macrorev-20240930-us6",
+      "output_sha256": "5d34b45723c95399428c8aa2328dda8b6b832353e7770f5d00769e9989299007",
+      "smoke_admissible": true
+    },
+    {
+      "unit": "t4-postearn-20240201-megacap",
+      "output_sha256": "d05dc208ccfb2147204c850cc18a699e60ddd828754223d4161bb4980d00abd5",
+      "smoke_admissible": true
+    }
+  ]
+}
