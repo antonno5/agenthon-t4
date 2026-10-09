@@ -1,0 +1,414 @@
+{
+  "status": "verified",
+  "images": {
+    "v11": "ghcr.io/antonno5/agenthon-t4@sha256:b6a841f95515f217e6b9fff421191f95e228d8e1d5e1594b9c6da1c3c226c22a",
+    "v17": "ghcr.io/antonno5/agenthon-t4@sha256:4d9d679c3eb8ec551e49058da3ac8383a73207a76ab62a449b6a469a8b01a24b"
+  },
+  "docker_flags": [
+    "--rm",
+    "--platform=linux/amd64",
+    "--network=none",
+    "--read-only",
+    "--user",
+    "65534:65534",
+    "--cap-drop=ALL",
+    "--security-opt",
+    "no-new-privileges",
+    "--tmpfs",
+    "/tmp:rw,noexec,nosuid,nodev,size=64m",
+    "--pids-limit",
+    "256",
+    "--ulimit",
+    "nofile=1024:1024",
+    "--ulimit",
+    "nproc=256:256",
+    "--ulimit",
+    "fsize=67108864:67108864",
+    "--cpus=2",
+    "--memory=2g",
+    "--memory-swap=2g",
+    "-e",
+    "QFBENCH_SEED=0",
+    "-e",
+    "QFBENCH_NETWORK=none"
+  ],
+  "records": [
+    {
+      "version": "v11",
+      "unit": "t4-EXAMPLE-eps-beat",
+      "returncode": 0,
+      "seconds": 0.31,
+      "stderr": "",
+      "output_tree_ok": true,
+      "output_bytes": 1024,
+      "files": [
+        "answer.json"
+      ],
+      "answer_sha256": "ea494a73e592e70e6df6f72779f790830f4616334036778907eef5606166be89",
+      "answer_parity": true,
+      "smoke_admissible": true
+    },
+    {
+      "version": "v11",
+      "unit": "t4-auction-btc-202411-us7",
+      "returncode": 0,
+      "seconds": 0.294,
+      "stderr": "",
+      "output_tree_ok": true,
+      "output_bytes": 10012,
+      "files": [
+        "answer.json"
+      ],
+      "answer_sha256": "65147f5b0b1b12c7bc1e0e7a4473ff2041a6bba65909d65467c297c22fc25e5a",
+      "answer_parity": true,
+      "smoke_admissible": true
+    },
+    {
+      "version": "v11",
+      "unit": "t4-cotpos-202411-us10",
+      "returncode": 0,
+      "seconds": 0.287,
+      "stderr": "",
+      "output_tree_ok": true,
+      "output_bytes": 12666,
+      "files": [
+        "answer.json"
+      ],
+      "answer_sha256": "fd9345cefe61ac2f34ac87f6406f9f048bc9a9da0d4d7572a381c64b82944dc3",
+      "answer_parity": true,
+      "smoke_admissible": true
+    },
+    {
+      "version": "v11",
+      "unit": "t4-cpicomp-202410-us11",
+      "returncode": 0,
+      "seconds": 0.301,
+      "stderr": "",
+      "output_tree_ok": true,
+      "output_bytes": 12740,
+      "files": [
+        "answer.json"
+      ],
+      "answer_sha256": "116ea6be2378de7b1f427130a8bc46e910cba82e8736d8405de403a8a6f70b57",
+      "answer_parity": true,
+      "smoke_admissible": true
+    },
+    {
+      "version": "v11",
+      "unit": "t4-credit-event-2023",
+      "returncode": 0,
+      "seconds": 0.482,
+      "stderr": "",
+      "output_tree_ok": true,
+      "output_bytes": 8612,
+      "files": [
+        "answer.json"
+      ],
+      "answer_sha256": "807b816722dd6bfc2931ac77066634a7ae245a8b6bf596b84dee47ec5cbf349b",
+      "answer_parity": true,
+      "smoke_admissible": true
+    },
+    {
+      "version": "v11",
+      "unit": "t4-eps-growth-2024Q3-banks",
+      "returncode": 0,
+      "seconds": 1.451,
+      "stderr": "",
+      "output_tree_ok": true,
+      "output_bytes": 8426,
+      "files": [
+        "answer.json"
+      ],
+      "answer_sha256": "b6b789aefcc3d1dd6b3cfd2c868da8dc7f014f566446983827a34411b2135470",
+      "answer_parity": true,
+      "smoke_admissible": true
+    },
+    {
+      "version": "v11",
+      "unit": "t4-eps-yoy-2023Q2-mixed",
+      "returncode": 0,
+      "seconds": 0.547,
+      "stderr": "",
+      "output_tree_ok": true,
+      "output_bytes": 6404,
+      "files": [
+        "answer.json"
+      ],
+      "answer_sha256": "9f3894e07dd6ecbff2bc6fb93bfc285c2407b93ff0a8b5a4cbda44937faa2abd",
+      "answer_parity": true,
+      "smoke_admissible": true
+    },
+    {
+      "version": "v11",
+      "unit": "t4-fomc-curve-20220728",
+      "returncode": 0,
+      "seconds": 0.287,
+      "stderr": "",
+      "output_tree_ok": true,
+      "output_bytes": 6929,
+      "files": [
+        "answer.json"
+      ],
+      "answer_sha256": "d5d385e9445dd8cd1c9c9e1282a64e6afa0eb3272eab78ba892b77ae661105be",
+      "answer_parity": true,
+      "smoke_admissible": true
+    },
+    {
+      "version": "v11",
+      "unit": "t4-fomc-curve-20240918",
+      "returncode": 0,
+      "seconds": 0.298,
+      "stderr": "",
+      "output_tree_ok": true,
+      "output_bytes": 6947,
+      "files": [
+        "answer.json"
+      ],
+      "answer_sha256": "266a7b56079717f9b2931e7846a194f32cc3bdb3422f48219658e1b8043f405d",
+      "answer_parity": true,
+      "smoke_admissible": true
+    },
+    {
+      "version": "v11",
+      "unit": "t4-macrorev-20240930-us6",
+      "returncode": 0,
+      "seconds": 0.321,
+      "stderr": "",
+      "output_tree_ok": true,
+      "output_bytes": 14531,
+      "files": [
+        "answer.json"
+      ],
+      "answer_sha256": "5d34b45723c95399428c8aa2328dda8b6b832353e7770f5d00769e9989299007",
+      "answer_parity": true,
+      "smoke_admissible": true
+    },
+    {
+      "version": "v11",
+      "unit": "t4-postearn-20240201-megacap",
+      "returncode": 0,
+      "seconds": 0.346,
+      "stderr": "",
+      "output_tree_ok": true,
+      "output_bytes": 3707,
+      "files": [
+        "answer.json"
+      ],
+      "answer_sha256": "d05dc208ccfb2147204c850cc18a699e60ddd828754223d4161bb4980d00abd5",
+      "answer_parity": true,
+      "smoke_admissible": true
+    },
+    {
+      "version": "v17",
+      "unit": "t4-EXAMPLE-eps-beat",
+      "returncode": 0,
+      "seconds": 0.337,
+      "stderr": "",
+      "output_tree_ok": true,
+      "output_bytes": 1024,
+      "files": [
+        "answer.json"
+      ],
+      "answer_sha256": "ea494a73e592e70e6df6f72779f790830f4616334036778907eef5606166be89",
+      "answer_parity": true,
+      "smoke_admissible": true
+    },
+    {
+      "version": "v17",
+      "unit": "t4-auction-btc-202411-us7",
+      "returncode": 0,
+      "seconds": 0.337,
+      "stderr": "",
+      "output_tree_ok": true,
+      "output_bytes": 10012,
+      "files": [
+        "answer.json"
+      ],
+      "answer_sha256": "65147f5b0b1b12c7bc1e0e7a4473ff2041a6bba65909d65467c297c22fc25e5a",
+      "answer_parity": true,
+      "smoke_admissible": true
+    },
+    {
+      "version": "v17",
+      "unit": "t4-cotpos-202411-us10",
+      "returncode": 0,
+      "seconds": 0.358,
+      "stderr": "",
+      "output_tree_ok": true,
+      "output_bytes": 12666,
+      "files": [
+        "answer.json"
+      ],
+      "answer_sha256": "fd9345cefe61ac2f34ac87f6406f9f048bc9a9da0d4d7572a381c64b82944dc3",
+      "answer_parity": true,
+      "smoke_admissible": true
+    },
+    {
+      "version": "v17",
+      "unit": "t4-cpicomp-202410-us11",
+      "returncode": 0,
+      "seconds": 0.325,
+      "stderr": "",
+      "output_tree_ok": true,
+      "output_bytes": 12740,
+      "files": [
+        "answer.json"
+      ],
+      "answer_sha256": "116ea6be2378de7b1f427130a8bc46e910cba82e8736d8405de403a8a6f70b57",
+      "answer_parity": true,
+      "smoke_admissible": true
+    },
+    {
+      "version": "v17",
+      "unit": "t4-credit-event-2023",
+      "returncode": 0,
+      "seconds": 0.497,
+      "stderr": "",
+      "output_tree_ok": true,
+      "output_bytes": 8612,
+      "files": [
+        "answer.json"
+      ],
+      "answer_sha256": "807b816722dd6bfc2931ac77066634a7ae245a8b6bf596b84dee47ec5cbf349b",
+      "answer_parity": true,
+      "smoke_admissible": true
+    },
+    {
+      "version": "v17",
+      "unit": "t4-eps-growth-2024Q3-banks",
+      "returncode": 0,
+      "seconds": 1.944,
+      "stderr": "",
+      "output_tree_ok": true,
+      "output_bytes": 8375,
+      "files": [
+        "answer.json"
+      ],
+      "answer_sha256": "8d591d50e9c62162d8e2852f6bb8d17b700f22a0d18bd89f98a18887ab5a19c8",
+      "answer_parity": true,
+      "smoke_admissible": true
+    },
+    {
+      "version": "v17",
+      "unit": "t4-eps-yoy-2023Q2-mixed",
+      "returncode": 0,
+      "seconds": 0.671,
+      "stderr": "",
+      "output_tree_ok": true,
+      "output_bytes": 6384,
+      "files": [
+        "answer.json"
+      ],
+      "answer_sha256": "5addc3c695f81661bd51d684926ab79705146a1677056e322266e66f4207cea1",
+      "answer_parity": true,
+      "smoke_admissible": true
+    },
+    {
+      "version": "v17",
+      "unit": "t4-fomc-curve-20220728",
+      "returncode": 0,
+      "seconds": 0.303,
+      "stderr": "",
+      "output_tree_ok": true,
+      "output_bytes": 6929,
+      "files": [
+        "answer.json"
+      ],
+      "answer_sha256": "d5d385e9445dd8cd1c9c9e1282a64e6afa0eb3272eab78ba892b77ae661105be",
+      "answer_parity": true,
+      "smoke_admissible": true
+    },
+    {
+      "version": "v17",
+      "unit": "t4-fomc-curve-20240918",
+      "returncode": 0,
+      "seconds": 0.302,
+      "stderr": "",
+      "output_tree_ok": true,
+      "output_bytes": 6947,
+      "files": [
+        "answer.json"
+      ],
+      "answer_sha256": "266a7b56079717f9b2931e7846a194f32cc3bdb3422f48219658e1b8043f405d",
+      "answer_parity": true,
+      "smoke_admissible": true
+    },
+    {
+      "version": "v17",
+      "unit": "t4-macrorev-20240930-us6",
+      "returncode": 0,
+      "seconds": 0.301,
+      "stderr": "",
+      "output_tree_ok": true,
+      "output_bytes": 14531,
+      "files": [
+        "answer.json"
+      ],
+      "answer_sha256": "5d34b45723c95399428c8aa2328dda8b6b832353e7770f5d00769e9989299007",
+      "answer_parity": true,
+      "smoke_admissible": true
+    },
+    {
+      "version": "v17",
+      "unit": "t4-postearn-20240201-megacap",
+      "returncode": 0,
+      "seconds": 0.368,
+      "stderr": "",
+      "output_tree_ok": true,
+      "output_bytes": 3707,
+      "files": [
+        "answer.json"
+      ],
+      "answer_sha256": "d05dc208ccfb2147204c850cc18a699e60ddd828754223d4161bb4980d00abd5",
+      "answer_parity": true,
+      "smoke_admissible": true
+    }
+  ],
+  "toolkit": "2.6.0",
+  "scorer": "5.2.2",
+  "official_commit": "458bc07efc05983de342ccb371e2b3cd793d621f",
+  "build_url": "https://github.com/antonno5/agenthon-t4/actions/runs/37933821586",
+  "limitations": [
+    "CPU/memory reduced to 2 CPUs/2 GiB on CI; no GPU or House endpoint.",
+    "Public smoke is non-rankable; private organizer ingestion/scoring is not reproduced."
+  ],
+  "v11_runtime_probe": {
+    "uid": 65534,
+    "gid": 65534,
+    "cap_eff": "0000000000000000",
+    "no_new_privs": "1",
+    "tmp_options": "rw,nosuid,nodev,noexec,relatime,size=65536k,inode64",
+    "nofile": [
+      1024,
+      1024
+    ],
+    "nproc": [
+      256,
+      256
+    ],
+    "fsize": [
+      67108864,
+      67108864
+    ]
+  },
+  "v17_runtime_probe": {
+    "uid": 65534,
+    "gid": 65534,
+    "cap_eff": "0000000000000000",
+    "no_new_privs": "1",
+    "tmp_options": "rw,nosuid,nodev,noexec,relatime,size=65536k,inode64",
+    "nofile": [
+      1024,
+      1024
+    ],
+    "nproc": [
+      256,
+      256
+    ],
+    "fsize": [
+      67108864,
+      67108864
+    ]
+  },
+  "passed": 22
+}
