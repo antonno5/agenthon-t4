@@ -1,0 +1,29 @@
+DRAFT — not posted or sent.
+
+Subject: T4 970286 and 971361: repeated Failed after the 9 October all-clear; runtime comparison attached
+
+Could you inspect the organizer-side processing records for Track 4 Development submissions 970286 and 971361 (competition 17768, phase 29649)? Both expose only "Submission processing failed. Diagnostic details are available to the organizers", no scores, and an empty detailed report.
+
+Our minute-resolution watcher first observed 970286 Running at 2026-10-09 01:08:23 UTC and Failed at 01:11:27 UTC. For 971361 it observed Running at 08:27:48 UTC and Failed at 08:28:51 UTC. These are observation times, not exact transition timestamps. For 971361, storage Last-Modified headers are 08:28:21 UTC for ingestion logs and 08:28:29 UTC for scoring logs; all available program logs are withheld. These artifacts do not prove which participant containers ran or why processing stopped.
+
+Both uploads contain the same ZIP bytes (SHA256 69da11f6988331acb1a74a092cf951df57a37937ab443bd994801383ff8f70ac), naming:
+ghcr.io/antonno5/agenthon-t4@sha256:4d9d679c3eb8ec551e49058da3ac8383a73207a76ab62a449b6a469a8b01a24b
+
+Known successful comparison: V11 submission 965395, Finished on 6 October, image:
+ghcr.io/antonno5/agenthon-t4@sha256:b6a841f95515f217e6b9fff421191f95e228d8e1d5e1594b9c6da1c3c226c22a
+
+Checks completed:
+- Exact ZIP contents, C5 parser/digest, team alias and HMAC proof checked locally; downloaded stored upload matches local SHA256. No credentials are included.
+- Both registry configurations carry qfbench2.interface_version="2.0", linux/amd64, no declared VOLUME, and the same Docker v2 manifest/gzip-layer format. Anonymous cold V17 layer pull succeeded on a clean machine.
+- Both exact images completed all 11 public tasks as UID/GID 65534, read-only, cap-drop=ALL, no-new-privileges, noexec/nosuid/nodev /tmp=64 MiB, PID/nproc/nofile/file-size limits. CPU/memory were reduced to 2 CPUs/2 GiB; no GPU or House access was reproduced.
+- All 22 outputs passed the shared output-tree checker and official non-rankable smoke verifier (toolkit 2.6.0, scorer 5.2.2, Track 4 commit 458bc07efc05983de342ccb371e2b3cd793d621f), with byte-identical answers to the previously validated releases.
+- The V17 public answer diff changes EPS numerical forecasts/intervals and evidence_trace in two units. All public classification labels and claims remain identical to V11.
+- This image makes no House or third-party API calls. It declares four permitted local non-neural predictors using access="local", with checksums, cutoffs and provenance. The two new EPS experts share one bundled artifact checksum and have distinct model names/versions.
+
+Reproduction and machine-readable results:
+https://github.com/antonno5/agenthon-t4/actions/runs/37933821586
+https://github.com/antonno5/agenthon-t4/blob/submission/t4-v17/research/v17-release/runtime-diff-validation.json
+
+These checks do not reproduce private ingestion or rankable scoring. We saw the acknowledged outage ending 00:35 UTC and later recurrence reports in hub issue 7, plus Track 4 issue 28, but cannot establish that our submissions have the same cause.
+
+Please identify the failing stage and sanitized exception/error code for these two IDs. In particular: did image inspection and container startup succeed; were the per-unit run records and sanitized outputs produced; did scoring stop on a missing/inconsistent organizer record or on a specific submission field? If this is a worker fault, can the existing submissions be rerun after the fix, or is a fresh upload required?

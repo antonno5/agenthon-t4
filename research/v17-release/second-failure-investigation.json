@@ -1,0 +1,322 @@
+{
+  "checked_at": "2026-10-09T13:08:54.883669+00:00",
+  "failed_submissions": [
+    970286,
+    971361
+  ],
+  "last_successful_submission": 965395,
+  "conclusion": "Organizer processing/scoring infrastructure is the leading hypothesis; exact cause remains unconfirmed without organizer diagnostics.",
+  "runtime_defect_reproduced": false,
+  "new_codabench_uploads": 0,
+  "strict_runtime": {
+    "result": "22/22",
+    "toolkit": "2.6.0",
+    "scorer": "5.2.2",
+    "url": "https://github.com/antonno5/agenthon-t4/actions/runs/37933821586",
+    "limitations": [
+      "CPU/memory reduced to 2 CPUs/2 GiB on CI; no GPU or House endpoint.",
+      "Public smoke is non-rankable; private organizer ingestion/scoring is not reproduced."
+    ],
+    "max_unit_seconds": 1.944,
+    "max_output_bytes": 14531
+  },
+  "prior_validation_gap": "Previous checks used the CI user UID, executable /tmp, and omitted capability/ulimit restrictions; the new A/B diagnostic covers them and both versions pass.",
+  "official_version_check": {
+    "track_main_unchanged": true,
+    "track_commit": "458bc07efc05983de342ccb371e2b3cd793d621f",
+    "common_251_to_260": "No change to submission descriptor parser/schema or analysis output schema; changes mainly trust contracts and documentation."
+  },
+  "registry_comparison": [
+    {
+      "version": "v11",
+      "manifest_media_type": "application/vnd.docker.distribution.manifest.v2+json",
+      "layer_media_types": [
+        "application/vnd.docker.image.rootfs.diff.tar.gzip"
+      ],
+      "compressed_bytes": 43070063,
+      "architecture": "amd64",
+      "os": "linux",
+      "labels": {
+        "org.opencontainers.image.revision": "753007d6d64a94961adb0e655412d8ecb3bdced0",
+        "qfbench2.interface_version": "2.0"
+      },
+      "volumes": null,
+      "entrypoint": [
+        "python",
+        "-m",
+        "agent_submit_v11.cli"
+      ]
+    },
+    {
+      "version": "v17",
+      "manifest_media_type": "application/vnd.docker.distribution.manifest.v2+json",
+      "layer_media_types": [
+        "application/vnd.docker.image.rootfs.diff.tar.gzip"
+      ],
+      "compressed_bytes": 43109993,
+      "architecture": "amd64",
+      "os": "linux",
+      "labels": {
+        "org.opencontainers.image.revision": "579870d372a2248f1c1d983dabac3c4650e30246",
+        "qfbench2.interface_version": "2.0"
+      },
+      "volumes": null,
+      "entrypoint": [
+        "python",
+        "-m",
+        "agent_submit_v17.cli"
+      ]
+    }
+  ],
+  "answer_diff": [
+    {
+      "unit": "t4-EXAMPLE-eps-beat",
+      "changed_rows": [],
+      "claims_identical": true,
+      "labels_identical": true
+    },
+    {
+      "unit": "t4-auction-btc-202411-us7",
+      "changed_rows": [],
+      "claims_identical": true,
+      "labels_identical": true
+    },
+    {
+      "unit": "t4-cotpos-202411-us10",
+      "changed_rows": [],
+      "claims_identical": true,
+      "labels_identical": true
+    },
+    {
+      "unit": "t4-cpicomp-202410-us11",
+      "changed_rows": [],
+      "claims_identical": true,
+      "labels_identical": true
+    },
+    {
+      "unit": "t4-credit-event-2023",
+      "changed_rows": [],
+      "claims_identical": true,
+      "labels_identical": true
+    },
+    {
+      "unit": "t4-eps-growth-2024Q3-banks",
+      "changed_rows": [
+        {
+          "entity": "BAC",
+          "fields": [
+            "interval",
+            "point_forecast"
+          ]
+        },
+        {
+          "entity": "C",
+          "fields": [
+            "interval",
+            "point_forecast"
+          ]
+        },
+        {
+          "entity": "GS",
+          "fields": [
+            "interval",
+            "point_forecast"
+          ]
+        },
+        {
+          "entity": "JPM",
+          "fields": [
+            "interval",
+            "point_forecast"
+          ]
+        },
+        {
+          "entity": "MS",
+          "fields": [
+            "interval",
+            "point_forecast"
+          ]
+        },
+        {
+          "entity": "PNC",
+          "fields": [
+            "interval",
+            "point_forecast"
+          ]
+        },
+        {
+          "entity": "USB",
+          "fields": [
+            "interval",
+            "point_forecast"
+          ]
+        },
+        {
+          "entity": "WFC",
+          "fields": [
+            "interval",
+            "point_forecast"
+          ]
+        }
+      ],
+      "claims_identical": true,
+      "labels_identical": true
+    },
+    {
+      "unit": "t4-eps-yoy-2023Q2-mixed",
+      "changed_rows": [
+        {
+          "entity": "AMD",
+          "fields": [
+            "interval",
+            "point_forecast"
+          ]
+        },
+        {
+          "entity": "AMGN",
+          "fields": [
+            "interval",
+            "point_forecast"
+          ]
+        },
+        {
+          "entity": "DOW",
+          "fields": [
+            "interval",
+            "point_forecast"
+          ]
+        },
+        {
+          "entity": "HON",
+          "fields": [
+            "interval",
+            "point_forecast"
+          ]
+        },
+        {
+          "entity": "IBM",
+          "fields": [
+            "interval",
+            "point_forecast"
+          ]
+        },
+        {
+          "entity": "TMO",
+          "fields": [
+            "interval",
+            "point_forecast"
+          ]
+        }
+      ],
+      "claims_identical": true,
+      "labels_identical": true
+    },
+    {
+      "unit": "t4-fomc-curve-20220728",
+      "changed_rows": [],
+      "claims_identical": true,
+      "labels_identical": true
+    },
+    {
+      "unit": "t4-fomc-curve-20240918",
+      "changed_rows": [],
+      "claims_identical": true,
+      "labels_identical": true
+    },
+    {
+      "unit": "t4-macrorev-20240930-us6",
+      "changed_rows": [],
+      "claims_identical": true,
+      "labels_identical": true
+    },
+    {
+      "unit": "t4-postearn-20240201-megacap",
+      "changed_rows": [],
+      "claims_identical": true,
+      "labels_identical": true
+    }
+  ],
+  "second_failure_log_metadata": [
+    {
+      "log": "prediction_stdout",
+      "bytes": 0,
+      "modified": "Fri, 09 Oct 2026 08:26:56 GMT",
+      "content": ""
+    },
+    {
+      "log": "prediction_stderr",
+      "bytes": 0,
+      "modified": "Fri, 09 Oct 2026 08:26:56 GMT",
+      "content": ""
+    },
+    {
+      "log": "prediction_ingestion_stdout",
+      "bytes": 51,
+      "modified": "Fri, 09 Oct 2026 08:28:21 GMT",
+      "content": "Program logs are withheld from participant output.\n"
+    },
+    {
+      "log": "prediction_ingestion_stderr",
+      "bytes": 51,
+      "modified": "Fri, 09 Oct 2026 08:28:21 GMT",
+      "content": "Program logs are withheld from participant output.\n"
+    },
+    {
+      "log": "scoring_stdout",
+      "bytes": 51,
+      "modified": "Fri, 09 Oct 2026 08:28:29 GMT",
+      "content": "Program logs are withheld from participant output.\n"
+    },
+    {
+      "log": "scoring_stderr",
+      "bytes": 51,
+      "modified": "Fri, 09 Oct 2026 08:28:29 GMT",
+      "content": "Program logs are withheld from participant output.\n"
+    },
+    {
+      "log": "scoring_ingestion_stdout",
+      "bytes": 0,
+      "modified": "Fri, 09 Oct 2026 08:28:21 GMT",
+      "content": ""
+    },
+    {
+      "log": "scoring_ingestion_stderr",
+      "bytes": 0,
+      "modified": "Fri, 09 Oct 2026 08:28:21 GMT",
+      "content": ""
+    }
+  ],
+  "sources": [
+    {
+      "kind": "organizer confirmed earlier outage",
+      "url": "https://github.com/Agenthon-2026/Agenthon2026-public/issues/7#issuecomment-6071853344",
+      "note": "Acknowledged window ends 2026-10-09 00:35 UTC, before our observed run times; this does not directly confirm our cause."
+    },
+    {
+      "kind": "participant recurrence report",
+      "url": "https://github.com/Agenthon-2026/Agenthon2026-public/issues/7#issuecomment-6078475762",
+      "note": "Reports same status/message after the announced fix, including an 08:26 UTC upload on 9 October; organizer has not confirmed its cause."
+    },
+    {
+      "kind": "participant Track 4 report",
+      "url": "https://github.com/Agenthon-2026/track4-analysis-public/issues/28",
+      "note": "Similar Track 4 failures; no organizer answer at time of check."
+    },
+    {
+      "kind": "organizer explanation of prior Failed case",
+      "url": "https://github.com/Agenthon-2026/track4-analysis-public/issues/20#issuecomment-5964394633",
+      "note": "Missing interface label prevented run-record creation in that case; both our actual image configs have the required label."
+    },
+    {
+      "kind": "runtime contract",
+      "url": "https://github.com/Agenthon-2026/Agenthon2026-public/blob/6fe0fe79f638759891fc0a097d0a57eaff9fe772/docs/DEVELOPMENT-RUNTIME.md"
+    },
+    {
+      "kind": "local model declaration policy",
+      "url": "https://github.com/Agenthon-2026/track4-analysis-public/blob/458bc07efc05983de342ccb371e2b3cd793d621f/docs/ARTIFACT-POLICY.md"
+    }
+  ],
+  "next_required_evidence": "Organizer failure stage, sanitized traceback/error code, per-unit run-record/output availability for 971361 and 970286.",
+  "organizer_message_draft": "organizer-diagnostic-request.txt",
+  "organizer_message_sent": false
+}

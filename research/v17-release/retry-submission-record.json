@@ -33,14 +33,19 @@
       "n_units": 10.0
     }
   },
-  "result_status": "pending",
+  "result_status": "failed",
   "watcher": {
     "host": "cero",
     "read_only": true,
     "duration_seconds": 43200,
     "interval_seconds": 60,
     "directory": "/home/antonnos/t4-v17-20261009/submission-watch/retry1-output",
-    "last_verified": "2026-10-09T08:04:27.228869+00:00"
+    "last_verified": "2026-10-09T08:04:27.228869+00:00",
+    "state": "complete"
   },
-  "local_result_directory": "test-output/submission-v17-retry"
+  "local_result_directory": "test-output/submission-v17-retry",
+  "latest_status": "Failed",
+  "scores": {},
+  "failure_observed_at": "2026-10-09T08:28:51.121363+00:00",
+  "investigation": "second-failure-investigation.json"
 }
